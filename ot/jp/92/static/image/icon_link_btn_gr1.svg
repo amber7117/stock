@@ -1,0 +1,26 @@
+GET /course/common/images/icon_link_btn_gr.svg HTTP/1.1
+sec-ch-ua: "Android WebView";v="119", "Chromium";v="119", "Not?A_Brand";v="24"
+sec-ch-ua-mobile: ?1
+CF-IPCountry: JP
+user-agent: Mozilla/5.0 (Linux; Android 11; SHG04 Build/SC210; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/119.0.6045.193 Mobile Safari/537.36 Instagram 311.0.0.32.118 Android (30/11; 420dpi; 1080x2226; SHARP/KDDI; SHG04; XKH; qcom; ja_JP; 545986901)
+RemoteIp: 2001:268:9807:8dcb:df60:3806:1b0f:50a2
+sec-ch-ua-platform: "Android"
+CF-RAY: 83fade908eaff6e1-NRT
+accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+X-Forwarded-For: 2001:268:9807:8dcb:df60:3806:1b0f:50a2
+x-requested-with: com.instagram.android
+X-Forwarded-Proto: https
+CF-Visitor: {"scheme":"https"}
+sec-fetch-mode: no-cors
+sec-fetch-dest: image
+CDN-Loop: cloudflare
+referer: http://www.gaoqianfa.com/
+accept-language: ja-JP,ja;q=0.9,en-US;q=0.8,en;q=0.7
+CF-Connecting-IP: 2001:268:9807:8dcb:df60:3806:1b0f:50a2
+Host: skeseaxbt.xyz
+sec-fetch-site: cross-site
+accept-encoding: gzip
+Remote-Address: 8.219.30.75
+Scheme: http
+OriginHost: skeseaxbt.xyz
+

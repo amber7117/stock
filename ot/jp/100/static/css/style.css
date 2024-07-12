@@ -1,0 +1,924 @@
+
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Hiragino Sans", "ヒラギノ角ゴ ProN", apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Meiryo, sans-serif;
+    /*自動文字詰め*/
+    font-feature-settings: "palt";
+    font-feature-settings: "palt";
+    background: #f2f2f2;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+p {
+    font-family: "Hiragino Sans", "ヒラギノ角ゴ ProN", apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Meiryo, sans-serif;
+    /*自動文字詰め*/
+    font-feature-settings: "palt";
+    font-size: 20px;
+    line-height: 1.8;
+    color: #333;
+    font-weight: 500;
+    margin: 30px 0;
+    padding: 60px;
+}
+
+.mincho {
+    font-family: 'Noto Serif JP', Georgia, 游明朝, "Yu Mincho", YuMincho, "Hiragino Mincho ProN", HGS明朝E, メイリオ, Meiryo, serif !important;
+    font-family: 'Noto Serif JP', Georgia, 游明朝, "Yu Mincho", YuMincho, "Hiragino Mincho ProN", HGS明朝E, メイリオ, Meiryo, serif !important;
+    text-align: center !important;
+    font-size: 18px;
+}
+
+.wrap {
+    overflow: hidden;
+}
+
+
+
+/* 文字
+******************************************************************************/
+
+
+/* 装飾 */
+
+.td1 {
+    color: #f50677;
+    font-weight: 700;
+}
+
+.td2 {
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+.td3 {
+    color: #23b3ac;
+    font-weight: 900;
+}
+
+.td4 {
+    background: linear-gradient(transparent 60%, #ffeab0 60%);
+    font-weight: 900;
+}
+
+.td5 {
+    color: #026587;
+    font-weight: 700;
+}
+
+.td6 {
+    background: #333;
+    color: #fff;
+    padding: 5px;
+}
+
+.td7 {
+    background: #f50677;
+    color: #ffff00;
+    padding: 5px;
+}
+
+.ts_bg1 {
+    font-size: 180%;
+}
+
+.ts_bg2 {
+    font-size: 150%;
+}
+
+.ts_bg3 {
+    font-size: 130%;
+}
+
+.ts_bg4 {
+    font-size: 180%;
+    font-style: italic;
+}
+
+.kome {
+    vertical-align: super;
+    font-size: 18px;
+}
+
+
+.wh {
+    color: #fff;
+}
+
+.center {
+    text-align: center;
+}
+
+.shadow {
+    filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.8));
+}
+
+.intro p {
+    margin: 30px 0;
+    padding: 20px 60px 60px 60px;
+}
+
+@media only screen and (max-width: 1000px) {
+
+
+    .ts_sm {
+        font-size: 30px !important;
+    }
+
+    .ts_sm2 {
+        font-size: 23px !important;
+    }
+
+}
+
+
+/* ヘッダー
+******************************************************************************/
+
+.head {
+    width: 100vw;
+    height: auto;
+    background-image: url(../image/head_bg.jpg);
+    background-position: center;
+    margin: auto;
+}
+
+.head_cont {
+    width: 1000px;
+    margin: 0px auto;
+    line-height: 0;
+    background: none;
+    padding: 40px;
+    text-align: center;
+}
+
+.head_cont img {
+    width: 90%;
+}
+
+.ctabtn {
+    margin: 30px auto;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .head {
+        width: 100vw;
+        height: auto;
+        background-image: url(../image/head_bg1.jpg);
+        background-position: center;
+        margin: auto;
+    }
+
+    .head_cont {
+        width: 1000px;
+        margin: 0px auto;
+        line-height: 0;
+        background: none;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .head_cont img {
+        width: 100%;
+    }
+}
+
+
+
+
+/* 背景
+******************************************************************************/
+
+.bg_wh {
+    background: #fff;
+}
+
+.bg_bk {
+    background: #000;
+}
+
+.bg_gr {
+    background: #f1f1f1;
+}
+
+.bg_bl {
+    background: #527699;
+}
+
+.bg_lbl {
+    background: #9CC4E5;
+}
+
+
+.bg_grd {
+    background: linear-gradient(90deg, #f7931e, #f15a24);
+}
+
+.bg_tokuten {
+    width: 100vw;
+    height: auto;
+    background-image: url(../image/bg_tokuten.jpg);
+    background-position: center;
+    background-repeat: repeat;
+    margin: auto;
+}
+
+.bg_voice {
+    width: 100vw;
+    height: auto;
+    background-image: url(../image/bg_voice.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    margin: auto;
+}
+
+.bg1 {
+    width: 100vw;
+    height: auto;
+    background-image: url(../image/bg1.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    margin: auto;
+    padding: 60px 0;
+}
+
+.bg2 {
+    width: 100vw;
+    height: auto;
+    background-image: url(../image/bg2.jpg);
+    background-position: center;
+    background-repeat: repeat;
+    margin: auto;
+    padding: 60px 0;
+}
+
+
+
+@media only screen and (max-width: 1000px) {}
+
+
+
+
+/* 画像
+******************************************************************************/
+
+.sh {
+    margin: 0 auto;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+.sh2 {
+    margin: 0 auto;
+    width: 800px;
+    margin-bottom: 30px !important;
+}
+
+.sh3 {
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+.contimg {
+    float: right;
+    width: 40%;
+    margin-top: 0 !important;
+    margin-left: 15px !important;
+}
+
+.contimg1 {
+    width: 100%;
+}
+
+.contimg2 {
+    width: 80%;
+}
+
+.contimg3 {
+    width: 90%;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .sh,
+    .sh2,
+    .contimg1,
+    .contimg2,
+    .contimg3 {
+        margin: 0 auto;
+        padding: 60px 0;
+    }
+
+    .sh3 {
+        margin: 0 auto;
+        padding: 60px 0 0 0;
+    }
+}
+
+
+/* コンテンツ
+******************************************************************************/
+
+/* 共通 */
+
+.content {
+    width: 900px;
+    margin: 0px auto;
+    line-height: 0;
+    background: #fff;
+    padding: 40px;
+    border-radius: 50px;
+}
+
+.content2 {
+    width: 1200px;
+    margin: 0px auto;
+    line-height: 0;
+    background: none;
+    padding: 60px;
+    text-align: center;
+}
+
+.content3 {
+    width: 900px;
+    margin: 0px auto;
+    line-height: 0;
+    background: none;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.content4 {
+    width: 90%;
+    margin: 0px auto;
+    line-height: 0;
+    background: none;
+    padding: 60px;
+    text-align: center;
+}
+
+
+
+.kiyaku {
+    overflow: auto;
+    width: 700px;
+    height: 100px;
+    padding: 10px;
+    border: 2px solid #666;
+    background: #fff;
+    line-height: 1.5em;
+    margin: 0 auto;
+    text-align: left;
+    margin-top: 100px;
+}
+
+.kiyaku p {
+    font-size: 14px;
+}
+
+
+.content img {
+    margin: 30px auto;
+}
+
+.twitter {
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+/*SNSボタン*/
+
+.sns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sns a {
+    width: calc(40%);
+}
+
+.sns img {
+    width: 90%;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .content,
+    .content2,
+    .content3,
+    .content4 {
+        width: 900px;
+        padding: 0;
+        padding-bottom: 100px;
+    }
+}
+
+
+
+
+
+/* 教え子の声
+******************************************************************************/
+
+.voice_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.voice {
+    background: #fff;
+    margin: 10px;
+    border-radius: 40px;
+    width: calc(90%/3);
+    /* 横幅を3等分 */
+    height: auto;
+    display: flex;
+    /* 高さを揃えるための指定 */
+    flex-direction: column;
+    /* 高さを揃えるための指定 */
+}
+
+.voice .vc {
+    text-align: left !important;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.voice img {
+    width: 35%;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.voice h3 {
+    font-size: 30px;
+    line-height: 1.5;
+    color: #DD5898;
+    padding: 0 20px;
+}
+
+.voice .name {
+    background: #2887DD;
+    color: #fff;
+    border-radius: 40px;
+    padding: 5px 20px;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .voice_wrap {
+        display: block;
+    }
+
+    .voice {
+        width: 100%;
+        display: block;
+    }
+}
+
+
+/* QA
+******************************************************************************/
+
+.qash {
+    width: 30%;
+    margin-bottom: 60px;
+}
+
+.boxQA {
+    position: relative;
+    margin: 0 auto;
+    padding: 20px 20px 0 20px;
+    /*A文章部分背景色*/
+    width: 95%;
+    text-align: left;
+}
+
+.boxQA .box-title {
+    position: relative;
+    /*Q文章部分背景色*/
+    padding: 30px 40px 20px 80px;
+    color: #2887DD;
+    /*Q文章文字色*/
+    font-size: 22px;
+    font-weight: 900 !important;
+    line-height: 1.5;
+    border-bottom: 2px solid #333;
+}
+
+.boxQA .box-title:before {
+    content: "Q";
+    display: inline-block;
+    line-height: 50px;
+    position: absolute;
+    padding: 0em;
+    font-size: 25px;
+    color: white;
+    /*Q文字色*/
+    background: #2887DD;
+    /*Q背景色*/
+    font-weight: bold;
+    width: 50px;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    left: 0.5em;
+    top: 1.8em;
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    border: solid 3px white;
+    border-radius: 50%;
+}
+
+.boxQA .box-title:after {
+    content: "A";
+    display: inline-block;
+    line-height: 40px;
+    position: absolute;
+    padding: 0em;
+    font-size: 25px;
+    color: white;
+    /*A文字色*/
+    background: #DD5898;
+    /*A背景色*/
+    font-weight: bold;
+    width: 50px;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    left: 0.5em;
+    bottom: -100px;
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    border: solid 3px white;
+    border-radius: 50%;
+}
+
+.boxQA p {
+    padding: 20px 20px 40px 40px;
+    margin: 0;
+    text-align: left;
+    margin-left: 50px;
+    font-weight: 500 !important;
+}
+
+.boxQA ul {
+    padding: 0 1em;
+    position: relative;
+}
+
+.boxQA ul li {
+    line-height: 1.5;
+    padding: 0.5em 0 0.5em 4.2em;
+    list-style-type: none !important;
+}
+
+.boxQA ul li:before {
+    font-family: "FontAwesome";
+    content: "\f138";
+    /*アイコン種類*/
+    position: absolute;
+    left: 3.5em;
+    color: #FFAB8B;
+    /*Aのリストのアイコンの色*/
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .qash {
+        width: 40%;
+        margin: 50px auto;
+    }
+
+    .boxQA {
+        font-size: 40px;
+    }
+
+    .boxQA .box-title {
+        padding: 40px 20px 40px 130px;
+    }
+
+    .boxQA .box-title:before {
+        line-height: 80px;
+        font-size: 40px;
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+    }
+
+    .boxQA .box-title:after {
+        line-height: 80px;
+        font-size: 40px;
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+        bottom: -150px;
+    }
+
+    .boxQA p {
+        padding: 0px 20px 40px 130px;
+        margin: 0;
+        text-align: left;
+    }
+
+}
+
+/* 追従ボタン
+******************************************************************************/
+
+.footer-fix {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #fefefe;
+    padding: 0;
+    box-sizing: border-box;
+    vertical-align: middle;
+    z-index: 888;
+}
+
+
+.footer_btn {
+    position: relative;
+    margin: 10px;
+    width: 90%;
+}
+
+.fix {
+    margin: 0 auto;
+    width: 1440px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    vertical-align: middle;
+}
+
+.fix p {
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .footer-fix {
+        width: 100%
+    }
+
+    .fix {
+        margin: 0 auto;
+        width: 1000px;
+        text-align: center;
+        position: relative;
+        display: block;
+        vertical-align: middle;
+    }
+
+    .fix p {
+        margin-left: 0px;
+        font-size: 22px;
+    }
+
+
+
+    .footer_btn {
+        width: 90%;
+    }
+}
+
+
+
+
+/* PC/SP表示切り替え
+******************************************************************************/
+
+.pc {
+    display: block !important;
+}
+
+.sp {
+    display: none !important;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .pc {
+        display: none !important;
+    }
+
+    .sp {
+        display: block !important;
+    }
+}
+
+
+/* フッター
+******************************************************************************/
+
+footer {
+    background-color: #666;
+    padding: 15px 0;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+footer p {
+    color: #fff;
+    font-size: 16px;
+    margin: 0 auto;
+    line-height: 2;
+    text-align: center !important;
+}
+
+@media only screen and (max-width: 1000px) {
+    footer {
+        padding-bottom: 10px;
+    }
+}
+
+
+/* レスポンシブ
+******************************************************************************/
+
+@media only screen and (max-width: 1000px) {
+
+    p {
+        font-size: 25px;
+        line-height: 1.8;
+    }
+
+}
+
+
+
+/* アニメーション
+******************************************************************************/
+
+/*矢印*/
+
+.slide-bottom {
+    -webkit-animation: slide-bottom 1s infinite both;
+    animation: slide-bottom 1s infinite both;
+    text-align: center;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2023-2-7 13:16:26
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info.
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation slide-bottom
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-bottom {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    100% {
+        -webkit-transform: translateY(20px);
+        transform: translateY(20px);
+    }
+}
+
+@keyframes slide-bottom {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    100% {
+        -webkit-transform: translateY(20px);
+        transform: translateY(20px);
+    }
+}
+
+
+/*ボタン*/
+
+.heartbeat {
+    -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+    animation: heartbeat 1.5s ease-in-out infinite both;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2022-11-8 13:41:17
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info.
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation heartbeat
+ * ----------------------------------------
+ */
+@-webkit-keyframes heartbeat {
+    from {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: center center;
+        transform-origin: center center;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    10% {
+        -webkit-transform: scale(0.91);
+        transform: scale(0.91);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    17% {
+        -webkit-transform: scale(0.98);
+        transform: scale(0.98);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    33% {
+        -webkit-transform: scale(0.87);
+        transform: scale(0.87);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    45% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+}
+
+@keyframes heartbeat {
+    from {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: center center;
+        transform-origin: center center;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    10% {
+        -webkit-transform: scale(0.91);
+        transform: scale(0.91);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    17% {
+        -webkit-transform: scale(0.98);
+        transform: scale(0.98);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    33% {
+        -webkit-transform: scale(0.87);
+        transform: scale(0.87);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    45% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+}

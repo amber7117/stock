@@ -1,0 +1,3186 @@
+/* ----------------------------
+reset
+------------------------------- */
+body,
+h1,h2,h3,h4,h5,h6,p,
+ul,ol,li,dl,dt,dd,
+form,fieldset,legend,pre,blockquote {
+	margin:0px;
+	padding:0px;
+}
+
+ul,li {
+	list-style:none;
+}
+
+img {
+	margin:0px;
+	padding:0px;
+	border:0px;
+	vertical-align:top;
+}
+
+html { font-size: 62.5%;} 
+
+body {
+	color: #111111;
+	font-family: "Helvetica Neue",
+    Arial,
+    "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans",
+    Meiryo,
+    sans-serif;
+    font-size: 1.8rem;;
+    line-height: 1.7;
+    color: #282828;
+	-webkit-text-size-adjust: 100%;
+    background-color: #ffffff;
+    text-align: left;
+}
+
+a,
+a:link,
+a:visited {
+	color: #181818;
+	text-decoration: underline;
+}
+
+a:hover,
+a:active {
+	color: #333;
+	text-decoration:none;
+}
+
+a img {
+	margin:0;
+	padding:0;
+	border-style:none;
+}
+
+/**************************************************************
+【配置設定】
+**************************************************************/
+.img_c{text-align:center; margin: 0px auto;}
+.img_c2{text-align:center; margin: 20px auto;}
+.img_c2 img{width: 70%;}
+
+
+/* バナー */
+.banner{}
+.banner img:hover{opacity:0.8; filter: alpha(opacity=60);}
+
+
+/* 共通 */
+#wrapper{
+width: 100%;
+margin: 0 auto;
+background-color: #ffffff;
+}
+
+.inner{
+    width: 1000px;
+	margin:0 auto;
+}
+.inner2{
+    width: 980px;
+	margin:0 auto;
+}
+
+.banner_pc{display: block;}
+.banner_sp{display: none;}
+
+.pcbr {display:inline;}
+.spbr {display:none;}
+
+
+
+/* ヘッダー */
+#header_pc{
+width:100%;
+margin: 0 auto;
+background-image: url("https://aidov.top/jp/24/index_files/header_back.png");
+background-repeat: no-repeat;
+background-position: center top;
+background-size: cover;
+}
+
+.head_top{
+padding: 30px 0 0;
+width: 938px;
+margin: 0 auto;
+}
+
+.head_l{
+float: left;
+}
+
+.head_r{
+float: right;
+}
+
+#header_pc h1{
+text-align: center;
+padding: 0 0 112px;
+}
+
+#header_pc{display: block;}
+#header_sp{display: none;}
+
+
+/* CTA */
+.cta{
+background-image: url("https://aidov.top/jp/24/index_files/cta_back.png");
+background-repeat: repeat;
+padding: 60px 0;
+color: #fff;
+}
+
+.cta h2{
+text-align: center;
+margin: 0 0 0px;
+}
+
+.cta_input{
+margin: 0 auto;
+text-align: center;
+}
+
+.deco2 {/* フォームの入力欄装飾用 */
+	display:block;
+	margin: 0 auto 20px;
+	padding:8px 15px 4px;
+	height:56px;
+	width:70%;
+	border:0;
+	font-size:24px;
+	line-height:60px;
+	font-weight:normal;
+	font-family:Arial, sans-serif;
+	text-align:center;
+	color:#444;
+	border:solid 1px #ccc;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-moz-box-shadow: inset 1px 4px 9px -6px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: inset 1px 4px 9px -6px rgba(0, 0, 0, 0.5);
+	box-shadow: inset 1px 4px 9px -6px rgba(0, 0, 0, 0.5);
+}
+
+.check{font-size: 0.9em;}
+	
+.submit {
+	margin:50px auto;
+	display:block;
+}
+
+a,
+a:link,
+a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+
+a:hover,
+a:active {
+	color: #ccc;
+	text-decoration:none;
+}
+
+/* ////ch1//// */
+.ch1{
+background-image: url("https://aidov.top/jp/24/index_files/ch1_back.png");
+background-repeat: no-repeat;
+background-position: center top;
+background-size: cover;
+}
+
+.ch1_in{
+padding: 110px 0 90px;
+background-color: #fff;
+}
+
+.ch1 h2{
+text-align: center;
+margin: 0 auto 20px;
+}
+
+.ch1 p{
+text-align: center;
+font-size: 2.4rem;
+}
+
+/* ////ch2//// */
+.ch2{
+background-image: url("https://aidov.top/jp/24/index_files/ch2_back.jpg");
+background-repeat: no-repeat;
+background-position: center top;
+}
+
+.ch2 h2{
+text-align: center;
+margin: 0 auto 0px;
+}
+
+/* ////ch3//// */
+.ch3{
+background-image: url("https://aidov.top/jp/24/index_files/ch3_back.png");
+background-repeat: repeat;
+padding: 325px 0 80px;
+}
+
+.ch3_in{
+width: 840px;
+margin: 0 auto;
+}
+
+.ch3_box{
+background-color: #fff;
+box-shadow: 0px 4px 11px -5px rgba(0,0,0,0.8);
+border-radius: 30px;
+-webkit-border-radius: 30px;
+-moz-border-radius: 30px;
+padding: 250px 45px 80px;
+position:  relative;
+margin: 0 auto 80px;
+}
+
+.ab_title{
+position:  absolute;
+left: 0;
+right: 0;
+top: -50px;
+margin: auto;
+width: 500px;
+}
+.ab_title img{
+width: 100%;
+}
+
+.greeting_wp{
+background-image: url("https://aidov.top/jp/24/index_files/img_underline.png");
+background-repeat: repeat;
+background-position: left bottom;
+background-size: auto 40px;
+font-size: 22px;
+line-height: 40px;
+text-align: center;
+position:  relative;
+}
+
+.ab_mark{
+position:  absolute;
+left: -40px;
+top: 0px;
+margin: auto;
+width: 74px;
+}
+.ab_mark img{
+width: 100%;
+}
+
+/* ////ch4//// */
+.ch4{
+background-image: url("https://aidov.top/jp/24/index_files/ch4_back.png");
+background-repeat: no-repeat;
+background-position: center top;
+background-size: cover;
+position:  relative;
+}
+
+.ab_title_ch4{
+position:  absolute;
+left: 0;
+right: 0;
+top: -50px;
+margin: 0 auto;
+width: 839px;
+}
+.ab_title_ch4 img{
+width: 100%;
+}
+
+.ch4_oji_wp{
+position:  relative;
+}
+
+.ch4_oji{
+position:  absolute;
+left: -20px;
+top: 20px;
+width: 220px;
+}
+.ch4_oji img{
+width: 100%;
+}
+
+.ch4_wp{
+width: 945px;
+margin: 0 auto;
+padding: 270px 0 150px;
+}
+
+.ch4_box_l{
+float: left;
+width: 42%;
+background-color: #fff;
+padding: 30px;
+margin: 70px auto 0;
+}
+
+.ch4_box_r{
+float: right;
+width: 42%;
+background-color: #fff;
+padding: 30px;
+margin: 70px auto 0;
+}
+
+.ch4 h3{
+background-image: url("https://aidov.top/jp/24/index_files/ch4_title2.png");
+background-repeat: no-repeat;
+background-position: center top;
+background-size: 100% 100%;
+font-size: 24px;
+line-height: 140%;
+text-align: center;
+padding: 10px 10px;
+margin: 0 0 45px;
+}
+
+.tb1{
+border-collapse: separate;
+width: 60%;
+border-spacing: 5px;
+margin: 0 auto;
+}
+
+.tb1 th{
+width: 48%;
+}
+.tb1 th img{
+width: 100%;
+}
+.tb1 td{
+font-size: 25px;
+font-weight: bold;
+text-align: right;
+vertical-align: middle;
+}
+
+.avr{width: 100%;margin: 20px auto 0;
+border-bottom: 5px solid #bb0602;}
+.avr_l{
+float: left;
+width: 48%;
+}
+.avr_l img{
+width: 100%;
+}
+.avr_r{
+float: right;
+text-align: center;
+display: block;
+font-size: 44px;
+color: #bb0602;
+font-weight: bold;
+width: 52%;
+}
+
+/* ////ch5//// */
+.ch5{
+background-image: url("https://aidov.top/jp/24/index_files/ch5_back.png");
+background-repeat: repeat;
+background-position: center top;
+position:  relative;
+}
+
+.ab_title_ch5{
+position:  absolute;
+left: 0;
+right: 0;
+top: -50px;
+margin: 0 auto 0px;
+width: 839px;
+z-index: 5;
+}
+.ab_title_ch5 img{
+width: 100%;
+}
+
+.step{
+padding: 170px 0 0;
+margin: 0 auto 0px;
+width: 858px;
+}
+
+.step_oji{
+text-align: right;
+position: relative;
+z-index: 100;
+}
+
+.step3{
+padding: 0 0 150px;
+text-align: center;
+}
+
+/* ////ch6//// */
+.ch6{
+background-image: url("https://aidov.top/jp/24/index_files/ch6_back.png");
+background-repeat: no-repeat;
+background-position: center top;
+background-size: cover;
+position:  relative;
+}
+
+.ab_title_ch6{
+position:  absolute;
+left: 0;
+right: 0;
+top: -70px;
+margin: 0 auto;
+width: 839px;
+}
+.ab_title_ch6 img{
+width: 100%;
+}
+
+.ch6_oji_wp{
+position:  relative;
+}
+
+.ch6_oji{
+position:  absolute;
+right: 20px;
+top: 80px;
+width: 108px;
+}
+.ch6_oji img{
+width: 100%;
+}
+
+
+.ch6_inner{
+padding: 280px 0 100px;
+width: 980px;
+margin: 0 auto;
+}
+
+.faq{
+margin: 30px auto;
+width: 85%;
+}
+
+.faq_a{
+background-color: #ffcc03;
+border-radius: 20px;
+-webkit-border-radius: 20px;
+-moz-border-radius: 20px;
+float: left;
+}
+
+
+.q1{
+background-image: url("https://aidov.top/jp/24/index_files/q1.png");
+background-repeat: no-repeat;
+background-position: 10px 10px;
+font-size: 28px;
+line-height: 140%;
+font-weight: bold;
+padding: 28px 25px 25px 100px;
+}
+
+.q2{
+background-image: url("https://aidov.top/jp/24/index_files/q2.png");
+background-repeat: no-repeat;
+background-position: 10px 10px;
+font-size: 28px;
+line-height: 140%;
+font-weight: bold;
+padding: 28px 25px 25px 100px;
+}
+
+.q3{
+background-image: url("https://aidov.top/jp/24/index_files/q3.png");
+background-repeat: no-repeat;
+background-position: 10px 10px;
+font-size: 28px;
+line-height: 140%;
+font-weight: bold;
+padding: 28px 25px 25px 100px;
+}
+
+.q4{
+background-image: url("https://aidov.top/jp/24/index_files/q4.png");
+background-repeat: no-repeat;
+background-position: 10px 10px;
+font-size: 28px;
+line-height: 140%;
+font-weight: bold;
+padding: 28px 25px 25px 100px;
+}
+
+.q5{
+background-image: url("https://aidov.top/jp/24/index_files/q5.png");
+background-repeat: no-repeat;
+background-position: 10px 10px;
+font-size: 28px;
+line-height: 140%;
+font-weight: bold;
+padding: 28px 25px 25px 100px;
+}
+
+.ans{
+background-color: #fff;
+width: 70%;
+float: right;
+border-radius: 20px;
+-webkit-border-radius: 20px;
+-moz-border-radius: 20px;
+box-shadow: 0px 4px 11px -5px rgba(0,0,0,0.8);
+padding: 50px 80px 50px 50px;
+position:  relative;
+font-size: 2.2rem;
+line-height: 160%;
+}
+
+.ch6_a{
+position:  absolute;
+right: -10px;
+top: 20px;
+width: 94px;
+}
+.ch6_a img{
+width: 100%;
+}
+
+.oji_r{
+float: right;
+margin: 0 30px 10px 10px;
+}
+
+/* ////ch7//// */
+.ch7{
+background-color: #000002;
+background-image: url("https://aidov.top/jp/24/index_files/ch7_back.jpg");
+background-repeat: repeat-y;
+background-position: center 500px;
+padding: 0 0 150px;
+}
+
+.ch7 h2{
+background-image: url("https://aidov.top/jp/24/index_files/ch7_title_back.png");
+background-repeat: no-repeat;
+background-position: center top;
+text-align: center;
+}
+
+.ch7_inner{
+width: 980px;
+margin: 100px auto;
+}
+
+.ch7_box{
+text-align: center;
+font-size: 2.2rem;
+line-height: 200%;
+background-color: #fff;
+padding: 60px 30px;
+}
+
+.ch7_oji{
+margin: 100px auto;
+text-align: center;
+}
+
+.ch7 h3{
+margin: 50px auto 0;
+}
+
+/* ////ch8//// */
+.ch8{
+background-image: url("https://aidov.top/jp/24/index_files/ch5_back.png");
+background-repeat: repeat-y;
+background-position: center top;
+position:  relative;
+}
+
+.ab_title_ch8{
+position:  absolute;
+left: 0;
+right: 0;
+top: -70px;
+margin: 0 auto;
+width: 839px;
+}
+.ab_title_ch8 img{
+width: 100%;
+}
+
+.ch8_oji_wp{
+position:  relative;
+}
+
+.ch8_oji{
+position:  absolute;
+right: 0;
+left: 0;
+margin: 0 auto;
+top: -120px;
+width: 203px;
+}
+.ch8_oji img{
+width: 100%;
+}
+
+.ch8_inner{
+width: 920px;
+margin: 0 auto;
+text-align: center;
+font-size: 2.2rem;
+line-height: 200%;
+padding: 280px 30px 60px;
+text-shadow: 1px 2px 2px rgba(255,255,255,1.0);
+}
+
+.ch8 h3{
+margin: 80px 0 80px;
+font-size: 2.8rem;
+line-height: 180%;
+text-shadow: 1px 2px 2px rgba(255,255,255,1.0);
+}
+
+.ch8_oji_wp2{
+position:  relative;
+padding: 0 0 150px;
+}
+
+.ch8_oji2{
+position:  absolute;
+right: -20px;
+top: -30px;
+width: 312px;
+}
+.ch8_oji2 img{
+width: 100%;
+}
+
+
+
+
+
+/************
+フロートボタンPC
+*************/
+.floating {
+  position: fixed;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  background-color: rgba(255,246,0,0.8);
+  display: none;
+  padding: 5px 0;
+}
+
+.float_in{
+width: 980px;
+background-image: url("https://aidov.top/jp/24/index_files/tuibi_back.png");
+background-repeat: no-repeat;
+margin: 0 auto;
+padding: 0px 0 5px;
+position: relative;
+}
+
+.floating a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+}
+.floating a:hover {
+  opacity: 1;
+}
+
+.fl_box{
+padding: 27px 143px 20px 0;
+text-align: right;
+}
+
+.fl2{
+float: left;
+margin: 0 15px 0 0;
+}
+
+.fl3{
+float: left;
+margin: 0 0px 0 0;
+padding: 3px 0 0;
+}
+
+.fl4{
+position: absolute;
+right: 5px;
+top: 5px;
+}
+
+.batsu_box{
+position: relative;
+}
+
+.batsu{
+position: absolute;
+top:0px;
+right: 20px;
+width: 20px;
+}
+.batsu img{
+width: 100%;
+}
+
+/************
+ページトップ
+*************/
+.button{
+  position: fixed;
+  right: 10px;
+  bottom: 180px;
+  color: #fff;
+  cursor: pointer;
+  transition: .3s;
+  width: 40px;
+  
+  /*デフォルトで非表示にする*/
+  opacity: 0;
+  visibility: hidden;
+}
+.button img{
+width: 100%;
+}
+
+/*このクラスが付与されると表示する*/
+.active{
+  opacity: 1;
+  visibility: visible;
+}
+
+
+/* footer */
+footer{
+    background-color: #fff;
+	padding:40px 0px;
+	text-align: left;
+	width:100%;
+    line-height: 1.3;
+}
+
+.footer_inner{
+    width: 90%;
+	margin:0 auto;
+}
+
+footer h2{
+width: 373px;
+}
+footer h2 img{
+width: 100%;
+}
+
+.f_navi{
+margin: 45px 0;
+font-size: 1.8rem;
+}
+
+.f_menseki{
+font-size: 1.6rem;
+}
+
+.copy{
+text-align: center;
+font-size: 1.2rem;
+margin: 40px 0 0;
+color: #00208a;
+}
+
+footer a,
+footer a:link,
+footer a:visited {
+	color: #00208a;
+	text-decoration: none;
+}
+
+footer a:hover,
+footer a:active {
+	color: #00208a;
+	text-decoration:underline;
+}
+
+
+
+
+/*ここからタブレット用（600px～1000px）環境の設定
+---------------------------------------------------------------------------*/
+@media (min-width:600px) and (max-width:1000px){
+body { font-size: 1.6rem;
+	line-height: 1.7;
+background-image:none;}
+
+/* イメージ */
+.img_c img{width:100%;}
+.img_c2 img{width:90%; margin: 20px auto;}
+
+
+/* 共通 */
+#wrapper{
+width: 100%;
+margin: 0 auto;
+background-color: #ffffff;
+}
+
+.inner{
+	width:92%;
+	margin:0 auto;
+}
+
+.inner2{
+	width:92%;
+	margin:0 auto;
+}
+
+.banner_pc{display: block;}
+.banner_sp{display: none;}
+
+.pcbr {display:inline;}
+.spbr {display:none;}
+
+/* ヘッダー */
+#header_sp{
+width:100%;
+margin: 0 auto;
+background-image: url("https://aidov.top/jp/24/index_files/header_back.png");
+background-repeat: no-repeat;
+background-position: center top;
+background-size: cover;
+}
+
+.head_top{
+padding: 20px 0 0;
+width: 90%;
+margin: 0 auto;
+}
+
+.head_l{
+float: left;
+width: 45%;
+}
+.head_l img{
+width: 100%;
+}
+
+.head_r{
+float: right;
+width: 53%;
+}
+.head_r img{
+width: 100%;
+}
+
+#header_sp h1{
+text-align: center;
+padding: 0 0 40px;
+width: 90%;
+margin: 0 auto;
+}
+#header_sp h1 img{width: 100%;}
+
+/* スマホナビ関連 */
+.reg_btn {
+position: absolute;
+top:10px;
+right:10px;
+z-index: 10;
+	font-size: 12px;
+	display: block;
+	width: 120px;
+	line-height: 12px;
+	text-align: center;
+	color: #ffffff;
+	border: none;
+background-color: #309fd6;
+
+	padding:8px 0px;
+	margin:0px auto 0;
+	border-radius: 100px;
+-webkit-border-radius: 100px;
+-moz-border-radius: 100px;
+}
+
+.reg_btn a,
+.reg_btn a:link,
+.reg_btn a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+
+.reg_btn a:hover,
+.reg_btn a:active {
+	color: #fff;
+	text-decoration:none;
+}
+
+.drawer-menu-item{
+font-size: 1.4rem !important;
+text-decoration: none!important}
+
+.drawer-hamburger-icon,
+.drawer-hamburger-icon:before,
+.drawer-hamburger-icon:after {
+  width: 25px;
+  height: 3px;
+  -webkit-transition: all .6s cubic-bezier(0.190, 1.000, 0.220, 1.000);
+  transition: all .6s cubic-bezier(0.190, 1.000, 0.220, 1.000);
+  background-color: #222;
+}
+
+.drawer-menu-item a,
+.drawer-menu-item a:link,
+.drawer-menu-item a:visited {
+	color: #111111;
+	text-decoration: none!important}
+
+
+#header_pc{display: none;}
+#header_sp{display: block;}
+
+/* PCナビ */
+#pc_nav{
+display: none;
+}
+
+/* CTA */
+.cta{
+background-image: url("https://aidov.top/jp/24/index_files/cta_back.png");
+background-repeat: repeat;
+padding: 60px 0;
+color: #fff;
+}
+
+.cta h2{
+text-align: center;
+margin: 0 auto 0px;
+width: 70%;
+}
+.cta h2 img{
+width: 100%;
+}
+
+.cta_input{
+margin: 0 auto;
+text-align: center;
+}
+
+.deco2 {/* フォームの入力欄装飾用 */
+	display:block;
+	margin: 0 auto 20px;
+	padding:8px 15px 4px;
+	height:45px;
+	width:80%;
+	border:0;
+	font-size:20px;
+	line-height:34px;
+	font-weight:normal;
+	font-family:Arial, sans-serif;
+	text-align:center;
+	color:#444;
+	border:solid 1px #ccc;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-moz-box-shadow: inset 1px 4px 9px -6px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: inset 1px 4px 9px -6px rgba(0, 0, 0, 0.5);
+	box-shadow: inset 1px 4px 9px -6px rgba(0, 0, 0, 0.5);
+}
+
+.check{
+font-size: 0.9em;
+line-height: 140%;
+}
+
+.submit {
+	margin:40px auto;
+	display:block;
+    width: 70%;
+}
+.submit img{
+width: 100%;
+}
+
+
+a,
+a:link,
+a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+
+a:hover,
+a:active {
+	color: #ccc;
+	text-decoration:none;
+}
+
+/* ////ch1//// */
+.ch1{
+background-image: url("https://aidov.top/jp/24/index_files/ch1_back.png");
+background-repeat: no-repeat;
+background-position: center top;
+background-size: cover;
+}
+
+.ch1_in{
+padding: 40px 0 40px;
+background-color: #fff;
+}
+
+.ch1 h2{
+text-align: center;
+margin: 0 auto 20px;
+width: 90%;
+}
+.ch1 h2 img{
+width: 100%;
+}
+
+.ch1 p{
+text-align: center;
+font-size: 1.8rem;
+margin: 0 10px;
+}
+
+/* ////ch2//// */
+.ch2{
+background-image: none;
+background-repeat: no-repeat;
+background-position: center top;
+}
+
+.ch2 h2{
+text-align: center;
+margin: 0 auto 0px;
+}
+.ch2 h2 img{
+width: 100%;
+}
+
+/* ////ch3//// */
+.ch3{
+background-image: url("https://aidov.top/jp/24/index_files/ch3_back.png");
+background-repeat: repeat;
+padding: 80px 0 1px;
+}
+
+.ch3_in{
+width: 92%;
+margin: 0 auto;
+}
+
+.ch3_box{
+background-color: #fff;
+box-shadow: 0px 4px 11px -5px rgba(0,0,0,0.8);
+border-radius: 30px;
+-webkit-border-radius: 30px;
+-moz-border-radius: 30px;
+padding: 180px 20px 30px;
+position:  relative;
+margin: 0px auto 80px;
+}
+
+.ab_title{
+position:  absolute;
+left: 0;
+right: 0;
+top: -50px;
+margin: auto;
+width: 400px;
+}
+.ab_title img{
+width: 100%;
+}
+
+.greeting_wp{
+background-image: url("https://aidov.top/jp/24/index_files/img_underline.png");
+background-repeat: repeat;
+background-position: left bottom;
+background-size: auto 28px;
+font-size: 18px;
+line-height: 28px;
+text-align: center;
+position:  relative;
+}
+
+.ab_mark{
+position:  absolute;
+left: -40px;
+top: 0px;
+margin: auto;
+width: 60px;
+}
+.ab_mark img{
+width: 100%;
+}
+
+/* ////ch4//// */
+.ch4{
+background-image: url("https://aidov.top/jp/24/index_files/ch4_back.png");
+background-repeat: no-repeat;
+background-position: center top;
+background-size: cover;
+position:  relative;
+}
+
+.ab_title_ch4{
+position:  absolute;
+left: 0;
+right: 0;
+top: -50px;
+margin: 0 auto;
+width: 80%;
+}
+.ab_title_ch4 img{
+width: 100%;
+}
+
+.ch4_oji_wp{
+position:  relative;
+}
+
+.ch4_oji{
+position:  absolute;
+left: -20px;
+top: 20px;
+width: 30%;
+}
+.ch4_oji img{
+width: 100%;
+}
+
+.ch4_wp{
+width: 90%;
+margin: 0 auto;
+padding: 200px 0 80px;
+}
+
+.ch4_box_l{
+float: left;
+width: 42%;
+background-color: #fff;
+padding: 20px;
+margin: 30px auto 0;
+}
+
+.ch4_box_r{
+float: right;
+width: 42%;
+background-color: #fff;
+padding: 20px;
+margin: 30px auto 0;
+}
+
+.ch4 h3{
+background-image: url("https://aidov.top/jp/24/index_files/ch4_title2.png");
+background-repeat: no-repeat;
+background-position: center top;
+background-size: 100% 100%;
+font-size: 20px;
+line-height: 140%;
+text-align: center;
+padding: 10px 10px;
+margin: 0 0 5px;
+}
+
+.tb1{
+border-collapse: separate;
+width: 75%;
+border-spacing: 5px;
+margin: 0 auto;
+}
+
+.tb1 th{
+width: 48%;
+}
+.tb1 th img{
+width: 100%;
+}
+.tb1 td{
+font-size: 18px;
+font-weight: bold;
+text-align: right;
+vertical-align: middle;
+}
+
+.avr{width: 100%;margin: 10px auto 0;
+border-bottom: 3px solid #bb0602;}
+.avr_l{
+float: left;
+width: 48%;
+}
+.avr_l img{
+width: 100%;
+}
+.avr_r{
+float: right;
+text-align: center;
+display: block;
+font-size: 26px;
+color: #bb0602;
+font-weight: bold;
+width: 52%;
+}
+
+/* ////ch5//// */
+.ch5{
+background-image: url("https://aidov.top/jp/24/index_files/ch5_back.png");
+background-repeat: repeat;
+background-position: center top;
+position:  relative;
+}
+
+.ab_title_ch5{
+position:  absolute;
+left: 0;
+right: 0;
+top: -20px;
+margin: 0 auto 0px;
+width: 80%;
+z-index: 5;}
+.ab_title_ch5 img{
+width: 100%;
+}
+
+.step{
+padding: 170px 0 0;
+margin: 0 auto 0px;
+width: 85%;
+}
+
+.step_oji{
+text-align: right;
+position: relative;
+z-index: 100;
+width: 35%;
+float: right;
+}
+.step_oji img{
+width: 100%;
+}
+
+.step3{
+padding: 0 0 100px;
+margin: 0 auto;
+text-align: center;
+}
+.step3 img{
+width: 85%
+}
+
+/* ////ch6//// */
+.ch6{
+background-image: url("https://aidov.top/jp/24/index_files/ch6_back.png");
+background-repeat: repeat-y;
+background-position: center top;
+background-size: 150% auto;
+position:  relative;
+}
+
+.ab_title_ch6{
+position:  absolute;
+left: 0;
+right: 0;
+top: -70px;
+margin: 0 auto;
+width: 80%;
+}
+.ab_title_ch6 img{
+width: 100%;
+}
+
+.ch6_oji_wp{
+position:  relative;
+}
+
+.ch6_oji{
+position:  absolute;
+right: 20px;
+top: 30px;
+width: 60px;
+}
+.ch6_oji img{
+width: 100%;
+}
+
+
+.ch6_inner{
+padding: 200px 0 50px;
+width: 80%;
+margin: 0 auto;
+}
+
+.faq{
+margin: 30px auto;
+width: 100%;
+}
+
+.faq_a{
+background-color: #ffcc03;
+border-radius: 20px;
+-webkit-border-radius: 20px;
+-moz-border-radius: 20px;
+float: left;
+}
+
+
+.q1{
+background-image: url("https://aidov.top/jp/24/index_files/q1.png");
+background-repeat: no-repeat;
+background-position: 10px 10px;
+background-size: 40px auto;
+font-size: 18px;
+line-height: 140%;
+font-weight: bold;
+padding: 15px 20px 20px 60px;
+}
+
+.q2{
+background-image: url("https://aidov.top/jp/24/index_files/q2.png");
+background-repeat: no-repeat;
+background-position: 10px 10px;
+background-size: 40px auto;
+font-size: 18px;
+line-height: 140%;
+font-weight: bold;
+padding: 15px 20px 20px 60px;
+}
+
+.q3{
+background-image: url("https://aidov.top/jp/24/index_files/q3.png");
+background-repeat: no-repeat;
+background-position: 10px 10px;
+background-size: 40px auto;
+font-size: 18px;
+line-height: 140%;
+font-weight: bold;
+padding: 15px 20px 20px 60px;
+}
+
+.q4{
+background-image: url("https://aidov.top/jp/24/index_files/q4.png");
+background-repeat: no-repeat;
+background-position: 10px 10px;
+background-size: 40px auto;
+font-size: 18px;
+line-height: 140%;
+font-weight: bold;
+padding: 15px 20px 20px 60px;
+}
+
+.q5{
+background-image: url("https://aidov.top/jp/24/index_files/q5.png");
+background-repeat: no-repeat;
+background-position: 10px 10px;
+background-size: 40px auto;
+font-size: 18px;
+line-height: 140%;
+font-weight: bold;
+padding: 15px 20px 20px 60px;
+}
+
+.ans{
+background-color: #fff;
+width: 80%;
+float: right;
+border-radius: 20px;
+-webkit-border-radius: 20px;
+-moz-border-radius: 20px;
+box-shadow: 0px 4px 11px -5px rgba(0,0,0,0.8);
+padding: 30px 40px 30px 30px;
+position:  relative;
+font-size: 1.8rem;
+line-height: 160%;
+}
+
+.ch6_a{
+position:  absolute;
+right: -10px;
+top: 20px;
+width: 40px;
+}
+.ch6_a img{
+width: 100%;
+}
+
+.oji_r{
+float: right;
+margin: 0 0px 10px 10px;
+width: 30%;
+}
+.oji_r img{
+width: 100%;
+}
+
+/* ////ch7//// */
+.ch7{
+background-color: #000002;
+background-image: url("https://aidov.top/jp/24/index_files/ch7_back.jpg");
+background-repeat: repeat-y;
+background-position: center 500px;
+background-size: cover;
+padding: 0 0 120px;
+}
+
+.ch7 h2{
+background-image: none;
+background-repeat: no-repeat;
+background-position: center top;
+text-align: center;
+}
+.ch7 h2 img{
+width: 100%;
+}
+
+.ch7_inner{
+width: 90%;
+margin: 100px auto;
+}
+
+.ch7_box{
+text-align: center;
+font-size: 1.8rem;
+line-height: 180%;
+background-color: #fff;
+padding: 30px 20px;
+}
+
+.ch7_oji{
+margin: 30px auto;
+text-align: center;
+}
+.ch7_oji img{
+width: 96%;
+}
+
+.ch7 h3{
+margin: 30px auto 0;
+width: 100%;
+}
+.ch7 h3 img{
+width: 100%;
+}
+
+/* ////ch8//// */
+.ch8{
+background-image: url("https://aidov.top/jp/24/index_files/ch5_back.png");
+background-repeat: repeat-y;
+background-position: center top;
+position:  relative;
+}
+
+.ab_title_ch8{
+position:  absolute;
+left: 0;
+right: 0;
+top: -70px;
+margin: 30px auto 0;
+width: 90%;
+}
+.ab_title_ch8 img{
+width: 100%;
+}
+
+.ch8_oji_wp{
+position:  relative;
+}
+
+.ch8_oji{
+position:  absolute;
+right: 0;
+left: 0;
+margin: 0 auto;
+top: -120px;
+width: 25%;
+}
+.ch8_oji img{
+width: 100%;
+}
+
+.ch8_inner{
+width: 90%;
+margin: 0 auto;
+text-align: center;
+font-size: 1.6rem;
+line-height: 180%;
+padding: 240px 15px 30px;
+text-shadow: 1px 2px 2px rgba(255,255,255,1.0);
+}
+
+.ch8 h3{
+margin: 50px 0 50px;
+font-size: 2.4rem;
+line-height: 180%;
+text-shadow: 1px 2px 2px rgba(255,255,255,1.0);
+}
+
+.ch8_oji_wp2{
+position:  relative;
+padding: 0 0 50px;
+width: 100%;
+margin: 0 auto;
+}
+.ch8_oji_wp2 img{
+width: 100%;
+}
+
+.ch8_oji2{
+position:  absolute;
+right: -20px;
+top: -30px;
+width: 30%;
+}
+.ch8_oji2 img{
+width: 100%;
+}
+
+.ch8_mark{
+width: 60%;
+margin: 0 auto;
+}
+.ch8_mark img{
+width: 100%;
+}
+
+
+
+/************
+フロートボタンPC
+*************/
+.floating {
+  position: fixed;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  background-color: rgba(255,246,0,0.8);
+  display: none;
+  padding: 5px 0;
+}
+
+.float_in{
+width: 100%;
+background-image: url("https://aidov.top/jp/24/index_files/tuibi_back.png");
+background-repeat: no-repeat;
+background-size: 100% 100%;
+margin: 0 auto;
+padding: 8px 0 5px;
+position: relative;
+}
+
+.floating a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+}
+.floating a:hover {
+  opacity: 1;
+}
+
+.fl_box{
+padding: 5px 105px 0 0;
+margin: 0 0;
+text-align: right;
+float: right;
+width: 35%;
+}
+.fl_box img{
+width: 100%;
+}
+
+.fl2{
+float: left;
+margin: 0 15px 0 0;
+}
+
+.fl3{
+float: left;
+margin: 0 0px 0 0;
+padding: 3px 0 0;
+}
+
+.fl4{
+position: absolute;
+right: 5px;
+top: 5px;
+}
+
+.batsu_box{
+position: relative;
+}
+
+.batsu{
+position: absolute;
+top:0px;
+right: 20px;
+width: 20px;
+}
+.batsu img{
+width: 100%;
+}
+
+/* footer */
+footer{
+    background-color: #fff;
+	padding:30px 0;
+	text-align: left;
+	width:100%;
+    line-height: 1.3;
+}
+
+.footer_inner{
+    width: 94%;
+	margin:0 auto;
+}
+
+footer h2{
+width: 30%;
+}
+footer h2 img{
+width: 100%;
+}
+
+.f_navi{
+margin: 35px 0;
+font-size: 1.6rem;
+}
+
+.f_menseki{
+font-size: 1.4rem;
+}
+
+.copy{
+text-align: center;
+font-size: 1.2rem;
+margin: 30px 0 0;
+}
+
+footer a,
+footer a:link,
+footer a:visited {
+	color: #00208a;
+	text-decoration: none;
+}
+
+footer a:hover,
+footer a:active {
+	color: #00208a;
+	text-decoration:underline;
+}
+
+
+}
+
+/*ここからスマートフォン用（599px以下）環境の設定
+---------------------------------------------------------------------------*/
+@media only screen and (max-width:599px){
+body { font-size: 1.4rem; 
+background-image:none;
+line-height:1.7;
+margin: 0 auto 0;}
+
+/* イメージ */
+.img_c img{width:100%;}
+.img_c2 img{width:100%; margin: 20px auto;}
+
+
+
+
+/* 共通 */
+#wrapper{
+width: 100%;
+margin: 0 auto;
+background-color: #ffffff;
+}
+
+.inner{
+	width:92%;
+	margin:0 auto;
+}
+
+.inner2{
+	width:92%;
+	margin:0 auto;
+}
+
+.banner_pc{display: none;}
+.banner_sp{display: block;}
+
+.pcbr {display:none;}
+.spbr {display:inline;}
+
+/* ヘッダー */
+#header_sp{
+width:100%;
+margin: 0 auto;
+background-image: url("https://aidov.top/jp/24/index_files/header_back.png");
+background-repeat: no-repeat;
+background-position: center top;
+background-size: cover;
+}
+
+.head_top{
+padding: 20px 0 0;
+width: 90%;
+margin: 0 auto;
+}
+
+.head_l{
+float: left;
+width: 45%;
+}
+.head_l img{
+width: 100%;
+}
+
+.head_r{
+float: right;
+width: 53%;
+}
+.head_r img{
+width: 100%;
+}
+
+#header_sp h1{
+text-align: center;
+padding: 0 0 40px;
+width: 90%;
+margin: 0 auto;
+}
+#header_sp h1 img{width: 100%;}
+
+/* スマホナビ関連 */
+.reg_btn {
+position: absolute;
+top:10px;
+right:10px;
+z-index: 10;
+
+	font-size: 12px;
+	display: block;
+	width: 90px;
+	line-height: 12px;
+	text-align: center;
+	color: #ffffff;
+	border: none;
+background-color: #309fd6;
+
+	padding:8px 0px;
+	margin:0px auto 0;
+	border-radius: 100px;
+-webkit-border-radius: 100px;
+-moz-border-radius: 100px;
+}
+
+.reg_btn a,
+.reg_btn a:link,
+.reg_btn a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+
+.reg_btn a:hover,
+.reg_btn a:active {
+	color: #fff;
+	text-decoration:none;
+}
+
+.drawer-menu-item{
+font-size: 1.4rem !important;
+text-decoration: none!important}
+
+.drawer-hamburger-icon,
+.drawer-hamburger-icon:before,
+.drawer-hamburger-icon:after {
+  width: 32px;
+  height: 3px;
+  -webkit-transition: all .6s cubic-bezier(0.190, 1.000, 0.220, 1.000);
+  transition: all .6s cubic-bezier(0.190, 1.000, 0.220, 1.000);
+  background-color: #222;
+}
+
+.drawer-menu-item a,
+.drawer-menu-item a:link,
+.drawer-menu-item a:visited {
+	color: #111111;
+	text-decoration: none!important}
+
+
+.drawer-hamburger{
+top:-7px!important
+}
+
+#header_pc{display: none;}
+#header_sp{display: block;}
+
+#top_fix{display: block;}
+
+/* PCナビ */
+#pc_nav{
+display: none;
+}
+
+nav a,
+nav a:link,
+nav a:visited {
+	color: #111;
+	text-decoration: none;
+}
+
+nav a:hover,
+nav a:active {
+	color: #111;
+	text-decoration:none;
+}
+
+/* CTA */
+.cta{
+background-image: url("https://aidov.top/jp/24/index_files/cta_back.png");
+background-repeat: repeat;
+padding: 30px 0;
+color: #fff;
+}
+
+.cta h2{
+text-align: center;
+margin: 0 auto 0px;
+width: 80%;
+}
+.cta h2 img{
+width: 100%;
+}
+
+.cta_input{
+margin: 0 auto;
+}
+
+.deco2 {/* フォームの入力欄装飾用 */
+	display:block;
+	margin: 0 auto 10px;
+	padding:0px 15px 4px;
+	height:40px;
+	width:90%;
+	border:0;
+	font-size:14px;
+	line-height:20px;
+	font-weight:normal;
+	font-family:Arial, sans-serif;
+	text-align:center;
+	color:#444;
+	border:solid 1px #ccc;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-moz-box-shadow: inset 1px 4px 9px -6px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: inset 1px 4px 9px -6px rgba(0, 0, 0, 0.5);
+	box-shadow: inset 1px 4px 9px -6px rgba(0, 0, 0, 0.5);
+}
+
+.check{
+font-size: 12px;
+line-height: 140%;
+}
+
+.submit {
+	margin:20px auto;
+	display:block;
+    width: 90%;
+}
+.submit img{
+width: 100%;
+}
+
+a,
+a:link,
+a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+
+a:hover,
+a:active {
+	color: #ccc;
+	text-decoration:none;
+}
+
+/* ////ch1//// */
+.ch1{
+background-image: url("https://aidov.top/jp/24/index_files/ch1_back.png");
+background-repeat: no-repeat;
+background-position: center top;
+background-size: cover;
+}
+
+.ch1_in{
+padding: 30px 0 30px;
+background-color: #fff;
+}
+
+.ch1 h2{
+text-align: center;
+margin: 0 auto 10px;
+width: 96%;
+}
+.ch1 h2 img{
+width: 100%;
+}
+
+.ch1 p{
+text-align: center;
+font-size: 1.5rem;
+margin: 0 10px;
+}
+
+/* ////ch2//// */
+.ch2{
+background-image: none;
+background-repeat: no-repeat;
+background-position: center top;
+}
+
+.ch2 h2{
+text-align: center;
+margin: 0 auto 0px;
+}
+.ch2 h2 img{
+width: 100%;
+}
+
+/* ////ch3//// */
+.ch3{
+background-image: url("https://aidov.top/jp/24/index_files/ch3_back.png");
+background-repeat: repeat;
+padding: 130px 0 1px;
+}
+
+.ch3_in{
+width: 92%;
+margin: 0 auto;
+}
+
+.ch3_box{
+background-color: #fff;
+box-shadow: 0px 4px 11px -5px rgba(0,0,0,0.8);
+border-radius: 30px;
+-webkit-border-radius: 30px;
+-moz-border-radius: 30px;
+padding: 120px 15px 30px;
+position:  relative;
+margin: 0px auto 80px;
+}
+
+.ab_title{
+position:  absolute;
+left: 0;
+right: 0;
+top: -50px;
+margin: auto;
+width: 300px;
+}
+.ab_title img{
+width: 100%;
+}
+
+.greeting_wp{
+background-image: url("https://aidov.top/jp/24/index_files/img_underline.png");
+background-repeat: repeat;
+background-position: left bottom;
+background-size: auto 24px;
+font-size: 14px;
+line-height: 24px;
+text-align: center;
+position:  relative;
+}
+
+.ab_mark{
+position:  absolute;
+left: -40px;
+top: 0px;
+margin: auto;
+width: 40px;
+}
+.ab_mark img{
+width: 100%;
+}
+
+/* ////ch4//// */
+.ch4{
+background-image: url("https://aidov.top/jp/24/index_files/ch4_back.png");
+background-repeat: no-repeat;
+background-position: center top;
+background-size: cover;
+position:  relative;
+}
+
+.ab_title_ch4{
+position:  absolute;
+left: 0;
+right: 0;
+top: -50px;
+margin: 0 auto;
+width: 90%;
+}
+.ab_title_ch4 img{
+width: 100%;
+}
+
+.ch4_oji_wp{
+position:  relative;
+}
+
+.ch4_oji{
+position:  absolute;
+left: -20px;
+top: 20px;
+width: 30%;
+}
+.ch4_oji img{
+width: 100%;
+}
+
+.ch4_wp{
+width: 94%;
+margin: 0 auto;
+padding: 70px 0 70px;
+}
+
+.ch4_box_l{
+float: left;
+width: 44%;
+background-color: #fff;
+padding: 10px;
+margin: 30px auto 0;
+}
+
+.ch4_box_r{
+float: right;
+width: 44%;
+background-color: #fff;
+padding: 10px;
+margin: 30px auto 0;
+}
+
+.ch4 h3{
+background-image: url("https://aidov.top/jp/24/index_files/ch4_title2.png");
+background-repeat: no-repeat;
+background-position: center top;
+background-size: 100% 100%;
+font-size: 14px;
+line-height: 120%;
+text-align: center;
+padding: 10px 10px;
+margin: 0 0 5px;
+}
+
+.tb1{
+border-collapse: separate;
+width: 85%;
+border-spacing: 5px;
+margin: 0 auto;
+}
+
+.tb1 th{
+width: 48%;
+}
+.tb1 th img{
+width: 100%;
+}
+.tb1 td{
+font-size: 16px;
+font-weight: bold;
+text-align: right;
+vertical-align: middle;
+}
+
+.avr{width: 100%;margin: 10px auto 0;
+border-bottom: 3px solid #bb0602;}
+.avr_l{
+float: left;
+width: 48%;
+}
+.avr_l img{
+width: 100%;
+}
+.avr_r{
+float: right;
+text-align: center;
+display: block;
+font-size: 24px;
+color: #bb0602;
+font-weight: bold;
+width: 52%;
+}
+
+/* ////ch5//// */
+.ch5{
+background-image: url("https://aidov.top/jp/24/index_files/ch5_back.png");
+background-repeat: repeat;
+background-position: center top;
+position:  relative;
+}
+
+.ab_title_ch5{
+position:  absolute;
+left: 0;
+right: 0;
+top: -20px;
+margin: 0 auto 0px;
+width: 90%;
+z-index: 5;}
+.ab_title_ch5 img{
+width: 100%;
+}
+
+.step{
+padding: 90px 0 0;
+margin: 0 auto 0px;
+width: 90%;
+}
+
+.step_oji{
+text-align: right;
+position: relative;
+z-index: 100;
+width: 45%;
+float: right;
+}
+.step_oji img{
+width: 100%;
+}
+
+.step3{
+padding: 0 0 100px;
+margin: 0 auto;
+text-align: center;
+}
+.step3 img{
+width: 90%
+}
+
+/* ////ch6//// */
+.ch6{
+background-image: url("https://aidov.top/jp/24/index_files/ch6_back.png");
+background-repeat: repeat-y;
+background-position: center top;
+background-size: 150% auto;
+position:  relative;
+}
+
+.ab_title_ch6{
+position:  absolute;
+left: 0;
+right: 0;
+top: -70px;
+margin: 0 auto;
+width: 90%;
+}
+.ab_title_ch6 img{
+width: 100%;
+}
+
+.ch6_oji_wp{
+position:  relative;
+}
+
+.ch6_oji{
+position:  absolute;
+right: 20px;
+top: 30px;
+width: 60px;
+}
+.ch6_oji img{
+width: 100%;
+}
+
+
+.ch6_inner{
+padding: 60px 0 20px;
+width: 90%;
+margin: 0 auto;
+}
+
+.faq{
+margin: 30px auto;
+width: 100%;
+}
+
+.faq_a{
+background-color: #ffcc03;
+border-radius: 20px;
+-webkit-border-radius: 20px;
+-moz-border-radius: 20px;
+float: left;
+}
+
+
+.q1{
+background-image: url("https://aidov.top/jp/24/index_files/q1.png");
+background-repeat: no-repeat;
+background-position: 10px 10px;
+background-size: 30px auto;
+font-size: 16px;
+line-height: 140%;
+font-weight: bold;
+padding: 15px 15px 15px 50px;
+}
+
+.q2{
+background-image: url("https://aidov.top/jp/24/index_files/q2.png");
+background-repeat: no-repeat;
+background-position: 10px 10px;
+background-size: 30px auto;
+font-size: 16px;
+line-height: 140%;
+font-weight: bold;
+padding: 15px 15px 15px 50px;
+}
+
+.q3{
+background-image: url("https://aidov.top/jp/24/index_files/q3.png");
+background-repeat: no-repeat;
+background-position: 10px 10px;
+background-size: 30px auto;
+font-size: 16px;
+line-height: 140%;
+font-weight: bold;
+padding: 15px 15px 15px 50px;
+}
+
+.q4{
+background-image: url("https://aidov.top/jp/24/index_files/q4.png");
+background-repeat: no-repeat;
+background-position: 10px 10px;
+background-size: 30px auto;
+font-size: 16px;
+line-height: 140%;
+font-weight: bold;
+padding: 15px 15px 15px 50px;
+}
+
+.q5{
+background-image: url("https://aidov.top/jp/24/index_files/q5.png");
+background-repeat: no-repeat;
+background-position: 10px 10px;
+background-size: 30px auto;
+font-size: 16px;
+line-height: 140%;
+font-weight: bold;
+padding: 15px 15px 15px 50px;
+}
+
+.ans{
+background-color: #fff;
+width: 80%;
+float: right;
+border-radius: 20px;
+-webkit-border-radius: 20px;
+-moz-border-radius: 20px;
+box-shadow: 0px 4px 11px -5px rgba(0,0,0,0.8);
+padding: 20px 30px 20px 20px;
+position:  relative;
+font-size: 1.4rem;
+line-height: 160%;
+}
+
+.ch6_a{
+position:  absolute;
+right: -10px;
+top: 20px;
+width: 34px;
+}
+.ch6_a img{
+width: 100%;
+}
+
+.oji_r{
+float: right;
+margin: 0 0px 10px 10px;
+width: 30%;
+}
+.oji_r img{
+width: 100%;
+}
+
+/* ////ch7//// */
+.ch7{
+background-color: #000002;
+background-image: url("https://aidov.top/jp/24/index_files/ch7_back.jpg");
+background-repeat: repeat-y;
+background-position: center 500px;
+background-size: 150% auto;
+padding: 0 0 50px;
+}
+
+.ch7 h2{
+background-image: none;
+background-repeat: no-repeat;
+background-position: center top;
+text-align: center;
+}
+.ch7 h2 img{
+width: 100%;
+}
+
+.ch7_inner{
+width: 90%;
+margin: 30px auto 100px
+}
+
+.ch7_box{
+text-align: center;
+font-size: 1.4rem;
+line-height: 160%;
+background-color: #fff;
+padding: 20px 15px;
+}
+
+.ch7_oji{
+margin: 30px auto;
+text-align: center;
+}
+.ch7_oji img{
+width: 96%;
+}
+
+.ch7 h3{
+margin: 30px auto 0;
+width: 100%;
+}
+.ch7 h3 img{
+width: 100%;
+}
+
+/* ////ch8//// */
+.ch8{
+background-image: url("https://aidov.top/jp/24/index_files/ch5_back.png");
+background-repeat: repeat-y;
+background-position: center top;
+position:  relative;
+}
+
+.ab_title_ch8{
+position:  absolute;
+left: 0;
+right: 0;
+top: -70px;
+margin: 30px auto 0;
+width: 90%;
+}
+.ab_title_ch8 img{
+width: 100%;
+}
+
+.ch8_oji_wp{
+position:  relative;
+}
+
+.ch8_oji{
+position:  absolute;
+right: 0;
+left: 0;
+margin: 0 auto;
+top: -80px;
+width: 30%;
+}
+.ch8_oji img{
+width: 100%;
+}
+
+.ch8_inner{
+width: 90%;
+margin: 0 auto;
+text-align: center;
+font-size: 1.4rem;
+line-height: 180%;
+padding: 120px 15px 30px;
+text-shadow: 1px 2px 2px rgba(255,255,255,1.0);
+}
+
+.ch8 h3{
+margin: 40px 0 40px;
+font-size: 1.6rem;
+line-height: 180%;
+text-shadow: 1px 2px 2px rgba(255,255,255,1.0);
+}
+
+.ch8_oji_wp2{
+position:  relative;
+padding: 0 0 50px;
+width: 98%;
+margin: 0 auto;
+}
+.ch8_oji_wp2 img{
+width: 100%;
+}
+
+.ch8_oji2{
+position:  absolute;
+right: -20px;
+top: -30px;
+width: 40%;
+}
+.ch8_oji2 img{
+width: 100%;
+}
+
+.ch8_mark{
+width: 60%;
+margin: 0 auto;
+}
+.ch8_mark img{
+width: 100%;
+}
+
+
+/************
+フロートボタンPC
+*************/
+.floating {
+  position: fixed;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  background-color: rgba(255,246,0,0.8);
+  display: none;
+  padding: 5px 0;
+}
+
+.float_in{
+width: 100%;
+background-image: url("https://aidov.top/jp/24/index_files/tuibi_back_sp.png");
+background-repeat: no-repeat;
+background-size: 100% 100%;
+margin: 0 auto;
+padding: 10px 0 5px;
+position: relative;
+}
+
+.floating a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+}
+.floating a:hover {
+  opacity: 1;
+}
+
+.fl_box{
+padding: 0px 10px 0 0;
+margin: 0 0;
+text-align: right;
+float: right;
+width: 43%;
+}
+.fl_box img{
+width: 100%;
+}
+
+.fl2{
+float: left;
+margin: 0 15px 0 0;
+}
+
+.fl3{
+float: left;
+margin: 0 0px 0 0;
+padding: 3px 0 0;
+}
+
+.fl4{
+position: absolute;
+right: 5px;
+top: 5px;
+}
+
+.batsu_box{
+position: relative;
+}
+
+.batsu{
+position: absolute;
+top:0px;
+right: 20px;
+width: 20px;
+}
+.batsu img{
+width: 100%;
+}
+
+/************
+ページトップ
+*************/
+.button{
+  position: fixed;
+  right: 10px;
+  bottom: 100px;
+  color: #fff;
+  cursor: pointer;
+  transition: .3s;
+  width: 40px;
+  
+  /*デフォルトで非表示にする*/
+  opacity: 0;
+  visibility: hidden;
+}
+.button img{
+width: 100%;
+}
+
+/*このクラスが付与されると表示する*/
+.active{
+  opacity: 1;
+  visibility: visible;
+}
+
+/* footer */
+footer{
+    background-color: #fff;
+	padding:30px 0;
+	text-align: left;
+	width:100%;
+    line-height: 1.3;
+}
+
+.footer_inner{
+    width: 94%;
+	margin:0 auto;
+}
+
+footer h2{
+width: 50%;
+}
+footer h2 img{
+width: 100%;
+}
+
+.f_navi{
+margin: 25px 0;
+font-size: 1.4rem;
+line-height: 1.6;
+}
+
+.f_menseki{
+font-size: 1.1rem;
+}
+
+.copy{
+text-align: center;
+font-size: 1.2rem;
+margin: 20px 0 0;
+color: #00208a;
+}
+
+footer a,
+footer a:link,
+footer a:visited {
+	color: #00208a;
+	text-decoration: none;
+}
+
+footer a:hover,
+footer a:active {
+	color: #00208a;
+	text-decoration:underline;
+}
+
+
+}
+
+
+/*************************************************************
+【marginの設定】
+*************************************************************/
+.m0{margin:0 !important}
+.mt0{margin-top:0 !important}
+.mr0{margin-right:0 !important}
+.mb0{margin-bottom:0 !important}
+.ml0{margin-left:0 !important}
+
+.m5{margin:5px !important}
+.mt5{margin-top:5px !important}
+.mr5{margin-right:5px !important}
+.mb5{margin-bottom:5px !important}
+.ml5{margin-left:5px !important}
+
+.m10{margin:10px !important}
+.mt10{margin-top:10px !important}
+.mr10{margin-right:10px !important}
+.mb10{margin-bottom:10px !important}
+.ml10{margin-left:10px !important}
+
+.m15{margin:15px !important}
+.mt15{margin-top:15px !important}
+.mr15{margin-right:15px !important}
+.mb15{margin-bottom:15px !important}
+.ml15{margin-left:15px !important}
+
+.m20{margin:20px !important}
+.mt20{margin-top:20px !important}
+.mr20{margin-right:20px !important}
+.mb20{margin-bottom:20px !important}
+.ml20{margin-left:20px !important}
+
+.m25{margin:25px !important}
+.mt25{margin-top:25px !important}
+.mr25{margin-right:25px !important}
+.mb25{margin-bottom:25px !important}
+.ml25{margin-left:25px !important}
+
+.m30{margin:30px !important}
+.mt30{margin-top:30px !important}
+.mr30{margin-right:30px !important}
+.mb30{margin-bottom:30px !important}
+.ml30{margin-left:30px !important}
+
+.m35{margin:35px !important}
+.mt35{margin-top:35px !important}
+.mr35{margin-right:35px !important}
+.mb35{margin-bottom:35px !important}
+.ml35{margin-left:35px !important}
+
+.m40{margin:40px !important}
+.mt40{margin-top:40px !important}
+.mr40{margin-right:40px !important}
+.mb40{margin-bottom:40px !important}
+.ml40{margin-left:40px !important}
+
+.m45{margin:45px !important}
+.mt45{margin-top:45px !important}
+.mr45{margin-right:45px !important}
+.mb45{margin-bottom:45px !important}
+.ml45{margin-left:45px !important}
+
+.m50{margin:50px !important}
+.mt50{margin-top:50px !important}
+.mr50{margin-right:50px !important}
+.mb50{margin-bottom:50px !important}
+.ml50{margin-left:50px !important}
+
+.m55{margin:55px !important}
+.mt55{margin-top:55px !important}
+.mr55{margin-right:55px !important}
+.mb55{margin-bottom:55px !important}
+
+.ml55{margin-left:55px !important}
+.m60{margin:60px !important}
+.mt60{margin-top:60px !important}
+.mr60{margin-right:60px !important}
+.mb60{margin-bottom:60px !important}
+.ml60{margin-left:60px !important}
+
+.m65{margin:65px !important}
+.mt65{margin-top:65px !important}
+.mr65{margin-right:65px !important}
+.mb65{margin-bottom:65px !important}
+.ml65{margin-left:65px !important}
+
+.m70{margin:70px !important}
+.mr70{margin-right:70px !important}
+.mb70{margin-bottom:70px !important}
+.ml70{margin-left:70px !important}
+
+.m75{margin:75px !important}
+.mt75{margin-top:75px !important}
+.mr75{margin-right:75px !important}
+.mb75{margin-bottom:75px !important}
+.ml75{margin-left:75px !important}
+
+.m80{margin:80px !important}
+.mt80{margin-top:80px !important}
+.mr80{margin-right:80px !important}
+.mb80{margin-bottom:80px !important}
+.ml80{margin-left:80px !important}
+
+
+.mlrb30{margin:10px 30px 30px !important}
+.ml90{margin-left:90px !important}
+
+/**************************************************************
+【paddingの設定】
+**************************************************************/
+.p0{padding:0 !important}		
+.pt0{padding-top:0 !important}	
+.pr0{padding-right:0 !important}
+.pb0{padding-bottom:0 !important}
+.pl0{padding-left:0 !important}	
+
+.p5{padding:5px !important}
+.pt5{padding-top:5px !important}
+.pr5{padding-right:5px !important}
+.pb5{padding-bottom:5px !important}
+.pl5{padding-left:5px !important}
+
+.p10{padding:10px !important}
+.pt10{padding-top:10px !important}
+.pr10{padding-right:10px !important}
+.pb10{padding-bottom:10px !important}
+.pl10{padding-left:10px !important}
+
+.p20{padding:20px !important}
+.pt20{padding-top:20px !important}
+.pr20{padding-right:20px !important}
+.pb20{padding-bottom:20px !important}
+.pl20{padding-left:20px !important}
+
+.p30{padding:30px !important}
+
+.p4050{padding:40px 50px !important}
+
+.pb30{padding-bottom:30px !important}
+.pb40{padding-bottom:40px !important}
+.pb50{padding-bottom:50px !important}
+.pb80{padding-bottom:80px !important}
+
+/**************************************************************
+【widthの設定】
+**************************************************************/
+.w50{width:50px;}
+.w100{width:100px;}
+.w130{width:130px;}
+.w180{width:180px;}
+.w200{width:200px;}
+.w220{width:220px;}
+.w250{width:250px;}
+.w350{width:350px;}
+.w400{width:400px;}
+.w450{width:450px;}
+.w500{width:500px;}
+.w600{width:600px;}
+.w700{width:700px;}
+.w710{width:710px;}
+.w876{width:876px;}
+
+/**************************************************************
+【heightの設定】
+**************************************************************/
+.h10{height:10px;}
+.h30{height:30px;}
+.h100{height:100px;}
+.h200{height:200px;}
+
+
+/**************************************************************
+【配置設定】
+**************************************************************/
+.center{text-align:center;}
+.left{text-align:left;}
+.right{text-align:right;}
+
+.f_left{float:left;}
+.f_right{float:right;}
+
+/**************************************************************
+【文字装飾】
+**************************************************************/
+.red1{color:#FF0000;}/*明るい赤 */
+.red2{color:#c62726;}/*暗い赤 */
+.red1_b{color:#F00;font-weight:bold;}/*太字・明るい赤 */
+.red2_b{color:#d13938;font-weight:bold;}/*太字・暗い赤 */
+.blue{color:#00F;}/*青 */
+.bl{color:#1a7ca7;}/*青 */
+.or{color:#ff8a00;}/*オレンジ */
+.or2{color:#ff6c00;}/*オレンジ2 */
+.blk{color:#000;}/*黒 */
+.gr{color:#999;}/*グレー */
+.grn{color:#50A810;}/*みどり */
+.pk{color:#FE48DA;}/*ピンク */
+.gld{color:#d5b876;}/*ゴールド */
+.pp{color:#8A37BC;}/*むらさき */
+.underline{text-decoration:underline;}/*アンダーライン */
+strong{font-weight:bold;}/*太字 */
+.bg_y{
+    background-color:#F6BD15;
+    padding:0px 5px 0px;}
+.bg_k{
+	background-color: #F8FF12;
+	padding: 0px 5px 0px;}
+
+
+.font0_5{font-size:0.5em;}
+.font0_6{font-size:0.6em;}
+.font0_7{font-size:0.7em;}
+.font0_8{font-size:0.8em;}
+.font0_9{font-size:0.9em;}
+.font1{font-size:1em;}
+.font1_1{font-size:1.1em;}
+.font1_2{font-size:1.2em;}
+.font1_3{font-size:1.3em;}
+.font1_4{font-size:1.4em;}
+.font1_5{font-size:1.5em;}
+.font1_6{font-size:1.6em;}
+.font1_7{font-size:1.7em;}
+.font1_8{font-size:1.8em;}
+.font1_9{font-size:1.9em;}
+.font2{font-size:2em;}
+
+.lh160{
+line-height: 160%;
+}
+
+.font_M {
+	font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN","HG明朝E","ＭＳ Ｐ明朝","ＭＳ 明朝",serif;
+}
+
+
+/* CLEAR FIX*/
+.clearfix:after {content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;}
+.clearfix {display: inline-block;}
+/* Hides from IE-mac \*/
+* html .clearfix { height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+
+
+
+/*メールBOX */
+.mailbox{
+font-size: 20px;
+line-height: 28px;
+}
+.mailbox-list dl {
+    position: relative;
+    margin: 0px 0 0;
+    cursor: pointer;
+    border-top: 1px solid #DDD;
+    border-left: 1px solid #DDD;
+    border-right: 1px solid #DDD;
+}
+.mailbox-list dl:last-child {
+    border-bottom: 1px solid #DDD;
+}
+.mailbox-list dl:first-child {
+  margin-top: 0;
+}
+.mailbox-list dl::after {
+    position: absolute;
+    top: 38px;
+    right: 26px;
+    display: block;
+    width: 7px;
+    height: 7px;
+    margin: auto;
+    content: '';
+    transform: rotate(135deg);
+    border-top: 2px solid #000;
+    border-right: 2px solid #000;
+}
+.mailbox-list .open::after {
+    transform: rotate(-45deg);
+}
+.mailbox-list dl dt {
+    position: relative;
+    margin: 0;
+    padding: 15px 20px 15px 20px;
+    font-weight: normal;
+    background: #fff;
+}
+.mailbox-list dl dt span{font-size: 1.6rem;}
+
+.mailbox-list dl dd {
+    position: relative;
+    margin: 0;
+    padding: 20px 20px 20px 20px;
+    border-top: 1px dotted #ddd;
+    font-size: 18px;
+}
+.mailbox-list dl dd p {
+    margin: 30px 0 0;
+}
+.mailbox-list dl dd p:first-child{
+    margin-top: 0;
+}
+
+.mailbox em{
+font-style: normal;
+padding: 0 5px 0 0;
+}
+
+@media (min-width:600px) and (max-width:1024px){
+.mailbox{
+font-size: 16px;
+line-height: 24px;
+}
+
+ .mailbox-list dl {
+    margin: 0px 0 0;
+    line-height: 160%;
+}
+.mailbox-list dl:after {
+    top: 25px;
+    right: 20px;
+    width: 7px;
+    height: 7px;
+}
+.mailbox-list dl dt {
+    padding: 10px 40px 10px 15px;
+    font-size: 16px;
+}
+.mailbox-list dl dt::before {
+    font-size: 16px;
+    top: 12px;
+    left: 20px;
+}
+
+.mailbox-list dl dt span{font-size: 1.4rem;}
+
+.mailbox-list dl dd {
+    margin: 0;
+    padding: 10px 10px 10px 15px;
+    font-size: 14px;
+}
+.mailbox-list dl dd p {
+    margin: 30px 0 0;
+}
+.mailbox-list dl dd p:first-child{
+    margin-top: 0;
+}
+
+}
+
+@media only screen and (max-width:599px){
+.mailbox{
+font-size: 14px;
+line-height: 24px;
+}
+
+ .mailbox-list dl {
+    margin: 0px 0 0;
+    line-height: 160%;
+}
+
+
+.mailbox-list dl:after {
+    top: 20px;
+    right: 20px;
+    width: 7px;
+    height: 7px;
+}
+.mailbox-list dl dt {
+    padding: 5px 10px 5px 15px;
+    font-size: 14px;
+}
+.mailbox-list dl dt::before {
+    font-size: 14px;
+    top: 12px;
+    left: 20px;
+}
+
+.mailbox-list dl dt span{font-size: 1.2rem;}
+
+.mailbox-list dl dd {
+    margin: 0;
+    padding: 10px 10px 10px 15px;
+    font-size: 12px;
+}
+.mailbox-list dl dd p {
+    margin: 30px 0 0;
+}
+.mailbox-list dl dd p:first-child{
+    margin-top: 0;
+}
+}
+
+/*Q&A */
+.qa{
+font-size: 24px;
+line-height: 34px;
+}
+.qa-list dl {
+    position: relative;
+    margin: 20px 0 0;
+    cursor: pointer;
+    border: 1px solid #DDD;
+}
+.qa-list dl:first-child {
+  margin-top: 0;
+}
+.qa-list dl::after {
+    position: absolute;
+    top: 30px;
+    right: 26px;
+    display: block;
+    width: 7px;
+    height: 7px;
+    margin: auto;
+    content: '';
+    transform: rotate(135deg);
+    border-top: 2px solid #000;
+    border-right: 2px solid #000;
+}
+.qa-list .open::after {
+    transform: rotate(-45deg);
+}
+.qa-list dl dt {
+    position: relative;
+    margin: 0;
+    padding: 20px 20px 20px 60px;
+    font-weight: bold;
+    background: #fff;
+}
+.qa-list dl dt::before {
+    font-size: 30px;
+    line-height: 36px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: block;
+    content: 'Q.';
+    color: #5589c3;
+}
+.qa-list dl dd::before {
+    font-size: 30px;
+    line-height: 1;
+    position: absolute;
+    left: 20px;
+    display: block;
+    content: 'A.';
+    font-weight: bold;
+    color: #ed844b;
+}
+.qa-list dl dd {
+    position: relative;
+    margin: 0;
+    padding: 20px 20px 20px 60px;
+    background: #eee;
+}
+.qa-list dl dd p {
+    margin: 30px 0 0;
+}
+.qa-list dl dd p:first-child{
+    margin-top: 0;
+}
+
+@media (min-width:600px) and (max-width:1024px){
+.qa{
+font-size: 18px;
+line-height: 28px;
+}
+
+ .qa-list dl {
+    margin: 10px 0 0;
+    line-height: 160%;
+}
+.qa-list dl:after {
+    top: 20px;
+    right: 20px;
+    width: 7px;
+    height: 7px;
+}
+.qa-list dl dt {
+    padding: 10px 40px 10px 45px;
+    font-size: 18px;
+}
+.qa-list dl dt::before {
+    font-size: 14px;
+    top: 12px;
+    left: 20px;
+}
+.qa-list dl dt::before {
+    font-size: 18px;
+    line-height: 28px;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    display: block;
+    content: 'Q.';
+    color: #5589c3;
+}
+.qa-list dl dd::before {
+    font-size: 18px;
+    line-height: 1;
+    position: absolute;
+    left: 20px;
+    display: block;
+    content: 'A.';
+    font-weight: bold;
+    color: #ed844b;
+}
+.qa-list dl dd {
+    margin: 0;
+    padding: 10px 10px 10px 45px;
+}
+.qa-list dl dd p {
+    margin: 30px 0 0;
+}
+.qa-list dl dd p:first-child{
+    margin-top: 0;
+}
+}
+
+@media only screen and (max-width:599px){
+.qa{
+font-size: 14px;
+line-height: 24px;
+}
+
+ .qa-list dl {
+    margin: 10px 0 0;
+    line-height: 160%;
+}
+
+
+.qa-list dl:after {
+    top: 15px;
+    right: 20px;
+    width: 7px;
+    height: 7px;
+}
+.qa-list dl dt {
+    padding: 10px 40px 10px 35px;
+    font-size: 14px;
+}
+.qa-list dl dt::before {
+    font-size: 14px;
+    top: 12px;
+    left: 20px;
+}
+
+.qa-list dl dt::before {
+    font-size: 16px;
+    line-height: 20px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: block;
+    content: 'Q.';
+    color: #5589c3;
+}
+.qa-list dl dd::before {
+    font-size: 16px;
+    line-height: 20px;
+    position: absolute;
+    left: 10px;
+    display: block;
+    content: 'A.';
+    font-weight: bold;
+    color: #ed844b;
+}
+
+.qa-list dl dd {
+    margin: 0;
+    padding: 10px 10px 10px 35px;
+}
+.qa-list dl dd p {
+    margin: 30px 0 0;
+}
+.qa-list dl dd p:first-child{
+    margin-top: 0;
+}
+}

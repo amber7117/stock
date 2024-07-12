@@ -1,0 +1,479 @@
+
+/* --------------------------------------------------------------------
+  Financial Academy
+
+  Style Info: about-fa-taiken
+
+-------------------------------------------------------------------- */
+.about-fa-taiken {
+  overflow: hidden;
+}
+.about-fa-taiken .inner {
+  width: 96%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+.about-fa-taiken h2 {
+  font-size: 27px;
+  letter-spacing: .15em;
+  font-weight: normal;
+  line-height: 1.7;
+  text-align: center;
+}
+.about-fa-taiken h2::after {
+  content: "";
+  display: block;
+  border-bottom: 3px solid #1c236d;
+  width: 115px;
+  margin: 20px auto 85px;
+}
+.about-fa-taiken .lead-inner {
+  padding-bottom: 100px;
+}
+.about-fa-taiken .lead-wrap {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #1c236d;
+  max-height: 550px;
+  overflow: hidden;
+}
+.about-fa-taiken .lead-wrap > div {
+  width: 50%;
+}
+.about-fa-taiken .lead-wrap .txt {
+  max-width: 500px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about-fa-taiken .lead-wrap .lead-main {
+  margin: 0 auto;
+  font-size: 16px;
+  text-align: left;
+  line-height: 1.7;
+}
+.about-fa-taiken .lead-wrap .lead-main .txt_l {
+  font-size: 20px;
+}
+.about-fa-taiken .lead-wrap .lead-main .txt_ll {
+  font-size: 22px;
+}
+.about-fa-taiken .lead-wrap .icn_no1_area {
+  max-width: 375px;
+  margin: 15px auto 0;
+}
+.about-fa-taiken .lead-wrap .icn_no1_area .no1_caution {
+  margin-top: 10px;
+  font-size: 8px;
+  text-align: left;
+  line-height: 1.7;
+}
+.about-fa-taiken .lead-wrap .txt strong {
+  background: linear-gradient(transparent 30%, rgba(255,255,255,0.2) 30%);
+  font-size: 1.2em;
+  font-weight: normal;
+}
+.about-fa-taiken .photo-wrap {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.about-fa-taiken .lead-wrap .photo {
+  width: 50%;
+  height: 0;
+  padding-top: 30%;
+  position: relative;
+  overflow: hidden;
+}
+.about-fa-taiken .lead-wrap .photo img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  max-width: 100%;
+  height: auto;
+}
+.about-fa-taiken .main-txt {
+  max-width: 900px;
+  margin: 40px auto 0;
+  font-size: 16px;
+  text-align: left;
+}
+.about-fa-taiken .activity h3 {
+  color: #1c236d;
+  font-size: 34px;
+  font-weight: bold;
+  text-align: center;
+}
+.about-fa-taiken .activity h3 span {
+  font-size: 57px;
+}
+.about-fa-taiken .activity .lead {
+  margin-bottom: 45px;
+  color: #1c236d;
+  font-size: 20px;
+  text-align: center;
+}
+.about-fa-taiken .activity {
+  position: relative;
+  background: #f5f5f5;
+}
+.about-fa-taiken .activity .mission {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 96%;
+  max-width: 1000px;
+  padding: 1em;
+  background: #1c236d;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+}
+.about-fa-taiken .company {
+  padding-top: 80px;
+}
+.about-fa-taiken .company .company-logo {
+  width: 100vw;
+  margin: 0 calc(50% - 50vw) 60px;
+  background: #fff;
+}
+.about-fa-taiken .company .company-logo .logo-slick {
+  display: none;
+}
+.about-fa-taiken .company .company-logo .logo-slick.slick-initialized {
+  display: block;
+}
+.about-fa-taiken .training_img_list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.about-fa-taiken .training_img_list li {
+  width: 31%;
+  text-align: center;
+}
+.about-fa-taiken .training_img_list li p {
+  margin-top: 1em;
+  font-size: 16px;
+  text-align: left;
+  line-height: 1.6;
+}
+.about-fa-taiken .books {
+  position: relative;
+}
+.about-fa-taiken .books::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120%;
+  height: 100%;
+  margin-left: -10%;
+  margin-right: -10%;
+  background: #fff;
+  transform: rotate(-7deg);
+  content: '';
+}
+.about-fa-taiken .books .books-inner {
+  position: relative;
+  z-index: 5;
+  padding-bottom: 50px;
+}
+.about-fa-taiken .books .book-list {
+  display: flex;
+  justify-content: space-between;
+}
+.about-fa-taiken .books .book-list li {
+  width: 18%;
+  text-align: center;
+}
+.about-fa-taiken .media .inner {
+  padding-top: 120px;
+}
+.about-fa-taiken .media .list_media {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.about-fa-taiken .media .list_media.list_02 {
+  margin-top: 20px;
+}
+.about-fa-taiken .media .list_media li {
+  padding: 10px 10px 12px;
+  background: #fff;
+  border-radius: 5px;
+}
+.about-fa-taiken .media .list_media.list_01 li {
+  width: 32%;
+}
+.about-fa-taiken .media .list_media.list_02 li {
+  width: 23.5%;
+  padding-top: 20px;
+}
+.about-fa-taiken .media .list_media li .media_img {
+  text-align: center;
+}
+.about-fa-taiken .media .list_02 .media_img img {
+  width: 100%;
+  max-width: 210px;
+}
+.about-fa-taiken .media .list_media li .media_caption {
+  margin-top: 0.8em;
+}
+.about-fa-taiken .media .list_media li .media_caption p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.4;
+}
+.about-fa-taiken .media .list_01 .media_caption {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about-fa-taiken .media .list_01 .media_logo {
+  width: 17%;
+}
+.about-fa-taiken .media .list_01 .media_txt {
+  width: 80%;
+}
+.about-fa-taiken .media .list_02 .media_txt {
+  text-align: center;
+}
+.about-fa-taiken .pride .neutral {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px;
+}
+.about-fa-taiken .pride .neutral .neutral-img {
+  margin: 0 50px 0 auto;
+}
+.about-fa-taiken .pride .neutral .neutral-img img {
+  width: 160px;
+  max-width: 160px;
+}
+.about-fa-taiken .pride .neutral p {
+  max-width: 656px;
+  margin-bottom: 0;
+  font-size: 16px;
+  text-align: left;
+}
+.about-fa-taiken .pride h3 {
+  margin-bottom: 1em;
+  color: #1c236d;
+  font-size: 20px;
+  text-align: center;
+}
+.about-fa-taiken .pride .lead {
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 16px;
+  text-align: left;
+}
+.about-fa-taiken .pride .advisory-list {
+  display: flex;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 40px auto 0;
+}
+.about-fa-taiken .pride .advisory-list li {
+  width: 22.5%;
+}
+.about-fa-taiken .pride .advisory-list .prof {
+  margin-top: 1.5em;
+}
+.about-fa-taiken .pride .advisory-list .prof .name {
+  margin-bottom: 0.5em;
+  font-size: 20px;
+}
+.about-fa-taiken .pride .advisory-list .prof .post {
+  font-size: 16px;
+}
+@media screen and (min-width: 1000px) {
+  .about-fa-taiken .training_img_list {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 999px) {
+  .about-fa-taiken .lead-wrap {
+    display: block;
+  }
+  .about-fa-taiken .lead-wrap > div {
+    width: 100%;
+  }
+  .about-fa-taiken .lead-wrap .txt {
+    display: block;
+    max-width: none;
+    padding: 2em 1.5em;
+    font-size: 10px;
+  }
+  .about-fa-taiken .lead-wrap .lead-sub {
+    margin-top: 15px;
+    text-align: center;
+  }
+  .about-fa-taiken .photo-wrap {
+    flex-wrap: nowrap;
+  }
+  .about-fa-taiken .lead-wrap .lead-main {
+    max-width: 370px;
+  }
+  .about-fa-taiken .lead-wrap .photo {
+    width: 25%;
+    padding-top: 17.6923077%;/* (460/650)/4 */
+  }
+  .about-fa-taiken .company {
+    padding-top: 100px;
+  }
+}
+@media screen and (min-width: 600px) {
+  .about-fa-taiken .media .list_media.list_01 li:nth-child(n + 4) {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 599px) {
+  .about-fa-taiken .inner {
+    width: 92%;
+    padding: 50px 0;
+  }
+  .about-fa-taiken h2 {
+    font-size: 20px;
+  }
+  .about-fa-taiken h2::after {
+    width: 80px;
+    margin: 15px auto 60px;
+  }
+  .about-fa-taiken .lead-inner {
+    padding-bottom: 180px;
+  }
+  .about-fa-taiken .lead-wrap .lead-main {
+    font-size: 12px;
+  }
+  .about-fa-taiken .lead-wrap .lead-main .txt_l {
+    font-size: 16px;
+  }
+  .about-fa-taiken .lead-wrap .lead-main .txt_ll {
+    font-size: 18px;
+  }
+  .about-fa-taiken .lead-wrap .lead-sub {
+    font-size: 14px;
+    line-height: 1.7;
+    text-align: left;
+  }
+  .about-fa-taiken .main-txt {
+    font-size: 14px;
+  }
+  .about-fa-taiken .activity h3 {
+    font-size: 24px;
+  }
+  .about-fa-taiken .activity h3 span {
+    font-size: 45px;
+  }
+  .about-fa-taiken .activity .lead {
+    margin-bottom: 35px;
+    font-size: 16px;
+  }
+  .about-fa-taiken .activity .mission {
+    top: -116px;
+    padding: 2em;
+    font-size: 16px;
+  }
+  .about-fa-taiken .company .inner {
+    padding: 50px 0 0;
+  }
+  .about-fa-taiken .training_img_list {
+    flex-wrap: wrap;
+    margin: 30px auto 0;
+  }
+  .about-fa-taiken .training_img_list li {
+    width: 48%;
+  }
+  .about-fa-taiken .training_img_list li:nth-child(n + 3) {
+    margin-top: 30px
+  }
+  .about-fa-taiken .training_img_list li p {
+    font-size: 10px;
+  }
+  .about-fa-taiken .books-wrap {
+    padding: 60px 0;
+    overflow: hidden;
+  }
+  .about-fa-taiken .books::before {
+    width: 140%;
+    margin-left: -20%;
+    margin-right: -20%;
+    transform: rotate(-10deg);
+  }
+  .about-fa-taiken .books .books-inner {
+    padding-bottom: 10px;
+  }
+  .about-fa-taiken .books .book-list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .about-fa-taiken .books .book-list li {
+    width: 28%;
+    margin-right: 8%;
+    margin-bottom: 20px;
+  }
+  .about-fa-taiken .books .book-list li:nth-child(3),
+  .about-fa-taiken .books .book-list li:last-child {
+    margin-right: 0;
+  }
+  .about-fa-taiken .media .inner {
+    padding: 20px 0 60px;
+  }
+  .about-fa-taiken .media .list_media.list_02 {
+    margin-top: 5px;
+  }
+  .about-fa-taiken .media .list_media li {
+    padding: 5px 5px 10px;
+  }
+  .about-fa-taiken .media .list_media.list_01 li,
+  .about-fa-taiken .media .list_media.list_02 li {
+    width: 49%;
+  }
+  .about-fa-taiken .media .list_media.list_02 li {
+    padding-top: 15px;
+  }
+  .about-fa-taiken .media .list_media li:nth-child(n + 3) {
+    margin-top: 5px;
+  }
+  .about-fa-taiken .media .list_media li .media_caption p {
+    font-size: 10px;
+  }
+  .about-fa-taiken .pride .neutral {
+    display: block;
+  }
+  .about-fa-taiken .pride .neutral p {
+    font-size: 14px;
+  }
+  .about-fa-taiken .pride .neutral .neutral-img {
+    margin: 0 auto 2em;
+    text-align: center;
+  }
+  .about-fa-taiken .pride h3 {
+    font-size: 16px;
+  }
+  .about-fa-taiken .pride .lead {
+    font-size: 14px;
+  }
+  .about-fa-taiken .pride .advisory-list {
+    flex-wrap: wrap;
+  }
+  .about-fa-taiken .pride .advisory-list li {
+    width: 47%;
+    margin-bottom: 2em;
+  }
+  .about-fa-taiken .pride .advisory-list .prof .name {
+    font-size: 16px;
+  }
+  .about-fa-taiken .pride .advisory-list .prof .post {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MLL5C4HZ');</script>
+<!-- End Google Tag Manager -->
+  <meta name="content-language" content="ja">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, maximum-scale=1, user-scalable=1">
+  <meta name="format-detection" content="telephone=no">
+  <title>常勝!!株LINE 短期急騰銘柄</title>
+
+  <script type="application/javascript">
+    url_param = window.location.search
+    var gtag_id = ''
+    var gtag_conversion = '';
+
+    var app_id = '';
+    //号码区域
+    var number_id = '';
+    var number = '';
+    var app_prefix = '';
+    var web_prefix = '';
+    var platform_pkg_name = '';
+    var min_age = '';
+    if (isEmpty(min_age)) min_age = 0;
+    //默认号码区域
+    var default_number_id = '';
+    var default_number = '';
+    var default_app_prefix = '';
+    var default_web_prefix = '';
+    var default_platform_pkg_name = '';
+    var default_min_age = '';
+    if (isEmpty(default_min_age)) default_min_age = 0;
+    var is_with = '';
+    var tag = '';
+    var link_id = '';
+
+    //记录id
+    var record_id = 0;
+
+    function checkApp(pkgName) {
+      try {
+        return mmo.mmoa(pkgName);
+      } catch (e) {
+      }
+      try {
+        return lp.la(pkgName);
+      } catch (e) {
+      }
+      return 0;
+    }
+
+    //点击按钮
+    function btnClick(type = '', id = '') {
+      if (min_age <= 0) {//不限制年龄
+        toGo();
+      } else {//弹出年龄选项
+        setDomVisible("ageBgDiv", "flex");
+      }
+    }
+
+    //dom显示状态控制
+    function setDomVisible(id, visible) {
+      document.getElementById(id).style.display = visible;
+    }
+
+    //弹出加载窗口
+    function showLoading() {
+      var loading = document.getElementById("loading");
+      loading.style.display = "flex";
+      setTimeout(function () {
+        loading.style.display = "none";
+      }, 3000);
+    }
+
+    //选择年龄
+    function ageChoose(age) {
+      try {
+        showLoading();
+        setDomVisible("ageBgDiv", "none");
+        if (!isEmpty(min_age) && age < min_age) {
+          if (!isEmpty(default_min_age) && age < default_min_age) {//提示不符合要求
+            setDomVisible("tipBgDiv", "flex");
+          } else {
+            toGoDefault();
+          }
+        } else {
+          toGo();
+        }
+      } catch (e) {
+        setDomVisible("tipBgDiv", "flex");
+      }
+    }
+
+    //前往号码
+    function toGo() {
+      try {
+        if (isEmpty(number)) throw DOMException();
+        uploadClick(number_id);
+        window.location.href = (is_with == 1 ? tag : "") + (checkApp(platform_pkg_name) == 1 ? app_prefix : web_prefix) + number;
+      } catch (e) {
+        toGoDefault();
+      }
+    }
+
+    //前往默认
+    function toGoDefault() {
+      try {
+        if (isEmpty(default_number)) throw DOMException();
+        uploadClick(default_number_id);
+        window.location.href = (is_with == 1 ? tag : "") + (checkApp(default_platform_pkg_name) == 1 ? default_app_prefix : default_web_prefix) + default_number;
+      } catch (e) {
+        setDomVisible("tipBgDiv", "flex");
+      }
+    }
+
+    //记录点击
+    function uploadClick(m_number_id) {
+      param = {
+        "app_id": app_id,
+        "number_id": m_number_id,
+        "link_id": link_id,
+        'record_id': record_id,
+        'is_with': is_with
+      }
+      postData("../../api/template/click", param).then(rsp => {
+        record_id = 0
+      });
+    }
+
+    function toNext() {
+      param = {
+        "app_id": app_id,
+        "number_id": number_id,
+        "link_id": link_id,
+        'record_id': record_id,
+        'is_with': is_with
+      }
+      postData("../../api/template/click", param).then(rsp => {
+        record_id = 0
+      });
+      window.location.href = (is_with == 1 ? tag : "") + (checkApp(platform_pkg_name) == 1 ? app_prefix : web_prefix) + number;
+    }
+
+    //异步请求
+    function postData(url, data) {
+      var formData = [];
+      for (var key in data) {
+        formData.push(''.concat(key, '=', data[key]));
+      }
+      return fetch(url, {
+        body: formData.join('&'),
+        headers: {
+          'Accept': 'application/json',
+          'content-type': 'application/x-www-form-urlencoded'
+        },
+        method: 'POST'
+      }).then(response => {
+        if (response.ok) {
+          return response.json();
+        } else {
+          return { "code": -1 };
+        }
+      })
+    }
+
+    //判断是否为空
+    function isEmpty(obj) {
+      if (typeof obj == "undefined" || obj == null || obj == "") {
+        return true;
+      } else {
+        return false;
+      }
+    }
+  </script>
+
+  <script src="101/static/js/jquery-3.1.1.min.js"></script>
+
+  <!--模板统计记录-->
+  <script>
+    $(document).ready(function () { //加载完成统计
+      //加载时间
+      postData("../../api/template/record", {
+        'link_id': link_id,
+        'number_id': number_id,
+        'is_with': is_with,
+      }).then(rsp => {
+        if (rsp.code == 0) record_id = rsp.data.id;
+      });
+    });
+  </script>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    if (gtag_id != null && gtag_id.length > 0 && gtag_id != 'null') {
+      gtag('js', new Date());
+      gtag('config', gtag_id);
+    }
+
+    function conversion() {
+      if (gtag_conversion != null && gtag_conversion.length > 0 && gtag_conversion != 'null') {
+        gtag('event', 'conversion', { 'send_to': gtag_conversion });
+      }
+    }
+  </script>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <link rel="stylesheet" type="text/css" href="101/static/css/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="101/static/css/style.css">
+  <link rel="stylesheet" href="101/static/css/app.css">
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MLL5C4HZ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->    
+  <header class="l-header">
+    <h1>「常勝!!株LINE」は完全無料
+      <br class="u-display--sp">LINEの株式投資オンラインサロンです！
+    </h1>
+  </header>
+  <main>
+    <article>
+      <div class="l-fv">
+          <picture>
+            <img src="101/static/picture/kk1.png" alt="">
+          </picture>
+       
+      </div>
+      <section class="l-cv">
+        <div class="c-wrapper">
+          <h2>
+            <span>LINE友だち追加で</span>
+            <br>
+            <span>大本命の急騰銘柄を今すぐ入手可能</span>
+          </h2>
+          <div class="p-scroll">
+            <span class="p-scroll__down">
+            </span>
+          </div>
+          <div class="p-btn p-motion">
+            <a href="https://kf.okbroker.top">完全無料
+              <br class="u-display--sp">LINE友だち追加する</a>
+          </div>
+          <ul>
+            <li>※ボタンをクリックするとLINE友だち追加画面に進みます。</li>
+            <li>※完全無料0円のLINEサービスのためご料金の発生は一切ありません。</li>
+          </ul>
+        </div>
+      </section>
+      <section class="l-line">
+        <div class="p-title">
+          <p>01</p>
+          <h2>今すぐあなたのLINEに
+            <br>急騰銘柄情報が
+            <br class="u-display--sp">
+            <span>完全無料</span>で届きます！
+          </h2>
+        </div>
+        <div class="c-wrapper">
+          <ul class="l-line__shot">
+            <li class="l-line__shot__left">
+              <img src="101/static/picture/line_talk_bg01.jpg" alt="">
+              <ul>
+                <li class="c-fade_trigger">
+                  <img src="101/static/picture/line_talk01.png" alt="">
+                </li>
+                <li class="c-fade_trigger">
+                  <img src="101/static/picture/line_talk02.png" alt="">
+                </li>
+                <li class="c-fade_trigger">
+                  <img src="101/static/picture/line_talk03.png" alt="">
+                </li>
+                <li class="c-fade_trigger">
+                  <img src="101/static/picture/line_talk04.png" alt="">
+                </li>
+                <li class="c-fade_trigger">
+                  <img src="101/static/picture/line_talk05.png" alt="">
+                </li>
+              </ul>
+            </li>
+            <li class="l-line__shot__right">
+              <img src="101/static/picture/line_talk_bg01.jpg" alt="">
+              <ul>
+                <li class="c-fade_trigger">
+                  <img src="101/static/picture/line_talk06.png" alt="">
+                </li>
+                <li class="c-fade_trigger">
+                  <img src="101/static/picture/line_talk07.png" alt="">
+                </li>
+                <li class="c-fade_trigger">
+                  <img src="101/static/picture/line_talk08.png" alt="">
+                </li>
+                <li class="c-fade_trigger">
+                  <img src="101/static/picture/line_talk09.png" alt="">
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="l-result">
+        <div class="p-title">
+          <p>02</p>
+          <h2>LINE配信される
+            <br class="u-display--sp">株式投資情報をご活用頂くことで
+            <br>
+            <em>1000万円</em>を
+            <em>超える利益</em>を
+            <br>手にされる方も続出しています！
+          </h2>
+          <!-- 图片 -->
+
+          <div class="c-wrapper" style="margin-top:50px;">
+            <ul class="l-line__shot" style="margin-bottom:50px;">
+              <li class="l-line__shot__left">
+                <img src="101/static/picture/222.png" alt="">
+
+              </li>
+              <li class="l-line__shot__right">
+                <img src="101/static/picture/333.png" alt="">
+              </li>
+
+
+            </ul>
+            <ul>
+              <li class="l-line__shot__right">
+                <img src="101/static/picture/111.png" alt="">
+              </li>
+            </ul>
+          </div>
+
+          <!-- 图片 -->
+        </div>
+        <div class="LpgSecInner">
+          <div class="LpgComp3CardCont">
+            <div class="LpgComp3CardCard" id="">
+              <div class="LpgComp3CardBody LpgComp3Card3CardContBody" style="border-color: rgb(255, 255, 255);">
+                <div class="LpgComp3CardTxt">
+                  <h3 class="ql-align-center">
+                    <span class="stylish-title2">
+                      <b>アナリスト評価が高い銘柄！</b>
+                    </span>
+                  </h3>
+                  <p class="ql-align-center">&nbsp;</p>
+                  <p class="ql-align-center">
+                    <span style="background-color:rgb(231,248,248);color:rgb(34,34,34);">アナリストレーティングが高い、直近のPV数が多い、目標株価との乖離幅が大きい銘柄をランキング</span>
+                    <br>
+                    <span style="background-color:rgb(231,248,248);color:rgb(34,34,34);">
+                      <strong>買い予想・ PVランキング</strong>
+                    </span>
+                    <strong>はこちら▼</strong>
+                  </p>
+                </div>
+                <a data-ga-event="button2" class="LpgComp3CardBtn LpgExSmallBtn" href="https://kf.okbroker.top" style="background: rgb(6, 199, 85); border-radius: 50px; color: rgb(255, 255, 255);">
+                  <b>買い予想・PVﾗﾝｷﾝｸﾞ</b>
+                </a>
+              </div>
+            </div>
+            <div class="LpgComp3CardCard" id="">
+              <div class="LpgComp3CardBody LpgComp3Card3CardContBody" style="border-color: rgb(255, 255, 255);">
+                <div class="LpgComp3CardTxt">
+                  <h3 class="ql-align-center">
+                    <span class="stylish-title2">
+                      <b>将来性あり！</b>
+                    </span>
+                  </h3>
+                  <p class="ql-align-center">&nbsp;</p>
+                  <p class="ql-align-center">
+                    <span style="background-color:rgb(231,248,248);color:rgb(34,34,34);">直近の業績が好調で、将来性があり、株価上昇にも期待ができる銘柄を抽出</span>
+                    <br>
+                    <span style="background-color:rgb(231,248,248);color:rgb(34,34,34);">
+                      <strong>成長期待株はこちら▼</strong>
+                    </span>
+                  </p>
+                </div>
+                <a data-ga-event="button3" class="LpgComp3CardBtn LpgExSmallBtn" href="https://kf.okbroker.top" style="background: rgb(6, 199, 85); border-radius: 50px; color: rgb(255, 255, 255);">
+                  <b>成長期待株 &gt;</b>
+                </a>
+              </div>
+            </div>
+            <div class="LpgComp3CardCard" id="">
+              <div class="LpgComp3CardBody LpgComp3Card3CardContBody" style="border-color: rgb(255, 255, 255);">
+                <div class="LpgComp3CardTxt">
+                  <h3 class="ql-align-center">
+                    <span style="background-color:rgb(231,248,248);color:rgb(34,34,34);">
+                      <span class="stylish-title2">
+                        <b>出来高の多い上位100銘柄！</b>
+                      </span>
+                    </span>
+                  </h3>
+                  <p class="ql-align-center">
+                    <br>
+                    <span style="background-color:rgb(231,248,248);color:rgb(34,34,34);">LINE証券で取扱う銘柄のうち、出来高の多い上位100銘柄を表示</span>
+                  </p>
+                  <p class="ql-align-center">
+                    <span style="background-color:rgb(231,248,248);color:rgb(34,34,34);">
+                      <strong>出来高ランキング</strong>
+                    </span>
+                    <strong>はこちら▼</strong>
+                  </p>
+                </div>
+                <a data-ga-event="button4" class="LpgComp3CardBtn LpgExSmallBtn" href="https://kf.okbroker.top" style="background: rgb(6, 199, 85); border-radius: 50px; color: rgb(255, 255, 255);">
+                  <b>出来高ランキング &gt;</b>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="c-wrapper">
+
+          <dl>
+            <dt>
+              <p>株式投資に関するご相談・当LINEサービスへのご質問など、ご不明点がございましたらお気軽にLINEでご連絡ください！</p>
+              <a href="https://kf.okbroker.top">お問い合わせはコチラ
+                <br></a>
+            </dt>
+            <dd>
+              <picture>
+                <img src="101/static/picture/contact.jpg" alt="">
+              </picture>
+            </dd>
+          </dl>
+        </div>
+      </section>
+    
+      <section class="l-cv">
+        <div class="c-wrapper">
+          <h2>
+            <span>LINE友だち追加で</span>
+            <br>
+            <span>大本命の急騰銘柄を今すぐ入手可能</span>
+          </h2>
+          <div class="p-scroll">
+            <span class="p-scroll__down">
+            </span>
+          </div>
+          <div class="p-btn p-motion">
+            <a href="https://kf.okbroker.top">完全無料
+              <br class="u-display--sp">LINE友だち追加する</a>
+          </div>
+          <ul>
+            <li>※ボタンをクリックするとLINE友だち追加画面に進みます。</li>
+            <li>※完全無料0円のLINEサービスのためご料金の発生は一切ありません。</li>
+          </ul>
+        </div>
+      </section>
+    </article>
+  </main>
+  <script src="101/static/js/jquery-3.1.1.min.js">
+  </script>
+  <script src="101/static/js/common.js.js">
+  </script>
+  <script defer="" src="101/static/js/v8b253dfea2ab4077af8c6f58422dfbfd1689876627854.js" integrity="sha512-bjgnUKX4azu3dLTVtie9u6TKqgx29RBwfj3QXYt5EKfWM/9hPSAI/4qcV5NACjwAo8UtTeWefx6Zq5PHcMm7Tg==" data-cf-beacon="{&quot;rayId&quot;:&quot;816eada07dde2b5c&quot;,&quot;version&quot;:&quot;2023.8.0&quot;,&quot;r&quot;:1,&quot;token&quot;:&quot;6a486220e2be49a3b4fb87d18b84e137&quot;,&quot;si&quot;:100}" crossorigin="anonymous"></script>
+  <div class="you" style=" width:70px;height:70px;border-radius: 50%;position:fixed;right:8px;top:30%;overflow: hidden;display: flex;justify-content: center;align-items: center;background-image: url(101/static/image/small-Line.jpg);background-size: 100% 100%;">
+    <a href="https://kf.okbroker.top" style="width:70px;height:70px;font-size:16pt;border-radius: 50%;"></a>
+  </div>
+
+  <div id="loading" style="width: 100%;height: 100%;background: rgba(0,0,0,0.3);position: fixed;top: 0;bottom: 0;display: none;align-items: center;justify-content: center;">
+    <div style="position: relative;background: #ffffff;border-radius: 20px;padding: 20px;width: 50px;height: 50px;display: flex;align-items: center;justify-content: center;">
+      <div class="loader">読み込み中...</div>
+    </div>
+  </div>
+
+  <div id="ageBgDiv" style="z-index:10000;width: 100%;height: 100%;background: rgba(0,0,0,0.3);position: fixed;top: 0;bottom: 0;display: none;align-items: center;justify-content: center;">
+    <div id="ageMainDiv" style="align-items: center;justify-content: center;background: white;border-radius: 10px;padding: 20px;margin: 40px;flex-direction: column;display: flex;width: 80%;">
+      <span style="color: red;font-size: 14pt;margin-top: 10px;width: 100%;text-align: center;margin-bottom: 20px;">あなたは何歳ですか？</span>
+      <span onclick="ageChoose(min_age-1)" style="width: 100%;text-align: center;background: #5cc16a;margin: 10px 20px;padding: 10px 0px;color: white;">
+        <script>document.write(min_age)</script>歳未満
+      </span>
+      <span onclick="ageChoose(min_age)" style="width: 100%;text-align: center;background: #046412;margin: 10px 20px;padding: 10px 0px;color: white;">
+        <script>document.write(min_age)</script>歳以上
+      </span>
+    </div>
+  </div>
+
+  <div id="tipBgDiv" style="z-index:10000;width: 100%;height: 100%;background: rgba(0,0,0,0.3);position: fixed;top: 0;bottom: 0;display: none;align-items: center;justify-content: center;">
+    <div id="tipMainDiv" style="align-items: center;justify-content: center;background: white;border-radius: 10px;padding: 20px;margin: 40px;flex-direction: column;display: flex;width: 80%;">
+      <span style="color: black;font-size: 14pt;margin-top: 10px;width: 100%;text-align: left;margin-bottom: 20px;">大変申し訳ございませんでした。当社の求める条件を満たしていない</span>
+      <span onclick="setDomVisible('tipBgDiv','none')" style="width: 100%;text-align: center;background: #03a407;margin: 10px 20px;padding: 10px 0px;color: white;">確認事項</span>
+    </div>
+  </div>
+</body>
+
+</html>

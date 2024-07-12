@@ -1,0 +1,118 @@
+
+
+.corona_emg{
+    margin: 30px auto;
+    text-align: left;
+}
+
+.corona_emg .ttl{
+    display: block;
+    color: #1c236d;
+    background: none;
+    border: 1px solid;
+    outline: 0;
+    width: 100%;
+    padding: 10px 10px 10px 60px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.corona_emg .ttl .icn svg{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.corona_emg .ttl.student .icn svg{
+    width: 30px;
+    left: 20px;
+}
+.corona_emg .ttl .icn path{ fill: #1c236d;}
+.corona_emg .ttl::after{
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-left: 1px solid;
+    border-bottom: 1px solid;
+    position: absolute;
+    top: -3px;
+    bottom: 0;
+    right: 15px;
+    margin: auto;
+    transform: rotate(-45deg);
+}
+.corona_emg .ttl.active::after {
+    transform: rotate(135deg);
+    top: 0;
+}
+
+.corona_emg .conts{
+    display: none;
+    margin-bottom: 30px;
+    padding: 0 10px;
+}
+
+.emg_list{
+    display: flex;
+    flex-wrap: wrap;
+    counter-reset: emg_list;
+}
+.emg_list li{
+    margin-top: 10px;
+    background-color: #F3F4F7;
+    background-size: auto 53px;
+    background-position: center 10px;
+    background-repeat: no-repeat;
+    font-size: 13px;
+    padding: 70px 10px 10px;
+}
+.emg_list li::before{
+    counter-increment: emg_list;
+    content: counter(emg_list);
+    width: 1.5em;
+    height: 1.5em;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: #1c236d;
+    color: #fff;
+    margin-right: 5px;
+}
+
+.emg_list.student li:first-child{ background-image: url(../image/icn_mask.svg)}
+.emg_list.student li:nth-child(2){ background-image: url(../image/icn_alcohol_hand.svg)}
+.emg_list.student li:nth-child(3){ background-image: url(../image/icn_heat.svg)}
+
+
+.corona_emg .link_detail{
+    display: inline-block;
+    color: #1c236d;
+    font-size: 13px;
+    border: 1px solid;
+    padding: 0 2em;
+    margin-top: 1em;
+    position: relative;
+}
+.corona_emg .link_detail::after{
+    content: "";
+    border: 4px solid transparent;
+    border-left: 6px solid #1c236d;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+}
+
+@media screen and (min-width: 600px) {
+    .corona_emg .ttl .icn svg{ margin-left: 10px;}
+    
+    .emg_list li{ width: calc(96% / 3);}
+    .emg_list li:not(:nth-child(3n)){ margin-right: 2%;}
+}
+
+@media screen and (max-width: 599px) {
+    .emg_list li{
+        width: calc(98% / 2);
+        background-size: auto 40px;
+        padding-top: 60px;
+    }
+    .emg_list li:not(:nth-child(2n)){ margin-right: 2%;}
+}

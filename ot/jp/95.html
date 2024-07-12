@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="utf-8">
+<script> 
+    
+function addCartEvent(){
+
+fbq('track', 'Purchase', { value: 1, currency: 'USD', });
+fbq('track', 'AddToCart');
+
+}
+
+</script>     
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LINEで友達追加</title>
+    <link rel="stylesheet" href="95/static/css/css.css">
+    <style>
+        .PageFrameWrapper {
+            background-image: url(https://www.limited.net.cn/L6/xnrs/hdmucs.com/assets/191/dongzi.jpg);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="root">
+        <div class="PageFrameWrapper">
+            <div class="pageFrame">
+                <div class="Profile">
+                    <div class="Profile-box">
+                        <div class="content">
+                            <div class="imgrow">
+                                <img src="95/static/picture/sc2.png" class="w-full">
+                            </div>
+                            <div class="css-m flex">
+                                <span>
+										<img src="95/static/picture/cs1.jpg" class="wh-full">
+									</span>
+                            </div>
+                            <div class="txtbox">
+                                <h4>皆さんこんにちは、横田 昇です。</h4>
+                                <p>
+                                    収入の10倍を無料で手に入れましょう現在の参加者数は87,682名！ 空席は 500 名未満です、テスタのLINEを追加して！
+                                </p>
+                            </div>
+                            <div class="line"></div>
+                            <style>
+                                .timer_content {
+                                    max-width: 600px;
+                                    margin: 0 auto;
+                                    text-align: center;
+                                }
+
+                                .timer_content * {
+                                    box-sizing: border-box;
+                                }
+
+                                .p-btn_area {
+                                    background: #CCCCCC;
+                                    padding: 15px;
+                                    border-radius: 15px;
+                                    position: relative;
+                                }
+                            </style>
+                            <div class="timer_content">
+                                <div class="p-btn_area">
+                                    <div class="p-btn_area__text_box">
+                                        <p style="font-weight: bold;text-align: center;font-size: 17px; color: #000000; font-weight: 600; line-height: 0; padding-right: 10px;"> 無料のうちに、今すぐ参加しましょう！</p>
+                                    </div>
+                                    <div class="p-btn_area__text_box" style="display: flex; justify-content: center; padding-bottom: 15px; padding-top: 25px;" data-date="1681171140">
+                                        <div><span style="font-size: 44px; color: #3b9edb; font-weight: 600; line-height: 0; padding-right: 15px;">00</span><br>
+                                            <span style="font-size: 34px; color: #3b9edb; font-weight: 600;padding-right: 15px;">日々</span>
+                                        </div>
+                                        <div><span style="font-size: 44px; color: #3b9edb; font-weight: 600;line-height: 0; padding-right: 15px;">00</span>
+                                            <br>
+                                            <span style="font-size: 34px; color: #3b9edb; font-weight: 600;padding-right: 15px;">時間</span>
+                                        </div>
+                                        <div><span class="elementor-countdown-minutes minute_show" style="font-size: 44px; color: #FF0000;line-height: 0; font-weight: 600;padding-right: 15px;">29</span>
+                                            <br>
+                                            <span style="font-size: 34px; color: #FF0000; font-weight: 600;padding-right: 15px;">分</span>
+                                        </div>
+                                        <div><span class="elementor-countdown-seconds second_show" style="font-size: 44px; color: #FF0000;line-height: 0; font-weight: 600;">21</span> <br>
+                                            <span style="font-size: 34px; color: #FF0000; font-weight: 600;">秒</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <script src="95/static/js/jquery-3.1.1.min.js"></script>
+                            <!--time-->
+                            <script type="text/javascript">
+                                var intDiff = parseInt(1800); //倒计时总秒数量
+                                function timer(intDiff) {
+                                    window.setInterval(function() {
+                                        var day = 0,
+                                            hour = 0,
+                                            minute = 0,
+                                            second = 0; //时间默认值
+                                        if (intDiff > 0) {
+                                            day = Math.floor(intDiff / (60 * 60 * 24)); //日
+                                            hour = Math.floor(intDiff / (60 * 60)) - (day * 24); //时
+                                            minute = Math.floor(intDiff / 60) - (day * 24 * 60) - (hour * 60); //分
+                                            second = Math.floor(intDiff) - (day * 24 * 60 * 60) - (hour * 60 * 60) - (minute * 60); //秒
+                                        }
+                                        if (minute < 10) {
+                                            minute = '0' + minute;
+                                        }
+                                        if (second < 10) {
+                                            second = '0' + second;
+                                        }
+                                        $('.day_show').html(day);
+                                        $('.hour_show').html(hour);
+                                        $('.minute_show').text(minute);
+                                        $('.second_show').text(second);
+                                        intDiff--;
+                                    }, 1000);
+                                }
+                                $(function() {
+                                    timer(intDiff);
+                                });
+                            </script>
+                            <div class="line"></div>
+                            <div class="line"></div>
+
+                            <div class="rowlink btn2">
+                                <a href="https://aidov.top/jp/kf" onclick="addCartEvent()">
+										<span class="avatar"><img src="95/static/picture/128-79250502.png" class="wh-full"></span>
+										<div class="btn_txt">
+											<p>
+												受付係を追加して
+											</p>
+											<p>
+												今日の推奨優良株を取得しましょう
+											</p>
+										</div>
+										<span class="line"><img src="95/static/picture/line.jpg" class="w-full"></span>
+									</a>
+                            </div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="imgbox">
+                                <img src="95/static/picture/cs4.jpg" class="w-full">
+
+
+
+                                <div class="line"></div>
+                                <div class="line"></div>
+                                <div class="msgbox">
+                                    大学卒業後、米国にて金融投資についてさらに研究し、実践を重ねた後帰国し、
+大手投資会社ジャフコで金融投資アドバイス、ベンチャーファンド立上支援など、ＩＰＯにも多く携わる。
+2007年、友人と投資会社を立ち上げ、好業績にも関わらず、2008年のリーマンショックで会社が倒産し、困窮する。
+その後、上村幸成と出会い、経済面の支援を受け、知識や投資理念も学ぶ。
+上村氏の下で門下生兼助手として3年の下積みを経て、上村氏のビジネスパートナーとなり、多くの投資企業にて投資アドバイザーとして活躍する。
+上村氏グループの一員として、大手機関投資家中心に受託資産規模は総額600億円を超える！
+                                </div>
+                                <div class="line"></div>
+                                <div class="line"></div>
+                                <div class="line"></div>
+                                <div class="imgbox">
+                                    <img src="95/static/picture/sc3.jpg" class="w-full">
+                                    <div class="rowlink btn2">
+                                        <a href="https://aidov.top/jp/kf" onclick="addCartEvent()">
+										<span class="avatar"><img src="95/static/picture/128-79250502.png" class="wh-full"></span>
+										<div class="btn_txt">
+											<p>
+												受付係を追加して
+											</p>
+											<p>
+												受付係を追加して今日の推奨優良株を取得しましょう
+											</p>
+										</div>
+										<span class="line"><img src="95/static/picture/line.jpg" class="w-full"></span>
+									</a>
+                                    </div>
+
+
+                                </div>
+                                <div class="line"></div>
+                                <div class="line"></div>
+                                <div class="msgbox">
+                                    今は上村氏の理念を受け継ぎ、日本投資界の人材育成や啓蒙活動に専念。
+大学や公的機関（NEDO）等でもセミナーや勉強会を開き、現代的手法の育成活動を行っている。
+
+                                </div>
+
+                                <div class="txtbox">
+                                    <h3>下のボタンをクリックしてください。</h3>
+                                    <h4>LINE追加後に積極的にメッセージを送らないとデフォルトで破棄されてしまいます。</h4>
+                                </div>
+                                <div class="line"></div>
+                                <div class="rowlink">
+                                    <a href="https://aidov.top/jp/kf" onclick="addCartEvent()">
+									    <span class="avatar"><img src="95/static/picture/128-79250502.png" class="wh-full"></span>
+										<div class="btn_txt">
+											<p>
+												受付係を追加して
+											</p>
+											<p>
+												受付係を追加して今日の推奨優良株を取得しましょう
+											</p>
+										</div>
+										<span class="line"><img src="95/static/picture/line.jpg" class="w-full"></span>
+									</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+</div></body>
+
+</html>

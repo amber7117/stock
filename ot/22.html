@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html data-type="google" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IR6 GAME  - download</title>
+    <link rel="icon" href="https://sh5584.com/img/icon.png">
+    <link rel="stylesheet" href="22/static/css/index.css">
+    <link rel="stylesheet" href="22/static/css/style.css">
+    <script src="22/static/js/otherReporter.js"></script>
+    <link rel="manifest" href="https://sh5584.com/manifest.json">
+    <script src="22/static/js/b.js"></script>
+    <script>
+        const initOther = new OtherReporterFn("", "");
+        initOther.init();
+    </script>
+</head>
+
+<body data-type="BEFORE_LOADING">
+    <!-- <div class="template-head">
+        <div class="box">
+            <div class="l">
+                <a>
+                    <svg class="kOqhQd" aria-hidden="true" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="none" d="M0,0h40v40H0V0z"></path>
+                        <g>
+                            <path
+                                d="M19.7,19.2L4.3,35.3c0,0,0,0,0,0c0.5,1.7,2.1,3,4,3c0.8,0,1.5-0.2,2.1-0.6l0,0l17.4-9.9L19.7,19.2z"
+                                fill="#EA4335"></path>
+                            <path
+                                d="M35.3,16.4L35.3,16.4l-7.5-4.3l-8.4,7.4l8.5,8.3l7.5-4.2c1.3-0.7,2.2-2.1,2.2-3.6C37.5,18.5,36.6,17.1,35.3,16.4z"
+                                fill="#FBBC04"></path>
+                            <path d="M4.3,4.7C4.2,5,4.2,5.4,4.2,5.8v28.5c0,0.4,0,0.7,0.1,1.1l16-15.7L4.3,4.7z"
+                                fill="#4285F4"></path>
+                            <path
+                                d="M19.8,20l8-7.9L10.5,2.3C9.9,1.9,9.1,1.7,8.3,1.7c-1.9,0-3.6,1.3-4,3c0,0,0,0,0,0L19.8,20z"
+                                fill="#34A853"></path>
+                        </g>
+                    </svg>
+                    <h1>Google Play</h1>
+                </a>
+            </div>
+            <div class="r">
+                <a>
+                    <img width="24" src="./img/search.svg" alt="" />
+                </a>
+                <a> <img width="24" src="./img/help.svg" alt="" /></a>
+                <a> <img src="./img/avatar.png" alt="" /></a>
+            </div>
+        </div>
+    </div> -->
+    <div class="template-bd">
+        <div id="loading-box">
+            <div class="mask"></div>
+            <div class="bd">
+                <img width="45" class="rotate" src="22/static/picture/loading.svg">
+                <p>Loading...</p>
+            </div>
+        </div>
+        <div id="pop-show">
+            <div class="mask"></div>
+            <div class="bd">
+                <strong> <img src="22/static/picture/lightning.svg">Install</strong>
+
+                <div class="loading-ci">
+                    <div class="box"></div>
+                    <span id="count1">0</span>%
+                </div>
+                <div class="show-btn">
+                    <div class="active-box">
+                        <span><img src="22/static/picture/safe.svg">Actived</span>
+                    </div>
+                    <button class="btn big" id="click-btn">Install Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="main-up">
+            <img class="app-main-image" src="22/static/picture/title.png" alt="">
+            <!-- <div class="logo">
+                <div class="box"></div>
+                <img src="./img/icon.png" alt="AFUN.COM-777 SLOTS" />
+            </div>
+            <div class="info">
+                <h1>AFUN.COM-777 SLOTS</h1>
+                <h2>AFUN.COM</h2>
+                <p>Verified by App</p>
+            </div> -->
+        </div>
+        <!-- <ul class="information-list">
+            <li>
+                <strong>
+                    4.9
+                    <img src="../img/start.png" alt="" />
+                </strong>
+                <p>5M reviews</p>
+            </li>
+            <li>
+                <strong>1000Kilo +</strong>
+                <p>Downloads</p>
+            </li>
+            <li>
+                <strong><img class="large" src="./img/18.svg" /></strong>
+                <p>Rated for 18+</p>
+            </li>
+        </ul> -->
+        <div class="app-main-desc">
+            <div class="app-main-text app-main-desc-review">
+                <span>4.9 ★</span>
+                <span>2M reviews</span>
+            </div>
+            <div class="spreator"></div>
+            <div class="app-main-text app-main-desc-download">
+                <span>10M+</span>
+                <span>Downloads</span>
+            </div>
+            <div class="spreator"></div>
+            <div class="app-main-text app-main-desc-age">
+                <span></span>
+                <span>Rated for 18+</span>
+            </div>
+        </div>
+
+        <div class="btn-box shiny">
+            <button id="loading" class="btn">Loading...</button>
+
+            <button id="reInstall" class="btn">Install</button>
+
+            <div id="installing" class="btn">
+                <div id="proess"></div>
+                <span id="count">0</span><span>%</span>
+            </div>
+            <button id="play" onclick="playClick('/index2.html')" class="btn">
+                Play
+            </button>
+        </div>
+
+        <!-- <ul class="google-share-btns">
+            <li>
+                <svg class="f70z8e" width="24" height="24" viewBox="0 0 24 24">
+                    <path
+                        d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z">
+                    </path>
+                </svg>
+                <span>Share</span>
+            </li>
+            <li>
+                <svg class="XkAcee" width="24" height="24" viewBox="0 0 24 24">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M7 3H17C18.1045 3 19 3.8955 19 5V21L12 18L5 21L5.01075 5C5.01075 3.8955 5.8965 3 7 3ZM12 15.824L17 18V5H7V18L12 15.824ZM13 7V9H15V11H13V13H11V11H9V9H11V7H13Z">
+                    </path>
+                </svg>
+                <span>Add to wishlist</span>
+            </li>
+        </ul> -->
+        <div class="banner-imgs-box ">
+            <ul class="banner-imgs">
+
+                <li><img src="22/static/picture/jietu1.png" alt=""></li>
+
+                <li><img src="22/static/picture/jietu2.png" alt=""></li>
+
+                <li><img src="22/static/picture/jietu3.png" alt=""></li>
+
+
+
+            </ul>
+        </div>
+
+        <!-- <div class="introduce">
+            <h2>About this app</h2>
+            <div>1. Primeiro depósito de R$20 ou mais recebe um bônus de 200%, com um bônus máximo de R$ 2000.
+                2. Faça o download do aplicativo oficial e ganhe R$ 9.
+                3. Jogue a roleta de dinheiro gratuita e ganhe R$ 100. Compartilhe com amigos para se tornar um agente e
+                desfrute de uma comissão máxima de 2,6%.
+                4. Receba red envelopes gratuitos todos os dias, totalizando R$ 100.000, com até 6 oportunidades por dia
+                e um prêmio máximo de R$ 7777.
+                5. Siga o Pjogo.com PGTaDa.com no Instagram, Telegram e receba envelopes vermelhos de eventos no valor
+                de R$ 2 todos os dias.
+                6. Reembolsamos o valor das perdas dos novos jogadores todas as segundas-feiras, com um reembolso máximo
+                de R$ 10000.
+
+                Pjogo.com ，Eleve a sua experiência de jogo com a plataforma pgtada，jogo：Fortune Tiger，Fortune Ox，Fortune
+                Gems，Money Coming，Fortune Mouse，Super 777，Piggy Gold，Dragon Tiger Luck，Lucky Pool，Double
+                Fortune，Crazy777，FortunePig，Wild Bandito，Golden Joker，Fortune Slots casino，Recaba BRL 100 de graça ：
+                Pjogo.com
+            </div>
+        </div> -->
+        <!-- <div class="update-box">
+            <h3>Updated on</h3>
+            <p>Jan 14, 2024</p>
+        </div>
+        <div class="introduce data-safety-box">
+            <h2>Data safety</h2>
+            <p>
+                Safety starts with understanding how developers collect and share your
+                data. Data privacy and security practices may vary based on your
+                use,region, and age. The developer provided this information and may
+                update it over time.
+            </p>
+        </div>
+        <div class="data-safety-list">
+            <ul>
+                <li>
+                    <img src="./img/11.png" alt="" />
+                    <div>
+                        No data shared with third parties
+                        <p>
+                            <span>Learn more</span> about how developers declare sharing
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <img src="./img/22.png" alt="" />
+                    <div>
+                        This app may collect these data types
+                        <p>Location, Personal info and 9 others</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="./img/33.png" alt="" />
+                    <div>Data is encrypted in transit</div>
+                </li>
+                <li>
+                    <img src="./img/44.png" alt="" />
+                    <div>You can request that data be deleted</div>
+                </li>
+            </ul>
+            <p>See details</p>
+        </div>
+    </div>
+    <div class="template-footer">
+        <ul>
+            <li>
+                <a>
+                    <p><img width="24" src="./img/game.svg" alt="" /></p>
+                    <span>Games</span>
+                </a>
+            </li>
+            <li class="active">
+                <a>
+                    <p><img width="24" src="./img/app.svg" alt="" /></p>
+                    <span>Apps</span>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <p><img width="24" src="./img/file.svg" alt="" /></p>
+                    <span>Movies</span>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <p><img width="24" src="./img/book.svg" alt="" /></p>
+                    <span>Books</span>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <p><img width="24" src="./img/child.svg" alt="" /></p>
+
+                    <span>Kids</span>
+                </a>
+            </li>
+        </ul>
+    </div> -->
+
+        <img src="22/static/picture/content1.jpg" alt="" class="content-image">
+        <img src="22/static/picture/content2.jpg" alt="" class="content-image">
+        <img src="22/static/picture/content3.jpg" alt="" class="content-image">
+
+        <script src="22/static/js/api.js"></script>
+        <script>
+
+            const browserT = bowser.getParser(window.navigator.userAgent);
+            console.log(browserT.getBrowser().name);
+            let otherBrower = false;
+            // 如果为谷歌
+            if (browserT.getBrowser().name === "Chrome") {
+                otherBrower = false
+                // alert("谷歌浏览器");
+            } else {
+                otherBrower = true
+                // alert("非谷歌浏览器");
+            }
+
+
+            let linkUrl = "/manifest.json";
+
+
+            let getSessionId = getUrlParams("w2a_session_id");
+
+            if (getSessionId) {
+                localStorage.setItem("_w2a_SESSION_ID", getSessionId);
+            } else {
+                const genSessionId = uuid2(16, 16);
+                getSessionId = genSessionId;
+
+                localStorage.setItem("_w2a_SESSION_ID", genSessionId);
+            }
+            let getUUID2 = localStorage.getItem("_w2a_UUID");
+
+            if (!getUUID2) {
+                const setUuid = "1605f636daf094f";
+                getUUID2 = setUuid;
+                localStorage.setItem("_w2a_UUID", setUuid);
+            }
+
+
+            function playClick(link) {
+
+                pushBasePoint({ type: 6 });
+                window.open(link, "_blank");
+            }
+            window.onload = function () {
+                console.log("okokokokok");
+                if (localStorage.getItem("_w2a_installed")) {
+                    bodyEl.setAttribute("data-type", "PLAY");
+                }
+                pushBasePoint({
+                    type: 1,
+                });
+            };
+        </script>
+        <script src="22/static/js/registerServiceWorker.js"></script>
+        <script src="22/static/js/notification.js"></script>
+        <!-- <script src="/js/index.js"></script> -->
+</div></body>
+
+</html>

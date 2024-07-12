@@ -1,0 +1,174 @@
+@media screen and (max-width: 1200px) {
+  .container-lg {
+    padding: 0 20px;
+  }
+
+  #topview h1 img {
+    width: 1050px;
+  }
+
+  .top-form-container {
+    margin-left: 15px;
+    padding: 5px 20px;
+    width: 100%x;
+  }
+
+  .form-container {
+    margin: 10px;
+  }
+
+  .container-md img {
+    width: 100%;
+  }
+
+  .form-container {
+    margin: 10px;
+  }
+
+  .bg-red img {
+    width: 100%;
+  }
+
+  .form-body img {
+    width: 100%;
+  }
+
+  .form-body {
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+  }
+
+  .regist-form input[type="text"] {
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .form-controls input[type="image"] {
+    width: 100%;
+  }
+
+  .form-arrow {
+    display: none;
+  }
+
+  #modal-open img {
+    width: 50px;
+  }
+
+  #popup-form-btn {
+    padding: 20px;
+  }
+
+  .input-items {
+    width: 100%;
+    float: left;
+  }
+
+  .step img {
+    width: 35px;
+  }
+
+  .form-controls {
+    width: 100%;
+    float: right;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .container-md {
+    padding: 0 20px;
+  }
+
+  .top-form-container {
+    margin-left: 15px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #topview .form {
+    top: 390px;
+    width: 100%;
+    display: block;
+  }
+
+  #topview h1 img {
+    width: 100%;
+  }
+
+  .form-container {
+    margin: 10px;
+  }
+
+  #popup-form-btn p {
+    width: 100%;
+    font-size: 80%;
+    text-align: center;
+  }
+
+  #popup-form-btn a {
+    width: 100%;
+    font-size: 100%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .form-body {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .top-form-text,
+  .footer-form-text {
+    margin-right: 0;
+  }
+  .igm_ajs {
+    display: none;
+  }
+  .footer-document .risk {
+    width: 100%;
+  }
+  .footer-document .ex-links li + li {
+    margin-left: 2px;
+  }
+
+  .footer-document .announce-group {
+    width: 100%;
+    float: left;
+    padding-left: 0;
+    margin-left: 0;
+    margin-bottom: 100px;
+  }
+
+  #popup-form-btn {
+    padding: 10px;
+  }
+  #popup-form-btn p {
+    margin-top: 0;
+  }
+
+  .text-md {
+    font-size: 19px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .igm_ajs {
+    width: 56% !important;
+  }
+  .t_con {
+    padding: 30px 0 40px 0;
+  }
+  .h_con {
+    height: 180px !important;
+  }
+}
+
+@media (max-width: 420px) {
+  #popup-form-btn {
+    font-size: 50px;
+  }
+}

@@ -1,0 +1,65 @@
+/*
+ *
+ *
+ *
+ * *
+ */
+*{margin:0;padding:0;}
+body{margin:0;padding:7px;height:100%;background-color:#fff;font:14px/1.5 "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", serif}
+h1{font-size:18px}
+h2{font-size:16px}
+a{color:#EB5F3E;text-decoration:none}
+a:hover{text-decoration:underline}
+
+.fastcatbox-2{background-color: #F8FAFE;padding:6px;max-width:640px;margin: 0 auto;}
+.box-content img{max-width:100%;}
+.fastcat-footer{color:#737373;text-align:center;border-top:none;background:none;}
+.fastcat-footer a{color:#737373;}
+.fastcat-footer p{padding:0 0 20px 0;font-size:12px}
+
+
+.norms-title {
+    background: #DCDCDC;
+    line-height: 30px;
+    text-align: center;
+}
+.norms-table{ margin:0px 2%;}
+.norms-table table{ width:100%; border: 1px solid #f1f1f1;}
+.norms-table table thead th{ line-height:30px; background:#F34242 !important;color: #fff; }
+.norms-table table img{ width:50px; padding:5px 0;}
+.norms-table table{ text-align:center;}
+
+.fastcat-arr-box{ background:#F0FFFF; margin:2%; border-radius:3px; border: 1px solid #DCDCDC; overflow:hidden;}
+.norms-title{background:#DCDCDC; line-height:30px; text-align:center;}
+.norms-title i{ padding:0px 5px; font-size:14px; color:#000; font-weight: bold; }
+
+.rows-head {
+    clear: both;
+    margin: 10px 2%;
+    width: 96%;
+}
+
+.rows-params .fastcat-group {
+    border: 1px solid #ccc;
+    padding: 4px;
+    float: left;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    margin-right: 0.2rem;
+    margin-left: 0.2rem;
+    text-align: center;
+}
+.rows-params .fastcat-group img {
+    width: 98%;
+}
+
+.norms-total {
+    text-align: right;
+    margin: 10px 2%;
+    font-size: 16px;
+    color: #F34242;
+}
+.norms-total li {
+    list-style: none;
+}
+

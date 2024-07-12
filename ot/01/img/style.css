@@ -1,0 +1,49 @@
+body, html {
+    background-color: transparent !important;
+}
+.no-times-notice {
+	display:none !important;
+}
+.expire-notice {
+    display:none !important;
+}
+.countdown-embed-simple-2 .countdown {
+    background-color: #feed00 !important;
+}
+.countdown-embed-simple-2 .countdown {
+    padding: 0px 10px !important;
+}
+.countdown-embed-simple-2 .countdown__days .countdown__label, 
+.countdown-embed-simple-2 .countdown__hours .countdown__label, 
+.countdown-embed-simple-2 .countdown__mins .countdown__label, 
+.countdown-embed-simple-2 .countdown__secs .countdown__label {
+    font-size: 11px !important;
+    color: #333333 !important;
+    font-weight: 500 !important;
+}
+.countdown-embed-simple-2 .countdown__days>*+*, 
+.countdown-embed-simple-2 .countdown__hours>*+*, 
+.countdown-embed-simple-2 .countdown__mins>*+*, 
+.countdown-embed-simple-2 .countdown__secs>*+* {
+    margin-top: 8px !important;
+}
+.registration-embed-styled-0 .countdown__days .countdown__counter, 
+.registration-embed-styled-0 .countdown__hours .countdown__counter, 
+.registration-embed-styled-0 .countdown__mins .countdown__counter, 
+.registration-embed-styled-0 .countdown__secs .countdown__counter {
+    background-color: #feed00 !important;
+    color: #333 !important;
+}
+.registration-embed-styled-0 .countdown__days .countdown__label, 
+.registration-embed-styled-0 .countdown__hours .countdown__label, 
+.registration-embed-styled-0 .countdown__mins .countdown__label, 
+.registration-embed-styled-0 .countdown__secs .countdown__label {
+    font-size: 11px !important;
+    color: #333 !important;
+}
+.registration-embed-styled-0 .countdown__days>*+*, 
+.registration-embed-styled-0 .countdown__hours>*+*, 
+.registration-embed-styled-0 .countdown__mins>*+*, 
+.registration-embed-styled-0 .countdown__secs>*+* {
+    margin-top: 8px !important;
+}

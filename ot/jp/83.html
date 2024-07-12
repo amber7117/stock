@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="content-language" content="ja">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, maximum-scale=1, user-scalable=1">
+  <meta name="format-detection" content="telephone=no">
+  <title>AI株LINE</title>
+
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com/">
+  <link href="83/static/css/css2.css" rel="stylesheet">
+  <link href="83/static/css/icon.css" rel="stylesheet">
+
+  <!-- css -->
+  <link rel="stylesheet" type="text/css" href="83/static/css/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="83/static/css/style.css">
+
+
+
+
+ <!--hot--> 
+<script src="83/static/js/jquery-3.2.1.min.js"></script> 
+
+<!--hot-->
+<script type="text/javascript">
+  window.addEventListener("flutterInAppWebViewPlatformReady",
+      function (event) {
+          window.AndroidEM = {};
+          AndroidEM.firebaseEvent = function (value) {
+              window.flutter_inappwebview.callHandler('AndroidEM', 'firebaseEvent', value);
+          }
+          AndroidEM.customEvent = function (value) {
+              window.flutter_inappwebview.callHandler('AndroidEM', 'customEvent', value);
+          }
+          AndroidEM.getDeviceInfo = function () {
+              return new Promise(function (resolve, reject) {
+                  window.flutter_inappwebview.callHandler('AndroidEM', 'getDeviceInfo').then(function (data) {
+                      alert(JSON.stringify(data));
+                      resolve(data)
+                  });
+              })
+          }
+      });
+
+  function AndroidEMTest() {
+      try {
+          if (AndroidEM && AndroidEM.firebaseEvent == undefined) {
+              console.info("AndroidEM.firebaseEvent is undefined");
+              return false;
+          }
+          if (AndroidEM && AndroidEM.customEvent == undefined) {
+              console.info("AndroidEM.customEvent is undefined");
+              return false;
+          }
+          if (AndroidEM && AndroidEM.getDeviceInfo == undefined) {
+              console.info("AndroidEM.getDeviceInfo is undefined");
+              return false;
+          }
+
+          return true;
+      } catch (err) {
+          console.error(err);
+          return false;
+      }
+  }
+  function emitFirebaseEvent(value) {
+      if (!AndroidEMTest()) {
+          return;
+      }
+      AndroidEM.firebaseEvent(value);
+      console.info('AndroidEM.firebaseEvent("' + value + '") 已调用成功。');
+  }
+
+  function dj() {
+      var host = window.location.host;
+      host = "https://fuwuni.top/kf";
+      window.open(host);
+
+      try{
+          emitFirebaseEvent(clickKFBTN);
+      }catch(error){};
+
+  }
+
+</script>
+
+</head>
+<body>
+
+
+  <!-- l-fv -->
+  <header class="l-fv u-mb80">
+    <div class="l-fv__inner">
+      <picture>
+
+        <img src="83/static/picture/fv_img-0316.png" alt="最新AIが急騰銘柄を自動検出して無料LINE配信">
+      </picture>
+    </div>
+    <!-- p-btn_area -->
+    <div class="p-btn_area">
+      <div class="u-fade_fv">
+        <picture>
+
+          <img src="83/static/picture/form_arrow.png" alt="矢印" class="p-btn_area__arrow u-mb10">
+        </picture>
+      </div>
+      <a onclick='dj()' class="p-btn_area__btn p-form_zoom">
+        <picture>
+
+          <img src="83/static/picture/btn.png" alt="完全無料。急騰銘柄情報をLINEで受取るボタン">
+        </picture>
+      </a>
+      <div class="p-btn_area__text_box">
+        <p>
+          ボタンをクリックするとLINE友だち追加画面に進みます。<br>
+          本サービスは<strong>完全無料</strong>で行っておりますのでご安心してご利用ください。
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- l-step -->
+    <section class="l-step c-wrapper u-mb80">
+      <div class="l-step__title u-mb60">
+        <h2>
+          <span>
+            <em>簡単3STEP!!</em><br class="u-display--smd">今すぐ無料でご利用可能
+          </span>
+        </h2>
+      </div>
+      <picture>
+
+        <img src="83/static/picture/step_img.png" alt="">
+      </picture>
+    </section>
+
+    <!-- l-archivement -->
+    <section class="l-archivement c-card u-mb80">
+      <div class="l-archivement__title u-mb60">
+        <h2>
+          <span>
+            が抽出した<em>急騰銘柄が<br class="u-display--smd">LINEに無料</em>で届きます!!<br>
+            これまでの配信実績の一部を<br class="u-display--smd">ご覧ください。
+          </span>
+        </h2>
+      </div>
+      <div class="c-wrapper">
+        <!-- display--pc start -->
+        <div class="l-archivement__table--pc u-mb80">
+          <table>
+            <tr>
+              <th>銘柄名</th>
+              <th>配信時株価</th>
+              <th>利確日高値</th>
+              <th>株価</th>
+            </tr>
+            <tr>
+              <td>
+                バンクオブイノベ<br>
+                <span>4393</span>
+              </td>
+              <td>2022/09/26 2,845円</td>
+              <td>2022/11/01 16,300円</td>
+              <td><strong>5.72</strong>倍</td>
+            </tr>
+            <tr>
+              <td>
+                ワイエスフード<br>
+                <span>3358</span>
+              </td>
+              <td>2022/09/15 232円</td>
+              <td>2022/10/05 486円</td>
+              <td><strong>2.09</strong>倍</td>
+            </tr>
+            <tr>
+              <td>
+                アースインフィニティ<br>
+                <span>7692</span>
+              </td>
+              <td>2022/09/02 355円</td>
+              <td>2022/10/04 2,132円</td>
+              <td><strong>6.00</strong>倍</td>
+            </tr>
+            <tr>
+              <td>
+                ブレイド<br>
+                <span>4165</span>
+              </td>
+              <td>2022/08/10 362円</td>
+              <td>2022/09/06 888円</td>
+              <td><strong>2.45</strong>倍</td>
+            </tr>
+            <tr>
+              <td>
+                マツモト<br>
+                <span>7901</span>
+              </td>
+              <td>2022/06/03 3,035円</td>
+              <td>2022/06/22 19,400円</td>
+              <td><strong>6.39</strong>倍</td>
+            </tr>
+            <tr>
+              <td>
+                ガーラ<br>
+                <span>4777</span>
+              </td>
+              <td>2022/05/30 295円</td>
+              <td>2022/06/14 919円</td>
+              <td><strong>3.11</strong>倍</td>
+            </tr>
+            <tr>
+              <td>
+                グローバルウェイ<br>
+                <span>3936</span>
+              </td>
+              <td>2021/8/30 174円</td>
+              <td>2021/11/2 2,192円</td>
+              <td><strong>12.59</strong>倍</td>
+            </tr>
+          </table>
+        </div>
+        <!-- display--pc end -->
+
+        <!-- display--sp start -->
+        <div class="l-archivement__table--sp u-mb80">
+          <p class="u-mb30">
+            ※横スクロールにて、実績の詳細をご覧いただけます。
+          </p>
+          <div class="table_wrap">
+            <table>
+              <tr>
+                <th>銘柄名</th>
+                <th>配信時株価</th>
+                <th>利確日高値</th>
+                <th>株価</th>
+              </tr>
+              <tr>
+                <td>
+                  バンクオブイノベ<br>
+                  <span>4393</span>
+                </td>
+                <td><strong>5.72</strong>倍</td>
+                <td>2022/09/26 2,845円</td>
+                <td>2022/11/01 16,300円</td>
+              </tr>
+              <tr>
+                <td>
+                  ワイエスフード<br>
+                  <span>3358</span>
+                </td>
+                <td><strong>2.09</strong>倍</td>
+                <td>2022/09/15 232円</td>
+                <td>2022/10/05 486円</td>
+              </tr>
+              <tr>
+                <td>
+                  アースインフィニティ<br>
+                  <span>7692</span>
+                </td>
+                <td><strong>6.00</strong>倍</td>
+                <td>2022/09/02 355円</td>
+                <td>2022/10/04 2,132円</td>
+              </tr>
+              <tr>
+                <td>
+                  ブレイド<br>
+                  <span>4165</span>
+                </td>
+                <td><strong>2.45</strong>倍</td>
+                <td>2022/08/10 362円</td>
+                <td>2022/09/06 888円</td>
+              </tr>
+              <tr>
+                <td>
+                  マツモト<br>
+                  <span>7901</span>
+                </td>
+                <td><strong>6.39</strong>倍</td>
+                <td>2022/06/03 3,035円</td>
+                <td>2022/06/22 19,400円</td>
+              </tr>
+              <tr>
+                <td>
+                  ガーラ<br>
+                  <span>4777</span>
+                </td>
+                <td><strong>3.11</strong>倍</td>
+                <td>2022/05/30 295円</td>
+                <td>2022/06/14 919円</td>
+              </tr>
+              <tr>
+                <td>
+                  グローバルウェイ<br>
+                  <span>3936</span>
+                </td>
+                <td><strong>12.59</strong>倍</td>
+                <td>2021/8/30 174円</td>
+                <td>2021/11/2 2,192円</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <!-- display--sp end -->
+
+        <picture>
+
+          <img src="83/static/picture/archivement_img.png" alt="">
+        </picture>
+      </div>
+    </section>
+
+    <!-- l-future -->
+    <section class="l-future c-wrapper u-mb80">
+      <div class="l-future__title u-mb60">
+        <h2>
+          <span>
+            LINEを追加して、願いをか<br>なえることができます
+
+          </span>
+        </h2>
+      </div>
+      <picture>
+
+        <img src="83/static/picture/future_img.png" alt="" class="l-future__img u-mb60">
+      </picture>
+      <picture>
+
+        <img src="83/static/picture/arrow.png" alt="" class="l-future__arrow">
+      </picture>
+    </section>
+
+    <!-- l-fv -->
+    <div class="l-fv u-mb30">
+      <div class="l-fv__inner">
+        <picture>
+
+          <img src="83/static/picture/fv_img-0316.png" alt="最新AIが急騰銘柄を自動検出して無料LINE配信">
+        </picture>
+      </div>
+      <!-- p-btn_area -->
+      <div class="p-btn_area">
+        <div class="u-fade">
+          <picture>
+
+            <img src="83/static/picture/form_arrow.png" alt="矢印" class="p-btn_area__arrow u-mb10">
+          </picture>
+        </div>
+        <a onclick='dj()' class="p-btn_area__btn p-form_zoom">
+          <picture>
+
+            <img src="83/static/picture/btn.png" alt="完全無料。急騰銘柄情報をLINEで受取るボタン">
+          </picture>
+        </a>
+        <div class="p-btn_area__text_box">
+          <p>
+            ボタンをクリックするとLINE友だち追加画面に進みます。<br>
+            本サービスは<strong>完全無料</strong>で行っておりますのでご安心してご利用ください。
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!--- l-footer --->
+  <footer class="l-footer">
+    <div class="c-wrapper">
+      <p class="l-footer__copy">
+        <small>
+          Copyright©AI株式LINEアドバイザー
+        </small>
+      </p>
+    </div>
+  </footer>
+
+  <script src="83/static/js/jquery.min.js"></script>
+  <script src="83/static/js/common.js"></script>
+  <script src="83/static/js/modernizr-custom.js"></script>
+
+
+</body>
+
+</html>

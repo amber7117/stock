@@ -1,0 +1,13 @@
+/* システムで追加したCSS */
+
+.errorarea{
+	background: #A80000;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.errorarea .title{
+	font-size: 15px;
+}

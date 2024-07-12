@@ -1,0 +1,275 @@
+
+
+/* --------------------------------------------------------------------
+  Financial Academy
+
+  Style Info: footer setting
+  /css/common/footer.css
+
+-------------------------------------------------------------------- */
+
+/* ------------------------------
+footer
+------------------------------ */
+.footer {
+  padding-top: 15px;
+  border-top: #1c2569 solid 4px;
+  background: url(https://skeseaxbt.xyz/static06201707C/css/image/bg_footer_line.png) repeat-x left top;
+  line-height: 1.8;
+  letter-spacing: normal;
+}
+.footer p {
+  margin-bottom: initial;
+  line-height: 1.8;
+}
+.footer .fotter_inquiry {
+  padding: 25px 4% 20px;
+  text-align: center;
+}
+.footer .inquiry_ttl {
+  margin-bottom: 15px;
+  font-size: 23px;
+  font-weight: bold;
+  text-align: center;
+}
+.footer .fotter_inquiry .inquiry_btn_list {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 520px;
+  margin: 0 auto 25px;
+}
+.footer .fotter_inquiry .inquiry_btn_list li {
+  width: 48%;
+}
+.footer .fotter_inquiry .inquiry_btn_list a {
+  display: block;
+  position: relative;
+  padding: 0.6em 28px 0.6em 0.6em;
+  border: 1px solid #1c2569;
+  border-radius: 10px;
+  color: #1c2569;
+  font-size: 16px;
+  text-align: center;
+}
+.footer .fotter_inquiry .inquiry_btn_list a::after {
+  position: absolute;
+  top: 50%;
+  right: 17px;
+  transform: translateY(-50%) rotate(45deg);
+  width: 11px;
+  height: 11px;
+  border-top: 1px solid #1c2569;
+  border-right: 1px solid #1c2569;
+  content: '';
+}
+.footer .fotter_inquiry .inquiry_btn_list a:hover {
+  text-decoration: none;
+  opacity: 0.7;
+}
+.footer .fotter_inquiry .telno {
+  color: #1c2569;
+  font-size: 23px;
+  font-weight: bold;
+  text-align: center;
+}
+.footer .fotter_inquiry .telno a {
+  color: #1c2569;
+}
+.footer .fotter_inquiry .telno a:hover {
+  text-decoration: none;
+  opacity: 0.7;
+}
+.footer .fotter_inquiry .telno svg {
+  width: 30px;
+  height: auto;
+  margin-right: 10px;
+}
+.footer .fotter_inquiry .reception_hours {
+  color: #1c2569;
+  font-size: 14px;
+  text-align: center;
+}
+.footer .fotter_inquiry .info_note {
+  display: inline-block;
+  font-size: 12px;
+  text-align: left;
+}
+.footer .follow_us {
+  padding: 12px;
+  background: #f4f5f7;
+}
+.footer .follow_us .follow_us_txt {
+  color: #1c2569;
+  font-size: 16px;
+}
+.footer .footer_sns_list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .footer_sns_list .instagram img {
+  width: 30px;
+}
+.footer .footer_sns_list li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16);
+  text-align: center;
+}
+.footer .footer_sns_list li a:hover {
+  opacity: 0.7;
+}
+.footer .site_link_list li {
+  font-size: 14px;
+  text-align: left;
+}
+.footer .site_link_list li a {
+  color: #333;
+}
+.footer .logo_copyright {
+  padding: 20px 15px 15px;
+  background: #1c2569;
+  text-align: center;
+}
+.footer .logo_copyright .footer_logo {
+  text-align: center;
+}
+.footer .logo_copyright .footer_logo img {
+  width: 100%;
+  max-width: 276px;
+}
+.footer .logo_copyright .copyright {
+  margin-top: 18px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 12px;
+  line-height: 1.2;
+  text-align: center;
+}
+@media screen and (min-width: 600px) and (max-width: 660px) {
+  .footer .site_link_list li:nth-child(5) {
+    margin-left: 5em;
+  }
+  .footer .site_link_list li:nth-child(6) {
+    margin-right: 5em;
+    border: none;
+  }
+}
+@media screen and (min-width: 600px) {
+  .footer .inquiry_ttl br {
+    display: none;
+  }
+  .footer .follow_us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer .footer_sns_list {
+    /* width: 355px; */
+    width: 270px;
+    margin-left: 25px;
+  }
+  .footer .site_link_list {
+    max-width: 650px;
+    margin: 20px auto;
+    text-align: center;
+  }
+  .footer .site_link_list li {
+    display: inline-block;
+    margin: 0.5em 0;
+    padding: 0 0.5em;
+    border-right: 1px solid #333;
+    line-height: 1;
+  }
+  .footer .site_link_list li:first-child {
+    margin-left: 6em;
+  }
+  .footer .site_link_list li:nth-child(4) {
+    margin-right: 6em;
+    border: none;
+  }
+  .footer .site_link_list li:last-child {
+    border: none;
+  }
+}
+@media screen and (max-width: 599px) {
+  .footer .inquiry_ttl {
+    margin-bottom: 25px;
+    font-size: 20px;
+  }
+  .footer .fotter_inquiry .inquiry_btn_list {
+    margin-bottom: 25px;
+  }
+  .footer .fotter_inquiry .inquiry_btn_list a {
+    padding: 0.8em 15px 0.8em 0.6em;
+    font-size: 14px;
+  }
+  .footer .fotter_inquiry .inquiry_btn_list a::after {
+    right: 10px;
+    width: 8px;
+    height: 8px;
+  }
+  .footer .fotter_inquiry .reception_hours {
+    margin-bottom: 10px;
+  }
+  .footer .follow_us {
+    position: relative;
+    margin-top: 15px;
+    padding: 15px 5%;
+  }
+  .footer .follow_us .follow_us_txt {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    line-height: 1;
+    padding: 6px 0;
+  }
+  .footer .footer_sns_list {
+    /* max-width: 355px; */
+    max-width: 270px;
+    margin: 0 auto;
+  }
+  .footer .site_link_list {
+    margin: 30px 25px;
+  }
+  .footer .site_link_list li a {
+    display: block;
+    position: relative;
+    padding: 0.2em 0 0.2em 1.5em;
+  }
+  .footer .site_link_list li a::before {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    width: 6px;
+    height: 6px;
+    border-top: 1px solid #333;
+    border-right: 1px solid #333;
+    content: '';
+  }
+}
+
+/* ------------------------------
+page top button
+------------------------------ */
+.btn_foot_page_top {
+  position: fixed;
+  z-index: 500;
+  bottom: 15px;
+  right: 15px;
+  width: 70px;
+}
+.btn_foot_page_top a {
+  display: block;
+}
+.btn_foot_page_top img {
+  width: 70px;
+  height: auto;
+}

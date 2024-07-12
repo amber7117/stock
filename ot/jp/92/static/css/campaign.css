@@ -1,0 +1,1071 @@
+
+/* --------------------------------------------------------------------
+  Financial Academy
+
+  Style Info: campaign
+              /school/css/campaign.css
+-------------------------------------------------------------------- */
+/* ------------------------------
+common
+------------------------------ */
+.campaign {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 70px 0 80px;
+}
+.campaign p {
+  text-align: inherit;
+}
+.campaign.pt0 {
+  padding-top: 0;
+}
+.campaign.pb0 {
+  padding-bottom: 0;
+}
+.campaign.width_margin {
+  width: 92%;
+}
+/* 2 column */
+.campaign.col2 {
+  width: 92%;
+}
+.campaign .limited_campaign_ttl {
+  font-size: 30px;
+  font-weight: normal;
+  text-align: center;
+  line-height: 1.4;
+}
+.campaign .limited_campaign_ttl span {
+  display: inline-block;
+  position: relative;
+  padding: 0.2em 2em 0;
+}
+.campaign .limited_campaign_ttl span::before,
+.campaign .limited_campaign_ttl span::after {
+  position: absolute;
+  bottom: -0.1em;
+  height: 1.5em;
+  border-left: 2px dashed;
+  content: '';
+}
+.campaign .limited_campaign_ttl span::before {
+  left: 0.6em;
+  transform: rotate(-30deg);
+}
+.campaign .limited_campaign_ttl span::after {
+  right: 0.6em;
+  transform: rotate(30deg);
+}
+.campaign .limited_campaign_ttl::after {
+  content: none;
+}
+.campaign .campaign_inner {
+  margin: 80px 0;
+}
+.campaign .btn01 a {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+}
+/* by seminar */
+.campaign.kabu .limited_campaign_ttl {
+  color: #2c4198;
+}
+.campaign.kabu .limited_campaign_ttl span::before,
+.campaign.kabu .limited_campaign_ttl span::after {
+  border-color: #2c4198;
+}
+.campaign.fudo .limited_campaign_ttl {
+  color: #44a1c5;
+}
+.campaign.fudo .limited_campaign_ttl span::before,
+.campaign.fudo .limited_campaign_ttl span::after {
+  border-color: #44a1c5;
+}
+.campaign.mf .limited_campaign_ttl {
+  color: #8a9f55;
+}
+.campaign.mf .limited_campaign_ttl span::before,
+.campaign.mf .limited_campaign_ttl span::after {
+  border-color: #8a9f55;
+}
+.campaign.kyouyou .limited_campaign_ttl {
+  color: #ea5520;
+}
+.campaign.kyouyou .limited_campaign_ttl span::before,
+.campaign.kyouyou .limited_campaign_ttl span::after {
+  border-color: #ea5520;
+}
+@media screen and (min-width: 600px) {
+  /* 2 column */
+  .campaign.col2 .campaign_inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  .campaign.col2 .campaign_inner > div {
+    width: 48.5%;
+  }
+}
+@media screen and (max-width: 599px) {
+  .campaign .campaign_inner {
+    margin: 50px 0;
+  }
+  .campaign .limited_campaign_ttl {
+    font-size: 20px;
+  }
+  .campaign .limited_campaign_ttl span {
+    padding: 0.2em 2em 0;
+  }
+  .campaign .limited_campaign_ttl span::before,
+  .campaign .limited_campaign_ttl span::after {
+    height: 80%;
+  }
+  /* 2 column */
+  .campaign.col2 .campaign_inner > div + div {
+    margin-top: 40px;
+  }
+}
+
+/* ------------------------------
+amazon_card_01
+------------------------------ */
+.campaign .amazon_card_01 * {
+  font-family: '?橯橝??嫛??? Pro W3', 'Hiragino Kaku Gothic Pro W3','昒? ?嫛???','MS P Gothic', system-ui, sans-serif;
+}
+.campaign .amazon_card_01 .amazon_card_01_inner {
+  padding: 25px 4% 15px;
+  border-radius: 10px 10px 0 0;
+  background-image: url(../image/bg_02.png), url(../image/bg_01.png);
+  background-size: cover, 57px auto;
+  text-align: center;
+}
+.campaign .amazon_card_01 .sub_ttl svg {
+  max-width: 221px;
+  height: auto;
+}
+.campaign .amazon_card_01 .campaign_ttl {
+  margin-top: 20px;
+  color: #fff;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+.campaign .amazon_card_01 .campaign_ttl .strong {
+  color: #f0c583;
+  font-size: 35px;
+}
+.campaign .amazon_card_01 .campaign_ttl .txt_l {
+  font-size: 55px;
+  font-weight: normal;
+}
+.campaign .amazon_card_01 .campaign_ttl .txt_s {
+  font-size: 20px;
+}
+.campaign .amazon_card_01 .campaign_ttl .txt_ss {
+  font-size: 16px;
+}
+.campaign .amazon_card_01 .img_amazon_gift_card {
+  text-align: center;
+}
+.campaign .amazon_card_01 .img_amazon_gift_card img {
+  max-width: 241px;
+}
+.campaign .amazon_card_01 .amazon_card_notelist {
+  display: inline-block;
+  color: #fff;
+  text-align: left;
+}
+.campaign .amazon_card_01 .amazon_card_notelist li {
+  font-size: 12px;
+}
+.campaign .amazon_card_01 .period {
+  background: #93130b;
+  padding: 0.8em;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+}
+.campaign .amazon_card_01 .period .arrow_r {
+  display: inline-block;
+  border-left: 8px solid #fff;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+}
+.campaign .amazon_card_01 .period .date,
+.campaign .amazon_card_01 .period .date * {
+  font-family: "Hiragino Mincho ProN W3", "?橯橝?瀡? ProN W3", "Hiragino Mincho ProN", "HG瀡?E", "?瀡?", YuMincho, "昒? ?瀡?", "昒? 瀡?", serif;
+}
+.campaign .amazon_card_01 .period .date {
+  font-size: 18px;
+}
+.campaign .amazon_card_01 .period .txt_l {
+  font-size: 30px;
+}
+@media screen and (min-width: 600px) {
+  /* 1 column */
+  .campaign.col1 .amazon_card_01 .amazon_card_01_inner {
+    background-image: url(../image/bg_02_1col.png), url(../image/bg_01.png);
+    background-size: cover, 68px auto;
+  }
+  .campaign.col1 .amazon_card_01 .sub_ttl svg {
+    max-width: 299px;
+  }
+  .campaign.col1 .amazon_card_01 .campaign_ttl {
+    margin-top: 0;
+  }
+  .campaign.col1 .amazon_card_01 .campaign_ttl .txt_l {
+    font-size: 65px;
+  }
+  .campaign.col1 .amazon_card_01 .campaign_ttl .txt_s {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 660px) {
+  /* 1 column */
+  .campaign.col1 .amazon_card_01 .amazon_card_notelist {
+    text-align: center;
+    line-height: 1.4;
+  }
+  .campaign.col1 .amazon_card_01 .amazon_card_notelist li {
+    display: inline-block;
+  }
+}
+@media screen and (min-width: 840px) {
+  /* 1 column */
+  .campaign.col1 .amazon_card_01 .campaign_ttl .br_01 {
+    display: none;
+  }
+}
+@media screen and (max-width: 949px) {
+  /* 2 column */
+  .campaign.col2 .amazon_card_01 .period .date {
+    display: block;
+  }
+}
+@media screen and (max-width: 599px) {
+  .campaign .amazon_card_01 .amazon_card_01_inner {
+    background-size: cover, 40px auto;
+  }
+  .campaign .amazon_card_01 .sub_ttl svg {
+    max-width: 200px;
+  }
+  .campaign .amazon_card_01 .campaign_ttl {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  .campaign .amazon_card_01 .campaign_ttl .strong {
+    color: #f0c583;
+    font-size: 24px;
+  }
+  .campaign .amazon_card_01 .campaign_ttl .txt_l {
+    font-size: 40px;
+    font-weight: normal;
+  }
+  .campaign .amazon_card_01 .campaign_ttl .txt_ss {
+    font-size: 11px;
+  }
+  .campaign .amazon_card_01 .campaign_ttl .txt_s {
+    font-size: 16px;
+  }
+  .campaign .amazon_card_01 .img_amazon_gift_card img {
+    max-width: 169px;
+  }
+  .campaign .amazon_card_01 .amazon_card_notelist {
+    margin-top: 10px;
+  }
+  .campaign .amazon_card_01 .period {
+    padding: 1em 0.5em;
+    font-size: 14px;
+  }
+  .campaign .amazon_card_01 .period .txt_l {
+    font-size: 20px;
+  }
+  .campaign .amazon_card_01 .period .date {
+    font-size: 14px;
+  }
+  /* 2 column */
+  .campaign.col2 .amazon_card_01 .period .date {
+    display: inline;
+  }
+}
+
+/* ------------------------------
+amazon_card_02
+------------------------------ */
+.amazon_card_02 * {
+  font-family: '?橯橝??嫛??? Pro W3', 'Hiragino Kaku Gothic Pro W3','昒? ?嫛???','MS P Gothic', system-ui, sans-serif;
+}
+.amazon_card_02 {
+  margin-top: 20px;
+}
+.amazon_card_02_inner {
+  padding: 20px 3% 10px;
+  background-image: url(../image/bg_01.png);
+  background-size: 68px auto;
+  border-radius: 10px 10px 0 0;
+}
+.amazon_card_02 .campaign_ttl {
+  margin-bottom: 0.6em;
+  color: #f0c583;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+.amazon_card_02 .img_amazon_gift_card {
+  text-align: center;
+}
+.amazon_card_02 .img_amazon_gift_card img {
+  width: 100%;
+  max-width: 240px;
+}
+.amazon_card_02 .amazon_gift_txt {
+  color: #fff;
+}
+.amazon_card_02 .amazon_gift_txt .amazon_gift_lead {
+  margin-bottom: 1em;
+  font-size: 16px;
+}
+.amazon_card_02 .amazon_gift_txt .amazon_gift_lead span {
+  font-family: '?橯橝??嫛??? Pro W6', 'Hiragino Kaku Gothic Pro W6','昒? ?嫛???','MS P Gothic', system-ui, sans-serif;
+}
+.amazon_card_02 .amazon_gift_txt .amazon_card_notelist {
+  font-size: 12px;
+  text-align: left;
+}
+.amazon_card_02 .period {
+  background: #93130b;
+  padding: 0.8em;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+}
+.amazon_card_02 .period .arrow_r {
+  display: inline-block;
+  border-left: 8px solid #fff;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+}
+.amazon_card_02 .period .date,
+.amazon_card_02 .period .date * {
+  font-family: "Hiragino Mincho ProN W3", "?橯橝?瀡? ProN W3", "Hiragino Mincho ProN", "HG瀡?E", "?瀡?", YuMincho, "昒? ?瀡?", "昒? 瀡?", serif;
+}
+.amazon_card_02 .period .date {
+  font-size: 18px;
+}
+.amazon_card_02 .period .txt_l {
+  font-size: 30px;
+}
+@media screen and (min-width: 600px) {
+  .amazon_card_02 .campaign_body {
+    display: flex;
+    justify-content: space-between;
+  }
+  .amazon_card_02 .img_amazon_gift_card {
+    width: 28%;
+  }
+  .amazon_card_02 .amazon_gift_txt {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 599px) {
+  .amazon_card_02_inner {
+    padding: 20px 8.5%;
+  }
+  .amazon_card_02 .campaign_ttl {
+    font-size: 16px;
+  }
+  .amazon_card_02 .img_amazon_gift_card img {
+    max-width: 170px;
+  }
+  .amazon_card_02 .amazon_gift_txt {
+    margin-top: 0.5em;
+  }
+  .amazon_card_02 .amazon_gift_txt .amazon_gift_lead {
+    font-size: 14px;
+  }
+  .amazon_card_02 .period {
+    padding: 1em 0.5em;
+    font-size: 14px;
+  }
+  .amazon_card_02 .period .txt_l {
+    font-size: 20px;
+  }
+  .amazon_card_02 .period .date {
+    font-size: 14px;
+  }
+}
+
+/* ------------------------------
+booklet_01
+------------------------------ */
+.campaign.booklet_01 {
+  position: relative;
+  padding: 25px 4%;
+  background-color: #FDF6E6;
+/*   border-radius: 10px 10px 0 0; */
+  text-align: center;
+}
+.campaign.booklet_01::before,
+.campaign.booklet_01::after {
+  content: "";
+  padding-top: 10px;
+  width: 100%;
+  background: url(../image/line_airmail.png) center/contain;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.campaign.booklet_01::before {
+  top: 0;
+}
+.campaign.booklet_01::after {
+  bottom: 0;
+}
+.campaign.booklet_01 .booklet_01_inner {
+  padding: 25px 2% 40px;
+/*   background: #fff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16); */
+}
+.campaign.booklet_01 .sub_ttl img {
+  width: 100%;
+  max-width: 332px;
+  height: auto;
+}
+.campaign.booklet_01 .sub_ttl {
+  position: relative;
+}
+.campaign.booklet_01 .sub_ttl::before {
+  content: "";
+  width: calc((90% - 332px)/2);
+  padding-top: 5%;
+  background: url(../image/illust_bird.svg) right bottom/contain no-repeat;
+  position: absolute;
+  right: -15px;
+  bottom: 0;
+}
+.campaign.booklet_01 .campaign_ttl {
+  display: none;
+  margin: 20px 0 40px;
+  color: #df052f;
+  font-size: 25px;
+  font-weight: bold;
+}
+.campaign.booklet_01 .campaign_ttl .txt_s {
+  font-size: 20px;
+}
+.campaign.booklet_01 .campaign_ttl .u_line {
+  padding-bottom: 0.3em;
+  background: linear-gradient(transparent 85%, rgba(250, 222, 230, 0.85) 15%);
+}
+.campaign.booklet_01 .red_booklet_img {
+  text-align: center;
+}
+.campaign.booklet_01 .red_booklet_img img {
+  display: none;
+  width: 100%;
+  max-width: 309px;
+  height: auto;
+}
+.campaign.booklet_01 .book_txt_list {
+  display: none;
+}
+/* 1 column */
+.campaign.col1 .booklet_01 .book_txt_list {
+  text-align: left;
+}
+.campaign.col1 .booklet_01 .book_txt_list li {
+  padding-left: 1em;
+  text-indent: -1em;
+}
+/* by seminar */
+.campaign.kabu .booklet_01 .red_booklet_img .booklet_kabu {
+  display: inline-block;
+}
+.campaign.fudo .booklet_01 .red_booklet_img .booklet_fudo {
+  display: inline-block;
+}
+.campaign.mf .booklet_01 .red_booklet_img .booklet_mf {
+  display: inline-block;
+}
+.campaign.kabu .booklet_01 .campaign_ttl.ttl_kabu {
+  display: block;
+}
+.campaign.fudo .booklet_01 .campaign_ttl.ttl_fudo {
+  display: block;
+}
+.campaign.mf .booklet_01 .campaign_ttl.ttl_mf {
+  display: block;
+  margin-bottom: 20px;
+}
+/* 1 column by seminar */
+.campaign.col1.kabu .booklet_01 .book_txt_kabu {
+  display: block;
+}
+.campaign.col1.fudo .booklet_01 .book_txt_fudo {
+  display: block;
+}
+.campaign.col1.mf .booklet_01 .book_txt_mf {
+  display: block;
+}
+@media screen and (min-width: 600px) {
+  /* 1 column */
+  .campaign.col1 .booklet_01 .book_detail {
+    display: inline-flex;
+    justify-content: space-between;
+  }
+  .campaign.col1 .booklet_01 .book_detail .red_booklet_img {
+    width: 40%;
+  }
+  .campaign.col1 .booklet_01 .book_txt_list {
+    width: 57%;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 599px) {
+  .campaign.booklet_01 {
+    padding: 43px 4%;
+  }
+  .campaign.booklet_01 .booklet_01_inner {
+    padding: 0 4% 25px;
+  }
+  .campaign.booklet_01 .sub_ttl::before {
+    position: static;
+    display: block;
+    width: 100%;
+    padding-top: 9.3%;
+    background-position-y: center;
+    margin-bottom: 12px;
+    margin-left: 6%;
+  }
+  .campaign.booklet_01 .sub_ttl svg {
+    width: 100%;
+    height: auto;
+  }
+  .campaign.booklet_01 .campaign_ttl {
+    margin: 10px 0 30px;
+    font-size: 20px;
+  }
+  .campaign.booklet_01 .campaign_ttl .txt_s {
+    font-size: 16px;
+  }
+  .campaign.booklet_01 .red_booklet_img img {
+    max-width: 230px;
+  }
+  /* kabu seminar */
+  .campaign.kabu .booklet_01 .campaign_ttl .br_kabu {
+    display: block;
+  }
+  /* 1 column */
+  .campaign.col1 .booklet_01 .book_txt_list {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+}
+
+/* ------------------------------
+writable_notebook_01
+------------------------------ */
+.campaign .writable_notebook_01 * {
+  font-feature-settings: normal;
+  font-family: '?橯橝??嫛??? Pro W3', 'Hiragino Kaku Gothic Pro W3','昒? ?嫛???','MS P Gothic', system-ui, sans-serif;
+}
+.campaign .writable_notebook_01 {
+  background-color: #b4872a;
+  background-image: url(https://www.f-academy.jp/school/image/campaign/booklet/bg_03_pc.png),
+    url(../image/bg_02_pc.png),
+    url(https://www.f-academy.jp/school/image/campaign/booklet/bg_01.png);
+  background-repeat: no-repeat;
+  background-position: right 10px top 38px, left 15px top 16px, left bottom;
+  background-size: 60px auto, 46px auto, auto 73px;
+  border-radius: 10px 10px 0 0;
+  text-align: center;
+  }
+.campaign .writable_notebook_01 .writable_notebook_body {
+  padding: 54px 4% 0;
+}
+.campaign .writable_notebook_01 .campaign_ttl {
+  margin-bottom: 15px;
+  color: #fff;
+  font-size: 25px;
+  font-weight: bold;
+}
+.campaign .writable_notebook_01 .campaign_ttl .txt_s {
+  font-size: 20px;
+}
+.campaign .writable_notebook_01 .campaign_ttl .txt_ss {
+  margin-left: -0.8em;
+  font-size: 13px;
+}
+.campaign .writable_notebook_01 .campaign_ttl .u_line {
+  padding-bottom: 0.3em;
+  background: linear-gradient(transparent 85%, rgba(252, 208, 132, 0.3) 15%);
+}
+.campaign .writable_notebook_01 .writable_notebook_img {
+  text-align: center;
+}
+.campaign .writable_notebook_01 .writable_notebook_img img {
+  width: 100%;
+  max-width: 309px;
+  height: auto;
+}
+.campaign .writable_notebook_01 .writable_notebook_txt {
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: left;
+}
+@media screen and (max-width: 929px) {
+  .campaign .writable_notebook_01 .campaign_ttl br {
+    display: none;
+  }
+}
+@media screen and (max-width: 599px) {
+  .campaign .writable_notebook_01 {
+    background-size: 14vw auto, 10vw auto, auto 56px;
+  }
+  .campaign .writable_notebook_01 .writable_notebook_body {
+    padding: 57px 4% 65px;
+  }
+  .campaign .writable_notebook_01 .sub_ttl svg {
+    max-width: 220px;
+    height: auto;
+  }
+  .campaign .writable_notebook_01 .campaign_ttl {
+    margin-bottom: 25px;
+    font-size: 20px;
+  }
+  .campaign .writable_notebook_01 .campaign_ttl br {
+    display: block;
+  }
+  .campaign .writable_notebook_01 .campaign_ttl .txt_s {
+    font-size: 16px;
+  }
+  .campaign .writable_notebook_01 .campaign_ttl .txt_ss {
+    font-size: 11px;
+  }
+  .campaign .writable_notebook_01 .writable_notebook_img img {
+    max-width: 230px;
+  }
+  .campaign .writable_notebook_01 .writable_notebook_txt {
+    font-size: 10px;
+  }
+}
+
+/* ------------------------------
+campaign_fx
+------------------------------ */
+.campaign_fx {
+  position: relative;
+  max-width: 1000px;
+  margin: 50px auto 0;
+  padding: 30px 6%;
+  background: #fff;
+  border: 1px solid #c36380;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.campaign_fx::before,
+.campaign_fx::after {
+  position: absolute;
+  transform: rotate(-45deg);
+  width: 100px;
+  height: 18px;
+  background: #c36380;
+  content: '';
+}
+.campaign_fx::before {
+  top: 15px;
+  left: -25px;
+}
+.campaign_fx::after {
+  bottom: 15px;
+  right: -25px;
+}
+.campaign_fx .campaign_ttl {
+  display: inline-block;
+  margin-bottom: 0.7em;
+  padding: 0.4em 0.6em;
+  background: #c36380;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 20px;
+  line-height: 1;
+}
+.campaign_fx .campaign_txt {
+  font-size: 16px;
+  text-align: left;
+}
+.campaign_fx .campaign_txt .camp_strong_txt {
+  color: #c36380;
+  font-size: 20px;
+}
+@media screen and (min-width: 600px) {
+  .campaign_fx {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .campaign_fx .campaign_fx_txt {
+    width: 70%;
+  }
+  .campaign_fx .campaign_fx_img {
+    width: 28%;
+  }
+}
+@media screen and (max-width: 599px) {
+  .campaign_fx {
+    margin-top: 30px;
+    text-align: center;
+  }
+  .campaign_fx .campaign_fx_txt {
+    margin-bottom: 0.5em;
+  }
+  .campaign_fx .campaign_ttl {
+    font-size: 18px;
+  }
+  .campaign_fx .campaign_txt {
+    font-size: 14px;
+  }
+  .campaign_fx .campaign_txt .camp_strong_txt {
+    font-size: 16px;
+  }
+}
+
+/* ------------------------------
+tax_reform
+
+/upimage/final-return-t.html ??橜??橫録?
+?2023?満??湬?壄?????橋????灀(PDF)???????椉掋??
+?橜??橫録????掋??
+?????/school/image/campaign/tax_reform/?鸁???掋??
+------------------------------ */
+.campaign.tax_reform {
+  width: 92%;
+}
+.campaign.tax_reform .campaign_inner {
+  margin: 60px 0;
+}
+.campaign.tax_reform .btn02 {
+  max-width: 540px;
+  margin: 0 auto;
+}
+.campaign.tax_reform .limited_campaign_ttl {
+  color: #ea5520;
+}
+.campaign .tax_reform_01 * {
+  font-family: '?橯橝??嫛??? Pro W3', 'Hiragino Kaku Gothic Pro W3','昒? ?嫛???','MS P Gothic', system-ui, sans-serif;
+}
+.campaign .tax_reform_01 .tax_reform_01_inner {
+  padding: 28px 4% 15px;
+  border-radius: 10px 10px 0 0;
+  background-color: #ea5520;
+  background-image: url(https://www.f-academy.jp/school/image/campaign/booklet/bg_03_1col.png), url(https://www.f-academy.jp/school/image/campaign/booklet/bg_02_1col.png);
+  background-repeat: no-repeat;
+  background-position: right 25px top 15px, left 20px top 16px;
+  background-size: 77px auto, 52px auto;
+  text-align: center;
+}
+.campaign .tax_reform_01 .sub_ttl {
+  margin-bottom: 10px;
+}
+.campaign .tax_reform_01 .sub_ttl svg {
+  max-width: 291px;
+  height: auto;
+}
+.campaign .tax_reform_01 .campaign_ttl {
+  color: #fff;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 2.0;
+}
+.campaign .tax_reform_01 .campaign_ttl .u_line {
+  padding-bottom: 0.3em;
+  background: linear-gradient(transparent 85%, rgba(204, 204, 204, 0.44) 15%);
+}
+.campaign .tax_reform_01 .campaign_ttl .txt_m {
+  font-size: 20px;
+}
+.campaign .tax_reform_01 .campaign_ttl .txt_ss {
+  font-size: 16px;
+}
+.campaign .tax_reform_01 .img_tax_reform {
+  text-align: center;
+}
+.campaign .tax_reform_01 .img_tax_reform img {
+  max-width: 255px;
+}
+.campaign .tax_reform_01 .period {
+  padding: 0.8em;
+  background: #faf8e9;
+  border: 1px solid #ea5520;
+  border-top: none;
+  color: #ea5520;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+}
+.campaign .tax_reform_01 .period .arrow_r {
+  display: inline-block;
+  border-left: 8px solid #ea5520;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+}
+.campaign .tax_reform_01 .period .period_ttl {
+  display: inline-block;
+  margin-right: 15px;
+}
+.campaign .tax_reform_01 .period .date,
+.campaign .tax_reform_01 .period .date * {
+  font-family: "Hiragino Mincho ProN W3", "?橯橝?瀡? ProN W3", "Hiragino Mincho ProN", "HG瀡?E", "?瀡?", YuMincho, "昒? ?瀡?", "昒? 瀡?", serif;
+}
+.campaign .tax_reform_01 .period .date {
+  display: inline-block;
+  margin-left: 15px;
+  font-size: 18px;
+}
+.campaign .tax_reform_01 .period .txt_l {
+  font-size: 30px;
+}
+/* .campaign_in_application */
+.campaign_in_application.tax_reform.tax_reform {
+  max-width: 760px;
+  position: relative;
+  margin: 0 auto 45px;
+  padding: 1.5em 4% 1.5em 125px;
+  background: #fff;
+  border: 1px solid #ea5520;
+  border-radius: 10px;
+}
+.campaign_in_application.tax_reform.tax_reform .ico_limited {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 12px;
+  top: -36px;
+  width: 100px;
+  height: 100px;
+  background: #ea5520;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 25px;
+  line-height: 1.2;
+  text-align: center;
+}
+.campaign_in_application.tax_reform.tax_reform .txt {
+  color: #ea5520;
+  font-size: 16px;
+}
+@media screen and (max-width: 599px) {
+  .campaign.tax_reform {
+    padding: 50px 0;
+  }
+  .campaign.tax_reform .campaign_inner {
+    margin: 40px 0;
+  }
+  .campaign .tax_reform_01 .tax_reform_01_inner {
+    padding: 25px 4% 15px;
+    background-image: url(../image/bg_01_sp.png), url(https://aidov.top/school/image/campaign/tax_reform/bg_02_sp.png);
+    background-repeat: no-repeat;
+    background-position: left 6px top 13px, right 2px top 16px;
+    background-size: 44px auto, 42px auto;
+  }
+  .campaign .tax_reform_01 .campaign_ttl {
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+  .campaign .tax_reform_01 .campaign_ttl .txt_m {
+    font-size: 16px;
+  }
+  .campaign .tax_reform_01 .campaign_ttl .txt_ss {
+    font-size: 14px;
+  }
+  .campaign .tax_reform_01 .period {
+    padding: 1em 0.3em;
+    font-size: 14px;
+  }
+  .campaign .tax_reform_01 .period .period_ttl {
+    margin-right: 8px;
+  }
+  .campaign .tax_reform_01 .period .txt_l {
+    font-size: 20px;
+  }
+  .campaign .tax_reform_01 .period .date {
+    margin-left: 8px;
+    font-size: 14px;
+  }
+  /* .campaign_in_application */
+  .campaign_in_application.tax_reform.tax_reform {
+    margin: 20px auto 30px;
+    padding: 40px 4% 1em;
+  }
+  .campaign_in_application.tax_reform.tax_reform .ico_limited {
+    left: 10px;
+    top: -45px;
+    width: 80px;
+    height: 80px;
+    font-size: 19px;
+  }
+  .campaign_in_application.tax_reform.tax_reform .txt {
+    font-size: 14px;
+  }
+}
+
+/* ------------------------------
+book.inc
+------------------------------ */
+.campaign .book {
+  max-width: 800px;
+  background-color: #FDF6E6;
+  text-align: center;
+  margin: auto;
+  padding: 0;
+  position: relative;
+}
+.campaign .book::before,
+.campaign .book::after {
+  content: "";
+  padding-top: 10px;
+  width: 100%;
+  background: url(../image/line_airmail.png) center/contain;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.campaign .book::before {
+  top: 0;
+}
+.campaign .book::after {
+  bottom: 0;
+}
+.campaign .book .inner {
+  padding: 60px 0 40px;
+}
+.campaign .book p:not([class]) {
+  font-size: 12px;
+  text-align: center;
+}
+.campaign .book .ttl {
+  position: relative;
+}
+.campaign .book .ttl::before {
+  content: "";
+  width: 178px;
+  padding-top: 8%;
+  background: url(../image/illust_bird.svg) right bottom/contain no-repeat;
+  position: absolute;
+  right: -15px;
+  top: -32px;
+}
+.campaign .book .ttl::after {
+  content: none;
+}
+.campaign .book .wrapper_time,
+.campaign .book .wrapper_time *{
+  letter-spacing: 0;
+}
+.campaign .book .time {
+  background-color: #fff;
+  border: 1px solid;
+  border-radius: 4px;
+  color: #DF052F;
+  padding: 5px 10px;
+}
+.campaign .book .time p {
+  line-height: 1.5;
+  text-align: left;
+  width: fit-content;
+  margin: auto;
+}
+.campaign .book .time .intro::after{
+  content: "";
+  display: inline-block;
+  width: 1.8em;
+  padding-top: 3.6%;
+  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20id%3D%22%E3%82%B0%E3%83%AB%E3%83%BC%E3%83%97_823%22%20data-name%3D%22%E3%82%B0%E3%83%AB%E3%83%BC%E3%83%97%20823%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2217.114%22%20height%3D%227.986%22%20viewBox%3D%220%200%2017.114%207.986%22%3E%20%3Cg%20id%3D%22%E3%82%B0%E3%83%AB%E3%83%BC%E3%83%97_427%22%20data-name%3D%22%E3%82%B0%E3%83%AB%E3%83%BC%E3%83%97%20427%22%20transform%3D%22translate(0%200)%22%3E%20%3Cpath%20id%3D%22%E5%A4%9A%E8%A7%92%E5%BD%A2_1%22%20data-name%3D%22%E5%A4%9A%E8%A7%92%E5%BD%A2%201%22%20d%3D%22M3.993%2C0%2C7.986%2C5.7H0Z%22%20transform%3D%22translate(5.705%200)%20rotate(90)%22%20fill%3D%22%23df052f%22%2F%3E%20%3Cpath%20id%3D%22%E5%A4%9A%E8%A7%92%E5%BD%A2_2%22%20data-name%3D%22%E5%A4%9A%E8%A7%92%E5%BD%A2%202%22%20d%3D%22M3.993%2C0%2C7.986%2C5.7H0Z%22%20transform%3D%22translate(11.409%200)%20rotate(90)%22%20fill%3D%22%23df052f%22%2F%3E%20%3Cpath%20id%3D%22%E5%A4%9A%E8%A7%92%E5%BD%A2_3%22%20data-name%3D%22%E5%A4%9A%E8%A7%92%E5%BD%A2%203%22%20d%3D%22M3.993%2C0%2C7.986%2C5.7H0Z%22%20transform%3D%22translate(17.114%200)%20rotate(90)%22%20fill%3D%22%23df052f%22%2F%3E%20%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-position: right center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.campaign .book .time .date,
+.campaign .book .time .date * {
+  font-family: "Hiragino Mincho ProN W3", "?橯橝?瀡? ProN W3", "Hiragino Mincho ProN", "HG瀡?E", "?瀡?", YuMincho, "昒? ?瀡?", "昒? 瀡?", serif;
+}
+.campaign .book .time .date .txt_l{
+  font-size: 1.5em;
+}
+@media screen and (min-width: 600px) {
+  .campaign .book .grid{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    column-gap: 50px;
+    grid-template-rows: auto auto 1fr;
+    max-width: 670px;
+    margin: auto;
+  }
+  .campaign .book .ttl {
+    grid-column: 2/3;
+    padding: 20px 0 28px;;
+  }
+  .campaign .book .img {
+    grid-column: 1/2;
+    grid-row: 1/4;
+  }
+  .campaign .book .wrapper_time{
+    grid-column: 2/3;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 5px;
+  }
+
+  .campaign .book .time p{
+    font-size: 16px;
+  }
+  .campaign .book .time .date{
+    font-size: 18px;
+  }
+  .campaign .book .time .intro::after{
+    margin: 0 1em;
+  }
+}
+@media screen and (max-width: 599px) {
+  .campaign .book .inner {
+    width: 85%;
+  }
+  .campaign .book .ttl {
+    margin-bottom: 1em;
+  }
+  .campaign .book .ttl::before {
+    position: absolute;
+    width: 100%;
+    padding-top: 9.3%;
+    background-position-y: center;
+    top: -40px;
+  }
+  .campaign .book .img {
+    display: block;
+    width: 57%;
+    margin: 0 auto 10px 10.5%;
+  }
+  .campaign .book p:not([class]) {
+    text-align: left;
+  }
+  .campaign .book .time {
+    padding: 8px;
+    margin: 12px 0;
+  }
+  .campaign .book .time .intro::after{
+    width: 2em;
+    padding-top: 5.6%;
+  }
+  .campaign .book .time .date{
+    display: block;
+    font-size: 16px;
+  }
+}

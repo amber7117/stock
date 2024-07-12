@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="19/static/css/style.css">
+  <link rel="stylesheet" href="19/static/css/swiper-bundle.css">
+
+  <script src="19/static/js/jquery.min.js"></script>
+  <script src="19/static/js/swiper-bundle.js"></script>
+</head>
+
+<body>
+  <div class="nav">
+    <img src="19/static/picture/nav.jpg" alt="">
+    <div class="container">
+      <div class="paddingbox">
+        <h2>Hotels.com</h2>
+      </div>
+    </div>
+  </div>
+  <div class="top-wrap">
+    <div class="banner">
+      <img src="19/static/picture/banner.jpg" alt="">
+    </div>
+    <div class="widget-wrap">
+      <div class="widget-box">
+        <div class="container">
+          <div class="paddingbox">
+            <div class="banner-text">
+              <h2>Hotel tester</h2>
+              <p>Only need a mobile phone <br>Like and Comment</p>
+              <span>Earn £50-500 a day</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="contentImg">
+    <div class="imgBg">
+      <img src="19/static/picture/imgbg1.jpg" alt="">
+    </div>
+    <div class="container content-wrap">
+      <div class="paddingbox">
+        <div class="contentText">
+          <ul>
+            <li>
+              <img src="19/static/picture/icon1.png" alt="" class="icon">
+              <p>More than 20,000 hotels around the world</p>
+            </li>
+            <li>
+              <img src="19/static/picture/icon2.png" alt="" class="icon">
+              <p>Commission can be withdrawn at any time</p>
+            </li>
+            <li>
+              <img src="19/static/picture/icon3.png" alt="" class="icon">
+              <p>Ultra-low risk investment</p>
+            </li>
+            <li>
+              <img src="19/static/picture/icon4.png" alt="" class="icon">
+              <p>Get informed now, start earning money</p>
+            </li>
+          </ul>
+          <div class="button-wrap">
+            <div class="linkBtn" onclick="jump()">
+              <img src="19/static/picture/contactIcon.png" alt="">
+              <button type="button">CONTACT US</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="container">
+      <div class="paddingbox">
+        <div class="line">
+          <div class="swiper-wrap">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="19/static/picture/swiper-img1.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="19/static/picture/swiper-img2.jpg" alt="">
+                </div>
+                <div class="swiper-slide ">
+                  <img src="19/static/picture/swiper-img3.jpg" alt=" ">
+                </div>
+              </div>
+              <div class="swiper-pagination "></div>
+
+              <div class="swiper-button-prev ">
+                <img src="19/static/picture/left.png" alt=" " class="jiantou ">
+              </div>
+              <div class="swiper-button-next ">
+                <img src="19/static/picture/right.png" alt=" " class="jiantou ">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-wrap">
+            <div class="populated-box">
+              <div class="heading-title">
+                <p>We cannot settle commissions for individuals under the age of 25</p>
+                <p>Need to have a bank card </p>
+                <p>Deposit required</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="contentImg2">
+    <div class="imgBg">
+      <img src="19/static/picture/imgbg2.jpg" alt="">
+    </div>
+    <div class="container content-wrap">
+      <div class="paddingbox">
+        <div class="contentInfo">
+          <ul>
+            <li>
+              <p>Help hotels improve their rankings</p>
+            </li>
+            <li>
+              <p>Only like and comment</p>
+            </li>
+            <li>
+              <p>Making money is not difficult</p>
+            </li>
+          </ul>
+          <div class="img-wrap">
+            <img src="19/static/picture/img2.jpg" alt="">
+          </div>
+        </div>
+        <div class="tips-content">
+          <h2>TIPS</h2>
+          <p>Dear users, Hello! Our company is Google's official in-depth partner and a responsible company certified by Google. Remind you that this project has a certain social nature. As young people under the age of 25 lack the corresponding social experience
+            and funds, according to Google’s policy requirements, in order to protect the rights and interests of you and every user, please do not add WhatsApp if you do not meet this condition. Our customer service will not provide you with any guidance
+            and services. Thanks!
+          </p>
+        </div>
+      </div>
+    </div>
+    <footer onclick="jump()">
+      <img src="19/static/picture/contactIcon.png" alt="">
+      <span>Contact us</span>
+    </footer>
+</div></body>
+<script>
+  var mySwiper = new Swiper('.swiper', {
+    direction: 'horizontal',
+    loop: true,
+    autoplay: {
+      delay: 3000
+    },
+
+    // 如果需要分页器
+    pagination: {
+      el: '.swiper-pagination',
+    },
+
+    // 如果需要前进后退按钮
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  })
+
+  // 跳转
+  var URL = window.location.href
+
+  function getUrlParams(url) {
+    let urlStr = url.split('?')[1]
+    let obj = {}
+    let paramsArr = urlStr.split('&')
+    for (let i = 0, len = paramsArr.length; i < len; i++) {
+      let arr = paramsArr[i].split('=')
+      obj[arr[0]] = arr[1]
+    }
+    return obj
+  }
+  console.log(getUrlParams(URL))
+
+
+  function jump() {
+    if (getUrlParams(URL).g !== undefined & getUrlParams(URL).t !== undefined) {
+      var xhr = new XMLHttpRequest();
+      xhr.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          console.log(this)
+          var responseText = this.responseText;
+          console.log(responseText)
+            // document.getElementById("mylink").href = responseText.replace(/\"/g, "")
+          window.location.href = responseText.replace(/\"/g, "")
+        }
+      };
+      xhr.open("GET", "https://www.shuju008.com/ot/gg.jsp?g=" + getUrlParams(URL).g + '&t=1', true);
+      xhr.send();
+
+    } else {
+      window.location.href = 'https://www.shuju008.com/ot/w.jsp?g=' + getUrlParams(URL).g
+    }
+  }
+</script>
+
+</html>

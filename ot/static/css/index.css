@@ -1,0 +1,72 @@
+
+.lunbo {
+    width: 100%;
+    margin:0;
+    text-align: center;
+}
+ 
+.lunbo .scroll {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+ 
+.lunbo .scroll .img {
+    display: none;
+    width: 100%;
+    height: 100%;;
+	 object-fit: cover;
+}
+ 
+.lunbo .scroll .current {
+    display: block;
+}
+ 
+.scroll .left {
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    background-image: url('https://fuwuni.top/css/image/left.png');
+    background-position: -83px 0;
+    width: 41px;
+    height: 69px;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+ 
+.scroll .right{
+    position: absolute;
+    top: 50%;
+    right: 100px;
+    background-image: url('https://fuwuni.top/css/image/right.png');
+    background-position: -123px 0;
+    width: 41px;
+    height: 69px;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+ 
+.dots {
+    position: absolute;
+    bottom: 10px;
+    left: calc(50% - 80px);
+    width: 160px;
+}
+ 
+.dots>span {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 10px;
+    height: 10px;
+    border: 2px solid rgba(170,170,170,0.3);
+    border-radius: 5px;
+    cursor: pointer;
+}
+ 
+ 
+/* 小圆点的颜色 */
+.dots .square {
+    background-color: #0376ff;
+}
+/* CSS Document */
+
