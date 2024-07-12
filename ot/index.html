@@ -41,7 +41,7 @@
             const imagesPerPage = 10;
 
             function loadImages() {
-                $.get('/api/images', function(images) {
+                $.get('images', function(images) {
                     const startIndex = (page - 1) * imagesPerPage;
                     const endIndex = startIndex + imagesPerPage;
                     const imagesToShow = images.slice(startIndex, endIndex);
