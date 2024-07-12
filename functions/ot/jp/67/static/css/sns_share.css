@@ -1,0 +1,75 @@
+
+/* CSS Document */
+
+div.w100_wrap {
+    width: 100%;
+    background: #FFF;
+    margin: 0;
+    padding: 0;
+    height: 50px;
+}
+
+
+div.snsBtn {
+    width: 98%;
+    max-width: 1000px;
+    text-align: right;
+    padding: 10px 0;
+    line-height: 0.75;
+    margin: auto;
+    float: none;
+}
+
+body .sns_sec {
+width: 100%;
+max-width: 1000px;
+margin: 0 auto;
+}
+
+body .sns_sec article.sns_wrap {
+text-align: center;
+padding: 0 0 50px !important;
+max-width: 720px;
+margin: 0 auto;
+}
+
+.sns_list {
+display: flex;
+width: 28%;
+margin: auto;
+justify-content: space-between;
+}
+
+.sns_list li {
+width: 30%;
+font-size: 13px;
+text-align: center;
+line-height: 1.4;
+}
+
+.sns_list li a[rel~='nofollow'] {
+    outline: none !important;
+}
+
+.sns_list li a[rel~='nofollow'] > img {
+    outline: none !important;
+}
+
+
+@media screen and (max-width:640px){
+
+div.w100_wrap {
+    height: 30px;
+	margin-bottom: 5px;
+}
+
+.sns_list {
+width: 50%;
+}
+
+div.snsBtn {
+    width: 96vw;
+	padding: 10px 0px 10px;
+	}
+
+}

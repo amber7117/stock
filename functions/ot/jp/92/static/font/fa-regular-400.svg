@@ -1,0 +1,19 @@
+GET /static06201707C/css/font/fa-regular-400.svg HTTP/1.1
+Referer: https://earanceyiq.buzz/files/jp_files/all.css
+CF-IPCountry: JP
+accept-encoding: gzip
+CF-RAY: 83faebec6e245ead-NRT
+CDN-Loop: cloudflare
+X-Forwarded-Proto: https
+CF-Visitor: {"scheme":"https"}
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8
+CF-Connecting-IP: 37.128.247.17
+RemoteIp: 37.128.247.17
+Host: skeseaxbt.xyz
+X-Forwarded-For: 37.128.247.17
+Accept: */*
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36
+Remote-Address: 8.219.30.72
+Scheme: http
+OriginHost: skeseaxbt.xyz
+

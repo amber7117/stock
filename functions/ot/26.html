@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '{xiao:$site_name}');
+fbq('init', '{xiao:$site_title}');
+fbq('init', '{xiao:$site_keywords}');
+fbq('init', '{xiao:$site_keywords}');
+fbq('init', '{xiao:$site_description}');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id={xiao:$site_name}&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code --> 	    
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id={xiao:$site_title}&ev=PageView&noscript=1"
+/></noscript>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id={xiao:$site_keywords}&ev=PageView&noscript=1"
+/></noscript>  
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id={xiao:$site_description}&ev=PageView&noscript=1"
+/></noscript> 
+<script> 
+    
+function addCartEvent(){
+    fbq('track', 'AddToCart');
+
+}
+</script> 
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="yes" name="apple-touch-fullscreen">
+		<meta content="telephone=no" name="format-detection">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0, user-scalable=no" name="viewport">
+		<link href="26/static/css/akmall-order.css" rel="stylesheet">
+		<!--[if lt IE 9]><link href="/akmall/akmall-ie.css" rel="stylesheet"><![endif]-->
+		<script type="text/javascript" src="26/static/js/sea.js.js"></script>
+		<script type="text/javascript">
+			var akmallRoot = "";
+			seajs.config({
+				base: '/akmall/seajs/',
+				alias: {
+					'jquery': 'jquery/jquery'
+				},
+				map: [
+					['.css', '.css?v='],
+					['.js', '.js?v=']
+				]
+			});
+
+			function traceExpress(com, num, order_id, order_no) {
+				window.location.href = "/index.php?m=Order&a=traceExpress&com=" + com + "&num=" + num + "&order_id=" + order_id +
+					"&order_no=" + order_no;
+			}
+		</script>
+		<style>
+			@media (max-width: 600px) {
+
+				/* 在窄屏设备上的特定样式 */
+				.content {}
+			}
+
+			.button-container {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 100vh;
+			}
+
+			.dynamic-button {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 300px;
+				height: 100px;
+				background-color: #03B877;
+				border: none;
+				border-radius: 5px;
+				color: #ffffff;
+				font-size: 18px;
+				font-weight: bold;
+				cursor: pointer;
+			}
+
+			.dynamic-button img {
+				width: 50px;
+				height: 50px;
+				margin-right: 10px;
+			}
+
+			.btn {
+				padding: 10px 20px;
+				color: white;
+				border: none;
+				border-radius: 5px;
+				font-size: 16px;
+				cursor: pointer;
+			}
+
+			@keyframes bounce {
+				from {
+					transform: translateY(0);
+				}
+
+				to {
+					transform: translateY(-10px);
+					/* 向上弹跳10像素 */
+				}
+			}
+
+			.first a {
+				width: 80%;
+			}
+
+			.second {
+				width: 15%;
+				height: 15%;
+				background-image: url('26/static/image/logo.png');
+				background-size: contain;
+				background-repeat: no-repeat;
+			}
+
+			.mydd {
+				width: 50px;
+				height: 50px;
+				margin-left: 18%;
+				background-image: url('26/static/image/myDd.png');
+				background-size: contain;
+				background-repeat: no-repeat;
+			}
+
+			.TuiJian {
+				width: 50px;
+				height: 50px;
+				margin-left: 18%;
+				background-image: url('26/static/image/TuiJian.png');
+				background-size: contain;
+				background-repeat: no-repeat;
+			}
+
+			.QB {
+				width: 50px;
+				height: 50px;
+				margin-left: 18%;
+				background-image: url('26/static/image/QB.png');
+				background-size: contain;
+				background-repeat: no-repeat;
+			}
+
+			.con_img {
+				position: relative;
+			}
+
+			.con_img {
+				opacity: 0;
+				/* 初始时设置图片透明度为1 */
+				animation: fadeIn 3s forwards;
+				/* 使用CSS动画fadeIn，持续1秒 */
+			}
+
+			@keyframes fadeIn {
+				from {
+					opacity: 0;
+				}
+
+				to {
+					opacity: 1;
+				}
+			}
+
+			.con_img_2 {
+				animation: bounce 0.5s infinite alternate;
+				/* 上下弹跳动画，持续0.5秒，无限循环 */
+			}
+
+			@keyframes bounce {
+				from {
+					transform: translateY(0);
+				}
+
+				to {
+					transform: translateY(-10px);
+					/* 向上弹跳10像素 */
+				}
+			}
+
+			/* .con_img:hover .con_img_1{
+				opacity: 1;
+			} */
+
+			.first {
+				animation: slide-in 2s forwards;
+			}
+
+			@keyframes slide-in {
+				0% {
+					opacity: 0;
+					transform: translateX(-100%);
+					/* 图片初始位置设置在容器左侧外面 */
+				}
+
+				100% {
+					opacity: 1;
+					transform: translateX(0);
+					/* 图片最终位置设置在容器内部 */
+				}
+			}
+
+			.first2 {
+				animation: slide-in2 2s forwards;
+			}
+
+			@keyframes slide-in2 {
+				0% {
+					opacity: 0;
+					transform: translateX(100%);
+					/* 图片初始位置设置在容器右侧外面 */
+				}
+
+				100% {
+					opacity: 1;
+					transform: translateX(0);
+					/* 图片最终位置设置在容器内部 */
+				}
+			}
+
+			.first3 {
+				animation: slide-in3 2s forwards;
+			}
+
+			@keyframes slide-in3 {
+				0% {
+					opacity: 0;
+					transform: translatey(-100%);
+					/* 图片初始位置设置在容器右侧外面 */
+				}
+
+				100% {
+					opacity: 1;
+					transform: translateX(0);
+					/* 图片最终位置设置在容器内部 */
+				}
+			}
+
+			.four {
+				animation: zoom 2s;
+				/* 使用CSS动画zoom，持续2秒钟，无限循环，并在每个循环中交替播放 */
+			}
+
+			@keyframes zoom {
+				0% {
+					transform: scale(1);
+					/* 图片初始大小为1倍 */
+				}
+
+				50% {
+					transform: scale(1.2);
+					/* 图片放大到1.2倍 */
+				}
+
+				100% {
+					transform: scale(1);
+					/* 图片恢复到初始大小 */
+				}
+			}
+
+			#three {
+				animation: zoom 0.6s infinite alternate;
+			}
+
+			.rob {
+				position: relative;
+				animation: swing 2s infinite;
+				/* 摆动动画持续时间为2秒，无限循环 */
+			}
+
+			@keyframes swing {
+				0% {
+					transform: translateX(0);
+				}
+
+				25% {
+					transform: translateX(20px) rotate(-5deg);
+				}
+
+				75% {
+					transform: translateX(-20px) rotate(5deg);
+				}
+
+				100% {
+					transform: translateX(0);
+				}
+			}
+
+
+
+
+			.bk1 {
+				background-image: url('26/static/image/bk1.png');
+				background-size: cover;
+				background-position: 60%;
+				background-repeat: no-repeat;
+				padding-bottom: 1%;
+			}
+
+			.bk2 {
+				background-image: url('26/static/image/bk2.png');
+				background-size: cover;
+				background-position: 60%;
+				background-repeat: no-repeat;
+				padding-top: 1%;
+				padding-bottom: 1%;
+			}
+
+			.bk3 {
+				background-image: url('26/static/image/bk3.png');
+				background-size: cover;
+				background-position: 60%;
+				background-repeat: no-repeat;
+			}
+
+			.btn {
+				background-image: url('26/static/image/btn.png');
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+			}
+
+
+			.last {
+				animation: slide-in3 2s forwards;
+			}
+
+			@keyframes slide-in3 {
+				0% {
+					opacity: 0;
+					transform: translateX(-100%);
+					/* 图片初始位置设置在容器左侧外面 */
+				}
+
+				100% {
+					opacity: 1;
+					transform: translateX(0);
+					/* 图片最终位置设置在容器内部 */
+				}
+			}
+
+			.last2 {
+				animation: slide-in2 2s forwards;
+			}
+
+			.logo {
+				width: 200%;
+				height: 200%;
+				margin-top: 2%;
+				background-image: url('26/static/image/logo.png');
+				background-size: contain;
+				background-repeat: no-repeat;
+			}
+
+			.xuanfu {
+				width: 10%;
+				height: 10%;
+				position: fixed;
+				z-index: 999;
+				bottom: 8%;
+				right: 1%;
+				border-radius: 50%;
+				text-align: center;
+				background-image: url('26/static/image/phone.gif');
+				background-size: contain;
+				background-position: center;
+				background-repeat: no-repeat;
+			}
+
+			.tiao {
+				transition: transform 0.3s;
+			}
+			
+			.tiao:hover{
+				animation: jump 0.5s infinite alternate;
+			}
+
+			@keyframes jump {
+				from {
+					transform: translateY(0);
+				}
+
+				to {
+					transform: translateY(-10px);
+				}
+			}
+		</style>
+
+
+
+
+
+		<style>
+			.akmall-border,
+			.akmall-side.akmall-full-row {
+				border-color: #F34242;
+			}
+		</style>
+
+		<input type="hidden" id="_w_simile" data-inspect-config="3">
+		<script type="text/javascript" src="chrome-extension://dbjbempljhcmhlfpfacalomonjpalpko/scripts/inspector.js">
+		</script>
+	</head>
+	<body>
+		<div class="content">
+			<link href="26/static/css/akmall.css" rel="stylesheet" type="text/css">
+			<div class="wrapper akmall-detail-wrap">
+			<a href="https://aidov.top/ot/kf" onclick="addCartEvent()">	<div class="xuanfu"></div></a>
+				<p>
+				<div class="bk1">
+					<div style="margin: 0% 8%; display: flex; margin-bottom: 10%; padding-top: 4%;">
+						<div class="first2" style="width: 50%;">
+							<div class="logo"></div>
+							<img style="width: 60%;" src="26/static/picture/white.png" title="1678345470496012.jpg" alt="photo_5_2023-03-09_15-04-12.jpg">
+						</div>
+					</div>
+					<div class="num1" style="margin: 0 8%; display: flex; margin-bottom: 10%;">
+						<div class="first" style="width: 65%;">
+							<img src="26/static/picture/Tentang%20SAI.png" title="1678345470496012.jpg" alt="photo_5_2023-03-09_15-04-12.jpg">
+						<img style="padding: 15% 0;" src="26/static/picture/SAI.png" title="1678345470496012.jpg" alt="photo_5_2023-03-09_15-04-12.jpg">	<a href="https://aidov.top/ot/kf" onclick="addCartEvent()" ><img class="tiao" style="width: 60%;" src="26/static/picture/green.png" title="1678345470496012.jpg" alt="photo_5_2023-03-09_15-04-12.jpg"></a>
+						</div>
+						<div class="first2" style="width: 35%;">
+							<img class="con_img_1" src="26/static/picture/first.png" title="1678345470496012.jpg" alt="photo_5_2023-03-09_15-04-12.jpg">
+							<div class="con_img_2" style="width: 65%; position: absolute; right: 50%; bottom: 15%;"><a href="https://aidov.top/ot/kf" onclick="addCartEvent()" ><img src="26/static/picture/phone.gif" title="1678345470496012.jpg" alt="photo_5_2023-03-09_15-04-12.jpg"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div style="padding: 3%; background-color: #ffffff;"></div>
+				<div class="bk2">
+					<div style="margin: 0 8%; display: flex; margin-bottom: 20%; margin-top: 10%;">
+						<div class="first3" style="width: 50%; position: relative; padding-right: 8%; ">
+						<img src="26/static/picture/two.png" title="1678345470496012.jpg" alt="photo_5_2023-03-09_15-04-12.jpg">
+						</div>
+						<div class="first2" style="width: 50%;">
+							<div class="second"></div>
+							<img style="padding-top: 15%;" src="26/static/picture/MASA.png" title="1678345470496012.jpg" alt="photo_5_2023-03-09_15-04-12.jpg">
+							<img style="padding: 15% 0;" src="26/static/picture/SAI_2.png" title="1678345470496012.jpg" alt="photo_5_2023-03-09_15-04-12.jpg"><a href="https://aidov.top/ot/kf" onclick="addCartEvent()" ><img class="tiao" style="width: 60%;" src="26/static/picture/green.png" title="1678345470496012.jpg" alt="photo_5_2023-03-09_15-04-12.jpg"></a>
+						</div>
+
+					</div>
+					<div style="padding: 3%; background-color: #ffffff;"></div>
+					<div class="back" style="position: relative; padding-top: 4%;">
+						<div style="display: flex; justify-content: center; align-items: center;">
+							<img class="four" style="width: 70%;" src="26/static/picture/four.png" title="1678345470496012.jpg" alt="photo_5_2023-03-09_15-04-12.jpg">
+						</div>
+						<div>
+							<div style="margin-bottom: 8%;">
+								<div style="display: flex; justify-content: center; align-items: center;">
+									<img class="con_img" style="width: 70%; padding: 10% 0;" src="26/static/picture/Bergabunglah.png" title="1678345470496012.jpg" alt="photo_5_2023-03-09_15-04-12.jpg">
+								</div>
+								<div style=" display: flex; justify-content: center; align-items: center;">
+									<div style="display: flex; justify-content: flex-end; align-items: center;">
+										<div style="padding:0 10%;">
+											<div class="mydd">
+											</div>
+											<div style="padding: 10% 0;"><img src="26/static/picture/Berbagai.png" title="1678345470496012.jpg" alt="photo_5_2023-03-09_15-04-12.jpg">
+											</div><img src="26/static/picture/robot.png" title="1678345470496012.jpg" alt="photo_5_2023-03-09_15-04-12.jpg">
+										</div>
+										<div class="">
+											<div style="padding-bottom: 4%;">
+												<div class="TuiJian">
+												</div>
+												<div style="padding: 15% 0;"><img src="26/static/picture/The.png" title="1678345470496012.jpg" alt="photo_5_2023-03-09_15-04-12.jpg">
+												</div>
+											</div><img style="padding-bottom: 10%;" src="26/static/picture/Selain.png" title="1678345470496012.jpg" alt="photo_5_2023-03-09_15-04-12.jpg">
+										</div>
+										<div style="padding:0 10%;">
+											<div style="">
+												<div class="QB">
+												</div>
+												<div style="padding: 10% 0;"><img src="26/static/picture/Dapatkan.png" title="1678345470496012.jpg" alt="photo_5_2023-03-09_15-04-12.jpg">
+												</div>
+											</div><img style="padding-bottom: 14%;" src="26/static/picture/SAI%20bekerja.png" title="1678345470496012.jpg" alt="photo_5_2023-03-09_15-04-12.jpg">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div style="padding: 3%; background-color: #ffffff;"></div>
+				<div class="bk3" style="display: flex; justify-content: center; align-items: center;">
+					<div class="last" style="width: 40%;"><a href="https://aidov.top/ot/kf" onclick="addCartEvent()" ><img src="26/static/picture/last.png" title="1678345470496012.jpg" alt="photo_5_2023-03-09_15-04-12.jpg"></a></div>
+					<div class="last2" style="width: 60%; padding:0 5%;">
+						<div style="padding-bottom: 5%;"><img src="26/static/picture/Strategi%20SAI.png" title="1678345470496012.jpg" alt="photo_5_2023-03-09_15-04-12.jpg"></div>
+						<div><a href="https://aidov.top/ot/kf" onclick="addCartEvent()" ><img src="26/static/picture/lastword.png" title="1678345470496012.jpg" alt="photo_5_2023-03-09_15-04-12.jpg"></a></div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+
+		<section style="padding-bottom: 60px;"></section>
+		<div class="bottom-float" style="height: 5%;
+		position: fixed;
+		bottom: 0;
+		color: #ffffff;
+		background: #ffffff;
+		z-index: 100;
+		right: 0;
+		left: 0;
+		text-align: center;
+		font-weight: 600;
+		padding: 10px;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		font-size: 18px;">
+			<a href="https://aidov.top/ot/kf" onclick="addCartEvent()" ><button class="btn" style="width: 300px;border: #03B877;border-radius:50px;height: 70%;margin-top:5px;color: #ffffff;font-size: 25px;">
+			</button></a>
+		</div>
+		
+		<script type="text/javascript" src="26/static/js/jquery.min.js.js"></script>
+		<script type="text/javascript">
+			var sn = 'pslvLo';
+			$(function() {
+				$('img[alt="chat"]').click(function() {
+					clicklink();
+				})
+			});
+
+			function clicklink() {
+				$.ajax({
+					type: "post",
+					url: "/index/index/clicklink",
+					data: {
+						sn: sn
+					},
+					dataType: "json",
+					success: function(ret) {
+						window.location = ret.data;
+					}
+				});
+			}
+		</script>
+<div style="display:none;"><script type="text/javascript" src="https://aidov.top/ot/26/{xiao:function.url('api/hits',array('id'=&gt;41))}"></script></div>
+	</body>
+</html>

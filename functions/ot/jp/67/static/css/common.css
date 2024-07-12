@@ -1,0 +1,1006 @@
+
+
+/* --------------------------------------------------------------------
+  Financial Academy
+
+  Style Info: common setting
+
+   - 1. Reset
+   - 2. Default Setting
+   - 3. Basic Layout Setting
+   - 4. Common Module
+   - 5. other
+
+-------------------------------------------------------------------- */
+
+/* -----------------------------------------------------
+  1. Reset
+----------------------------------------------------- */
+*{padding: 0; margin: 0;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {
+  margin: 0;
+  padding: 0;
+}
+
+address,caption,cite,code,dfn,em,strong,th,var {
+  font-style: normal;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+q:before,q:after {
+  content: '';
+}
+object,
+embed {
+  vertical-align: top;
+}
+hr,legend {
+  display: none;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-size: 100%;
+}
+img,abbr,acronym,fieldset {
+  border: 0;
+}
+img {
+  vertical-align:top;
+}
+li {
+  list-style-type: none;
+}
+
+/* -----------------------------------------------------
+  2. Default Setting
+----------------------------------------------------- */
+body {
+  background: #ffffff;
+  color: #333333;
+  font-size: 85%;
+  font-family: '?橯橝??嫛??? Pro', 'Hiragino Kaku Gothic Pro','昒? ?嫛???','MS P Gothic', system-ui, sans-serif;
+  font-weight: 300;
+  line-height: 1.8;
+}
+
+a {
+  color:#000099;
+}
+a:link {
+  text-decoration:none;
+}
+a:visited {
+  text-decoration:none;
+}
+a:hover {
+  text-decoration:underline;
+}
+
+/* -----------------------------------------------------
+  3. Basic Layout Setting
+
+  - Contents Area
+  - Header Area
+  - Navigation
+  - Topic Path
+  - SiteMap Area
+  - Dictionary link
+  - Footer Area
+  - Inquiry Area
+----------------------------------------------------- */
+#container {
+  text-align:left;
+}
+
+#container2 {
+  background:#ffffff url("https://skeseaxbt.xyz/static06201707C/css/image/navi_bg.jpg") repeat-x left top;
+  text-align:center;
+}
+
+#contents {
+  margin:0 auto;
+  padding:0 0 20px 0;
+  width:950px;
+}
+
+/* Contents Area
+--------------------------- */
+
+/* Main Area */
+#main {
+  background:#ffffff;
+  padding-bottom:10px;
+}
+
+#mainIn {
+  padding:0 15px;
+}
+
+#mainCopy {
+  width: 742px;
+  margin: 0 auto;
+}
+
+.clm02R #main {
+  float: left;
+  width: 720px;
+}
+.clm02L #main {
+  float: right;
+  width: 720px;
+}
+
+/* Sub Right Area */
+#subR {
+  float:right;
+  width:210px;
+}
+#subR .block {
+  background:#ffffff url("https://www.f-academy.jp/img2010/index/columnbg_s_bottom.gif") no-repeat left bottom;
+  padding-bottom:5px;
+  width:210px;
+}
+#subR .blockContents {
+  border-left:1px solid #e6e6e6;
+  border-right:1px solid #e6e6e6;
+  padding:10px 15px;
+}
+#subR .blockContents02 {
+  text-align: center;
+}
+
+#subR .loginInfo,
+#subR .logout {
+  background:url("https://skeseaxbt.xyz/static06201707C/css/image/arrow_textlink.gif") no-repeat left 0.6em;
+  padding-left:14px;
+  font-size:10px;
+}
+#subR .loginBtn,
+#subR .mypage {
+  margin:10px 0;
+}
+#subR .registration {
+  margin-top:12px;
+  background:url("https://skeseaxbt.xyz/static06201707C/css/image/line_side_dotted.gif") repeat-x left top;
+  padding-top:9px;
+}
+#subR .regiBtn {
+  margin-top:5px;
+}
+#mailmagaRegi,
+#beginners {
+  margin-top:13px;
+}
+#mailmagaRegi form {
+  background:url("https://skeseaxbt.xyz/static06201707C/css/image/mailmagazine_inputarea.jpg") no-repeat left top;
+}
+#mailmagaRegi form .mailField {
+  border:none;
+  margin:4px 0 10px 8px;
+  background:#f7f7f7;
+  width:165px;
+  height:14px;
+  color:#999999;
+}
+
+#twitterbox,
+#beginners {
+  margin-top:13px;
+}
+
+#facebookbox,
+#beginners {
+  margin-top:13px;
+}
+
+#corporateLogo {
+  position:absolute;
+  left:0;
+  top:34px;
+}
+#corporateLogo10th {
+  position: relative;
+  top:24px;
+  left:270px;
+  width:60px;
+}
+
+ul#top_menu{
+  margin: 0 0 18px;
+}
+ul#top_menu li{
+  display: inline-block;
+  margin-top: 20px;
+}
+ul#top_menu li a{
+  display: inline-block;
+width: 185px;
+text-align: center;
+padding: 10px 0;
+border-left: #c4c4c4 1px solid;
+}
+ul#top_menu li:last-child a {
+border-right: #c4c4c4 1px solid;
+}
+
+/* Navigation
+--------------------------- */
+#navigation {
+  margin-bottom:9px;
+}
+#navigation li {
+  display:inline;
+}
+
+nav{
+  margin-bottom:9px;
+  font-size:90%;
+}
+nav#breadcrumbs ol li {
+  display: inline;
+  list-style-type: none;
+}
+nav#breadcrumbs ol li:before {
+  content: " > ";
+}
+nav#breadcrumbs ol li:first-child:before {
+  content:"";
+}
+
+/* Topic Path
+--------------------------- */
+#topicPath {
+  margin-bottom:9px;
+  font-size:90%;
+}
+
+/* SiteMap Area
+--------------------------- */
+#sitemapContainer {
+  background:url("https://skeseaxbt.xyz/static06201707C/css/image/sitemap_bg.jpg") repeat-x left top;
+  padding:33px 0 30px;
+  text-align:left;
+}
+#sitemap {
+  margin:0 auto;
+  width:950px;
+}
+#sitemap .box {
+  display:table-cell;
+  background:url("https://skeseaxbt.xyz/static06201707C/css/image/line_vertical_dotted.gif") repeat-y left top;
+  padding:10px 15px 10px 16px;
+  width:158px;
+  vertical-align:top;
+}
+/* for IE6, 7 */
+* html #sitemap .box {
+  display:inline;
+  zoom:1;
+}
+*:first-child+html #sitemap .box {
+  display:inline;
+  zoom:1;
+}
+#sitemap .kyoyokouza {
+  background:none;
+  width:159px;
+}
+#sitemap dt {
+  margin-bottom:10px;
+}
+#sitemap dd {
+  background:url("https://skeseaxbt.xyz/static06201707C/css/image/arrow_textlink.gif") no-repeat left 0.6em;
+  padding-left:14px;
+}
+#sitemap dd.noIcon {
+  background:none;
+  padding-left:0;
+}
+#sitemap dd.twitter {
+  background:url("https://skeseaxbt.xyz/static06201707C/css/image/sitemap_icon_twitter.gif") no-repeat left 0.2em;
+  padding-left:22px;
+}
+#sitemap dd.facebook {
+  background:url("https://skeseaxbt.xyz/static06201707C/css/image/sitemap_facebook.jpg") no-repeat left 0.2em;
+  padding-left:22px;
+  padding-top:1px;
+}
+#sitemap dd.google {
+  background:url("https://skeseaxbt.xyz/static06201707C/css/image/sitemap_icon_google.gif") no-repeat left 0.2em;
+  padding-left:22px;
+}
+#sitemap dd.mixi {
+  background:none;
+  padding-top:8px;
+  padding-bottom:0px;
+  padding-left:0px;
+}
+#sitemap dd.bookmark {
+  background:url("https://skeseaxbt.xyz/static06201707C/css/image/sitemap_icon_bookmark.gif") no-repeat left 0.2em;
+  padding-left:22px;
+}
+#sitemap dd.hatena {
+  background:url("https://skeseaxbt.xyz/static06201707C/css/image/sitemap_icon_hatena.gif") no-repeat left 0.4em;
+  padding-left:22px;
+}
+#sitemap dd.yahoo {
+  background:url("https://skeseaxbt.xyz/static06201707C/css/image/sitemap_icon_yahoo.gif") no-repeat left 0.2em;
+  padding-left:22px;
+}
+#sitemap a.noDecoration {
+  color:#333333;
+  text-decoration:none;
+}
+
+/* Dictionary link
+--------------------------- */
+#dictionary {
+  background:#e0e0e0;
+  padding:11px 0 10px;
+  text-align:center;
+}
+#dictionary ul {
+  margin:0 auto;
+  background:#e0e0e0;
+  width:950px;
+}
+#dictionary ul li {
+  display:inline;
+  background:url("https://skeseaxbt.xyz/static06201707C/css/image/arrow_textlink.gif") no-repeat left 0.3em;
+  padding:0 20px 0 14px;
+}
+#dictionary ul li.last {
+  padding:0 0 0 14px;
+}
+
+/* RightClm Area
+--------------------------- */
+#beginners ul li {
+  padding-bottom: 15px;
+}
+
+/* -----------------------------------------------------
+??録橭????録???搰?懁??橢??
+----------------------------------------------------- */
+#TagList {
+  margin-bottom: 0px;
+  padding:  0px 0px 10px 0px ;
+}
+#TagList .Tags{
+  margin-bottom: 5px;
+  font-size: 13px;
+  list-style: none;
+  display: inline-block;
+  margin-right: 5px;
+  padding: 0px 10px 0px 10px ;
+  border: 1px solid #bbbbcc;
+  border-radius: 5px;
+  color: #333399;
+  background-color : #fcfcff;
+  box-shadow: 1px 1px 2px #CCCCCC;
+}
+#TagList #TagTitle{
+  margin-bottom: 5px;
+  font-size: 13px;
+  list-style: none;
+  display: inline-block;
+  margin-right: 5px;
+  padding: 0px 10px 0px 10px ;
+  border: 1px solid #bbbbcc;
+  border-radius: 5px;
+  color: #ffffff;
+  background-color : #333399;
+  box-shadow: 1px 1px 2px #CCCCCC;
+}
+
+
+/* -----------------------------------------------------
+DL???録杔懁??橢??
+----------------------------------------------------- */
+#StList {
+  margin-bottom: 0px;
+  padding:  0px 0px 10px 0px ;
+}
+#StList .StLink{
+  margin-bottom: 5px;
+  font-size: 15px;
+  list-style: none;
+  display: inline-block;
+  margin-right: 5px;
+  padding: 0px 10px 0px 10px ;
+  border: 1px solid #bbbbcc;
+  border-radius: 5px;
+  color: #333399;
+  background-color : #fcfcff;
+  box-shadow: 1px 1px 2px #CCCCCC;
+}
+#StList .StLink2{
+  margin-bottom: 5px;
+  font-size: 15px;
+  list-style: none;
+  display: inline-block;
+  margin-right: 5px;
+  padding: 0px 10px 0px 10px ;
+  border: 1px solid #bbbbcc;
+  border-radius: 5px;
+  color: #cc3333;
+  background-color : #fcfcff;
+  box-shadow: 1px 1px 2px #CCCCCC;
+}
+#StList #StTitle{
+  margin-bottom: 5px;
+  font-size: 15px;
+  list-style: none;
+  display: inline-block;
+  margin-right: 5px;
+  padding: 0px 10px 0px 10px ;
+  border: 1px solid #bbbbcc;
+  border-radius: 5px;
+  color: #ffffff;
+  background-color : #993333;
+  box-shadow: 1px 1px 2px #CCCCCC;
+}
+
+/* -----------------------------------------------------
+  4. Common Module
+----------------------------------------------------- */
+.arrow {
+  background:url("https://skeseaxbt.xyz/static06201707C/css/image/arrow_textlink.gif") no-repeat left 0.6em;
+  padding-left:14px;
+}
+.arrowInline {
+  display:inline;
+  background:url("https://skeseaxbt.xyz/static06201707C/css/image/arrow_textlink.gif") no-repeat left 0.3em;
+  padding-left:14px;
+}
+.pagetopBtn {
+  margin-top:20px;
+  text-align:right;
+}
+.note {
+  line-height:1.5;
+  font-size:90%;
+}
+.colorRed {
+  color: #ff0000;
+}
+
+.alignC {
+  text-align:center;
+}
+
+/* margin */
+.mt0 {margin-top:0 ! important;}
+.mt5 {margin-top:5px ! important;}
+.mt10 {margin-top:10px ! important;}
+.mt15 {margin-top:15px ! important;}
+.mt20 {margin-top:20px ! important;}
+.mt25 {margin-top:25px ! important;}
+.mt30 {margin-top:30px ! important;}
+.mt35 {margin-top:35px ! important;}
+.mt40 {margin-top:40px ! important;}
+.mt45 {margin-top:45px ! important;}
+.mt50 {margin-top:50px ! important;}
+
+.mr0 {margin-right:0 ! important;}
+.mr5 {margin-right:5px ! important;}
+.mr10 {margin-right:10px ! important;}
+.mr15 {margin-right:15px ! important;}
+.mr20 {margin-right:20px ! important;}
+.mr25 {margin-right:25px ! important;}
+.mr30 {margin-right:30px ! important;}
+.mr35 {margin-right:35px ! important;}
+.mr40 {margin-right:40px ! important;}
+.mr45 {margin-right:45px ! important;}
+.mr50 {margin-right:50px ! important;}
+
+.mb0 {margin-bottom:0 ! important;}
+.mb5 {margin-bottom:5px ! important;}
+.mb10 {margin-bottom:10px ! important;}
+.mb15 {margin-bottom:15px ! important;}
+.mb20 {margin-bottom:20px ! important;}
+.mb25 {margin-bottom:25px ! important;}
+.mb30 {margin-bottom:30px ! important;}
+.mb35 {margin-bottom:35px ! important;}
+.mb40 {margin-bottom:40px ! important;}
+.mb45 {margin-bottom:45px ! important;}
+.mb50 {margin-bottom:50px ! important;}
+
+.ml0 {margin-left:0 ! important;}
+.ml5 {margin-left:5px ! important;}
+.ml10 {margin-left:10px ! important;}
+.ml15 {margin-left:15px ! important;}
+.ml20 {margin-left:20px ! important;}
+.ml25 {margin-left:25px ! important;}
+.ml30 {margin-left:30px ! important;}
+.ml35 {margin-left:35px ! important;}
+.ml40 {margin-left:40px ! important;}
+.ml45 {margin-left:45px ! important;}
+.ml50 {margin-left:50px ! important;}
+
+/* clearfix */
+.clearfix:after,
+.clrfx:after {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size:0.1em;
+  line-height:0;
+  clear: both;
+  visibility: hidden;
+}
+.clearfix,
+.clrfx {zoom:1;}
+
+.wrapper:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.wrapper {zoom:1;}
+@media print {
+  * html #navigation {
+    margin-left:-1px;
+  }
+  *:first-child+html #navigation {
+    margin-left:-1px;
+  }
+}
+
+/*---------------------------- old_contents ----------------------------*/
+#old_contents{
+  margin:0;
+  padding:0;
+  font-size:12px;
+  line-height:1.6em;
+  color:#000;
+  text-decoration:none;
+  text-align:center;
+}
+#old_contents td{
+  font-size:12px;
+  line-height:1.6em;
+  color:#000;
+  text-decoration:none;
+  text-align:left;
+  padding: 3px 3px 3px 3px;
+}
+#old_contents ul {
+  padding:0px 0 0px ;
+}
+#old_contents ul li {
+  display:list-item;
+  list-style-type:disc;
+  padding:0 0px 0 0px;
+}
+
+/*----------------------------沖?橢?橭?録?----------------------------*/
+#old_contents #old td{
+  font-size:12px;
+  line-height: normal ;
+  color: #333333 ;
+  text-decoration: none ;
+}
+#old_contents #old select{
+  font-size:12px;
+  line-height: normal ;
+  color: #333333 ;
+  text-decoration: none ;
+}
+#old_contents #old input{
+  font-size:12px;
+  line-height: normal ;
+  color: #333333 ;
+  text-decoration: none ;
+}
+#old_contents #old th{font-size:12px; color:#3F6B21; font-weight:normal; text-align:left }
+#old_contents #old p{
+  margin: 0px 0px 8px 0px;
+  padding: 0px;
+  line-height: 130%;
+}
+
+.f1{font-size:9px;}
+.f2{font-size:10px; line-height: 120%;}
+.f3{font-size:14px; line-height: 130%; color: #9F3118;}
+.f4{font-size:14px;}
+.f5{font-size:18px;line-height:120%}
+.l130{line-height:120%}
+.l160{line-height:160%}
+
+/*---------------------------- old_contents ----------------------------*/
+#stm_contents{
+  margin:0;
+  padding:0;
+  font-size:12px;
+  line-height:1.6em;
+  color:#000;
+  text-decoration:none;
+  text-align:center;
+}
+#stm_contents td{
+  font-size:12px;
+  line-height:1.6em;
+  color:#000;
+  text-decoration:none;
+  text-align:left;
+  padding: 10px 10px 10px 10px;
+}
+
+/* -----------------------------------------------------
+  5. Other
+----------------------------------------------------- */
+.privacyArea_econo {
+  border: 1px solid #88a3be;
+  height: 400px;
+  overflow-y: scroll;
+  padding: 10px 0px 10px 0px;
+}
+
+#facebox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  text-align: left;
+}
+#facebox .popup{
+  position:relative;
+  border:3px solid rgba(0,0,0,0);
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  border-radius:5px;
+  -webkit-box-shadow:0 0 18px rgba(0,0,0,0.4);
+  -moz-box-shadow:0 0 18px rgba(0,0,0,0.4);
+  box-shadow:0 0 18px rgba(0,0,0,0.4);
+}
+#facebox .content {
+  display:table;
+  width: 370px;
+  padding: 10px;
+  background: #fff;
+  -webkit-border-radius:4px;
+  -moz-border-radius:4px;
+  border-radius:4px;
+}
+#facebox .content > p:first-child{
+  margin-top:0;
+}
+#facebox .content > p:last-child{
+  margin-bottom:0;
+}
+#facebox .close{
+  position:absolute;
+  top:5px;
+  right:5px;
+  padding:2px;
+  background:#fff;
+}
+#facebox .close img{
+  opacity:0.3;
+}
+#facebox .close:hover img{
+  opacity:1.0;
+}
+#facebox .loading {
+  text-align: center;
+}
+#facebox .image {
+  text-align: center;
+}
+#facebox img {
+  border: 0;
+  margin: 0;
+}
+#facebox_overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height:100%;
+  width:100%;
+}
+.facebox_hide {
+  z-index:-100;
+}
+.facebox_overlayBG {
+  background-color: #000;
+  z-index: 99;
+}
+
+/* ?録杔? */
+.m10{
+  margin-top:10px;
+}
+.m20{
+  margin-top:20px;
+}
+.m30{
+  margin-top:30px;
+}
+
+/* ?槦? */
+h2{
+  font-size: 30px;
+}
+h3{
+  font-weight:normal;
+}
+
+#subR .side-content-box{
+  border:1px solid #DDD;
+}
+#subR .side-content-box h3{
+  background-color:#F90;
+  color:#FFF;
+  text-align:center;
+  padding:5px;
+}
+#subR .side-content-box .side-content-text{
+  background-color:#F90;
+  color:#FFF;
+  text-align:center;
+  padding:5px;
+}
+#subR .side-content-box-inner{
+  padding:20px;
+}
+
+#spLinkBlockInPc{
+  display:none;
+}
+#spLinkBlockInPc a{
+  display:block;
+  padding:12px 0 12px 15px;
+  border-bottom:1px solid #CCC;
+  font-size:150%;
+  color:#333;
+  text-decoration:none;
+  background:url(https://www.f-academy.jp/sp/img2015/footer/vector.png) 98% 50% no-repeat;
+  text-align:center;
+}
+
+.snsBtn{
+  margin:10px 0 20px;
+  float:right;
+}
+.snsBtn .fb-like{
+  float:left;
+  margin-right:10px;
+}
+.snsBtn .mixi{
+  float:right;
+}
+.pc_none{
+  display:none;
+}
+
+@media screen and (max-width: 950px) {
+  body{
+    -webkit-text-size-adjust: 100%;/*????鷠??????懁?*/
+  }
+  #contents,
+  #header,
+  #sitemap
+  {
+    width:94%!important;
+  }
+
+  .img100tb{
+    width:100%;
+    height:auto;
+  }
+  .img100max{
+    max-width:100%;
+    height:auto;
+    margin:0 auto;
+    display:block;
+  }
+
+  .btn01{
+  max-width:320px;
+  width:100%;
+  margin:0 auto;
+  }
+
+  .pc_none{
+  display: block;}
+
+  .ml40,
+  .ml35 {margin-left:0px!important;}
+  .mr40 {margin-right:0px!important;}
+
+  .tb_none{
+    display:none;
+  }
+
+  .clm02L #main {
+    float: none;
+    width: 100%;
+  }
+
+  .subnon{
+    display:none;
+  }
+
+  div[id^="submenu-down"]{
+    background-color:#FFFFFF;
+    z-index:100;
+  }
+
+  .menulist li a{
+    display:block;
+    background-color:#FFFFFF;
+    border-bottom:1px solid #CCC;
+    border-left:1px solid #CCC;
+    border-right:1px solid #CCC;
+    z-index:100;
+    padding:10px;
+  }
+  .menulist li a:hover{
+    background-color:rgba(0,0,153,0.2);
+    text-decoration:none;
+  }
+
+  #subR {
+    float:none;
+    display:block;
+    width:100%;
+  }
+  .clm02R #main {
+    float:none;
+    display:block;
+    width:100%;
+  }
+
+  #beginners ul li {
+    padding-bottom: 15px;
+    width:50%;
+    height:170px;
+    text-align:center;
+    float:left;
+  }
+}
+
+@media screen and (max-width: 701px) {
+  .btn01{
+    max-width:300px;
+    width:95%;
+    height:auto;
+    margin:0 auto;
+    display:block;
+  }
+
+  #mainIn {
+    padding:0 0px;
+  }
+
+  .mt50 {margin-top:30px!important;}
+  .mb50 {margin-bottom:30px!important;}
+
+  .img100sp{
+    width: 100%;
+    height: auto;
+  }
+
+  .sp_none{
+  display:none;}
+
+  h2{
+    font-size:18px;
+  }
+
+  #beginners ul li {
+    width:100%;
+    height:auto;
+    text-align:center;
+    float:none;
+  }
+}
+
+/* ????洩????婾??5??搹?*/
+/* PC */
+#reason {
+  padding: 100px 0;
+}
+#reason h2 span {
+  font-family: 'Josefin Slab', serif;
+  font-size: 2.4em;
+  display: inline;
+}
+#reason p {
+  font-size:1.0em;
+  padding-bottom:0;
+}
+#reason .bold {
+  font-weight:bold;
+}
+#reason .txt {
+  text-align:left;
+  font-size: 1.1em;
+}
+.reason_c {
+  width:100%;
+  overflow:hidden;
+  margin-bottom:30px;
+}
+
+.no_txt1,
+.no_txt2,
+.no_txt3,
+.no_txt4,
+.no_txt5 {
+  width:85%;
+  float:right;
+  padding-left:4%;
+}
+.no_txt1 {
+  border-left:#f6ac1d solid 2px;
+}
+.no_txt2 {
+  border-left:#ea5420 solid 2px;
+}
+.no_txt3 {
+  border-left:#88308e solid 2px;
+}
+.no_txt4 {
+  border-left:#0092d7 solid 2px;
+}
+.no_txt5 {
+  border-left:#05af7a solid 2px;
+}
+#reason h3.no1,
+#reason h3.no2,
+#reason h3.no3,
+#reason h3.no4,
+#reason h3.no5 {
+  font-size: 1.6em;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 16px;
+}
+#reason h3.no1 {
+  color: #f6ac1d;
+}
+#reason h3.no2 {
+  color:#ea5420;
+}
+#reason h3.no3 {
+  color:#88308e;
+}
+#reason h3.no4 {
+  color:#0092d7;
+}
+#reason h3.no5 {
+  color:#05af7a;
+}
+.font14 {
+  font-size:14px !important;
+}
+#reason img {
+  width:100%;
+  height:auto;
+}
+#reason .no img {
+  max-width:40px;
+}
+
+@media screen and (max-width : 499px) {
+  #reason h3.no1, #reason h3.no2, #reason h3.no3, #reason h3.no4, #reason h3.no5 {
+    font-size:1.2em;
+  }
+  #reason .txt {
+    text-align:left;
+    font-size:0.9em;
+  }
+  #reason img {
+    width:100%;
+    height:auto;
+  }
+  #reason .no img {
+    width:60%;
+    max-width:40px;
+  }
+}

@@ -1,0 +1,172 @@
+
+
+/* デザイン（スマホ） */
+
+@media screen and (max-width:640px) {
+  img {
+    max-width: 100%;
+    height: auto;
+    width/***/
+    : auto;
+  }
+  #fv {
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+  .gentei_area {
+    width: 100%;
+    padding: 40px 0px;
+    text-align: center;
+  }
+  #wrapper {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    overflow: hidden;
+  }
+  .wrapper_in {
+    width: auto;
+    margin: 0;
+    background: #ffffff;
+    padding-bottom: 50px;
+  }
+  .line_bun {
+    text-align: center;
+    padding: 10px 0px;
+  }
+  .tyu_text {
+    width: auto;
+    margin: 10px 30px;
+    text-align: left;
+  }
+  .section_space {
+    height: 20px;
+  }
+  .section_space_s {
+    height: 5px;
+  }
+  .midashi {
+    padding: 40px 0px 10px 0px;
+    text-align: center;
+    margin: 0;
+  }
+  .main_text {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1.0em;
+    line-height: 1.7em;
+    text-align: left;
+  }
+  .main_text_border {
+    width: 90%;
+    margin: 0 auto 20px;
+    font-size: 1.1em;
+    line-height: 1.8em;
+    text-align: left;
+    border: 1px solid #555151;
+    padding: 20px;
+  }
+  .main_text_border h2 {
+    margin-bottom: 10px;
+  }
+  .main_text_voice {
+    width: 90%;
+    margin: 0 auto 20px;
+    font-size: 1.1em;
+    line-height: 1.8em;
+    text-align: left;
+    border: 1px solid #555151;
+    padding: 20px 20px 0px 20px;
+  }
+  .voice_title {
+    font-size: 1.3em;
+    color: #ffffff;
+    background: #0857b9;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin: 0px 0px 0px 0px;
+  }
+  .voice_name {
+    text-align: right;
+    font-weight: 600;
+    padding: 10px;
+    margin-bottom: 8px;
+    font-size: 90%;
+  }
+  .jyouhou_title {
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: 600;
+    margin: 0px auto 20px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #555151;
+    width: 90%;
+  }
+  .renraku_mail {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .mail_box {
+    padding: 10px 15px;
+    width: 100%;
+    font-size: 1.1em;
+  }
+  div.slide-1 {
+    width: auto;
+    margin: 15px;
+    padding: 25px 20px;
+    background: #ffffff;
+  }
+  input::placeholder {
+    font-size: 0.7em;
+  }
+}
+
+@media screen and (max-width:576px) {
+.result_table{
+	text-align: left;
+	margin: 0 auto 30px auto;
+	font-size: 1rem;
+}
+.result_table thead td{
+	font-size: .8rem;
+	text-align: center;
+	background: #588494;
+	color: #fff;
+	padding: .5rem 1rem;
+}
+.result_table thead th{
+	font-size: .8rem;
+	text-align: center;
+	background: #588494;
+	color: #fff;
+	padding: .5rem 1rem;
+}
+.result_table th{
+	font-size: .95rem;
+	font-weight: bold;
+	padding: 1rem 0 1rem 1rem;
+	border-bottom: 1px solid #ccc;
+}
+.result_table td{
+	border-bottom: 1px solid #ccc;
+	vertical-align: middle;
+	padding: 1.5rem 1.5rem 1.5rem 1rem;
+}
+
+.result_table th span{
+	font-weight: normal;
+	margin-top: .5rem;
+	font-size: .7rem;
+	line-height: 1.2;
+	display: block;
+	color: #626262;
+}
+.result_table .per{
+	font-size: .8rem;
+}
+}

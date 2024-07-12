@@ -1,0 +1,325 @@
+
+/* --------------------------------------------------------------------
+/school/css/introduce_teacher.css
+
+???搰??櫱??introduce_teacher? ?CSS
+
+?撹inc???橭櫪 /includes/school/teacher_kyouyou.inc
+                /includes/school/teacher_kabu.inc
+                /includes/school/teacher_fudo.inc
+                /includes/school/teacher_mf.inc
+-------------------------------------------------------------------- */
+.introduce_teacher .lead {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 30px;
+  letter-spacing: .15em;
+}
+.introduce_teacher .profile_outer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.introduce_teacher .profile_box {
+  width: 22%;
+}
+.introduce_teacher .profile_box dt {
+  text-align: left;
+}
+.introduce_teacher .profile_box dd {
+  margin-top: 0.8em;
+}
+.introduce_teacher .profile_box .name {
+  margin-top: 0.3em;
+  font-size: 20px;
+}
+.introduce_teacher .profile_box .name span {
+  margin-left: 0.5em;
+  font-size: 20px;
+}
+.introduce_teacher .profile_box .career {
+  font-size: 14px;
+}
+.introduce_teacher .school_label {
+  display: inline-block;
+  margin-top: 0.3em;
+  padding: 0.4em 0.8em 0.3em;
+  background: #fff;
+  border: 1px solid;
+  border-radius: 9999px;
+  font-size: 14px;
+  line-height: 1.2;
+}
+.introduce_teacher .school_label.kabu {
+  color: #5e76a7;
+  border-color: #5e76a7;
+}
+.introduce_teacher .school_label.fudo {
+  color: #44a1c5;
+  border-color: #44a1c5;
+}
+.introduce_teacher .school_label.mf {
+  color: #8a9f55;
+  border-color: #8a9f55;
+}
+.introduce_teacher .school_label.kyouyouschool {
+  color: #7e678d;
+  border-color: #7e678d;
+}
+.introduce_teacher .school_label.parallelincome {
+  color: #8a9f55;
+  border-color: #8a9f55;
+}
+@media screen and (min-width: 600px) {
+  .introduce_teacher .school_label.parallelincome {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    letter-spacing: -0.06em;
+  }
+  /* for each school */
+  .introduce_teacher.fudo .profile_outer .profile_box,
+  .introduce_teacher.mf .profile_outer .profile_box {
+    display: flex;
+    justify-content: space-between;
+    width: 48%;
+  }
+  .introduce_teacher.fudo .profile_outer .profile_box dt,
+  .introduce_teacher.mf .profile_outer .profile_box dt {
+    width: 47%;
+  }
+  .introduce_teacher.fudo .profile_outer .profile_box dd,
+  .introduce_teacher.mf .profile_outer .profile_box dd {
+    width: 50%;
+    margin-top: 0;
+  }
+  .introduce_teacher.kabu .profile_outer {
+    max-width: 740px;
+  }
+  .introduce_teacher.kabu .profile_box {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 599px) {
+  .introduce_teacher .lead {
+    text-align: left;
+    font-size: 16px;
+    margin-bottom: 25px;
+    letter-spacing: 0;
+  }
+  .introduce_teacher .profile_box {
+    position: relative;
+    width: 46.5%;
+    padding-bottom: 26px;
+  }
+  .introduce_teacher .profile_box:nth-of-type(n + 3) {
+    margin-top: 30px;
+  }
+  .introduce_teacher .profile_box dt {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .introduce_teacher .profile_box dd p {
+    display: none;
+  }
+  .introduce_teacher .profile_box .name {
+    margin-top: 0.5em;
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.4;
+  }
+  .introduce_teacher .profile_box .name span {
+    display: block;
+    margin-left: 0;
+    font-size: 14px;
+  }
+  .introduce_teacher .profile_box .career {
+    margin-top: 1em;
+    font-size: 12px;
+    text-align: center;
+  }
+  .introduce_teacher .btn_profile {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+  }
+  .introduce_teacher .btn_profile span {
+    display: block;
+    position: relative;
+    margin: 10px auto 0;
+    width: 26px;
+    height: 26px;
+    border: 2px solid;
+    border-radius: 50%;
+    text-align: center;
+  }
+  .introduce_teacher .btn_profile span::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 16px;
+    height: 3px;
+    border-radius: 9999px;
+    content: '';
+  }
+  .introduce_teacher .btn_profile span::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 16px;
+    width: 3px;
+    border-radius: 9999px;
+    content: '';
+  }
+  .introduce_teacher .teacher_detail {
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    width: 92%;
+    padding: 30px 4% 20px;
+    border-radius: 15px;
+    background: #fff;
+    text-align: left;
+  }
+  .introduce_teacher .teacher_detail .btn_close {
+    position: absolute;
+    right: 13px;
+    top: 13px;
+    width: 34px;
+    height: 34px;
+    border: 2px solid;
+    border-radius: 50%;
+  }
+  .introduce_teacher .teacher_detail .btn_close span {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .introduce_teacher .teacher_detail .btn_close span::before,
+  .introduce_teacher .teacher_detail .btn_close span::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 3px;
+    border-radius: 9999px;
+    content: '';
+  }
+  .introduce_teacher .teacher_detail .btn_close span::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  .introduce_teacher .teacher_detail .btn_close span::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+  .introduce_teacher .teacher_detail figure {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .introduce_teacher .teacher_detail figure img {
+    width: 50%;
+  }
+  .introduce_teacher .teacher_detail figure figcaption {
+    width: 48%;
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.4;
+  }
+  .introduce_teacher .teacher_detail figure figcaption span {
+    display: block;
+    font-size: 14px;
+  }
+  .introduce_teacher .teacher_detail .profile {
+    margin-top: 5px;
+    font-size: 14px;
+    line-height: 1.8;
+  }
+  .introduce_teacher .school_label {
+    font-size: 12px;
+  }
+  /* for each school */
+  .introduce_teacher.kabu .btn_profile span,
+  .introduce_teacher.kabu .teacher_detail .btn_close {
+    border-color: #5e76a7;
+  }
+  .introduce_teacher.kabu .btn_profile span::before,
+  .introduce_teacher.kabu .btn_profile span::after,
+  .introduce_teacher.kabu .teacher_detail .btn_close span::before,
+  .introduce_teacher.kabu .teacher_detail .btn_close span::after {
+    background: #5e76a7;
+  }
+  .introduce_teacher.fudo .btn_profile span,
+  .introduce_teacher.fudo .teacher_detail .btn_close {
+    border-color: #44a1c5;
+  }
+  .introduce_teacher.fudo .btn_profile span::before,
+  .introduce_teacher.fudo .btn_profile span::after,
+  .introduce_teacher.fudo .teacher_detail .btn_close span::before,
+  .introduce_teacher.fudo .teacher_detail .btn_close span::after {
+    background: #44a1c5;
+  }
+  .introduce_teacher.mf .btn_profile span,
+  .introduce_teacher.mf .teacher_detail .btn_close {
+    border-color: #8a9f55;
+  }
+  .introduce_teacher.mf .btn_profile span::before,
+  .introduce_teacher.mf .btn_profile span::after,
+  .introduce_teacher.mf .teacher_detail .btn_close span::before,
+  .introduce_teacher.mf .teacher_detail .btn_close span::after {
+    background: #8a9f55;
+  }
+  .introduce_teacher.kyouyousemi .btn_profile span,
+  .introduce_teacher.kyouyousemi .teacher_detail .btn_close {
+    border-color: #ea5520;
+  }
+  .introduce_teacher.kyouyousemi .btn_profile span::before,
+  .introduce_teacher.kyouyousemi .btn_profile span::after,
+  .introduce_teacher.kyouyousemi .teacher_detail .btn_close span::before,
+  .introduce_teacher.kyouyousemi .teacher_detail .btn_close span::after {
+    background: #ea5520;
+  }
+}
+
+/* ------------------------------
+modal
+------------------------------ */
+.introduce_teacher .modal_teacher_wrap {
+  display: none;
+}
+@media screen and (max-width: 599px) {
+  .introduce_teacher .modal_teacher_wrap {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    width: 100%;
+    height: 100vh;
+  }
+  .introduce_teacher .modal_teacher_wrap .modal_bg {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+  }
+  /* for each school */
+  .introduce_teacher.kabu .modal_teacher_wrap .modal_bg {
+    background: rgba(94, 118, 167, 0.5);
+  }
+  .introduce_teacher.fudo .modal_teacher_wrap .modal_bg {
+    background: rgba(91, 160, 193, 0.5);
+  }
+  .introduce_teacher.mf .modal_teacher_wrap .modal_bg {
+    background: rgba(143, 158, 94, 0.5);
+  }
+  .introduce_teacher.kyouyousemi .modal_teacher_wrap .modal_bg {
+    background: rgba(225, 111, 78, 0.7);
+  }
+}

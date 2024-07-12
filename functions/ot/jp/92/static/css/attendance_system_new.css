@@ -1,0 +1,151 @@
+.cls-3{fill:#fff; }
+.bg-beige .cls-3{fill:#f3f3f2;}
+
+.about{
+    width: 100%;
+/*    max-width: 1000px;
+    padding: 65px 0 0;*/
+    margin: 0 auto 30px;
+}
+.about h3{
+    color: #1c236d;
+    text-align: center !important;
+    margin-bottom: 20px;
+    font-size: 26px !important;
+}
+.about ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.about li{
+    width: 45%;
+    margin-bottom: 50px;
+    /*    margin-right: 35px;*/
+    position: relative;
+    vertical-align: top;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    text-align: left;
+    line-height: 1.8;
+}
+.about li:nth-child(odd){ margin-right: 35px;}
+
+.about li h4{
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+.about li.henkin > figure,
+.about li.henkin > svg
+{
+    width: 47px;
+    margin: 0 auto 20px;
+    display: block;
+}
+
+.about li.double > figure,
+.about li.double > svg {
+    width: 215px;
+    margin: 40px auto 45px;
+    display: block;
+}
+
+.about li.family > figure,
+.about li.family > svg {
+    width: 130px;
+    margin: 20px auto 50px;
+    display: block;
+}
+.about .minischool li.family > figure,
+.about .minischool li.family > svg {
+    margin: 40px auto 50px;
+}
+
+
+.about li.kyugaku > figure,
+.about li.kyugaku > svg {
+    width: 94px;
+    margin: 15px auto 30px;
+    display: block;
+}
+
+.about li.keizoku > figure,
+.about li.keizoku > svg{
+    width: 105px;
+    margin: 15px auto 30px;
+    display: block;
+}
+
+.about .zemi li.keizoku > figure,
+.about .zemi li.keizoku > svg{
+    margin: 30px auto 35px;
+}
+
+.about li .caution{
+    position: absolute;
+    top: 101%;
+    left: 0;
+    font-size: 10px;
+    line-height: 1.2;
+}
+
+/* 僞僽儗僢僩 */
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+    .about li{ width:45%;}
+}
+
+/* 599px埲壓乮僗儅儂乯 */
+@media screen and (max-width: 599px) {
+    .about ul{ justify-content: center;}
+    .about li{
+        padding: 12px 8px;
+        margin-bottom: 4em;
+    }
+    .about li:nth-child(odd){ margin-right: 0;}
+
+    .about li h4{
+        margin-bottom: 10px;
+        font-size: 1.8em;
+    }
+    .about li.henkin > figure{ width: 36.3%;
+        margin: 0 auto 10px;
+    }
+    .about li.double > figure,
+    .about li.double > svg {
+        width: 94.6%;
+        margin: 40px auto 35px;
+        display:block
+    }
+    .about li.family > figure,
+    .about li.family > svg {
+        width: 68.3%;
+        margin: 20px auto 40px;
+        display:block
+    }
+    .about li.kyugaku > figure,
+    no_04 .about li:nth-of-type(4) > svg {
+        width: 55%;
+        margin: 15px auto 20px;
+        display:block
+    }
+    .about li.keizoku > figure,
+    .about li.keizoku > svg {
+        width: 59%;
+        margin: 15px auto 20px;
+        display:block
+    }
+    
+    /* 儌乕僟儖 */
+    .about .modal li{
+        margin-bottom: 1em;
+    }
+    .about li.modal-content{
+        width: 80%;
+        margin-bottom: 1em;
+        position: fixed;
+    }
+    .about li.modal-content:nth-child(odd){ margin-right: auto;}
+    .bg-beige .modal-content .cls-3{fill:#fff;}
+
+}

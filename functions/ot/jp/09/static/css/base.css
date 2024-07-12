@@ -1,0 +1,63 @@
+
+/* CSS Document */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*----------------------------------------------------------------------
+//////////■■■■base style■■■■//////////
+----------------------------------------------------------------------*/
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #222222;
+  font-size: clamp(1.6rem, 2.2vw, 2.2rem);
+  font-weight: 500;
+  font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  -webkit-text-size-adjust: 100%;
+  letter-spacing: 0em;
+  line-height: 1.75;
+  overflow-x: hidden;
+  position: relative;
+  min-width: 100%;
+  width: 100%;
+}
+
+a {
+  border: none;
+  text-decoration: none;
+  outline: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  width: 100%;
+}
+
+strong {
+  font-weight: 500;
+}
+
+img {
+  display: block;
+  width: 100%;
+}

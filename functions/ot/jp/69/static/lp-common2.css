@@ -1,0 +1,304 @@
+
+
+/*================================================
+common
+=================================================*/
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: -apple-system, "Hiragino Kaku Gothic ProN", Meiryo, "ãƒ¡ã‚¤ãƒªã‚ª",
+    "æ¸¸ã‚´ã‚·ãƒƒã‚¯ä½“", "Yu Gothic", YuGothic, sans-serif;
+  color: #555;
+  font-size: 14px;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+}
+
+.cf::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+h2 {
+  padding: 10px 0;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.container-md {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.container-lg {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-xs {
+  font-size: 10px;
+}
+
+.text-sm {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.text-md {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.text-lg {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.bg-light {
+  background-color: white;
+}
+
+.bg-dark {
+  background-color: #f4f4f4;
+}
+
+.bg-red {
+  background-color: #f72f2f;
+}
+
+.bg-point {
+  background-color: #fef7e5;
+}
+
+.color-y {
+  color: #fdfd80;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+/*================================================
+è¡Œé–“èª¿æ•´
+=================================================*/
+
+.pd-t-20 {
+  padding-top: 20px;
+}
+
+.pd-t-30 {
+  padding-top: 30px;
+}
+
+.pd-t-40 {
+  padding-top: 40px;
+}
+
+.pd-b-10 {
+  padding-bottom: 10px;
+}
+
+.pd-b-20 {
+  padding-bottom: 20px;
+}
+
+.pd-b-30 {
+  padding-bottom: 30px;
+}
+
+.pd-b-40 {
+  padding-bottom: 40px;
+}
+
+.pd-tb-20 {
+  padding: 20px 0;
+}
+
+.pd-tb-40 {
+  padding: 40px 0;
+}
+
+.pd-tb-60 {
+  padding: 60px 0;
+}
+
+.mg-t-20 {
+  margin-top: 20px;
+}
+
+.mg-t-30 {
+  margin-top: 30px;
+}
+.mg-t-40 {
+  margin-top: 40px;
+}
+
+.mg-b-10 {
+  margin-bottom: 10px;
+}
+
+.mg-b-20 {
+  margin-bottom: 20px;
+}
+
+.mg-b-30 {
+  margin-bottom: 30px;
+}
+
+.mg-b-40 {
+  margin-bottom: 40px;
+}
+
+.mg-tb-20 {
+  margin: 20px 0;
+}
+
+.mg-tb-40 {
+  margin: 40px 0;
+}
+
+/*================================================
+footer
+=================================================*/
+.footer-links-group {
+  background: #d6d6d6;
+  color: #333;
+  padding: 40px 0;
+}
+
+.footer-links.lp .text-list-items {
+  text-align: center;
+  font-size: 16px;
+}
+
+.footer-links .text-list-items {
+  font-size: 13px;
+  list-style: disc;
+  margin-left: 16px;
+}
+
+.footer-links.lp .text-list-items li {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.footer-links a {
+  color: #555 !important;
+  text-decoration: none !important;
+}
+
+.footer-document-group {
+  padding: 54px 0;
+  background: #333;
+  color: #fff;
+}
+
+.footer-document .risk {
+  width: 57%;
+  float: left;
+}
+
+.footer-document .risk dd:first-of-type {
+  margin-bottom: 40px;
+}
+
+/* .footer-document .announce {
+  width: 40%;
+  margin-left: 3%;
+  padding-left: 3%;
+  float: right;
+} */
+
+.footer-document .announce-group {
+  width: 40%;
+  margin-left: 3%;
+  padding-left: 3%;
+  float: right;
+}
+
+.footer-document dt {
+  margin-bottom: 12px;
+}
+
+.footer-document dd {
+  font-size: 13px;
+  color: #bfbfbf;
+  line-height: 1.7;
+  margin-bottom: 40px;
+}
+
+.footer-document dd:last-child {
+  /* margin-bottom: -10px; */
+}
+.footer-document .risk dd:first-of-type {
+  /* margin-bottom: 40px */
+}
+
+.footer-document .announce-body {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+  color: #bfbfbf;
+  font-size: 13px;
+}
+
+.footer-document .ex-links li {
+  float: left;
+}
+.footer-document .ex-links li + li {
+  margin-left: 8px;
+}
+
+.footer-links-group {
+  background: #d6d6d6;
+  color: #333;
+  padding: 40px 0;
+}
+
+.footer-document .announce-body th,
+.footer-document .announce-body td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: top;
+  border: 1px solid #444;
+  padding: 6px 10px;
+}
+
+.footer-document .joining-groups-title {
+  margin-bottom: 10px;
+}
+.footer-document .joining-groups-body {
+  border: 2px solid #fff;
+  padding: 20px;
+}
+.footer-document .joining-groups-body img {
+  width: 100%;
+}
+.footer-document .joining-groups-body .nihonsyoken-banner {
+  height: 102px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+}
+.footer-document .joining-groups-body .nihonsyoken-banner img {
+  background: #fff;
+}
+
+.copyright {
+  font-size: 12px;
+  background: #252525;
+  text-align: center;
+  color: #9a9a9a;
+  padding: 8px 0;
+}

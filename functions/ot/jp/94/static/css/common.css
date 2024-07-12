@@ -1,0 +1,341 @@
+
+/* CSS Document */
+body{
+font-family:'メイリオ', Meiryo, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', sans-serif !important;
+	font-size : 16px;
+	line-height : 28px;
+margin : 0;
+}
+
+body * {
+    box-sizing: border-box;
+}
+/* パソコンで見たときは"pc"のclassがついた画像が表示される */
+.pc { display: block !important; }
+.sp { display: none !important; }
+/* スマートフォンで見たときは"sp"のclassがついた画像が表示される */
+@media only screen and (max-width:599px) {
+.pc { display: none !important; }
+.sp { display: block !important; }
+}
+/* PCとSPの改行切り替え */
+@media screen and (min-width: 1025px) {
+  .br-pc { display:block; }
+  .br-sp { display:none; }
+}
+@media only screen and (max-width:599px) {
+  .br-pc { display:none; }
+  .br-sp { display:block; }
+}
+
+/* 画像の回り込み */
+.image_area {
+width: 320px;
+display: block;
+vertical-align: bottom;
+}
+.image_area2 {
+width: 240px;
+display: block;
+vertical-align: bottom;
+}
+@media only screen and (min-width: 600px){
+.image_right {
+float: right;
+margin: 0 0 21px 25px;
+}
+.image_left {
+float: left;
+margin: 0 25px 30px 0;
+}
+}
+@media only screen and (max-width:599px) {
+.image_right {
+float: none;
+margin: 25px auto;
+}
+.image_left {
+float: none;
+margin: 25px auto;
+}
+}
+.clear{
+	clear : both;
+}
+.tyu_text li{
+	margin-left : -10px;
+  text-indent: -1.0em;
+  padding: 0 0 0 1em;
+		font-size : 90%;
+		line-height : 160%;
+}
+.tyu_text li:before {
+	content:"※";
+}
+.font-m{
+	font-size : 120%;
+}
+.font-l{
+	font-size : 140%;
+}
+.color-red{
+	color : #cc0000;
+}
+.marker_yellow{
+	background : #ffff00;
+}
+
+/* 口座情報 */
+.kouza{
+	width : 90%;
+	margin : 0 auto;
+	line-height : 150%;
+}
+.kouza tr {
+  border-bottom: 1px solid #b5b1b1;
+}
+
+.kouza th,
+.kouza td {
+  padding: 15px 0;
+  border: none;
+}
+
+.kouza th {
+  width: 30%;
+}
+
+/* sp */
+@media only screen and (max-width: 480px) {
+.kouza th,
+.kouza td {
+    width: 100%;
+    display: block;
+  }
+
+.kouza tr {
+  border-bottom: 0px solid #b5b1b1;
+}
+.kouza th{
+	background : #f4f4f4;
+	padding : 8px 0px;
+}
+
+.kouza td {
+    padding : 10px 0px;
+  }
+}
+.renraku_text{
+	margin : 15px 0px;
+	font-size : 95%;
+	line-height : 150%;
+	margin-bottom : 10px;
+}
+#footer{
+	background : #333;
+	color : #ffffff;
+	font-size : 13px;
+	padding : 30px 0px;
+	text-align : center;
+}
+
+/* -- img.bounce -------------------------------------------------------------------------------------------- */
+
+img.bounce {
+	-webkit-animation: bounce 1.8s linear infinite;
+	animation: bounce 1.8s linear infinite;
+}
+
+@-webkit-keyframes bounce {
+	0% {
+		-webkit-transform: scale( 1 );
+		transform: scale( 1 );
+	}
+	25% {
+		-webkit-transform: scale( 1.05 );
+		transform: scale( 1.05 );
+	}
+	40% {
+		-webkit-transform: scale( 0.85 );
+		transform: scale( 0.85 );
+	}
+	50% {
+		-webkit-transform: scale( 1.05 );
+		transform: scale( 1.05 );
+	}
+	60% {
+		-webkit-transform: scale( 0.93 );
+		transform: scale( 0.93 );
+	}
+	70% {
+		-webkit-transform: scale( 1.03 );
+		transform: scale( 1.03 );
+	}
+	80% {
+		-webkit-transform: scale( 0.95 );
+		transform: scale( 0.95 );
+	}
+	90% {
+		-webkit-transform: scale( 1.01 );
+		transform: scale( 1.01 );
+	}
+	100% {
+		-webkit-transform: scale( 1 );
+		transform: scale( 1 );
+	}
+}
+
+@keyframes bounce {
+	0% {
+		-webkit-transform: scale( 1 );
+		transform: scale( 1 );
+	}
+	25% {
+		-webkit-transform: scale( 1.05 );
+		transform: scale( 1.05 );
+	}
+	40% {
+		-webkit-transform: scale( 0.85 );
+		transform: scale( 0.85 );
+	}
+	50% {
+		-webkit-transform: scale( 1.05 );
+		transform: scale( 1.05 );
+	}
+	60% {
+		-webkit-transform: scale( 0.93 );
+		transform: scale( 0.93 );
+	}
+	70% {
+		-webkit-transform: scale( 1.03 );
+		transform: scale( 1.03 );
+	}
+	80% {
+		-webkit-transform: scale( 0.95 );
+		transform: scale( 0.95 );
+	}
+	90% {
+		-webkit-transform: scale( 1.01 );
+		transform: scale( 1.01 );
+	}
+	100% {
+		-webkit-transform: scale( 1 );
+		transform: scale( 1 );
+	}
+}
+
+
+
+
+
+
+
+
+/* -- responsive ----------------------------------------------------------------------------------------------------------------- */
+
+/* 640pixel start */
+@media screen and ( max-width: 640px ){
+
+img.bounce {
+	max-width: 100%;
+}
+
+
+
+}
+/* 640pixel end */
+
+/* -- .slide-down -------------------------------------------------------------------------------------------- */
+
+.slide-down:after {
+	content: "";
+}
+
+.slide-down:hover {
+	cursor: pointer;
+	opacity: 0.8;
+}
+
+
+.active:after {
+	content: "";
+}
+
+
+
+
+/* -- div.slide-* -------------------------------------------------------------------------------------------- */
+
+div.slide-1{
+	display: none;
+}
+
+.graph_container{
+	display: flex;
+	justify-content: space-between;
+	padding: 0 25px;
+	margin-bottom: 30px;
+}
+
+.graphbox{
+	width: 300px;
+	text-align: center;
+}
+
+.graphbox img{
+	width: 100%;
+}
+
+@media screen and (max-width:640px){
+	.graph_container{
+		display: block;
+		margin-bottom: 0;
+	}
+	
+	.graphbox{
+		width: 100%;
+		margin-bottom: 15px;
+	}
+}
+
+.rateup {
+	padding: 1rem 1.5rem 1rem 1rem;
+}
+
+.rateup .counter {
+    font-weight: bold;
+    position: relative;
+	font-size: 140%;
+    display: inline-block;
+	color: #c10020;
+	letter-spacing: -1px;
+}
+.rateup .counter:before {
+    content: "\f0de";
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    right: -2.8rem;
+    animation: up 1.5s ease-in 1s infinite; 
+}
+@media screen and (max-width:640px){
+	.rateup .counter:before {
+    content: "\f0de";
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    right: -1.8rem;
+    animation: up 1.5s ease-in 1s infinite; 
+	}
+}
+
+
+@keyframes up {
+  0% {
+    top: 15px;
+    opacity: 0; }
+  60% {
+    top: 0;
+    opacity: 1; }
+  100% {
+    top: -5px;
+    opacity: 0; } 
+}

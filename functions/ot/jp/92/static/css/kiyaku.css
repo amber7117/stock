@@ -1,0 +1,204 @@
+
+
+/* --------------------------------------------------------------------
+  Financial Academy
+
+  Style Info: info kiyaku
+-------------------------------------------------------------------- */
+.kiyaku-area {
+  text-align: left;
+}
+.kiyaku-area p {
+    margin-bottom: 1em;
+    font-size: 13.6px;
+    font-feature-settings: normal;
+}
+.kiyaku-area .txt-indent {
+  padding-left: 1em;
+  text-indent: -1em;
+}
+
+.kiyaku-area ul {
+  list-style: none;
+  margin-bottom: 1em;
+  font-size: 13.6px;
+  line-height: 1.8;
+}
+.kiyaku-area ul li {
+  font-feature-settings: normal;
+}
+.kiyaku-area .list-indent li {
+  padding-left: 1em;
+  text-indent: -1em;
+}
+.kiyaku-area .list-indent-num li {
+  padding-left: 1.2em;
+  text-indent: -1.2em;
+}
+.kiyaku-area .heading-01 {
+  font-size: 13.6px;
+}
+.kiyaku-area .heading-02 {
+  margin-bottom: 0.5em;
+  font-size: 13.6px;
+}
+.kiyaku-area .heading-03 {
+  margin-bottom: 0.5em;
+  font-size: 13.6px;
+}
+
+.kiyaku-area .enactment {
+  margin-top: 2em;
+}
+
+.kiyaku-area .accordion {
+  position: relative;
+  margin-bottom: 35px;
+  text-align: center;
+  border: 1px solid;
+  padding: 10px 2em 10px 10px;
+  font-size: 23px;
+  cursor: pointer;
+}
+.kiyaku-area .accordion::after {
+  position: absolute;
+  top: 28%;
+  right: 4%;
+  transform: rotate(45deg);
+  width: 17px;
+  height: 17px;
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+  content: '';
+}
+.kiyaku-area .accordion.active::after {
+  top: 45%;
+  transform: rotate(-135deg);
+}
+.semi .kiyaku-area .accordion,
+.semi .kiyaku-area .accordion::after {
+  border-color: #d7ba41;
+}
+.fudo .kiyaku-area .accordion,
+.fudo .kiyaku-area .accordion::after {
+  border-color: #44a1c5;
+}
+.kabu .kiyaku-area .accordion,
+.kabu .kiyaku-area .accordion::after {
+  border-color: #5e76a7;
+}
+.fx .kiyaku-area .accordion,
+.fx .kiyaku-area .accordion::after {
+  border-color: #c36380;
+}
+.mf .kiyaku-area .accordion,
+.mf .kiyaku-area .accordion::after {
+  border-color: #8a9f55;
+}
+.kyouyou .kiyaku-area .accordion,
+.kyouyou .kiyaku-area .accordion::after {
+  border-color: #7e678d;
+}
+.retirement .kiyaku-area .accordion,
+.retirement .kiyaku-area .accordion::after {
+  border-color: #e16f4e;
+}
+.cl-blue .kiyaku-area .accordion,
+.cl-blue .kiyaku-area .accordion::after {
+  border-color: #2d4196;
+}
+.cl-org .kiyaku-area .accordion,
+.cl-org .kiyaku-area .accordion::after {
+  border-color: #f0961e;
+}
+
+.kiyaku-area.juko_kiyaku p,
+.kiyaku-area.juko_kiyaku ul {
+  font-size: 10px;
+}
+
+.kiyaku-area + .kiyaku-area {
+  margin-top: 40px;
+}
+
+.kiyaku-group .kihonseido_kiyaku .modal-content {
+  display: block;
+  position: static;
+  width: 100%;
+  max-height: none;
+  padding: 0;
+  border: none;
+  overflow: auto;
+}
+.kiyaku-group .juko_kiyaku p,
+.kiyaku-group .juko_kiyaku ul {
+  font-size: inherit;
+}
+
+.online_izumi_kiyaku p,
+.online_izumi_kiyaku ul {
+  font-size: 10px;
+}
+
+.kiyaku-area.iframe-area {
+  width: 100%;
+  max-width: none;
+}
+.kiyaku-area.iframe-area p,
+.kiyaku-area.iframe-area ul {
+  font-size: 100%;
+}
+.kiyaku-area.iframe-area.font-s p,
+.kiyaku-area.iframe-area.font-s ul {
+  font-size: 12px;
+}
+.kiyaku-area.iframe-area .heading-02 {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 599px) {
+  .kiyaku-area .accordion {
+    padding: 10px;
+    font-size: 16px;
+  }
+  .kiyaku-area .accordion::after {
+    content: none;
+  }
+
+  .kiyaku-area .modal-content {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    right: 0;
+    top: 110px;
+    width: 90%;
+    margin: auto;
+    max-height: 80%;
+    padding: 3%;
+    border: 2px solid #aaa;
+    background: #fff;
+    overflow-y: scroll !important;
+  }
+  .kiyaku-area #modal-close {
+    display: block;
+    position: fixed;
+    top: 120px;
+    right: 8%;
+    z-index: 3;
+    padding: 0 4px;
+    border: 3px solid #aaa;
+    background: #fff;
+    line-height: 1.3;
+  }
+  #modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 120%;
+    background-color: rgba( 0,0,0, 0.75 );
+  }
+}

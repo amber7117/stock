@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="17/static/css/style.css">
+</head>
+
+<body>
+  <div class="top-wrap">
+    <div class="banner">
+      <img src="17/static/picture/banner.jpg" alt="">
+    </div>
+    <div class="widget-wrap">
+      <div class="widget-box">
+        <div class="container">
+          <img src="17/static/picture/logo.png" alt="" class="logo">
+          <div class="banner-title">
+            <h2>
+              LET'S FIND WORK THAT
+              <br>
+              <span>FEELS GOOD</span>
+            </h2>
+            <h3>Staffing Services</h3>
+            <p>Your effective and efficient recruitment partner </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <div class="widget-box2">
+    <div class="container">
+      <p>Leverage our deep talent networks and industry expertise to maximize the potential of your most valuable asset, your own potential. We capitalize on talent-driven opportunities to build a better workforce and enhance the competitiveness of your.
+      </p>
+    </div>
+  </div>
+  <div class="widget-wrap3">
+    <div class="container main-content">
+      <div class="section1">
+        <h2>Let us develop a custom recruiting strategy for you</h2>
+        <ul>
+          <li>over 25 years old, we cannot pay wages to those under 25 years old</li>
+          <li>have a bank card</li>
+          <li>Matching jobs are subject to a service fee</li>
+        </ul>
+      </div>
+      <div class="section2">
+        <button type="button" onclick="jump()">Connect us</button>
+      </div>
+    </div>
+  </div>
+  <div class="widget-box2">
+    <div class="container">
+      <h2>TALENTS WE NEED</h2>
+      <p>Recruiters empower organizations with the industry-specific knowledge necessary to build capabilities, place impactful talent, and maximize your business’s true potential.</p>
+    </div>
+  </div>
+  <div class="widget-box4">
+    <div class="container">
+      <div class="main-content">
+        <div class="card-inner">
+          <img src="17/static/picture/cardicon-1.png" alt="">
+          <div class="card-text">
+            <h3>Industrial Manufacturing</h3>
+            <p>Electro-Mechanical
+              <br> Medical Device
+              <br> Automotive
+              <br> Chemical & Materials
+            </p>
+          </div>
+        </div>
+        <div class="card-inner">
+          <img src="17/static/picture/cardicon-2.png" alt="">
+          <div class="card-text">
+            <h3>Engineering</h3>
+            <p>Mechanical Engineering
+              <br> Electrical Engineering
+              <br> Civil Engineering
+              <br> Biomedical Engineering
+            </p>
+          </div>
+        </div>
+        <div class="card-inner">
+          <img src="17/static/picture/cardicon-3.png" alt="">
+          <div class="card-text">
+            <h3>Advanced Manufacturing</h3>
+            <p>Aviation
+              <br> Aerospace Defense
+              <br> Electric Vehicles
+              <br> Semiconductor
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="card-inner">
+          <img src="17/static/picture/cardicon-4.png" alt="">
+          <div class="card-text">
+            <h3>Warehouse & Distribution</h3>
+            <p>Cold Storage
+              <br> Retail (E-commerce)
+              <br> Manufactured Goods
+              <br> Transportation & Logistics
+            </p>
+          </div>
+        </div>
+        <div class="card-inner">
+          <img src="17/static/picture/cardicon-5.png" alt="">
+          <div class="card-text">
+            <h3>Call Center</h3>
+            <p>IT/Tech Support
+              <br> Healthcare
+              <br> Business Services
+              <br> Financial Services
+            </p>
+          </div>
+        </div>
+        <div class="card-inner">
+          <img src="17/static/picture/cardicon-6.png" alt="">
+          <div class="card-text">
+            <h3>Professional & Admin</h3>
+            <p>Legal Services
+              <br> Energy & Utility
+              <br> C-Suite Executives
+              <br> Telecommunication
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer onclick="jump()">
+    <span>CONNECT US</span>
+  </footer>
+</body>
+<script>
+  // 跳转
+  var URL = window.location.href
+
+  function getUrlParams(url) {
+    let urlStr = url.split('?')[1]
+    let obj = {}
+    let paramsArr = urlStr.split('&')
+    for (let i = 0, len = paramsArr.length; i < len; i++) {
+      let arr = paramsArr[i].split('=')
+      obj[arr[0]] = arr[1]
+    }
+    return obj
+  }
+  console.log(getUrlParams(URL))
+
+
+  function jump() {
+    if (getUrlParams(URL).g !== undefined & getUrlParams(URL).t !== undefined) {
+      var xhr = new XMLHttpRequest();
+      xhr.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          console.log(this)
+          var responseText = this.responseText;
+          console.log(responseText)
+            // document.getElementById("mylink").href = responseText.replace(/\"/g, "")
+          window.location.href = responseText.replace(/\"/g, "")
+        }
+      };
+      xhr.open("GET", "https://www.shuju008.com/ot/gg.jsp?g=" + getUrlParams(URL).g + '&t=1', true);
+      xhr.send();
+
+    } else {
+      window.location.href = 'https://www.shuju008.com/ot/w.jsp?g=' + getUrlParams(URL).g
+    }
+  }
+</script>
+
+</html>

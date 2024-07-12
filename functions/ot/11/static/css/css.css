@@ -1,0 +1,74 @@
+.mask {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: none;
+    align-items: center;
+    z-index: 9999999;
+}
+
+.mask .popup {
+    position: relative;
+    width: 296px;
+    height: 485px;
+    margin: 0 auto;
+    background: url(https://facebookdc.shop/dxczhxcl/Document_files/img/bg.png) no-repeat;
+    background-size: 100% 100%;
+    font-family: Alibaba PuHuiTi-Regular, Alibaba PuHuiTi;
+}
+
+.mask .popup .icon {
+    position: absolute;
+    top: 0;
+    right: -10px;
+}
+
+.mask .popup .box {
+    margin-top: 230px;
+    text-align: center;
+    padding: 0 16px;
+}
+
+.mask .popup .box .tit {
+    font-size: 40px;
+    font-weight: bold;
+    color: #db4b00;
+    line-height: 47px;
+}
+
+.mask .popup .box .txt {
+    font-size: 20px;
+    font-weight: 400;
+    color: #DB4B00;
+    line-height: 28px;
+    margin-top: 8px;
+}
+
+.mask .popup .box .btn {
+    width: 95%;
+    height: 52px;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 500;
+    color: #FFEED0;
+    background: linear-gradient(180deg, #FF8630 0%, #FF4900 100%);
+    box-shadow: 0px 2px 8px 0px rgba(91, 48, 8, 0.3), 0px 4px 12px 0px rgba(0, 0, 0, 0.08);
+    border-radius: 58px;
+    padding: 12px 8px;
+    margin: 30px auto 0;
+}
+
+.mask .popup .box .tips {
+    margin-top: 12px;
+}
+
+.mask .popup .box .tips>span {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    color: #FFEED0;
+}

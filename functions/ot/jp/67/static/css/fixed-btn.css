@@ -1,0 +1,20 @@
+
+.fixed-btn{
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    padding: 20px 90px 20px 10px;
+    background: rgba(0,0,0,.3);
+    position: fixed;
+    bottom: -150px;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    transition: all .3s;
+}
+.fixed-btn.is-show{ bottom: 0;}
+
+.fixed-btn > *,
+.fixed-btn a{
+    margin: 0 auto !important;
+}

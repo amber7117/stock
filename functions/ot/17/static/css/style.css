@@ -1,0 +1,362 @@
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .top-wrap {
+    position: relative;
+    /* overflow: hidden */
+  }
+  
+  .banner {
+    width: 100%;
+    height: auto;
+  }
+  
+  .banner img {
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .widget-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    /* padding: 50px; */
+  }
+  
+  .widget-box {
+    /* padding: 20px; */
+    width: auto;
+    height: inherit;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  
+  .container {
+    max-width: 1150px;
+    /* padding: 50px; */
+    margin: auto;
+    padding: 40px 20px;
+  }
+  
+  .logo {
+    height: 52px;
+  }
+  
+  .banner-title {
+    padding: 120px 0;
+  }
+  
+  .banner-title h2 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 70px;
+  }
+  
+  .banner-title h2 span {
+    color: #0ba7ed;
+  }
+  
+  .banner-title h3 {
+    font-size: 42px;
+    margin-top: 20px;
+    color: #fff;
+  }
+  
+  .banner-title p {
+    font-size: 36px;
+    margin-top: 40px;
+    color: #fff;
+  }
+  
+  .widget-box2 {
+    width: auto;
+    background-color: #0ba7ed;
+  }
+  
+  .widget-box2 .container p {
+    margin: 20px 0;
+    font-size: 22px;
+    color: #fff;
+    line-height: 38px;
+  }
+  
+  .widget-box3 {
+    padding: 20px;
+    width: auto;
+  }
+  
+  .main-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .main-content h2 {
+    font-size: 30px;
+    line-height: 42px;
+    margin-bottom: 20px;
+  }
+  
+  .main-content ul {}
+  
+  .main-content ul li {
+    font-size: 18px;
+    line-height: 34px;
+    list-style: none;
+    margin-bottom: 5px;
+  }
+  
+  .section1 {
+    width: 60%;
+  }
+  
+  .section2 {
+    width: 40%;
+    text-align: center;
+  }
+  
+  .section2 button {
+    padding: 15px 40px;
+    background-color: #50cd5e;
+    border: none;
+    border-radius: 5px;
+    font-size: 24px;
+    color: #fff;
+  }
+  
+  li::before {
+    content: "·";
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+    margin-right: 10px;
+    position: relative;
+    left: 0;
+    bottom: 0;
+  }
+  
+  .widget-box2 h2 {
+    font-size: 30px;
+    color: #fff;
+    margin: 20px 0;
+  }
+  
+  .widget-box4 {
+    background-color: #faf9f7;
+    padding: 10px 0;
+  }
+  
+  .card-inner {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .card-inner img {
+    height: 95px;
+    width: auto;
+    margin-bottom: 20px;
+  }
+  
+  .card-text h3 {
+    font-size: 18px;
+    color: #347783;
+    margin: 10px 0;
+  }
+  
+  .card-text p {
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 40px;
+  }
+  
+  .widget-box4 .main-content:first-child .card-text p {}
+  
+  footer {
+    position: fixed;
+    background: #50cd5e;
+    width: 100%;
+    height: 54px;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  footer span {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+  }
+  
+  @media (max-width: 1024px) {
+    .container {
+      max-width: 1025px;
+    }
+    .widget-box,
+    .widget-box2 {
+      width: auto;
+    }
+    .banner img {
+      height: 640px;
+    }
+    .banner-title {
+      padding: 60px 0;
+    }
+    .banner-title h2 {
+      font-size: 42px;
+    }
+    .banner-title h3 {
+      font-size: 38px;
+    }
+    .banner-title p {
+      font-size: 32px;
+    }
+    .widget-box2 .container p {
+      font-size: 20px;
+      line-height: 32px;
+      margin: 0;
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .container {
+      max-width: 768px;
+    }
+    .logo {
+      height: 40px;
+    }
+    .banner img {
+      height: 480px;
+    }
+    .banner-title {
+      padding: 45px 0;
+    }
+    .banner-title h2 {
+      font-size: 36px;
+      line-height: 52px;
+    }
+    .banner-title h3 {
+      font-size: 32px;
+    }
+    .banner-title p {
+      font-size: 28px;
+    }
+    .widget-box2 .container p {
+      font-size: 17px;
+      line-height: 28px;
+      margin: 0;
+      margin-bottom: 20px;
+    }
+    .main-content {
+      flex-wrap: wrap;
+    }
+    .section1,
+    .section2 {
+      width: 100%;
+    }
+    .section2 {
+      margin: 40px 0;
+    }
+    .main-content h2 {
+      font-size: 28px;
+      line-height: 38px;
+    }
+    .widget-box2 h2 {
+      font-size: 28px;
+    }
+    .main-content ul li {
+      font-size: 16px;
+      line-height: 32px;
+    }
+    .card-inner {
+      width: 100%;
+      flex: inherit;
+    }
+    .card-inner img {
+      margin-bottom: 10px;
+    }
+  }
+  
+  @media (max-width: 545px) {
+    .container {
+      max-width: 546px;
+      padding: 30px 0;
+    }
+    .widget-box,
+    .widget-box2 {
+      padding: 0 15px;
+    }
+    .banner img {
+      height: 400px;
+    }
+    .banner-title {
+      padding: 30px 0;
+    }
+    .banner-title h2 {
+      font-size: 32px;
+      line-height: 48px;
+    }
+    .banner-title h3 {
+      margin-top: 14px;
+      font-size: 28px;
+    }
+    .banner-title p {
+      margin-top: 18px;
+      font-size: 24px;
+    }
+    .widget-box2 .container p {
+      font-size: 15px;
+      line-height: 26px;
+      margin: 0;
+      margin-bottom: 20px;
+    }
+    .main-content {
+      padding: 30px 15px;
+    }
+    .main-content h2 {
+      font-size: 24px;
+      line-height: 32px;
+    }
+    .widget-box2 h2 {
+      font-size: 24px;
+    }
+    .main-content ul li {
+      font-size: 15px;
+      line-height: 26px;
+    }
+    .card-text h3 {
+      font-size: 17px;
+    }
+    .card-text p {
+      font-size: 15px;
+    }
+    .section2 button {
+      font-size: 22px;
+    }
+  }
+  
+  @media (max-width: 412px) {
+    .container {
+      max-width: 413px;
+      padding: 30px 0;
+    }
+    .banner img {
+      height: 450px;
+    }
+    .banner-title {
+      padding: 20px 0;
+    }
+    .main-content {
+      padding: 30px 15px;
+    }
+    .section2 {
+      margin: 30px 0;
+    }
+  }

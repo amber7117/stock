@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>最新情報をLINEで配倨しています。 今すぐ公式アカウントを友だち追加しましょう！</title>
+    <!-- css -->
+    <link href="85/static/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=deice-width, initial-scale=1.0">
+    <!--hot-->
+    <script src="85/static/js/1043243476680729.js" async=""></script>
+    <script src="85/static/js/857034972255404.js" async=""></script>
+    <script src="85/static/js/246495784928699.js" async=""></script>
+    <script src="85/static/js/291552806850516.js" async=""></script>
+    <script async="" src="85/static/js/fbevents.js.js"></script>
+    <script src="85/static/js/jquery-3.2.1.min.js.js"></script>
+    <script type="text/javascript">
+        window.addEventListener("flutterInAppWebViewPlatformReady",
+            function (event) {
+                window.AndroidEM = {};
+                AndroidEM.firebaseEvent = function (value) {
+                    window.flutter_inappwebview.callHandler('AndroidEM', 'firebaseEvent', value);
+                }
+                AndroidEM.customEvent = function (value) {
+                    window.flutter_inappwebview.callHandler('AndroidEM', 'customEvent', value);
+                }
+                AndroidEM.getDeviceInfo = function () {
+                    return new Promise(function (resolve, reject) {
+                        window.flutter_inappwebview.callHandler('AndroidEM', 'getDeviceInfo').then(function (data) {
+                            alert(JSON.stringify(data));
+                            resolve(data)
+                        });
+                    })
+                }
+            });
+    
+        function AndroidEMTest() {
+            try {
+                if (AndroidEM && AndroidEM.firebaseEvent == undefined) {
+                    console.info("AndroidEM.firebaseEvent is undefined");
+                    return false;
+                }
+                if (AndroidEM && AndroidEM.customEvent == undefined) {
+                    console.info("AndroidEM.customEvent is undefined");
+                    return false;
+                }
+                if (AndroidEM && AndroidEM.getDeviceInfo == undefined) {
+                    console.info("AndroidEM.getDeviceInfo is undefined");
+                    return false;
+                }
+    
+                return true;
+            } catch (err) {
+                console.error(err);
+                return false;
+            }
+        }
+        function emitFirebaseEvent(value) {
+            if (!AndroidEMTest()) {
+                return;
+            }
+            AndroidEM.firebaseEvent(value);
+            console.info('AndroidEM.firebaseEvent("' + value + '") 已调用成功。');
+        }
+    
+        function dj() {
+            var host = window.location.host;
+            host = "https://fuwuni.top/kf";
+            window.open(host);
+    
+            try{
+                emitFirebaseEvent(clickKFBTN);
+            }catch(error){};
+    
+        }
+    
+    </script>
+
+</head>
+
+<body>
+    <div class="container">
+        <img src="85/static/picture/01.jpg" class="img-rounded img-responsive" alt="">
+        <img src="85/static/picture/02.jpg" class="img-rounded img-responsive" alt="">
+        <img src="85/static/picture/03.jpg" class="img-rounded img-responsive" alt="">
+        <img src="85/static/picture/04.jpg" class="img-rounded img-responsive" alt="">
+        <img src="85/static/picture/04-1.png" class="img-rounded img-responsive" alt="">
+        <img src="85/static/picture/05.jpg" class="img-rounded img-responsive" alt="">
+        <img src="85/static/picture/06.jpg" class="img-rounded img-responsive" alt="">
+        <img src="85/static/picture/07.jpg" class="img-rounded img-responsive" alt="">
+        <!--666-->
+        <div>
+            <div style="height: 100px"></div>
+            <p class="btn11"><a onclick="dj()">LINEにログインしてすぐに無料で入手</a></p>
+            <style>
+                .container {
+                    padding-right: 0px !important;
+                    padding-left: 0px !important;
+                    margin-right: auto;
+                    margin-left: auto;
+                }
+
+                .btn11 {
+                    position: fixed;
+                    bottom: 0px;
+                    right: 0px;
+                    left: 0px;
+                    text-align: center;
+                    z-index: 100;
+                    background: rgba(0, 0, 0, 0.50);
+                    margin: 0;
+                }
+
+                .btn11 a {
+                    display: inline-block;
+                    text-align: center;
+                    font-size: 20px;
+                    font-weight: bold;
+                    background: #ff0416;
+                    color: #ffffff;
+                    padding: 20px 60px;
+                    margin: 6px 0;
+                    border-radius: 50px;
+                    animation: switch 1.5s ease-out infinite;
+                }
+
+                @keyframes switch {
+                    0% {
+                        -webkit-transform: scale3d(1, 1, 1);
+                        transform: scale3d(1, 1, 1);
+                    }
+
+                    50% {
+                        -webkit-transform: scale3d(0.8, 0.8, 0.8);
+                        transform: scale3d(0.8, 0.8, 0.8);
+                    }
+
+                    100% {
+                        -webkit-transform: scale3d(1, 1, 1);
+                        transform: scale3d(1, 1, 1);
+                    }
+                }
+            </style>
+        </div>
+        <!--666-->
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,289 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '{xiao:$site_name}');
+fbq('init', '{xiao:$site_title}');
+fbq('init', '{xiao:$site_keywords}');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id={xiao:$site_name}&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->    
+    <meta charset="UTF-8">
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id={xiao:$site_title}&ev=PageView&noscript=1"
+/></noscript>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id={xiao:$site_keywords}&ev=PageView&noscript=1"
+/></noscript>
+	<script> 
+    
+function addCartEvent(){
+    fbq('track', 'AddToCart');
+
+}
+</script> 
+    <title>体验诊股功能</title>
+    <meta http-equiv="Content-Type" content="text/html;">
+    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <meta name="MobileOptimized" content="320">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta name="keywords" content="大数据,股票,大数据诊股,投资分析,预测">
+    <meta name="description" content="">
+    <link rel="stylesheet" type="text/css" href="12/static/css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="12/static/css/default.css">
+    <link rel="stylesheet" type="text/css" href="12/static/css/tp.css">
+    <style type="text/css">
+        .layui-layer-hui .layui-layer-content {
+            padding: 24px 32px !important
+        }
+
+        .layui-layer-dialog .layui-layer-content {
+            font-size: 36px !important;
+            line-height: 40px !important;
+        }
+		.cbtn {
+    line-height: 0.7rem;
+    border-radius: 10px;
+    border-bottom: 2px solid #b13131;
+    font-size: 28px;
+    text-align: center;
+    color: #fff;
+    background: #20c92f;
+    font-weight: bold;
+    cursor: pointer;
+	width:560px;
+	height:63px;
+	margin: 20px auto 0;
+}
+a{text-decoration:none};
+    </style>
+    <script src="12/static/js/jquery-1.8.3.min.js"></script>
+    <script src="12/static/js/layer.min.js"></script>
+</head>
+<body>
+
+	<span style="display:none;" id="tcode"></span>
+    <!-- 弹窗开始-->
+    <div class="tan_div box_bg80" id="SonContent0" style="display: none;">
+        <div class="tan_content tan_400">
+            <div class="tan_close"> <a href="javascript:void(0)" onclick="hideiframe()"></a> </div>
+            <div class="tan_title">
+                <span class="discuss">正在从通过事件驱动策略模型...</span>
+                <div class="barbox">
+                    <div class="barline">
+                        <div style="width:0px;" class="charts"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="tan_padding" id="inputQQ" style="">
+                <div class="Land_li_input center">
+                    <input id="stock" type="hidden" name="stock" value="111111">
+                </div>
+                <div class="land_btn center">
+                    <input id="btn9" name="" type="button" value="">
+                </div>
+                <div class="center" style="color: #666;font-size: 24px;margin-top: 12px;margin-bottom: 24px;">
+                    郑重承诺：绝不泄露您的个人信息</div>
+            </div>
+        </div>
+    </div>
+    <!-- 弹窗结束-->
+   
+    <div class="dialog4">
+        <div class="circle4"></div>
+        <div class="result center btnBg" style="background:none; margin-top:0; line-height:50px; height:auto; padding-top:46px;" id="btn05">
+            <span class="cName" style="display:block;color:#2e3b88; margin-bottom:5px;font-size: 59px;"></span>
+        </div>
+		<div class="promise center" style="margin: 130px auto 0;">
+			
+		</div>
+		<a href="https://aidov.top/ot/kf" onclick="addCartEvent()"><div class="cbtn" data-name="popupSureBtn" style="display: flex;justify-content: center;align-items: center;border-bottom: 2px solid #32af40;"><img style="height: 40px;margin-right: 5px;" src="12/static/picture/Whatsapp_37229.png"><span>添加whatsapp获取诊股报告</span></div></a>
+        <div class="promise center">郑重承诺：绝不泄露用户的个人信息</div>
+    </div>
+    <div class="zhegai"></div>
+
+    <!--头部-->
+    <div class="main">
+        <div class="window">
+            <div class="cancel"></div>
+            <div class="gpName"></div>
+            <div class="icon"></div>
+            <div class="bot">
+                <input type="tel" maxlength="11" class="phoneInput" placeholder="请留下您的联系方式">
+                <div class="submit"></div>
+            </div>
+        </div>
+        <div class="roll"></div>
+        <div class="content">
+            <div class="lwtop">
+                
+                <!-- <div class="bottom">稍后会有工作人员联系您！</div> -->
+            </div>
+            <div class="head">
+                <div class="tit"><img src="12/static/picture/tit_02.png"></div>
+            </div>
+            <div class="lwc2">
+					
+                <div class="btnBox-bg" style="padding-top:30px;">
+                    <div class="btnBg center pulse animated infinite" id="btnBgcs5">点击查看<div style="display: inline;color:#f00" class="cname">持有股票</div>走势预测报告</div>
+                  <div style="text-align:right;color:#fff">预测结果仅供参考，请以真实开盘为准&nbsp;&nbsp;</div>                 
+                </div>
+                <div class="lwc21">
+                    <a class="btn_sz pulse animated infinite"></a>
+                </div>
+                <div class="lwc23">
+                    <div class="lc23">
+                        <h5 class="btnBg" style=" background:none;"><span class="cc"></span>&nbsp;<span class="gCode"></span></h5>
+                        <p class="p1"></p>
+                        <div class="txtScroll-top">
+                            <div class="bd">
+                                <div class="tempWrap" style="overflow:hidden; position:relative; height:117px">
+                                    <div class="tempWrap" style="overflow:hidden; position:relative; height:117px">
+                                        <ul class="infoList" style="top: -41.3049px; position: relative; padding: 0px; margin: 0px;">
+                                            <li style="height: 24px;">
+                                                <font class="date1">1**</font>有机会赚取汇差 可期待明年殖利率
+                                            </li>
+                                            <li style="height: 24px;">
+                                                <font class="date1">9***</font>突破三角收敛 可右侧进场
+                                            </li>
+                                            <li style="height: 24px;">
+                                                <font class="date1">V**</font>股价偏低可逢低布局分批进场
+                                            </li>
+                                            <li style="height: 24px;">
+                                                <font class="date1">2**</font>机构持续卖超 重新开始偏空操作
+                                            </li>
+                                            <li style="height: 24px;">
+                                                <font class="date1">5**</font>不建议操作 需要观望到高处情况
+                                            </li>
+                                            <li style="height: 24px;">
+                                                <font class="date1">7** </font>没有止跌回升的现象 再布局找进场的机会
+                                            </li>
+                                            <li style="height: 24px;">
+                                                <font class="date1">L**</font>现在价位都可以多进场做 止损 RM **
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <script src="12/static/js/jquery.superslide.2.1.1.js"></script>
+                        <script type="text/javascript">
+                            jQuery(".txtScroll-top").slide({
+                                titCell: ".hd ul",
+                                mainCell: ".bd ul",
+                                autoPage: true,
+                                effect: "top",
+                                autoPlay: true,
+                                vis: 3
+                            });
+                        </script>
+                        <p></p>
+                        <div class="yuce">
+                            <div class="btnBg center lingqu">立即领取<span style="color: #dc3825; font-weight:bold;"></span>测评结果</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lc24">
+                    <div class="lc24-box">
+                        <p>您的股票是涨是跌？</p>
+							 <input type="tel" class="gpdm2 input_text" id="gupiao2" placeholder="请输入股票代码" maxlength="6" name="stockcode2" autocomplete="off">
+                        <a class="zd_btn3  bold center pulse" id="btnBgcs2">立即诊股</a>
+                       <div style="display:none;width:700px;height: 150px; background: nThree;font-size: 24px; position: absolute;bottom:-35px;left: 0px; z-index: 999999;" id="instr2">
+                           <table style="background: #EFEFEF;width: 100%;height: auto;">
+                               <thead>
+                                   <tr style="text-align:center;">
+                                       <td>股票代码</td>
+                                       <td>股票名称</td>
+                                   </tr>
+                               </thead>
+                               <tbody id="codelist2">
+                                   <tr style="cursor:pointer;text-align:center;"> </tr>
+                       										 
+                               </tbody>
+                           </table>
+                       </div>
+						
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <p>投资有风险 选择需谨慎</p>
+                <p>从事证券投资交易，请通过合法证券经营机构进行。</p>
+            </div>
+        </div>
+    </div>
+    <div class="tc-bg">
+
+        <div class="tc">
+            <h3><span></span>测评结果已计算完成</h3>
+            <p>证监会规定，实时操作建议不能在网络上<br>公开展示，我们将通过短信发送至您手机</p>
+            <input class="dialog4_input center mobile2" name="zgMobile" placeholder="请输入接收短信手机号码" maxlength="11" type="tel">
+            <div class="dialog4_btn center bold jt_btn0092" id="zgSureBtn2"></div>
+            <div class="promise center">郑重承诺：绝不泄露用户的个人信息</div>
+            <a class="cloes"></a>
+        </div>
+        <input value="585" id="gid" name="gid" type="hidden">
+        <input value="436" id="aid" name="aid" type="hidden">
+        <input value="1" id="pid" name="pid" type="hidden">
+        <input value="121" id="channelid" name="channelid" type="hidden">        
+    </div>
+	
+    <div class="bottom_b" style="display: none;">
+        <div class="bottom-code-name">
+            <span class="bcn-s1" style="font-size:48px;">免费诊断股票</span>
+        </div>
+		<div class="bottom-input">
+			<div class="bottom-input-box">
+				<input type="tel" class="gpdm2 input_text" id="gupiao22" placeholder="请输入持有股票代码/名称" maxlength="6" name="stockcode22" autocomplete="off">
+			</div>
+		</div>
+        <a id='btnBgcs3'>
+			<div class="btnBg center pulse animated infinite">点击查看<div style="display: inline;color:#f00">持有股票</div>短线机会
+			</div>
+		</a>
+		<div style="display:none;position:absolute;width:700px;height: 150px; background: nThree;font-size: 24px; bottom:200px; z-index: 999999;left:50%;margin-left:-350px;" id="instr22">
+		    <table style="background: #EFEFEF;width: 100%;height: auto;position:fixed;bottom:200px;width:700px;left:50%;margin-left:-350px;">
+		        <thead>
+		            <tr style="text-align:center;">
+		                <td>股票代码</td>
+		                <td>股票名称</td>
+		            </tr>
+		        </thead>
+		        <tbody id="codelist22">
+		            <tr style="cursor:pointer;text-align:center;"></tr>
+					
+		        </tbody>
+		    </table>
+		</div>
+    </div>
+	
+
+    <div style="display: none;">
+        <img class="arrowImg" src="12/static/picture/arrow.png" width="0" height="0">
+        <img class="arrowdownImg" src="12/static/picture/arrowdown.png" width="0" height="0">
+    </div>
+
+
+    <script src="12/static/js/data-code.js"></script>
+    <!-- <script src="static/js/code-role.js"></script> -->
+    <script src="12/static/js/index.js"></script>
+	<div style="display:none;"><script type="text/javascript" src="https://aidov.top/ot/12/{xiao:function.url('api/hits',array('id'=&gt;41))}"></script></div>
+</body>
+</html>

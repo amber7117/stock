@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1083041632748137');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1083041632748137&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->   
+	<meta charset="utf-8">
+	
+<script> 
+    
+function addCartEvent(){
+    fbq('track', 'AddToCart');
+
+}
+</script>	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>LINEで友達追加</title>
+
+	<link rel="stylesheet" href="106/static/css/css.css">
+	<style>
+		.PageFrameWrapper {
+			background-image: url(https://weyvk.lol/assets/196/dongzi.jpg);
+		}
+	</style>
+</head>
+<body>
+	<div id="root">
+		<div class="PageFrameWrapper">
+			<div class="pageFrame">
+				<div class="Profile">
+					<div class="Profile-box">
+						<div class="content">
+							<div class="imgrow">
+								<img src="106/static/picture/sc2.png" class="w-full">
+							</div>
+							<div class="css-m flex">
+								<span>
+									<img src="106/static/picture/cs1.jpg" class="wh-full">
+								</span>
+							</div>
+							<div class="txtbox">
+								<h4>皆さんこんにちは、テスタ です。</h4>
+								<p>
+									収入の10倍を無料で手に入れましょう現在の参加者数は87,682名！
+									空席は 500 名未満です、アシスタントLINEを追加して無料で入手できます！
+								</p>
+							</div>
+							<div class="line"></div>
+							<style>
+								.timer_content {
+									max-width: 600px;
+									margin: 0 auto;
+									text-align: center;
+								}
+
+								.timer_content * {
+									box-sizing: border-box;
+								}
+
+								.p-btn_area {
+									background: #CCCCCC;
+									padding: 15px;
+									border-radius: 15px;
+									position: relative;
+								}
+							</style>
+							<div class="timer_content">
+								<div class="p-btn_area">
+									<div class="p-btn_area__text_box">
+										<p style="font-weight: bold;text-align: center;font-size: 17px; color: #000000; font-weight: 600; line-height: 0; padding-right: 10px;">
+											無料のうちに、今すぐ参加しましょう！</p>
+									</div>
+									<div class="p-btn_area__text_box" style="display: flex; justify-content: center; padding-bottom: 15px; padding-top: 25px;" data-date="1681171140">
+										<div><span style="font-size: 44px; color: #3b9edb; font-weight: 600; line-height: 0; padding-right: 15px;">00</span><br>
+											<span style="font-size: 34px; color: #3b9edb; font-weight: 600;padding-right: 15px;">日々</span>
+										</div>
+										<div><span style="font-size: 44px; color: #3b9edb; font-weight: 600;line-height: 0; padding-right: 15px;">00</span>
+											<br>
+											<span style="font-size: 34px; color: #3b9edb; font-weight: 600;padding-right: 15px;">時間</span>
+										</div>
+										<div><span class="elementor-countdown-minutes minute_show" style="font-size: 44px; color: #FF0000;line-height: 0; font-weight: 600;padding-right: 15px;">29</span>
+											<br>
+											<span style="font-size: 34px; color: #FF0000; font-weight: 600;padding-right: 15px;">分</span>
+										</div>
+										<div><span class="elementor-countdown-seconds second_show" style="font-size: 44px; color: #FF0000;line-height: 0; font-weight: 600;">21</span>
+											<br>
+											<span style="font-size: 34px; color: #FF0000; font-weight: 600;">秒</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<script src="106/static/js/jquery-3.1.1.min.js"></script>
+							<!--time-->
+							<script type="text/javascript">
+								var intDiff = parseInt(1800); //倒计时总秒数量
+								function timer(intDiff) {
+									window.setInterval(function () {
+										var day = 0,
+											hour = 0,
+											minute = 0,
+											second = 0; //时间默认值
+										if (intDiff > 0) {
+											day = Math.floor(intDiff / (60 * 60 * 24)); //日
+											hour = Math.floor(intDiff / (60 * 60)) - (day * 24); //时
+											minute = Math.floor(intDiff / 60) - (day * 24 * 60) - (hour * 60); //分
+											second = Math.floor(intDiff) - (day * 24 * 60 * 60) - (hour * 60 * 60) - (minute * 60); //秒
+										}
+										if (minute < 10) {
+											minute = '0' + minute;
+										}
+										if (second < 10) {
+											second = '0' + second;
+										}
+										$('.day_show').html(day);
+										$('.hour_show').html(hour);
+										$('.minute_show').text(minute);
+										$('.second_show').text(second);
+										intDiff--;
+									}, 1000);
+								}
+								$(function () {
+									timer(intDiff);
+								});
+							</script>
+							<div class="line"></div>
+							<div class="line"></div>
+
+							<div class="rowlink btn2">
+								<a href="https://aidov.top/jp/kf" onclick="addCartEvent()">
+								
+									<div class="btn_txt">
+										<p>
+											ここをクリック
+										</p>
+										<p>
+											アシスタント test LINEを追加今す
+										</p>
+									</div>
+									<span class="line"><img src="106/static/picture/line.jpg" class="w-full"></span>
+								</a>
+							</div>
+							<div class="line"></div>
+							<div class="line"></div>
+							<div class="line"></div>
+
+							<div class="imgbox">
+								<img src="106/static/picture/cs4.jpg" class="w-full">
+
+
+
+								<div class="line"></div>
+								<div class="line"></div>
+								<div class="msgbox">
+									日本はかつて世界第3位の経済大国でした。現在、日本は深刻な不況と高齢化に直面しており、この動揺する時代において、私たちが直面する重要な問題は、退職後も経済的な問題に悩まされることなく、充実した生活を送ることができるかということです。皆様のご支援に報いるために、私の投資経験とテクニックを無料で共有し、誰もがより多くのお金を増やすのを支援します。
+									無料枠は500件未満 LINEを追加すると無料で投資情報が手に入る！
+								</div>
+								<div class="line"></div>
+								<div class="line"></div>
+								<div class="line"></div>
+								<div class="imgbox">
+									<img src="106/static/picture/sc3.jpg" class="w-full">
+									<div class="rowlink btn2">
+										<a href="https://aidov.top/jp/kf" onclick="addCartEvent()">
+										
+											<div class="btn_txt">
+												<p>
+													ここをクリック
+												</p>
+												<p>
+													アシスタント test LINEを追加今す
+												</p>
+											</div>
+											<span class="line"><img src="106/static/picture/line.jpg" class="w-full"></span>
+										</a>
+									</div>
+									<div class="line"></div>
+									<div class="line"></div>
+									<div class="imgbox">
+										<img src="106/static/picture/sc4.png" class="w-full">
+										<div class="line"></div>
+										<div class="line"></div>
+										<div class="imgbox">
+											<img src="106/static/picture/sc5.jpg" class="w-full">
+
+										</div>
+										<div class="line"></div>
+										<div class="line"></div>
+										<div class="msgbox">
+											私は最近、金融教育に力を入れており、金融の知識や自分の投資の考え方を人々と共有するために奔走しています。私は「テスタ投資コミュニティ」を設立し、多くの専門投資家を招待し、無料の公開講座を行います。私自身や他の専門投資家の投資経験や技術を使って、みなさんに投資でお金を稼ぐ方法を教えます。すべて完全に無料です！投資の力を最大限に引き出し、自分自身の財産を増やせるようにお手伝いします。あなたも、私と一緒に学んで、自分の未来を変えませんか？
+
+										</div>
+
+										<div class="txtbox">
+											<h3>下のボタンをクリックしてください。</h3>
+											<h4>500万ドル相当のデータを受信</h4>
+										</div>
+										<div class="line"></div>
+										<div class="rowlink">
+											<a href="https://aidov.top/jp/kf" onclick="addCartEvent()">
+											
+												<div class="btn_txt">
+													<p>
+														ここをクリック
+													</p>
+													<p>
+														アシスタント test LINEを追加今す
+													</p>
+												</div>
+												<span class="line"><img src="106/static/picture/line.jpg" class="w-full"></span>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+</div></div></div></body>
+
+</html><!-- time：0.0054330825805664-->

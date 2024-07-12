@@ -1,0 +1,216 @@
+
+/* ------------------------------------------------------------ */
+/* 僙儈僫乕怽崬傒 儃僞儞斉 CSS    */
+/* ------------------------------------------------------------ */
+
+.seminar_apply h3.ttl_line {
+  border-top-style: dotted;
+  border-right: 0;
+  border-bottom: 0;
+  border-left: 0;
+  color: #1c236d;
+  font-size: 20px;
+  line-height: 1;
+  position: relative;
+  margin: 2em 0 1.5em !important;
+  font-weight: normal;
+}
+.seminar_apply h3.ttl_line span {
+  display: inline-block;
+  background: #fff;
+  padding: 0 .5em;
+  white-space: nowrap;
+  position: absolute;
+  top: -.5em;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.seminar_apply .note_list {
+  margin-bottom: 1.5em;
+  font-size: 14px !important;
+}
+.seminar_apply .note_list li {
+  padding-left: 1em;
+  text-indent: -1em;
+}
+.seminar_apply .workshop_msg {
+  margin-bottom: 1.5em;
+  padding-left: 1em;
+  text-indent: -1em;
+  font-size: 14px !important;
+}
+.seminar_apply .date_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.seminar_apply .date_list li {
+  position: relative;
+  width: 49%;
+  min-height: 90px;
+  background: #fff;
+  border: 1px solid #e8e7e7;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.seminar_apply .date_list li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 110px;
+  padding: 10px;
+  color: inherit;
+  font-size: 16px;
+  text-align: left;
+  text-decoration: none;
+}
+.seminar_apply .date_list li a p {
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.seminar_apply .date_list li a.disabled {
+  pointer-events: none;
+}
+.seminar_apply .date_list li a:hover {
+  opacity: 0.7;
+  text-decoration: none;
+}
+.seminar_apply .date_list li.no_dates {
+  justify-content: center;
+  width: 100%
+}
+.seminar_apply .date_list .txt_date {
+  display: inline;
+  width: calc(100% - 8.5em);
+  min-height: 2.5em;
+  white-space: nowrap;
+  font-weight: bold;
+}
+.seminar_apply .date_list .format_label {
+  width: 115px;
+  background-color: rgba(218, 95, 52, .1);
+  border-radius: 4px;
+  padding: 0.5rem;
+  font-size: 12px;
+  text-align: center;
+  line-height: 1;
+  float: right;
+}
+.seminar_apply .date_list .format_label.label_basic {
+  background-color: rgba(44, 65, 152, 0.2);
+}
+.seminar_apply .date_list .format_label.label_plus {
+  background-color: rgba(111, 176, 191, 0.3);
+}
+.seminar_apply .date_list .txt_place {
+  width: calc(100% - 95px);
+  min-height: 2.5em;
+  font-size: 14px;
+}
+.seminar_apply .date_list .availability {
+  width: calc(100% - 95px);
+  color: #db6137;
+  font-size: 12px;
+  font-weight: bold;
+}
+.seminar_apply .date_list .availability.none {
+  color: #1c236d;
+}
+.seminar_apply .date_list .btn {
+  position: absolute;
+  bottom: 17px;
+  right: 15px;
+  width: 90px;
+  padding: 0.8em 0 0.8em 0.5em;
+  background: #e60012;
+  border-radius: 5px;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  line-height: 1;
+  white-space: nowrap;
+}
+.seminar_apply .date_list .btn span {
+  display: block;
+  position: relative;
+  padding-right: 25px;
+  color: #fff;
+}
+.seminar_apply .date_list .btn span::before {
+  position: absolute;
+  top: 50%;
+  right: 7px;
+  transform: translateY(-50%);
+  width: 14px;
+  height: 14px;
+  background: #fff;
+  border-radius: 50%;
+  content: '';
+}
+.seminar_apply .date_list .btn span::after {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  border-left: 6px solid #e60012;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  content: '';
+}
+.seminar_apply .date_list .disabled .btn {
+  background: #CCC8C8;
+  box-shadow: 0 3px 0 #CCC8C8;
+}
+.seminar_apply .date_list .kabu {
+  border-color: #5e76a7;
+}
+.seminar_apply .date_list .kabu .txt_name {
+  color: #5e76a7;
+}
+.seminar_apply .date_list .fudo {
+  border-color: #44a1c5;
+}
+.seminar_apply .date_list .fudo .txt_name {
+  color: #44a1c5;
+}
+.seminar_apply .date_list .kyouyousemi {
+  border-color: #ea5520;
+}
+.seminar_apply .date_list .kyouyousemi .txt_name {
+  color: #ea5520;
+}
+.seminar_apply .date_list .mf {
+  border-color: #8a9f55;
+}
+.seminar_apply .date_list .mf .txt_name {
+  color: #8a9f55;
+}
+@media screen and (max-width: 599px) {
+  .seminar_apply h3.ttl_line {
+    font-size: 16px;
+  }
+  .seminar_apply .date_list {
+    display: block;
+  }
+  .seminar_apply .date_list li {
+    width: 100%;
+  }
+  .seminar_apply .date_list li a {
+    padding: 3%;
+    font-size: 14px;
+  }
+  .seminar_apply .date_list li a p {
+    font-size: 14px;
+  }
+  .seminar_apply .date_list .format_label {
+    font-size: 14px;
+  }
+  .seminar_apply .date_list .txt_place {
+    font-size: 12px;
+  }
+  .seminar_apply .date_list .btn {
+    font-size: 14px;
+  }
+}
