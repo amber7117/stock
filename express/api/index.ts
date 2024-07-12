@@ -17,6 +17,20 @@ app.get ('/jp' function (req, res) {
 });
 
 
+app.use('/images', express.static('images'));
+
+app.get('/api/images', (req, res) => {
+    const directoryPath = path.join(__dirname, 'images');
+    fs.readdir(directoryPath, (err, files) => {
+        if (err) {
+            return res.status(500).json({ error: 'Unable to scan directory' });
+        }
+        const imageFiles = files.filter(file => /\.(jpg|jpeg|png|gif)$/.test(fi$
+        res.json(imageFiles);
+    });
+});
+
+
 app.get('/', function (req, res) {
 	res.sendFile(path.join(__dirname, '..', 'components', 'home.htm'));
 });
