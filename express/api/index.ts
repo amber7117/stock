@@ -12,22 +12,28 @@ const urlencodedParser = bodyParser.urlencoded({ extended: false });
 
 app.use(express.static('public'));
 
-app.get ('/jp' function (req, res) {
-	res.sendFile(path.join(__dirname, '..', 'components', 'index.html'));
-});
-
 
 app.use('/images', express.static('images'));
 
-app.get('/api/images', (req, res) => {
-    const directoryPath = path.join(__dirname, 'images');
-    fs.readdir(directoryPath, (err, files) => {
-        if (err) {
-            return res.status(500).json({ error: 'Unable to scan directory' });
-        }
-        const imageFiles = files.filter(file => /\.(jpg|jpeg|png|gif)$/.test(fi$
+// Middleware to serve files from the 'images' directory under '/images' route
+app.use('/images', express.static('images'));
+
+// Route to serve 'index.htm' from 'components' directory for GET request to '/jp'
+app.get('/jp', (req, res) => {
+    res.sendFile(path.join(__dirname, '..', 'components', 'index.htm'));
+});
+
+// Route to list image files in the 'images' directory for GET request to '/api/images'
+app.get('/api/images', async (req, res) => {
+    try {
+        const directoryPath = path.join(__dirname, 'images');
+        const files = await fs.readdir(directoryPath);
+        const imageFiles = files.filter(file => /\.(jpg|jpeg|png|gif)$/.test(file));
         res.json(imageFiles);
-    });
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ error: 'Unable to scan directory' });
+    }
 });
 
 
