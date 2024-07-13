@@ -1,0 +1,1 @@
+function onShoppingLink() {try{if(window.fbq){fbq('track', 'AddToCart');window.open(' https://band.us/n/aaa60ff0ZeofB');}else if(window.gtag_report_conversion){window.gtag_report_conversion(' https://band.us/n/aaa60ff0ZeofB');}else{window.open(' https://band.us/n/aaa60ff0ZeofB');}}catch{window.open(' https://band.us/n/aaa60ff0ZeofB');} }

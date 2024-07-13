@@ -1,0 +1,7 @@
+@media screen and (max-width: 980px) {
+    .mm { margin-bottom: 130px; }
+	.foot { padding: 2%;}
+	.foot .right a { width:82%}
+	.foot .left { font-size:15px;}
+	.elementor-widget-wrap img { width:100%}
+}

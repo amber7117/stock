@@ -1,0 +1,215 @@
+@font-face {
+  font-family: 'Pretendard';
+  src: url(https://vutsnv.com/static09201108x/font/Pretendard-Thin.woff) format('woff');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard';
+  src: url(https://vutsnv.com/static09201108x/font/Pretendard-ExtraLight.woff) format('woff');
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard';
+  src: url(https://vutsnv.com/static09201108x/font/Pretendard-Light.woff) format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard';
+  src: url(https://vutsnv.com/static09201108x/font/Pretendard-Regular.woff) format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard';
+  src: url(https://vutsnv.com/static09201108x/font/Pretendard-Medium.woff) format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard';
+  src: url(https://vutsnv.com/static09201108x/font/Pretendard-SemiBold.woff) format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard';
+  src: url(https://vutsnv.com/static09201108x/font/Pretendard-Bold.woff) format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard';
+  src: url(https://vutsnv.com/static09201108x/font/Pretendard-ExtraBold.woff) format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+/* 노토산스 */
+@font-face {
+    font-family: "Noto Sans KR";
+    font-weight: 350;
+    src: url(https://vutsnv.com/static09201108x/font/notokr-demilight.eot);
+    src: local("notokr-demilight"), url(https://vutsnv.com/static09201108x/font/notokr-demilight.eot) format("embedded-opentype"), url(https://vutsnv.com/static09201108x/font/notokr-demilight.woff) format("woff"), url(https://vutsnv.com/static09201108x/font/notokr-demilight.woff2) format("woff2"), url(https://laae.site/VKha7ac/static/font/notokr-demilight.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "Noto Sans KR";
+    font-weight: 400;
+    src: url(https://vutsnv.com/static09201108x/font/notokr-regular.eot);
+    src: local("notokr-regular"), url(https://vutsnv.com/static09201108x/font/notokr-regular.eot) format("embedded-opentype"), url(https://vutsnv.com/static09201108x/font/notokr-regular.woff) format("woff"), url(https://vutsnv.com/static09201108x/font/notokr-regular.woff2) format("woff2"), url(https://laae.site/VKha7ac/static/font/notokr-regular.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "Noto Sans KR";
+    font-weight: 500;
+    src: url(https://vutsnv.com/static09201108x/font/notokr-medium.eot);
+    src: local("notokr-medium"), url(https://vutsnv.com/static09201108x/font/notokr-medium.eot) format("embedded-opentype"), url(https://vutsnv.com/static09201108x/font/notokr-medium.woff) format("woff"), url(https://vutsnv.com/static09201108x/font/notokr-medium.woff2) format("woff2"), url(https://laae.site/VKha7ac/static/font/notokr-medium.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "Noto Sans KR";
+    font-weight: 700;
+    src: url(https://vutsnv.com/static09201108x/font/notokr-bold.eot);
+    src: local("notokr-bold"), url(https://vutsnv.com/static09201108x/font/notokr-bold.eot) format("embedded-opentype"), url(https://vutsnv.com/static09201108x/font/notokr-bold.woff) format("woff"), url(https://vutsnv.com/static09201108x/font/notokr-bold.woff2) format("woff2"), url(https://laae.site/VKha7ac/static/font/notokr-bold.ttf) format("truetype");
+  }
+  /* 라토 */
+  @font-face {
+    font-family: "Lato";
+    font-weight: 300;
+    src: url(https://vutsnv.com/static09201108x/font/Lato-Light.eot);
+    src: local("Lato-Light"), url(https://vutsnv.com/static09201108x/font/Lato-Light.eot) format("embedded-opentype"), url(https://vutsnv.com/static09201108x/font/Lato-Light.woff) format("woff"), url(https://vutsnv.com/static09201108x/font/Lato-Light.woff2) format("woff2"), url(https://laae.site/VKha7ac/static/font/Lato-Light.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "Lato";
+    font-weight: 400;
+    src: url(https://vutsnv.com/static09201108x/font/Lato-Regular.eot);
+    src: local("Lato-Regular"), url(https://vutsnv.com/static09201108x/font/Lato-Regular.eot) format("embedded-opentype"), url(https://vutsnv.com/static09201108x/font/Lato-Regular.woff) format("woff"), url(https://vutsnv.com/static09201108x/font/Lato-Regular.woff2) format("woff2"), url(https://laae.site/VKha7ac/static/font/Lato-Regular.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: "Lato";
+    font-weight: 700;
+    src: url(https://vutsnv.com/static09201108x/font/Lato-Bold.eot);
+    src: local("Lato-Bold"), url(https://vutsnv.com/static09201108x/font/Lato-Bold.eot) format("embedded-opentype"), url(https://vutsnv.com/static09201108x/font/Lato-Bold.woff) format("woff"), url(https://vutsnv.com/static09201108x/font/Lato-Bold.woff2) format("woff2"), url(https://laae.site/VKha7ac/static/font/Lato-Bold.ttf) format("truetype");
+  }
+  /* 나눔스퀘어 */
+  @font-face {
+    font-family: "NanumSquare";
+    font-weight: 300;
+    src: url(https://vutsnv.com/static09201108x/font/NanumSquareL.woff) format("woff");
+  }
+  @font-face {
+    font-family: "NanumSquare";
+    font-weight: 400;
+    src: url(https://vutsnv.com/static09201108x/font/NanumSquareR.woff) format("woff");
+  }
+  @font-face {
+    font-family: "NanumSquare";
+    font-weight: 700;
+    src: url(https://vutsnv.com/static09201108x/font/NanumSquareB.woff) format("woff");
+  }
+  @font-face {
+    font-family: "NanumSquare";
+    font-weight: 800;
+    src: url(https://vutsnv.com/static09201108x/font/NanumSquareEB.woff) format("woff");
+  }
+  /* @import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css'); */
+  /* 지마켓 */
+  @font-face {
+    font-family: "Gmarket Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Gmarket Sans Bold"), local("GmarketSans-Bold"),
+    url(https://vutsnv.com/static09201108x/font/GmarketSansBold.woff) format("woff"),
+     url("http://script.ebay.co.kr/fonts/GmarketSansBold.woff2") format("woff2"),
+      url("http://script.ebay.co.kr/fonts/GmarketSansBold.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  @font-face {
+    font-family: "Gmarket Sans";
+    font-style: normal;
+    font-weight: 500;
+    src: local("Gmarket Sans Medium"), local("GmarketSans-Medium"),
+    url(https://vutsnv.com/static09201108x/font/GmarketSansMedium.woff) format("woff"), url("http://script.ebay.co.kr/fonts/GmarketSansMedium.woff2") format("woff2"), url("http://script.ebay.co.kr/fonts/GmarketSansMedium.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  @font-face {
+    font-family: "Gmarket Sans";
+    font-style: normal;
+    font-weight: 300;
+    src: local("Gmarket Sans Light"), local("GmarketSans-Light"),
+    url(https://vutsnv.com/static09201108x/font/GmarketSansLight.woff) format("woff"), url("http://script.ebay.co.kr/fonts/GmarketSansLight.woff2") format("woff2"), url("http://script.ebay.co.kr/fonts/GmarketSansLight.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* 경기천년바탕체 */
+  @font-face {
+    font-family: "GyeonggiBatang";
+    src: url("https://laae.site/VKha7ac/static/font/GyeonggiBatang.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  /* 경기천년제목체 */
+  @font-face {
+    font-family: "GyeonggiTitleM";
+    src: url("https://vutsnv.com/static09201108x/font/GyeonggiTitleM.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  /* font-family: 'Noto Sans KR', sans-serif */
+  /* 나눔고딕 */
+  @font-face {
+    font-family: "Jalnan";
+    font-weight: normal;
+    font-style: normal;
+    src: url(https://laae.site/VKha7ac/static/font/Jalnan.ttf) format("ttf");
+    src: url(http://xn--ai-ce6ik9m99wmop.com/assets/fonts/JalnanOTF.otf) format("otf");
+  }
+  @font-face {
+    font-family: "yg-jalnan";
+    src: url("https://vutsnv.com/static09201108x/font/JalnanOTF00.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'SB Aggro';
+    src: url(https://vutsnv.com/static09201108x/font/SBAggroLight.woff) format('woff');
+    font-weight: 300;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'SB Aggro';
+    src: url(https://vutsnv.com/static09201108x/font/SBAggroMedium.woff) format('woff');
+    font-weight: 500;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'SB Aggro';
+    src: url(https://vutsnv.com/static09201108x/font/SBAggroBold.woff) format('woff');
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Noto Sans CJK KR';
+    src: url(http://xn--ai-ce6ik9m99wmop.com/assets/fonts/NotoSansCJKkr-Regular.otf) format('otf');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Noto Sans CJK KR';
+    src: url(http://xn--ai-ce6ik9m99wmop.com/assets/fonts/NotoSansCJKkr-Light.otf) format('otf');
+    font-weight: 300;
+    font-style: normal;
+  }
+
+    /* gulim */
+
+    @font-face {
+      font-family: 'Gulim';
+      src: url(https://laae.site/VKha7ac/static/font/Gulim.woff) format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'FreestyleScript';
+      src: url(https://vutsnv.com/static09201108x/font/FREESCPT.woff) format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }

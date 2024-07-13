@@ -1,0 +1,192 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0 auto;
+    background: #fff;
+}
+
+ul {
+    list-style: none !important;
+    padding: 0 !important;
+}
+
+a {
+    color: #0170B9;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #3a3a3a;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.me-5 {
+    margin-right: 5px;
+}
+
+.my-15 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.btn {
+    display: inline-block;
+    text-align: center;
+    padding: 16px 32px;
+    background-color: #08c757;
+    color: #fff;
+    font-weight: bold;
+    line-height: 1;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.btn .btn-text {
+    word-wrap: break-word; /* 允许在单词内部断行 */
+    word-break: break-all; /* 允许在任何字符之间断行 */
+}
+
+
+.default-width {
+    max-width: 640px;
+}
+
+.el-container {
+    margin: 0 auto;
+}
+
+.el-row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.content-container {
+    padding: 5px;
+}
+
+.content {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    font-size: 13pt;
+    line-height: 1.85714285714286;
+    margin-top: 15px;
+    margin-bottom: 70px;
+}
+
+.content p {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.fixed-wrap {
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    bottom: 0px;
+}
+
+.text-wrap {
+    position: relative;
+}
+
+.content data[data-w-e-type="video"] {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.content div[data-w-e-type="video"] video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.top {
+    position: relative;
+}
+
+.top img {
+    width: 100%;
+}
+
+.top-widget {
+    width: 100%;
+    position: absolute; 
+    bottom: 5rem; 
+    left: 50%; 
+    transform: translateX(-50%);
+}
+
+.top-widget {
+    text-align: center;
+}
+
+.top-widget .btn {
+    font-size: 2rem;
+    background-color: #E71E00;
+    border-radius: 50px 50px 50px 50px;
+    letter-spacing: 5px;
+}
+
+.fixed-widget {
+    max-width: 631px;
+    left: 0%;
+    right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fixed-widget .btn {
+    min-width: 200px;
+    width: 100%;
+    padding: 16px 0;
+}
+
+.fixed-widget .countdown {
+    color: red; 
+    font-weight: bold; 
+    text-align: center; 
+    font-size: 24px; 
+    text-transform: uppercase;
+    background-color: #fff;
+}
+
+@keyframes  heart {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+    50% {
+        -webkit-transform: scale3d(0.9, 0.9, 0.9);
+        transform: scale3d(0.9, 0.9, 0.9);
+    }
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@media (max-width: 767px) {
+    
+}

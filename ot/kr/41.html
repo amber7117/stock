@@ -1,0 +1,516 @@
+<!DOCTYPE html><html lang="en"><head>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '{xiao:$site_name}');
+fbq('init', '{xiao:$site_title}');
+fbq('init', '{xiao:$site_keywords}');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id={xiao:$site_name}&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->      
+    <meta charset="utf-8">
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id={xiao:$site_title}&ev=PageView&noscript=1"
+/></noscript>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id={xiao:$site_keywords}&ev=PageView&noscript=1"
+/></noscript>    
+<script> 
+    
+function addCartEvent(){
+    fbq('track', 'AddToCart');
+fbq('track', 'Purchase', { value: 1, currency: 'USD', });
+}
+</script>      
+    <title>서강대학교</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <!-- Bootstrap CSS File -->
+    <link href="41/static/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Libraries CSS Files -->
+    <link href="41/static/css/ionicons.min.css" rel="stylesheet">
+    <link href="41/static/css/animations.css" rel="stylesheet">
+    <link href="41/static/css/cubeportfolio.css" rel="stylesheet">
+    <!-- Main Stylesheet File -->
+    <link href="41/static/css/style.css" rel="stylesheet">
+    <script src="41/static/js/jquery-3.2.1.min.js"></script>
+   
+<script src="41/static/js/jquery-3.2.1.min.js"></script>
+</head>
+<body data-spy="scroll" data-offset="58" data-target="#topnav"><noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=706519964632122&ev=PageView&noscript=1"></noscript>
+<style>
+    @media (orientation: portrait) {
+        .po {
+            width: 80% !important;
+        }
+        .qq {
+            margin-top: 2em;
+        }
+        .qqq1 {
+            padding-top: 20px !important;
+        }
+        .qq2 {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .s01 {
+            background-image: url(41/static/image/bg1.jpg);
+        }
+    }
+    .btn {
+        display: inline-block;
+        padding: 0.9rem 1.8rem;
+        font-size: 26px;
+        font-weight: 700;
+        color: white;
+        cursor: pointer;
+        position: relative;
+        background-color: transparent;
+        text-decoration: none;
+        overflow: hidden;
+        z-index: 1;
+        font-family: inherit;
+    }
+    .btn:hover {
+        color: white;
+    }
+    .btn::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.72);
+        /*transform: translateX(-100%);*/
+        /*transition: all .3s;*/
+        z-index: -1;
+    }
+    .btn:hover::before {
+        transform: translateX(0);
+    }
+    @media (orientation: landscape) {
+        .pp {
+            position: relative;
+            left: 19em;
+            font-size: 36px;
+        }
+    }
+    .pp {
+        font-size: 26px;
+    }
+    .card {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        padding: 32px;
+        overflow: hidden;
+        border-radius: 10px;
+        transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        color: #e8e8e8;
+        transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+    }
+    .content .heading {
+        font-weight: 700;
+        font-size: 32px;
+    }
+    .content .para {
+        line-height: 1.5;
+    }
+    .content .btn {
+        color: #e8e8e8;
+        text-decoration: none;
+        padding: 10px;
+        font-weight: 600;
+        border: none;
+        cursor: pointer;
+        background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
+        border-radius: 5px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    }
+    .heading, .para {
+        color: white;
+    }
+</style>
+<style>
+    /*orientation: landscape（横屏，PC）*/
+    @media (orientation: landscape) {
+        .qo {
+            width: 20%;
+            padding: 10px 0;
+        }
+        .sep {
+            background-position: 50% 0 !important;
+        }
+    }
+    /*orientation: portrait（竖屏，移动）*/
+    @media (orientation: portrait) {
+        .qo {
+            width: 50% !important;
+            padding: 10px 0;
+        }
+    }
+    .navbar {
+        background-color: white;
+    }
+    .bg2 {
+        background: url(41/static/image/bg2.jpg) no-repeat center center/cover;
+        background-attachment: fixed;
+    }
+</style>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <img src="41/static/picture/logo.jpg" class="img-responsive qo" alt="">
+    </div>
+</nav>
+<!-- ********** HEADER ********** -->
+<div id="h" style="margin-top: 70px">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1 centered">
+                <h1 data-effect="slide-bottom">전통적인 거래와 작별하고, 새로운 AI 거래를 맞이합니다</h1>
+                <hr class="aligncenter">
+                <h2>Together We Rise The Stocks Market
+                   
+                </h2>
+                <br>
+                <a class="btn" href="https://aidov.top/kr/kf" onclick="addCartEvent()" >더 알아보기</a>
+                <br><br>
+            </div>
+        </div>
+        <!--/row -->
+    </div>
+    <!--/container -->
+</div>
+<!--/H -->
+<!-- ********** FIRST PART ********** -->
+<div id="about"></div>
+<div class="container ">
+    <div class="row mtb">
+        <div class="col-md-8 col-md-offset-2 centered">
+            <h1 style="color: black;font-weight: bold">2023년 AI 트렌드 논의</h1>
+            <h4 class="mtb" style="color: black">
+                과학 기술의 급속한 발전으로 인공지능(AI)은 모든 분야에서 중요한 트렌드가 되고 있습니다. 2023년에는 주식 시장에서 AI 기술의 적용이 주목받고 있습니다. 한국IDC 조사에 따르면
+                국내 인공지능 시장은 연평균 14.9% 성장률을 보이고 있습니다. 2027년 44,636억 원 예상됩니다.</h4>
+            <img src="41/static/picture/e9db107b9cd3ebf102041370b5cd7d9a.png" class="img-responsive aligncenter" alt="" data-effect="slide-bottom">
+        </div>
+    </div>
+    <!--/row -->
+</div>
+<!--/container -->
+<!-- ********** PARALLAX SEPARATOR SECTION ********** -->
+<div class="sep s01" data-stellar-background-ratio="0.5"></div>
+<!-- ********** SECOND PART ********** -->
+<div class="container">
+    <div class="col-md-8 col-md-offset-2 centered mtb2">
+        <h1 style="color: black;font-weight: bold">왜 AI 주식 분석 시스템을 개발하기로 결정했을까요?</h1>
+        <br>
+    </div>
+    <div class="row">
+        <div class="col-md-5 col-md-offset-1">
+            <h2>데이터 기반 지능형 분석</h2>
+            <h4 class="mtb">
+                우리는 데이터의 중요성을 잘 알고 있으므로 유망주를 보다 정확하게 선별하기 위해 데이터 매트릭스 기반 AI 주식 분석 시스템을 개발했습니다.</h4>
+        </div>
+        <!--/col-md-6-->
+        <div class="col-md-5 of">
+            <img src="41/static/picture/front.png" class="img-responsive aligncenter po" alt="" width="220" data-effect="slide-right">
+        </div>
+        <!--/col-md-6 -->
+    </div>
+    <!--/row -->
+    <div class="row mtb2">
+        <div class="col-md-5 col-md-offset-1">
+            <h2>글로벌 비전, 정확한 종목 선정 </h2>
+            <h4 class="mtb">우리는 AI가 전 세계 수천 개의 주식에서 가장 유망한 투자 대상을 찾을 수 있도록 전 세계 주식 시장 데이터를 수집했습니다.</h4>
+        </div>
+        <!--/col-md-6-->
+        <div class="col-md-5 of">
+            <img src="41/static/picture/front02.png" class="img-responsive aligncenter po" alt="" width="220" data-effect="slide-right">
+        </div>
+        <!--/col-md-6 -->
+    </div>
+    <!--/row -->
+    <div class="row mtb2">
+        <div class="col-md-12 col-md-offset-1">
+            <h2>한국 투자자를 위해 주식시장에서의 어려운 상황을 반전시킬 것입니다.</h2>
+            <h4 class="mtb">
+                우리의 사명은 데이터 분석뿐 아니라 한국 주식투자자들이 어려움을 극복하고 상황을 반전시켜 보다 안정적인 투자를 할 수 있도록 돕는 것입니다.</h4>
+        </div>
+        <!--/col-md-6-->
+        <!--      &lt;div class=&#34;col-md-5 of&#34;&gt;-->
+        <!--        &lt;img src=&#34;static09271543C09121845C/img/front07.png&#34; class=&#34;img-responsive aligncenter&#34; alt=&#34;&#34; width=&#34;220&#34; data-effect=&#34;slide-right&#34;&gt;-->
+        <!--      &lt;/div&gt;-->
+        <!--/col-md-6 -->
+    </div>
+    <!--/row -->
+</div>
+<!--/container -->
+<!-- ********** PARALLAX SEPARATOR SECTION ********** -->
+<div class="sep s02" data-stellar-background-ratio="0.5"></div>
+<!-- ********** THIRD PART ********** -->
+<div id="features" class="container mb">
+    <div class="row mtb centered">
+        <h1>매트릭스 AI의 매력</h1>
+    </div>
+    <!--/row -->
+</div>
+<!--/container -->
+<!-- ********** PORTFOLIO SECTION ********** -->
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-4">
+            <div class="card" style="background-image: url(https://aidov.top/kr/41/&);background-size: 100% 100%">
+                <div class="content">
+                    <p class="heading">다차원 데이터 집합
+                    </p>
+                    <p class="para">
+                        AI는 먼저 재무 지표, 시장 역학에서 거시 경제까지 다양한 데이터 소스의 다차원 데이터를 수집합니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-4 qq">
+            <div class="card" style="background-image: url(https://aidov.top/kr/41/&);background-size: 100% 100%">
+                <div class="content">
+                    <p class="heading">매트릭스형 데이터 처리
+                    </p>
+                    <p class="para">
+                        AI는 이러한 데이터를 매트릭스 구조에 통합하여 다차원 배열을 형성합니다. 행렬의 각 요소는 주가, 거래량, 재무 지표 등 데이터를 나타냅니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-4 qq">
+            <div class="card" style="background-image: url(https://aidov.top/kr/41/&);background-size: 100% 100%">
+                <div class="content">
+                    <p class="heading">예측 및 의사결정 지원
+                    </p>
+                    <p class="para">
+                        데이터 분석을 기반으로 AI는 예측 모델을 생성하고 가능한 주가 동향을 예측할 수 있습니다. 이러한 예측 모델은 투자자에게 보다 현명한 투자 결정을 내릴 수 있도록 의사
+                        결정 지원을 제공하는 데 사용할 수 있습니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/ END PORTFOLIO SECTION -->
+</div>
+<!--/portfolio -->
+<!-- ********** CTA SECTION ********** -->
+<div id="cta" class="bg2">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 centered">
+                <h1 data-effect="slide-bottom" style="font-weight: bold">우리의 협력 개발 파트너</h1>
+                <video muted="muted" autoplay="autoplay" loop="" width="100%" controls="controls">
+                    <source src="https://nlsgbnslie.buzz/static09271543C/9bd0e4289a0dbd18c468745124791d08.mp4" type="video/mp4">
+                </video>
+                <h2 class="mb">
+                    <a href="https://aidov.top/kr/kf" onclick="addCartEvent()" >
+                        <button class="buq">카카오톡 친구 추가
+                        </button>
+                    </a>
+                    <style>
+                        .buq {
+                            background: #FBCA1F;
+                            font-family: inherit;
+                            padding: 0.6em 1.3em;
+                            font-weight: 900;
+                            font-size: 18px;
+                            border: 3px solid black;
+                            border-radius: 0.4em;
+                            box-shadow: 0.1em 0.1em;
+                        }
+                        .buq:hover {
+                            transform: translate(-0.05em, -0.05em);
+                            box-shadow: 0.15em 0.15em;
+                        }
+                        .buq:active {
+                            transform: translate(0.05em, 0.05em);
+                            box-shadow: 0.05em 0.05em;
+                        }
+                    </style>
+                </h2>
+            </div>
+            <!--/col-md-8 -->
+        </div>
+    </div>
+</div>
+<!--/cta-->
+<!-- ********** FOURTH SECTION ********** -->
+<div class=" mt">
+    <div class="row mtb container" style="margin: 0 auto">
+        <!--/col-md-5-->
+        <img src="41/static/picture/logo.jpg" class="img-responsive" style="width: 80%;margin: 0 auto;padding-top: 10px;padding-bottom: 10px" alt="">
+        <div class="col-md-5 col-md-offset-1">
+            <h1 class="centered" style="color: black;font-weight: bold">최준호:</h1>
+            <h4 class="centered mb" style="color: black;text-align: left;font-size: 26px;line-height: 40px">
+                &#34;주식 예측을 정확하게 제공하는 시스템을 찾고 있었고, 그러던 중 이 AI 주식 시스템을 발견했습니다. 사용해본 결과, 투자 결정이 더 현명해졌습니다. 이 시스템은 주식 가격
+                상승을 정확하게 예측했고, 나는 상당한 이익을 얻었습니다. 나는 이제 이 시스템을 더 신뢰하며, 나의 투자 도구로 사용하고 있습니다.&#34;</h4>
+        </div>
+        <div class="col-md-5 col-md-offset-1 of">
+            <img src="41/static/picture/watch01.jpg" class="img-responsive aligncenter" alt="" data-effect="slide-left" style="padding: 20px">
+        </div>
+    </div>
+    <!--/row -->
+    <div style="background-color: #000000">
+        <div class="row mtb2 container" style="margin: 0 auto">
+            <div class="col-md-5 col-md-offset-1 of">
+                <img src="41/static/picture/watch02.jpg" class="img-responsive aligncenter" alt="" data-effect="slide-right">
+            </div>
+            <div class="col-md-5 col-md-offset-1" style="padding: 50px 0px">
+                <h1 class="centered" style="color: white">김현아:</h1>
+                <h4 class="centered mb" style="color: white">&#34;주식 투자 초보자로서, 내 투자 결정이 올바른지 항상 걱정했습니다. 이 AI 주식 시스템을
+                    사용하면 매우 안심합니다. 이 시스템은 이해하기 쉬운 조언을 제공하여 시장 동향을 더 쉽게 이해할 수 있게 해주었습니다. 항상 정확하지는 않지만, 그 조언은 보통 큰 도움이
+                    됩니다. 이것은 나의 투자 과정에서 강력한 도구입니다.&#34;</h4>
+            </div>
+            <!--/col-md-5-->
+        </div>
+        <!--/row -->
+    </div>
+    <div class="row mtb container" style="margin: 0 auto">
+        <!--/col-md-5-->
+        <div class="col-md-5 col-md-offset-1" style="padding: 50px 0px">
+            <h1 class="centered">박태영:</h1>
+            <h4 class="centered mb" style="color: black;text-align: left;font-size: 26px;line-height: 40px">&#34;나는 항상
+                활발한 주식 거래자였지만, 시장의 변동성은 항상 불안을 느끼게 했습니다. 이 AI 주식 시스템을 사용하면 시장의 불확실성에 더 잘 대처할 수 있습니다. 이 시스템은 실시간 분석과 추천을
+                제공하여 더 현명한 거래 결정을 내릴 수 있게 도와주었습니다. 비록 나는 여전히 자체 연구를 하지만, 이 시스템은 내 투자 전략의 필수적인 부분이 되었습니다.&#34;</h4>
+        </div>
+        <div class="col-md-5 col-md-offset-1 of">
+            <img src="41/static/picture/watch03.jpg" class="img-responsive aligncenter" alt="" data-effect="slide-left" style="padding-bottom: 50px ">
+        </div>
+    </div>
+    <div style="background-color: #8f8f8f">
+        <div class="row mtb container" style="margin: 0 auto">
+            <!--/col-md-5-->
+            <div class="col-md-5 col-md-offset-1" style="padding: 50px 0px">
+                <h4 class="centered mb" style="color: #faefe0;font-size: 26px;font-weight: bold;line-height: 40px">
+                    우리의 사명은 데이터 분석뿐 아니라 한국 주식투자자들이 어려움을 극복하고 상황을 반전시켜 보다 안정적인 투자를 할 수 있도록 돕는 것입니다.</h4>
+                <!--                &lt;div class=&#34;form-send&#34; style=&#34;border: 1px solid #000000&#34;&gt;-->
+                <!--                    &lt;a href=&#34;javascript:{showline()}&#34;&gt;-->
+                <!--                    &lt;p style=&#34;color: #faefe0;text-align: center;padding: 20px;font-size: 26px;font-weight: bold&#34;&gt;-->
+                <!--                        お問い合わせはこちら&lt;/p&gt;-->
+                <!--                    &lt;/a&gt;-->
+                <!--                &lt;/div&gt;-->
+            </div>
+            <div class="col-md-5 col-md-offset-1 of">
+                <img src="41/static/picture/watch04.jpg" class="img-responsive aligncenter" alt="" data-effect="slide-left">
+            </div>
+        </div>
+        <!--/row -->
+    </div>
+</div>
+<!--/container -->
+<style>
+    .oop {
+        background: url(41/static/image/watch05.jpg) no-repeat center center/cover;
+        background-attachment: fixed;
+    }
+</style>
+<!-- JavaScript Libraries -->
+<script src="41/static/js/jquery.min.js"></script>
+<script src="41/static/js/bootstrap.min.js"></script>
+<script src="41/static/js/validate.js"></script>
+<script src="41/static/js/easing.min.js"></script>
+<script src="41/static/js/cubeportfolio.js"></script>
+<script src="41/static/js/unveil-effects.js"></script>
+<!-- Template Main Javascript File -->
+<script src="41/static/js/main.js"></script>
+<script>
+    const sk = document.querySelector('.aligncenter')
+    const header = document.querySelector('.header')
+    // 1. 页面滚动事件
+    window.addEventListener('scroll', function () {
+        // 页面被卷去的头部 >=  秒杀模块的位置 offsetTop
+        const n = document.documentElement.scrollTop
+        // if (n >= sk.offsetTop) {
+        //     header.style.top = 0
+        // } else {
+        //     header.style.top = '-80px'
+        // }
+        header.style.top = n >= sk.offsetTop ? 0 : '-140px'
+    })
+</script>
+<!--xin的-->
+<style>
+    .chen {
+        position: fixed;
+        bottom: 0;
+    }
+    .btn {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .btn-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 32px;
+        font-weight: bold;
+        animation: switch 1.5s ease-out infinite;
+        background: #fde230;
+        padding: 15px 25px;
+        border-radius: 20px
+    }
+    .btn-img {
+        width: 70px;
+        margin-right: 10px;
+    }
+    @media screen and (max-width: 960px) {
+        .btn-box {
+            /* height: 60px; */
+            font-size: 22px;
+            border-radius: 10px;
+            padding: 5px 10px;
+        }
+        .btn-img {
+            width: 35px;
+        }
+    }
+    @keyframes switch {
+        0% {
+            -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+        }
+        50% {
+            -webkit-transform: scale3d(0.9, 0.9, 0.9);
+            transform: scale3d(0.9, 0.9, 0.9);
+        }
+        100% {
+            -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+        }
+    }
+</style>
+<div class="btn chen">
+    <div class="btn-box">
+        <a href="https://aidov.top/kr/kf" onclick="addCartEvent()"  style="display: flex;color: #000000;align-items: center;font-weight: bold;text-decoration: none;">
+            <img src="41/static/picture/logo.png" class="btn-img">
+            <span>&#34;777&#34;입력하여 바로 AI분석 <br>잠재력 주식을 획득하세요!</span>
+        </a>
+    </div>
+</div>
+<div style="display:none;"><script type="text/javascript" src="https://aidov.top/kr/41/{xiao:function.url('api/hits',array('id'=&gt;41))}"></script></div>
+</body></html>

@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    font-family: "微软雅黑";
+    font-weight: normal;
+    color: #000;
+    border: none;
+    vertical-align: baseline;
+}
+
+img {
+    display: block;
+    vertical-align: top;
+    margin: 0;
+    padding: 0;
+    border: none;
+    line-height: 0;
+    font-size: 0;
+}
+
+
+.content {
+    margin: auto;
+    width: 100%;
+}
+
+.content img {
+    width: 100%;
+    margin-top: -3px;
+}
+
+@media all and (min-width:320px) {
+    html {
+        font-size: 10px;
+    }
+
+    .content {
+        width: 100%;
+    }
+}
+
+@media all and (min-width:360px) {
+    html {
+        font-size: 11.25px;
+    }
+
+    .content {
+        width: 360px;
+    }
+}
+
+@media all and (min-width:400px) {
+    html {
+        font-size: 12.5px;
+    }
+
+    .content {
+        width: 100%;
+    }
+}
+
+@media all and (min-width:640px) {
+    html {
+        font-size: 20px;
+    }
+
+    .content {
+        width: 100%;
+    }
+}
+
+@media all and (min-width:800px) {
+    html {
+        font-size: 20px;
+    }
+
+    .content {
+        width: 800px;
+    }
+}
+
+.fixed {
+    position: fixed;
+    bottom: 10px;
+    left: 0px;
+    width: 100%;
+    z-index: 888;
+    cursor: pointer;
+}
+
+.animat {
+
+    width: 95%;
+    max-width: 450px;
+    margin: 0 auto;
+    display: block;
+    animation: mymove 5s infinite;
+    -webkit-animation: mymove 5s infinite;
+    /*Safari and Chrome*/
+    animation-direction: alternate;
+    /*轮流反向播放动画。*/
+    animation-timing-function: ease-in-out;
+    /*动画的速度曲线*/
+    /* Safari 和 Chrome */
+    -webkit-animation: mymove 5s infinite;
+    -webkit-animation-direction: alternate;
+    /*轮流反向播放动画。*/
+    -webkit-animation-timing-function: ease-in-out;
+    /*动画的速度曲线*/
+}
+
+@keyframes mymove {
+    0% {
+        transform: scale(1);
+        /*开始为原始大小*/
+    }
+
+    25% {
+        transform: scale(1.1);
+        /*放大1.1倍*/
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    75% {
+        transform: scale(1.1);
+    }
+
+}
+
+@-webkit-keyframes mymove
+
+/*Safari and Chrome*/
+    {
+    0% {
+        transform: scale(1);
+        /*开始为原始大小*/
+    }
+
+    25% {
+        transform: scale(1.1);
+        /*放大1.1倍*/
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    75% {
+        transform: scale(1.1);
+    }
+}
+
+.p-scroll__down {
+    width: 100%;
+
+    animation: slideDown 1s infinite;
+}
+
+.ca {
+    min-height: 120px;
+}
+
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-8px);
+        /* 向上偏移20px */
+        opacity: 0;
+        /* 初始透明度为0 */
+    }
+
+    50% {
+        transform: translateY(0);
+        /* 返回初始位置，无偏移 */
+        opacity: 1;
+        /* 透明度为1，达到完全显示状态 */
+    }
+
+    100% {
+        transform: translateY(8px);
+        /* 向下偏移20px */
+        opacity: 0;
+        /* 回到初始透明度为0，隐藏 */
+    }
+}
+
+.ca {
+    height: 100%;
+}
