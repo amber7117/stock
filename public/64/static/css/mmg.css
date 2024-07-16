@@ -1,0 +1,343 @@
+/* 样式按钮 */
+.animated-button {
+	display: inline-block;
+	animation: continuousScale 1.5s infinite;
+	/* 添加无限循环动画 */
+	width: 85%;
+	left: 7.5%;
+	bottom: 10px;
+	padding: 0;
+	background: none;
+}
+
+.a-btns-b {
+	display: none;
+	color: #3c1e1e !important;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	font-weight: bold;
+	background: #71D957 !important;
+	border-radius: 100px;
+	box-sizing: border-box;
+	margin-bottom: 5px;
+	margin: 1px 0 !important;
+}
+
+.a-btns-k>div,
+.a-btns-b>div {
+	flex: 1;
+}
+
+.a-btns-k img,
+.a-btns-b img {
+	width: 35px;
+	object-fit: contain;
+	border-radius: 4px;
+}
+
+.a-btns-k {
+	display: none;
+	color: #3c1e1e !important;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	width: 100%;
+	font-weight: bold;
+	background: yellow !important;
+	border-radius: 100px;
+	box-sizing: border-box;
+	margin: 1px 0 !important;
+}
+
+/* 创建无限循环的缩放动画 */
+@keyframes continuousScale {
+	0% {
+		transform: scale(1.0);
+	}
+
+	50% {
+		transform: scale(1.05);
+		/* 缩放至 1.1 倍 */
+	}
+
+	100% {
+		transform: scale(1.0);
+	}
+}
+
+.btn11 {
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+	left: 0px;
+	text-align: center;
+	z-index: 100;
+	margin: 0;
+	/*   background: rgba(0,0,0,0.5);*/
+}
+
+.btn12 {
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	left: 0px;
+	text-align: center;
+	z-index: 100;
+	margin: 0;
+}
+
+.btn11 .a,
+.btn12 .a {
+	text-align: center;
+	font-size: 150%;
+	font-weight: bold;
+	background: linear-gradient(to right, #ff7500, #e8373d);
+	color: #fff;
+	padding: 20px 60px;
+	margin: 6px 0;
+	border-radius: 50px;
+	animation: switch 1.5s ease-out infinite;
+	overflow: hidden;
+}
+
+.btn11 .a:hover,
+.btn12 .a:hover {
+	text-decoration: navajowhite
+}
+
+.line_btn {
+	animation: switch 1.5s ease-out infinite;
+}
+
+@keyframes switch {
+	0% {
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1);
+	}
+
+	50% {
+		-webkit-transform: scale3d(0.9, 0.9, 0.9);
+		transform: scale3d(0.9, 0.9, 0.9);
+	}
+
+	100% {
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1);
+	}
+}
+
+.h_box {
+	height: 80px;
+}
+
+.server{
+	position: fixed;
+	right: 20px;
+	bottom: 95px;
+	width: 5vw;
+	height: 5vw;
+	min-width: 60px;
+	min-height: 60px;
+	max-width: 120px;
+	max-height: 120px;
+}
+.server img{
+	width: 100% !important;
+	object-fit: contain;
+}
+@media screen and (max-width: 767px) {
+	.se_wrap1 {
+		padding: 10px 0 !important;
+	}
+
+	.btn11 .a,
+	.btn12 .a {
+		padding: 8px 16px !important;
+		font-size: 14px !important;
+	}
+
+	.h_box {
+		height: 60px
+	}
+
+	.line_btn {
+		font-size: 14px !important;
+		padding: 15px 20px !important;
+		letter-spacing: 0 !important;
+	}
+
+	.f_box {
+		padding: 0 10px !important;
+	}
+
+	.f_box h1 {
+		font-size: 26px !important;
+	}
+
+	.f_box h2 {
+		font-size: 18px !important;
+	}
+}
+
+.k-show {
+	display: none;
+}
+
+/* 基本样式 */
+.mgmgInput[type="text"] {
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 13px;
+	flex: 1;
+}
+
+/* 鼠标悬停时的样式 */
+.mgmgInput[type="text"]:hover {
+	border-color: #666;
+}
+
+/* 聚焦时的样式 */
+.mgmgInput[type="text"]:focus {
+	border-color: #007bff;
+	box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+	outline: none;
+}
+.complain{
+	width: 100%;
+	max-width: 400px;
+	margin: 0 10px;
+	padding: 20px;
+	border-radius: 5px;
+	background: #fff;
+	box-sizing: border-box;
+}
+.complain .in {
+	display: flex;
+	align-items: center;
+	margin-top: 5px;
+	font-size: 14px;
+}
+.complain .in .label{
+	width: 100px;
+	text-align: center;
+}
+/* 禁用状态的样式 */
+.mgmgInput[type="text"]:disabled {
+	background-color: #f0f0f0;
+	cursor: not-allowed;
+}
+
+/* 输入内容的错误状态 */
+.mgmgInput[type="text"].error,#complain-type.error {
+	border-color: #ff0000;
+	box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+}
+
+/* 输入内容的成功状态 */
+.mgmgInput[type="text"].success {
+	border-color: #00cc00;
+	box-shadow: 0 0 5px rgba(0, 204, 0, 0.5);
+}
+
+/* 基本按钮样式 */
+.mgmgButton {
+	display: inline-block;
+	padding: 10px 20px;
+	font-size: 16px;
+	background-color: #f90;
+	/* 橙色背景 */
+	color: #000;
+	/* 文字颜色 */
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+/* 鼠标悬停时的样式 */
+.mgmgButton:hover {
+	background-color: #ff852f;
+	/* 鼠标悬停时的橙色 */
+}
+
+/* 激活（点击）时的样式 */
+.mgmgButton:active {
+	background-color: #cc5500;
+	/* 按钮激活时的橙色 */
+}
+/* 禁用状态的样式 */
+.mgmgButton:disabled {
+	background-color: #f0f0f0;
+	cursor: not-allowed;
+}
+.popup{
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 999;
+	display: none;
+}
+.popup .content .mb{
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: #00000050;
+	z-index: -1;
+}
+.popup .content{
+	position: relative;
+	z-index: 2;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+/* 基本样式 */
+.mgmgInput-container {
+	display: flex;
+	align-items: center;
+}
+
+/* 选择区号样式 */
+.mgmgInput-container select {
+	border: 1px solid #ccc;
+	padding: 5px;
+	flex: 1;
+	padding: 10px 20px;
+	border-radius: 5px;
+}
+
+/* 输入手机号码样式 */
+.mgmgInputPhone {
+	flex: 1;
+	border: none;
+}
+
+/* 错误状态样式 */
+.mgmgInput-container.error {
+	border-color: #ff0000;
+}
+.hidden {
+    display: none;
+    background-color: #f44336;
+    color: white;
+    text-align: center;
+    padding: 15px 50px;
+    position: fixed;
+    top: 20px; /* 距离顶部的距离 */
+    right: 20px; /* 距离右边的距离 */
+    z-index: 1000;
+}
+
+.success {
+    background-color: #4CAF50;
+}
