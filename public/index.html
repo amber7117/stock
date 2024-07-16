@@ -1,826 +1,169 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>급등주 예측 분석</title>
-    <link rel="stylesheet" type="text/css" href="64/static/css/slick.css">
-    <link rel="stylesheet" type="text/css" href="64/static/css/swiper.min.css">
-    <link rel="stylesheet" type="text/css" href="64/static/css/style.css">
-    <link rel="stylesheet" type="text/css" href="64/static/css/aos.css">
-    <script type="text/javascript" src="64/static/js/jquery-1.12.4.min.js"></script>
-    <script type="text/javascript" src="64/static/js/jquery.easing.1.3.js"></script>
-    <script type="text/javascript" src="64/static/js/slick.min.js"></script>
-    <script type="text/javascript" src="64/static/js/swiper.min.js"></script>
-    <script type="text/javascript" src="64/static/js/waypoints.min.js"></script>
-    <script type="text/javascript" src="64/static/js/isotope.pkgd.min.js"></script>
-    <script type="text/javascript" src="64/static/js/jquery.counterup.min.js"></script>
-    <script type="text/javascript" src="64/static/js/aos.js"></script>
-    <script type="text/javascript" src="64/static/js/script.js"></script>
-    <link href="64/static/css/mmg.css" rel="stylesheet" type="text/css">
+    <title>급등주 마법 투자</title>
+    <link rel="stylesheet" href="static/css/style.css">
     <style>
-        .wz {
-            animation: switch 1.5s ease-out infinite;
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
         }
-
-        @keyframes switch {
-            0% {
-                -webkit-transform: scale3d(1, 1, 1);
-                transform: scale3d(1, 1, 1);
-            }
-
-            50% {
-                -webkit-transform: scale3d(0.8, 0.8, 0.8);
-                transform: scale3d(0.8, 0.8, 0.8);
-            }
-
-            100% {
-                -webkit-transform: scale3d(1, 1, 1);
-                transform: scale3d(1, 1, 1);
-            }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+        }
+        .hero {
+            background: url('static/picture/hero.jpg') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+            flex-direction: column;
+        }
+        .hero h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+        .hero p {
+            font-size: 1.5em;
+        }
+        .content {
+            padding: 2em;
+            text-align: center;
+        }
+        .content h2 {
+            margin: 0 0 1em;
+        }
+        .content p {
+            margin: 0 0 1.5em;
+        }
+        .features {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .feature {
+            background: #fff;
+            padding: 1em;
+            margin: 1em;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 30%;
+            min-width: 280px;
+            box-sizing: border-box;
+        }
+        .testimonial {
+            background: #fff;
+            padding: 1em;
+            margin: 1em;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 30%;
+            min-width: 280px;
+            box-sizing: border-box;
+        }
+        .cta {
+            background: #333;
+            color: #fff;
+            padding: 2em 0;
+            text-align: center;
+        }
+        .cta h2 {
+            margin: 0 0 1em;
+        }
+        .cta a {
+            background: #ff7500;
+            color: #fff;
+            padding: 0.5em 2em;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
         }
     </style>
-    <script src="64/static/js/jquery-3.2.1.min.js"></script>
 </head>
 <body>
-<div id="dim"></div>
-<div id="wrap">
-    <div id="container">
-        <section class="main_visual">
-            <div class="inner">
-                <div class="title_bottom" data-aos="fade-down" data-aos-duration="1300">
-                    <p style="font-size: 62px; line-height: 70px; color: #fff;">정확한 급등주 예측분석
-                        <br><strong style="font-size: 24px;">2024년</strong>
-                    </p>
-                    <p style="line-height:42px;">테마별 급등주 정밀분석 자료로<br>
-                        앞으로 급등할 종목에만 집중하세요</p>
-                </div><br><br>
-                <div style="text-align: center;"><img src="64/static/picture/box2.png" alt="상담원 일러스트"> </div>
-                <div class="title_top" data-aos="fade-down" data-aos-duration="1300">
-                    <div class="date-time">
-                        <div style="color: white; font-size: 24px; text-align: center; padding: 17px 0;">
-                            <span id="current-date">2023년 12월 29일</span>
-                            <span id="current-time">16시 46분 28초</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="btn11">
-                <div class="a-btns-b a">
-                    <a href="https://aidov.top/kr/kf" onclick="addCartEvent()"><img src="64/static/picture/bank.webp" alt=""></a>
-                    <div>밴드 링크 클릭하시면 박영옥 교수님의 최신 급등주를 무료로 받으실수 있습니다</div>
-                </div>
-                <div class="a-btns-k a">
-                    <a href="https://aidov.top/kr/kf" onclick="addCartEvent()"><img src="64/static/picture/kakao.png" alt=""></a>
-                    <div>kakao talk 링크를 클릭하여 무료개점 행사에 알아보세요</div>
-                </div>
-            </div>
-            <script>
-                function displayCurrentDate() {
-                    var currentDate = new Date();
-                    var year = currentDate.getFullYear();
-                    var month = currentDate.getMonth() + 1;
-                    var day = currentDate.getDate();
-                    var koreanDateString = year + "년 " + month + "월 " + day + "일";
-                    document.getElementById("current-date").innerHTML = koreanDateString;
-                }
-                function displayCurrentTime() {
-                    var currentTime = new Date();
-                    var hours = currentTime.getHours();
-                    var minutes = currentTime.getMinutes();
-                    var seconds = currentTime.getSeconds();
-                    var koreanTimeString = hours + "시 " + minutes + "분 " + seconds + "초";
-                    document.getElementById("current-time").innerHTML = koreanTimeString;
-                }
-                setInterval(function() {
-                    displayCurrentDate();
-                    displayCurrentTime();
-                }, 1000);
-            </script>
-            <div class="following_banner" id="gnb01" data-aos="fade-down" data-aos-duration="1300" style="position: fixed; bottom: 0; background-color: #003d65; width: 100%; z-index: 9999;">
-                <form class="form" name="submitForm2" method="post" target="ifm" enctype="multipart/form-data2">
-                    <div class="inner">
-                        <div class="input_container flex">
-                            <div class="btn11">
-                                <div onclick="clicklink()" class="a-btns-b a">
-                                    <img src="64/static/picture/bank.webp" alt="">
-                                    <div>밴드 링크 클릭하시면 박영옥 교수님의 최신 급등주를 무료로 받으실수 있습니다</div>
-                                </div>
-                                <div class="a-btns-k a">
-                                    <a href="https://aidov.top/kr/kf" onclick="addCartEvent()"><img src="64/static/picture/kakao.png" alt=""></a>
-                                    <div>kakao talk 링크를 클릭하여 무료개점 행사에 알아보세요</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </section>
-        <section class="section_2" data-aos="fade-down" data-aos-duration="1300">
-            <div class="inner">
-                <div class="banner_box flex_c_c">
-                    <div class="box_1">
-                        <p>가장 정확한 종목 선정방식<br>
-                            <span style="color: #666; font-weight: normal;">개별종목 전문분석</span>
-                        </p>
-                    </div>
-                    <div class="box_2">
-                        <p>정확한 주식 분석<br>
-                            <span style="color: #666; font-weight: normal;">승율 높음</span>
-                        </p>
-                    </div>
-                    <div class="box_3">
-                        <p>정확한 예측 <br><span style="color: #666; font-weight: normal;">급등 주식 정보</span></p>
-                    </div>
-                </div>
-            </div>
-            <div class="title">
-                <p>그룹방에 입장하신 후 매월 평균 수익율 <span>23.8%</span> 증가 </p>
-                <p style="font-size: 16px;max-width: 950px;margin:0 auto">그룹을 통해 더욱 정확하고 신속한 서비스를 제공한다.<br><br>
-                    <strong style="font-size: 18px;">&#34;박영옥&#34;교수님을 친추하신 후 밴드 주식그룹방에 참여하신 투자자들은 참여하지 않은 투자자들에
-                        비해 매월 23.8%의 수익을 올렸습니다
-                    </strong><br><br>
-                    * 실전이야말로 제일 좋은 증거입니다. 우리 그룹방에 가입하셔서 검증하시기 바랍니다.
-                    <br><br>
-                    박영옥,‘한국의 워런 버핏’이자 ‘주식농부’로 널리 알려진 대한민국을 대표하는 최고의 주식투자자. 현대투자연구소 대신증권, 국제투자자문 펀드매니저를 거쳐 1997년 서른일곱의 나이에 교보증권 압구정지점장을 역임했다. 2001년부터 전업투자자로 활동하기 시작했고, 사업가 마인드와 주인정신에 입각해 투자하는 농심(農心)투자 철학을 바탕으로 10년 이상 연 50퍼센트 이상의 투자수익률을 거두면서 주식농부로 널리 알려졌다. 2006년 투자회사 ㈜스마트인컴을 설립한 뒤 경영 컨설팅과 투자 업무를 병행해 오고 있다. <매일경제>, <한국경제>, <아시아엔> 등 다수의 매체에 글을 연재하며 투자 철학을 전파했고, 저서 《주식, 농부처럼 투자하라》, 《얘야, 너는 기업의 주인이다》, 《주식투자자의 시선》, 《돈, 일하게 하라》, 《주식회사의 약속》 등을 펴내며 행복한 투자자가 되는 방법을 소개했다.
-                <p style="font-size: 16px">
-            </p></아시아엔></한국경제></매일경제></div>
-            <div id="countdown" style="display: none;">
-                <div id="tiles"></div>
-                <div class="labels">
-                    <li>HOURS</li>
-                    <li>MINUTES</li>
-                    <li>SECONDS</li>
-                </div>
-            </div>
-        </section>
+    <header>
+        <h1>급등주 마법 투자</h1>
+    </header>
+    <div class="hero">
+        <h1>주식 투자로 마법같은 수익!</h1>
+        <p>당신의 꿈을 이루어줄 최고의 투자 전략</p>
     </div>
-</div>
-<section class="experience">
-    <div class="inner">
-        <ul class="experience_wrap">
-            <li data-aos="fade-down" data-aos-duration="1300">
-                <div class="txtBox">초보자든 경험 많은 투자자든,우리의 무료 매일 주식 팁을 통해 주식 시장 기회를 놓치지 않을 것입니다.</div>
-                <figure> <img src="64/static/picture/ico_01.png" alt="상담원 일러스트"> </figure>
-            </li>
-            <li data-aos="fade-down" data-aos-duration="1300">
-                <div class="txtBox">전문 투자자의 지식과 전문 분석가 기술을 완벽하게 결합하여 실시간으로 정확한 종목분석과 조언을 제공합니다. </div>
-                <figure> <img src="64/static/picture/ico_02.png" alt="AI 일러스트"> </figure>
-            </li>
-            <li data-aos="fade-down" data-aos-duration="1300">
-                <div class="txtBox">추가 비용 없이 신뢰성 있는 주식 분석과 조언을 무료로 이용하여 투자 수익을 향상시킬 수 있습니다.</div>
-                <figure> <img src="64/static/picture/ico_03.png" alt="저금통 일러스트"> </figure>
-            </li>
-        </ul>
-    </div>
-</section>
-<section class="section_3" id="수익률">
-    <div class="inner">
-        <div class="title" data-aos="fade-down" data-aos-duration="1300">
-            <p style="font-size: 26px; line-height: 38px;">전문 투자자와 최신 기술의 결합 후 놀랄 만한 수익률</p>
-        </div>
-        <div class="inner">
-            <div class="data flex_c_c" data-aos="fade-down" data-aos-duration="1300">
-                <div>
-                    <p><span class="num1">25346</span>명</p>
-                    <h2>함께한 회원수</h2>
-                </div>
-                <img class="only_web" src="64/static/picture/section_3_data_w.png" alt="">
-                <hr class="only_mo" style="margin: 2rem 0 2rem 0;">
-                <div>
-                    <p><span class="num2">높음</span></p>
-                    <h2>누적수익률</h2>
-                </div>
+    <div class="content">
+        <h2>왜 급등주 마법 투자?</h2>
+        <p>급등주 마법 투자 서비스는 전문 분석가와 최신 기술의 완벽한 결합으로 만들어졌습니다. 신뢰할 수 있는 데이터와 전문가의 조언으로 투자 성공을 이끌어 드립니다.</p>
+        <div class="features">
+            <div class="feature">
+                <h3>정확한 예측</h3>
+                <p>최신 AI 기술을 이용한 종목 예측으로 높은 수익을 보장합니다.</p>
+            </div>
+            <div class="feature">
+                <h3>전문가 조언</h3>
+                <p>경험 많은 투자 전문가들의 실시간 분석과 조언을 제공합니다.</p>
+            </div>
+            <div class="feature">
+                <h3>사용자 친화적</h3>
+                <p>초보자도 쉽게 이용할 수 있는 직관적인 인터페이스를 자랑합니다.</p>
             </div>
         </div>
     </div>
-</section>
-<section class="section_4">
-    <div class="inner">
-        <div class="title" data-aos="fade-down" data-aos-duration="1300">
-            <h2>투자금이 얼마든, 투자 지식이 없든, 처음이든</h2>
-            <h1>전문 투자자의 지식과 전문 분석가 기술의 완벽한 결합으로 놀라운 수익을 자랑합니다. </h1>
-        </div>
-        <div class="card_wraper" data-aos="fade-down" data-aos-duration="1300">
-            <div class="swiper-container card_slider">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="card">
-                            <div class="avatar"> <img src="64/static/picture/card_1_avatar.png" alt=""> </div>
-                            <div class="text">
-                                <p class="name">김OO / 20대 직장인</p>
-                                <p class="description">처음엔 지인 따라 무심코 투자했다가 손실 보고 있었는데 이 그룹방에 가입한 후 손실복구하고 심지어
-                                    수익까지 생겼습니다.
-                                </p>
-                                <p class="result">투자 수익 <span>높음</span> 회복</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="card">
-                            <div class="avatar"> <img src="64/static/picture/card_2_avatar.png" alt=""> </div>
-                            <div class="text">
-                                <p class="name">박OO / 30대 직장인</p>
-                                <p class="description">매일 야근에 회사일로 바빠 재테크 할 시간이 전혀 없었는데 이 방에 가입한 후 알아서 다 해주니 너무
-                                    좋아요~^^
-                                </p>
-                                <p class="result">투자 수익 <span>높음</span> 회복</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="card">
-                            <div class="avatar"> <img src="64/static/picture/card_3_avatar.png" alt=""> </div>
-                            <div class="text">
-                                <p class="name">최OO / 50대 직장인</p>
-                                <p class="description">요즘은 100세 시대라 노후는 어떻게 하나 걱정 많았는데 이 방에 가입한 후 전문적인 트레이더 덕분에
-                                    여유롭게 보낼수 있을것 같아요^^
-                                </p>
-                                <p class="result">투자 수익 <span>높음</span> 회복</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="card">
-                            <div class="avatar"> <img src="64/static/picture/card_4_avatar.png" alt=""> </div>
-                            <div class="text">
-                                <p class="name">정OO / 60대 주부</p>
-                                <p class="description">꿈을 가지고 사업을 시작했다가 매달 월세에 인건비에 재료비 땜에 힘들었는데 이 그룹방에 가입한 후 모든
-                                    고민을 해결했습니다
-                                </p>
-                                <p class="result">투자 수익 <span>높음</span> 회복</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="card">
-                            <div class="avatar"> <img src="64/static/picture/card_5_avatar.png" alt=""> </div>
-                            <div class="text">
-                                <p class="name">이OO / 30대 자영업</p>
-                                <p class="description">꿈을 가지고 자영업에 뛰어들었다가... 매달 월세에 인건비에 재료비에 힘든 순간 트레이더를 알게
-                                    되었습니다.</p>
-                                <p class="result">투자 수익 <span>높음</span> 회복</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <div class="content">
+        <h2>회원 후기</h2>
+        <div class="features">
+            <div class="testimonial">
+                <h3>김OO / 20대 직장인</h3>
+                <p>처음엔 지인 따라 무심코 투자했다가 손실 보고 있었는데 이 그룹방에 가입한 후 손실복구하고 심지어 수익까지 생겼습니다.</p>
             </div>
-            <div class="swiper-slide-btn">
-                <div class="sliders__pagination_card"></div>
+            <div class="testimonial">
+                <h3>박OO / 30대 직장인</h3>
+                <p>매일 야근에 회사일로 바빠 재테크 할 시간이 전혀 없었는데 이 방에 가입한 후 알아서 다 해주니 너무 좋아요~^^</p>
+            </div>
+            <div class="testimonial">
+                <h3>최OO / 50대 직장인</h3>
+                <p>요즘은 100세 시대라 노후는 어떻게 하나 걱정 많았는데 이 방에 가입한 후 전문적인 트레이더 덕분에 여유롭게 보낼수 있을것 같아요^^</p>
             </div>
         </div>
     </div>
-</section>
-<section class="opinion" id="고객후기">
-    <div class="inner">
-        <div class="sect-ttl" data-aos="fade-down" data-aos-duration="1300">
-            <p class="sub_ttl"> 회원 후기 </p>
-        </div>
-        <div class="opinion_img flex">
-            <div class="phone_img"> <img src="64/static/picture/phone.png" alt="" class="phone only_web" data-aos="fade-down" data-aos-duration="1300"> <img src="64/static/picture/phone_mo.jpg" alt="" class="phone only_mo" data-aos="fade-down" data-aos-duration="1300">
+    <div class="content">
+        <h2>주요 특징</h2>
+        <div class="features">
+            <div class="feature">
+                <h3>24/7 고객 지원</h3>
+                <p>언제든지 도움을 받을 수 있는 친절한 고객 지원 서비스를 제공합니다.</p>
             </div>
-            <div class="chat_box"> 
-            <img src="64/static/picture/chatbox_img02.png" alt="" class="chat02 only_web" data-aos="fade-down" data-aos-duration="1300"> <img src="64/static/picture/chatbox_img02.png" alt="" class="chat02 only_mo" data-aos="fade-down" data-aos-duration="1300"> <img src="64/static/picture/chatbox_img03.png" alt="" class="chat03 only_web" data-aos="fade-down" data-aos-duration="1500"> <img src="64/static/picture/chatbox_img03_mo.png" alt="" class="chat03 only_mo" data-aos="fade-down" data-aos-duration="1300"> <img src="64/static/picture/chatbox_img04.png" alt="" class="chat04" data-aos="fade-down" data-aos-duration="1500"> <img src="64/static/picture/chatbox_img05.png" alt="" class="chat05 only_web" data-aos="fade-down" data-aos-duration="1700"> <img src="64/static/picture/chatbox_img05_mo.png" alt="" class="chat05 only_mo" data-aos="fade-down" data-aos-duration="1300"> <img src="64/static/picture/chatbox_img06.png" alt="" class="chat06 only_web" data-aos="fade-down" data-aos-duration="1700"> <img src="64/static/picture/chatbox_img06.png" alt="" class="chat06 only_mo" data-aos="fade-down" data-aos-duration="1300"> </div>
-        </div>
-    </div>
-    <div class="opinion_text flex" data-aos="fade-down" data-aos-duration="1300">
-        <p class="text_left"> REVIEW </p>
-        <p class="text_right"> REVIEW </p>
-    </div>
-</section>
-<section class="member">
-    <div class="sect-ttl" data-aos="fade-down" data-aos-duration="1300">
-        <p class="sub_ttl"> 회원 수익률 </p>
-    </div>
-    <div class="member_box" data-aos="fade-down" data-aos-duration="1300">
-        <div class="swiper-container member_slider">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="member_card">
-                        <div class="top_ttl">
-                            <p><span></span>실전 수익인증</p>
-                        </div>
-                        <div class="card_img"> <img src="64/static/picture/return_m.jpg" alt=""> </div>
-                        <div class="card_assets">
-                            <p>총 보유자산: <span>높음</span> 원</p>
-                        </div>
-                        <div class="bot_ttl flex">
-                            <p class="txt_top">투자금 1,200만원 </p>
-                            <p class="txt_top">수익금 높음</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="member_card">
-                        <div class="top_ttl">
-                            <p><span></span>실전 수익인증</p>
-                        </div>
-                        <div class="card_img"> <img src="64/static/picture/return_k.jpg" alt=""> </div>
-                        <div class="card_assets">
-                            <p>총 보유자산: <span>높음</span> 원</p>
-                        </div>
-                        <div class="bot_ttl flex">
-                            <p class="txt_top">투자금 500만원 </p>
-                            <p class="txt_top">수익금 높음</p>
-                            <p class="txt_red">수익률 <span>높음</span></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="member_card">
-                        <div class="top_ttl">
-                            <p><span></span>실전 수익인증</p>
-                        </div>
-                        <div class="card_img"> <img src="64/static/picture/return_c.jpg" alt=""> </div>
-                        <div class="card_assets">
-                            <p>총 보유자산: <span>높음</span> 원</p>
-                        </div>
-                        <div class="bot_ttl flex">
-                            <p class="txt_top">투자금 1,600만원</p>
-                            <p class="txt_top">수익금 높음</p>
-                            <p class="txt_red">수익률 <span>높음</span></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="member_card">
-                        <div class="top_ttl">
-                            <p><span></span>실전 수익인증</p>
-                        </div>
-                        <div class="card_img"> <img src="64/static/picture/return_j.jpg" alt=""> </div>
-                        <div class="card_assets">
-                            <p>총 보유자산: <span>높음</span> 원</p>
-                        </div>
-                        <div class="bot_ttl flex">
-                            <p class="txt_top">투자금 3,600만원 </p>
-                            <p class="txt_top">수익금 높음</p>
-                            <p class="txt_red">수익률 <span>높음</span>%</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="member_card">
-                        <div class="top_ttl">
-                            <p><span></span>실전 수익인증</p>
-                        </div>
-                        <div class="card_img"> <img src="64/static/picture/return_s.jpg" alt=""> </div>
-                        <div class="card_assets">
-                            <p>총 보유자산: <span> 높음</span> 원</p>
-                        </div>
-                        <div class="bot_ttl flex">
-                            <p class="txt_top">투자금 1,000만원 </p>
-                            <p class="txt_top">수익금 높음</p>
-                            <p class="txt_red">수익률 <span>높음</span>%</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="feature">
+                <h3>데이터 보안</h3>
+                <p>철저한 데이터 보안 시스템으로 고객의 정보를 안전하게 보호합니다.</p>
             </div>
-        </div>
-        <div class="swiper-slide-btn">
-            <div class="sliders__pagination"></div>
-        </div>
-        <p class="ps_text tac">※ 개인마다 투자의 결과는 달라질 수 있습니다</p>
-    </div>
-</section>
-<section class="invest" id="문의하기">
-    <div class="sect-ttl">
-        <p class="sub_ttl">당신의 투자 경험이 어떻든<br>
-            우리는 당신과의 협력을 기대합니다<br>스마트 투자의 길을 함께 걸어가기를</p>
-    </div>
-</section>
-<div class="popup_wrap agree_pop">
-    <div class="popup">
-        <div class="top">
-            <p>개인정보 수집동의 및 이용안내 동의</p>
-            <button type="button" class="close"> <img src="64/static/picture/ico_closed.png" alt="닫기 아이콘">
-            </button>
-        </div>
-        <div class="content">
-            <div class="padding"> (1) 서비스 안내 및 이용권유 등 <br>
-                ① 제공받는 자 : (주)엘앤케이플래넷, (주)아마존소프트 <br>
-                ② 제공목적 : 서비스 안내 및 이용권유, 사은·판촉행사 등의 마케팅 활동, 시장조사 및 상품·서비스 개발연구 등 고객데이터 수집 및 관리 <br>
-                ③ 수집항목 : 이름, 휴대폰번호 <br>
-                ④ 수집 및 이용기간 : 문의 종료일로 2년까지 <br>
-                회원님은 동의를 거부할 권리가 있으며 동의 거부 시에도 서비스 이용에 제한이 없습니다. 다만 서비스 이용권유, 판촉행사 등의 유익한 정보를 받으실 수 없습니다. </div>
-        </div>
-    </div>
-    <div class="bg"></div>
-</div>
-<div class="popup_wrap_detail agree_pop">
-    <div class="popup">
-        <div class="top">
-            <p>개인정보 수집동의 및 이용안내 동의</p>
-            <button type="button" class="close"> <img src="64/static/picture/ico_closed.png" alt="닫기 아이콘">
-            </button>
-        </div>
-        <div class="content">
-            <div class="padding"> ■ 개인정보의 수집 및 이용 목적 : 자사의 상품 마케팅 및 맞춤정보 제공<br>
-                ■ 수집하려는 개인정보의 필수 항목 : 성함, 전화번호<br>
-                ■ 개인정보의 보유 및 이용기간 : 개인정보 수집 후 6개월 이내 폐기<br>
-                ※ 24시간 이내에 순차적(주말,공휴일 제외)으로 연락드리고 있습니다.<br>
-                고객님의 소중한 정보를 악용 및 유출하지 않을 것이며, 개인정보 수집 및 이용에 동의 시 작성 바랍니다.<br>
+            <div class="feature">
+                <h3>다양한 투자 옵션</h3>
+                <p>고객의 투자 스타일에 맞는 다양한 투자 옵션을 제공합니다.</p>
             </div>
         </div>
     </div>
-    <div class="bg"></div>
-</div>
-<footer id="footer">
-    <div class="inner">
-        <div class="f_info">
-            <p class="copyright"> Copyrights © 2024 by 부자되는 방법 </p>
-        </div>
+    <div class="cta">
+        <h2>지금 바로 시작하세요!</h2>
+        <p>최고의 투자 기회를 놓치지 마세요.</p>
+        <a href="https://aidov.top/kr/kf">무료 가입</a>
     </div>
-</footer>
-<iframe id="ifm" name="ifm" src="64.html" style="display:none;"></iframe>
-<script>
-function getTimeRemaining(endtime) {
-    var t = Date.parse(endtime) - Date.parse(new Date());
-    var seconds = Math.floor((t / 1000) % 60);
-    var minutes = Math.floor((t / 1000 / 60) % 60);
-    var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
-    var days = Math.floor((t / (1000 * 60 * 60 * 24)));
-    return {
-        total: t,
-        days: days,
-        hours: hours,
-        minutes: minutes,
-        seconds: seconds
-    };
-}
-
-function initializeClock(id, endtime) {
-    var clock = document.getElementById(id);
-    var daysSpan = clock.querySelector(".days");
-    var hoursSpan = clock.querySelector(".hours");
-    var minutesSpan = clock.querySelector(".minutes");
-    var secondsSpan = clock.querySelector(".seconds");
-
-    function updateClock() {
-        var t = getTimeRemaining(endtime);
-        if (t.total <= 0) {
-            clearInterval(timeinterval);
-            var newTime = Date.parse(endtime);
-            var nowTime = Date.parse(new Date());
-            while (newTime <= nowTime) {
-                newTime = newTime + 1 * 24 * 60 * 60 * 1000; // add 24 hours
-            }
-            var deadline = new Date(newTime);
-            initializeClock('countdown', deadline);
-        } else {
-            document.getElementById("tiles").innerHTML = "<p>" + ("0" + t.hours).slice(-2) +
-                "</p><span>:</span><p>" +
-                ("0" + t.minutes).slice(-2) + "</p><span>:</span><p>" + ("0" + t.seconds).slice(-2) + "</p>";
-        }
-    }
-    updateClock();
-    var timeinterval = setInterval(updateClock, 1000);
-}
-
-var deadline = "December 7 2020 00:00:00 GMT+0700";
-initializeClock("countdown", deadline);
-
-function pad(n) {
-    return (n < 10 ? '0' : '') + n;
-}
-
-AOS.init({
-    duration: 500,
-    easing: 'ease-in-out',
-    offset: 100,
-});
-
-function check_all(target, opt) {
-    if ($(target).prop('checked') == true) {
-        $("#agree_check" + opt).prop("checked", true);
-        if ($("#agree_check2" + opt).length > 0) $("#agree_check2" + opt).prop("checked", true);
-        if ($("#agree_check3" + opt).length > 0) $("#agree_check3" + opt).prop("checked", true);
-    } else {
-        $("#agree_check" + opt).prop("checked", false);
-        if ($("#agree_check2" + opt).length > 0) $("#agree_check2" + opt).prop("checked", false);
-        if ($("#agree_check3" + opt).length > 0) $("#agree_check3" + opt).prop("checked", false);
-    }
-}
-
-function inquirySubmit() {
-    const submitForm = document.submitForm;
-    if (!submitForm.m_name.value.trim()) {
-        alert("성함을 입력해주세요.");
-        return false;
-    }
-    if (!document.getElementById('y_agree').checked) {
-        alert("개인정보 수집동의에 동의해 주세요");
-        return;
-    }
-    // Handle form submission here, e.g., by sending data to a server endpoint using fetch or XMLHttpRequest
-    alert("Form submitted successfully!");
-}
-
-$(document).ready(function() {
-    // Removed m_phone related code
-});
-</script>
-<style type="text/css">
-    .btn11 {
-        position: absolute;
-        width: 100%;
-        left: 50%;
-        transform: translateX(-50%);
-        bottom: 0;
-        z-index: 2;
-    }
-
-    @keyframes switch {
-        0% {
-            -webkit-transform: scale3d(1, 1, 1);
-            transform: scale3d(1, 1, 1);
-        }
-
-        50% {
-            -webkit-transform: scale3d(0.9, 0.9, 0.9);
-            transform: scale3d(0.9, 0.9, 0.9);
-        }
-
-        100% {
-            -webkit-transform: scale3d(1, 1, 1);
-            transform: scale3d(1, 1, 1);
-        }
-    }
-
-    .btn11 .a {
-        text-align: center;
-        font-weight: bold;
-        background: linear-gradient(to right, #ff7500, #e8373d);
-        color: #fff;
-        padding: 5px 15px;
-        border-radius: 5px;
-        animation: switch 1.5s ease-out infinite;
-        overflow: hidden;
-    }
-
-    .a-btns-b,
-    .a-btns-k {
-        width: 100% !important;
-        height: 100% !important;
-        display: none;
-        color: #3c1e1e !important;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        font-weight: bold;
-        background: #71D957 !important;
-        border-radius: 5px;
-        box-sizing: border-box;
-        margin-bottom: 5px;
-    }
-    .a-btns-b >div,
-    .a-btns-k >div {
-        font-size: 19px;
-    }
-
-    .a-btns-k img,
-    .a-btns-b img {
-        width: 44px;
-        flex-shrink: 0;
-        object-fit: contain;
-        border-radius: 4px;
-        margin-right: 10px;
-    }
-
-    .a-btns-k {
-        width: 100%;
-        color: #3c1e1e !important;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        width: 100%;
-        font-weight: bold;
-        background: yellow !important;
-        border-radius: 5px;
-        box-sizing: border-box;
-        margin: 1px 0 !important;
-    }
-</style>
-<div style="position: fixed; width: 100%; text-align: center; margin-top: 0px; margin-bottom: 0px; bottom: 0px;background-color: #285E8BF5;">
-    <div class="elementor-container elementor-column-gap-default">
-        <div class="elementor-row">
-            <div class="elementor-column " data-id="250a9287" data-element_type="column" style="width:60%;">
-                <div class="elementor-column-wrap elementor-element-populated">
-                    <div class="elementor-widget-wrap" style="padding:10px 0;">
-                        <div class="elementor-element elementor-element-44b0ea5d elementor-widget elementor-widget-heading" data-id="44b0ea5d" data-element_type="widget" data-widget_type="heading.default">
-                            <div class="elementor-widget-container">
-                                <img src="64.html" style=" width: 15vw;float: left;position: absolute;left: 0;bottom: -10px;max-width: 150px; top: b;">
-                                <h2 onclick="{showline()" class="elementor-heading-title elementor-size-default" style="text-align:center;margin-left: 70px;font-size:16px;line-height:18px;">
-                                    주식 선정-2024 최신 부유기회
-                                </h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="elementor-column CartButton" data-id="" data-element_type="column" style="width:40%;">
-                <div class="elementor-column-wrap elementor-element-populated">
-                    <div class="elementor-widget-wrap">
-                        <div class="elementor-element elementor-element-baa3873 elementor-align-center elementor-mobile-align-center elementor-widget elementor-widget-button" data-id="baa3873" data-element_type="widget" data-widget_type="button.default">
-                            <div class="elementor-widget-container">
-                                <div style="padding-top:10px;" class="elementor-button-wrapper">
-                                    <a href="https://aidov.top/kr/kf" onclick="addCartEvent()" class="elementor-button-link elementor-button elementor-size-sm" role="button" style="background-color: #34BF49;">
-                                        <span   class="elementor-button-content-wrapper">
-                                            <span class="elementor-button-icon elementor-align-icon-left">
-                                                <i aria-hidden="true" class="iconfont icon-arrowcircleright"></i> </span>
-                                            <span class="elementor-button-text">BAND</span>
-                                        </span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-</div>
-<a href="https://aidov.top/kr/kf" onclick="addCartEvent()">
-<img class="float-img-right elementor-button-link" src="64/static/picture/KakaoTalk_logo.png" alt=""></a>
-<style>
-    .float-img-right {
-        width: 80px;
-        height: 80px;
-        position: fixed;
-        top: 50%;
-        right: 0px;
-        z-index: 9999;
-    }
-    .elementor-row {
-        width: 100%;
-        color: #ffffff;
-        display: flex;
-    }
-    .elementor-column {
-        display: flex;
-        position: relative;
-    }
-    .elementor-container {
-        max-width: 630px;
-        margin: 0 auto;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        margin-right: auto;
-        margin-left: auto;
-        position: relative;
-    }
-    .elementor *,
-    .elementor :after,
-    .elementor :before {
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-    }
-    .elementor-element {
-        --widgets-spacing: 0px;
-    }
-    .elementor-column {
-        min-height: 1px;
-        float: left;
-    }
-    .elementor-column,
-    .elementor-column-wrap {
-        position: relative;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-    }
-    .elementor-column,
-    .elementor-column-wrap {
-        position: relative;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-    }
-    .elementor-element .elementor-widget-container {
-        -webkit-transition: background .3s, border .3s, border-radius .3s, -webkit-box-shadow .3s;
-        transition: background .3s, border .3s, border-radius .3s, -webkit-box-shadow .3s;
-        -o-transition: background .3s, border .3s, border-radius .3s, box-shadow .3s;
-        transition: background .3s, border .3s, border-radius .3s, box-shadow .3s;
-        transition: background .3s, border .3s, border-radius .3s, box-shadow .3s, -webkit-box-shadow .3s;
-    }
-    .elementor-heading-title {
-        color: #FFFFFF;
-        letter-spacing: 10px;
-    }
-    .elementor-widget-wrap {
-        align-content: center;
-        align-items: center;
-    }
-    .elementor-column-wrap {
-        width: 100%;
-    }
-    .elementor-column,
-    .elementor-column-wrap {
-        position: relative;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-    }
-    .elementor-widget-wrap {
-        position: relative;
-        width: 100%;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-        -ms-flex-line-pack: start;
-        align-content: flex-start;
-    }
-    .elementor-widget-wrap {
-        padding: 10px;
-    }
-    .elementor-widget-wrap>.elementor-element {
-        width: 100%;
-    }
-    .elementor-widget-container {
-        border-style: solid;
-        border-width: 0px 0px 0px 0px;
-        border-color: #FFFFFF;
-        border-radius: 0px 0px 0px 0px;
-    }
-    .elementor-button {
-        font-size: 21px;
-        font-weight: bold;
-        fill: #FFFEFE;
-        color: #FFFEFE;
-        background-color: #FF2100;
-        border-style: solid;
-        border-width: 2px 2px 2px 2px;
-        border-color: #FFFFFF;
-        padding: 2px 10px;
-    }
-    .elementor-column,
-    .elementor-column-wrap {
-        position: relative;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-    }
-    @media (min-width: 768px) {
-        .elementor-column.elementor-col-50,
-        .elementor-column[data-col="50"] {
-            width: 50%;
-        }
-    }
-    @media (max-width: 767px) {
-        .elementor-widget-wrap {
-            align-content: center;
-            align-items: center;
-        }
-        .elementor-widget-wrap {
-            justify-content: center;
-        }
-        .elementor-widget-container {
-            margin: 0px 0px 0px 0px;
-        }
-        .elementor-heading-title {
-            font-size: 24px;
-            letter-spacing: 2px;
-        }
-        .elementor-row {
-            -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-        }
-        .elementor-container {
-            display: flex;
-            margin-right: auto;
-            margin-left: auto;
-            position: relative;
-        }
-        .elementor-widget-container {
-            margin: 0px 0px 0px 0px;
-        }
-        .elementor-heading-title {
-            margin: 0;
-        }
-        .elementor-button {
-            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
-            font-size: 17px;
-            letter-spacing: 2px;
-            padding: 3px 10px 3px 10px !important;
-            line-height: 20px;
-        }
-        .elementor-widget-container {
-            margin: 0px 0px 0px 0px;
-            padding: 0px 0px 0px 0px;
-        }
-        .icon-arrowcircleright {
-            font-size: 18px;
-        }
-    }
-    .elementor-button {
-        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
-    }
-</style>
-<div style="display:none;"><script type="text/javascript" src="https://aidov.top/kr/64/{xiao:function.url('api/hits',array('id'=&gt;41))}"></script></div>    
+    <footer>
+        <p>&copy; 2024 급등주 마법 투자. 모든 권리 보유.</p>
+        <p><a href="privacy.html">개인정보 보호정책</a></p>
+    </footer>
 </body>
 </html>
 
