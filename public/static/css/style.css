@@ -79,8 +79,8 @@ header {
     margin: 1em;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    width: 30%;
-    min-width: 280px;
+    width: calc(25% - 2px); /* reduce width by 2px */
+    min-width: calc(280px - 2px); /* reduce min-width by 2px */
     box-sizing: border-box;
     transition: transform 0.3s;
 }
