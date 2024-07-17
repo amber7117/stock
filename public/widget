@@ -1,8 +1,8 @@
-    <link rel="stylesheet" href="static/css/bootstrap.min.css">
-    <link rel="stylesheet" href="static/css/style.css">
-    <link rel="stylesheet" href="static/css/fb-layout.css">
-    <link rel="stylesheet" href="static/css/fb-style8.css">
-    <link id="fb-color" rel="stylesheet" href="static/css/color-blue.css">
+    <link rel="stylesheet" href="https://stockkr-ten.vercel.app/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stockkr-ten.vercel.app/static/css/style.css">
+    <link rel="stylesheet" href="https://stockkr-ten.vercel.app/static/css/fb-layout.css">
+    <link rel="stylesheet" href="https://stockkr-ten.vercel.app/static/css/fb-style8.css">
+    <link id="fb-color" rel="stylesheet" href="https://stockkr-ten.vercel.app/static/css/color-blue.css">
    <div class="container">		
 		<!-- Click To FIB Messenger Container -->	
 		<div class="fb-style8">
@@ -13,7 +13,7 @@
 
 				<a class="fb-button" id="ccBtn">
                     <div>
-					<img class="fa-messenger" src="static/img/icon.png" alt="">
+					<img class="fa-messenger" src="https://stockkr-ten.vercel.app/static/img/icon.png" alt="">
                     </div>
                     
                 </a>
@@ -30,7 +30,7 @@
 							</div>
 							<!-- Profile Picture -->
 							<div class="fb-img-cont">
-								<img class="fb-user-img" src="static/img/profile_01.png" alt="">
+								<img class="fb-user-img" src="https://stockkr-ten.vercel.app/static/img/profile_01.png" alt="">
 								<strong class="fb-status-icon fb-online"></strong>
 							</div>
 				    	</a>
@@ -45,7 +45,7 @@
 							</div>
 				    		<!-- Profile Picture -->
 							<div class="fb-img-cont">
-								<img class="fb-user-img" src="static/img/profile_02.png" alt="">
+								<img class="fb-user-img" src="https://stockkr-ten.vercel.app/static/img/profile_02.png" alt="">
 								<strong class="fb-status-icon fb-online"></strong>
 							</div>
 							<!-- Display Name & Last Seen -->
@@ -62,7 +62,7 @@
 							</div>
 				    		<!-- Profile Picture -->
 							<div class="fb-img-cont">
-								<img class="fb-user-img" src="static/img/profile_03.png" alt="">
+								<img class="fb-user-img" src="https://stockkr-ten.vercel.app/static/img/profile_03.png" alt="">
 								<strong class="fb-status-icon fb-online"></strong>
 							</div>
 				    	</a>
@@ -78,7 +78,7 @@
 							</div>
 				    		<!-- Profile Picture -->
 							<div class="fb-img-cont">
-								<img class="fb-user-img" src="static/img/profile_04.png" alt="">
+								<img class="fb-user-img" src="https://stockkr-ten.vercel.app/static/img/profile_04.png" alt="">
 								<strong class="fb-status-icon fb-online"></strong>
 							</div>
 				    	</a>
@@ -94,7 +94,7 @@
 							</div>
 				    		<!-- Profile Picture -->
 							<div class="fb-img-cont">
-								<img class="fb-user-img" src="static/img/profile_05.png" alt="">
+								<img class="fb-user-img" src="https://stockkr-ten.vercel.app/static/img/profile_05.png" alt="">
 								<strong class="fb-status-icon fb-online"></strong>
 							</div>
 				    	</a>
@@ -108,7 +108,7 @@
 							</div>
 				    		<!-- Profile Picture -->
 							<div class="fb-img-cont">
-								<img class="fb-user-img" src="static/img/profile_06.png" alt="">
+								<img class="fb-user-img" src="https://stockkr-ten.vercel.app/static/img/profile_06.png" alt="">
 								<strong class="fb-status-icon fb-online"></strong>
 							</div>
 				    	</a>
@@ -119,7 +119,7 @@
 			</div>
 		</div>
 	</div>
-    <script src="static/js/jquery.min.js"></script>
-   <script src="static/js/bootstrap.min.js"></script>
-   <script src="static/js/fb-layout.js"></script>
-   <script src="static/js/fb-style8.js"></script>
+    <script src="https://stockkr-ten.vercel.app/static/js/jquery.min.js"></script>
+   <script src="https://stockkr-ten.vercel.app/static/js/bootstrap.min.js"></script>
+   <script src="https://stockkr-ten.vercel.app/static/js/fb-layout.js"></script>
+   <script src="https://stockkr-ten.vercel.app/static/js/fb-style8.js"></script>
