@@ -76,11 +76,11 @@ header {
 .feature, .testimonial {
     background: #fff;
     padding: 1em;
-    margin: 1em;
+    margin: 0.5em; /* Reduce margin to 0.5em */
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    width: calc(25% - 2px); /* reduce width by 2px */
-    min-width: calc(280px - 2px); /* reduce min-width by 2px */
+    width: calc(25% - 2px); /* width adjustment remains the same */
+    min-width: calc(280px - 2px); /* min-width adjustment remains the same */
     box-sizing: border-box;
     transition: transform 0.3s;
 }
