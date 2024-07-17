@@ -1,0 +1,138 @@
+/*======================================================
+
+Project: FB Messenger - Direct Message on Facebook Messenger From website HTML Plugin
+Author: Black Theme
+Released On: 8, Sep 2019
+@version: 1.0
+
+========================================================*/
+
+/* Click To FB Messenger Main Panel */
+.fb-style8{
+	font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.fb-style8 .fb-panel{
+  	position: fixed;
+  	bottom: 24px;
+  	right: 24px;
+  	height: 70px;
+}
+
+/* Click To FB Messenger Floating Button */
+.fb-style8 .fb-panel .fb-button{
+	position: fixed;
+	padding: 9px 7px;
+	width: 50px;
+	height: 50px;
+	bottom: 20px;
+	right: 20px;
+	border: 1px solid #fff;
+	border-radius: 50px;
+	text-align: center;
+	box-shadow: 0 0 10px rgba(12, 12, 12, 0.3);	
+	cursor: pointer;
+}
+.fb-style8 .fb-panel .fb-button:hover{
+	box-shadow: 0px 0px 10px rgba(12, 12, 12, 0.5);
+}
+.fb-style8 .fb-button img{
+  	width: 33px;
+  	cursor: pointer;
+}
+
+/* Click To FB Messenger Panel Grid */
+.fb-style8 .fb-panel ul{
+	position: absolute;
+    display: grid;
+	right: -253px;
+	top: -275px;
+    left: auto;
+    height: 100%;
+    width: 500px;
+    list-style: none;
+    text-align: right;
+    transform: translateY(-50%);
+}
+.fb-style8 .fb-panel ul li{
+  	display: inline-block;
+    padding: 30px;
+  	margin-right: 55px;
+    margin-top: 0;
+}
+
+/* User List Profile */
+.fb-style8 .fb-panel .fb-list{
+  	display: flex;
+    position: absolute;
+    line-height: 25px;
+    text-align: center;
+    cursor: pointer;
+}
+.fb-style8 .fb-list .fb-img-cont{
+	position: relative;
+}
+.fb-style8 .fb-list .fb-user-img{
+    display: block;
+    margin-top: 1px;
+    width: 50px;
+    height: 50px;
+	border-radius: 20%;
+}
+.fb-style8 .fb-list:hover .fb-user-img{
+    border-radius: 50%;
+}
+.fb-style8 .fb-list .fb-status-icon{
+	position: absolute;
+	height: 12px;
+    width: 12px;
+    bottom: 2px;
+    right: 5px;
+    border-radius: 50%;
+}
+.fb-style8 .fb-list .fb-user-info{
+	padding-left: 15px;
+	padding-right: 25px;
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-right: -20px;
+	width: 150px;
+	border-radius: 10px;
+    text-align: right;
+    box-shadow: 0px 0px 10px #ccc;
+}
+.fb-style8 .fb-user-info strong{
+	font-size: 14px;
+    font-weight: bold;
+}
+.fb-style8 .fb-user-info p{
+	margin-top: -10px;
+	margin-bottom: -1px;
+	font-size: 11px;
+	line-height: 30px;
+}
+
+/* Scal Transition Effect */
+.fb-style8 .fb-panel .scale-transition{ 
+	transition: transform 0.3s cubic-bezier(0.53, 0.01, 0.36, 1.63) !important; 
+}
+.fb-style8 .fb-panel .scale-transition.scale-out{
+  	transform: scale(0);
+  	transition: transform 0.2s !important;
+}
+.fb-style8 .fb-panel .scale-transition.scale-in{ 
+	transform: scale(1); 
+}
+
+/* Common CSS */
+.fb-style8 .fb-panel .fb-list,
+.fb-style8 .fb-list .fb-user-img,
+.fb-style8 .fb-list:hover .fb-user-img,
+.fb-style8 .fb-list .fb-user-info,
+.fb-style8 .fb-user-info strong,
+.fb-style8 .fb-user-info p{
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}

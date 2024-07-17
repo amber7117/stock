@@ -1,0 +1,514 @@
+/*======================================================
+
+Project: FB Messenger - Direct Message on Facebook Messenger From website HTML Plugin
+Author: Black Theme
+Released On: 8, Sep 2019
+@version: 1.0 
+ 
+========================================================*/
+
+/*======================================================
+[Table of Contents For Blue Gradiant Color]
+* Click To FB Messenger Main Layout CSS
+* Click To FB Messenger Sidebar Togle CSS
+* DropDown List for Click To FB Messenger Style10 Button CSS
+* Click To FB Messenger Style1 CSS
+* Click To FB Messenger Style2 CSS
+* Click To FB Messenger Style3 CSS
+* Click To FB Messenger Style4 CSS
+* Click To FB Messenger Style5 CSS
+* Click To FB Messenger Style6 CSS
+* Click To FB Messenger Style7 CSS
+* Click To FB Messenger Style8 CSS
+* Click To FB Messenger Style9 CSS
+* Click To FB Messenger Style10 CSS
+========================================================*/ 
+
+/*==================================================
+    Click To FB Messenger Main Layout CSS
+====================================================*/
+.layout .layout-features i{
+    color: #009efd;
+}
+.layout .layout-funcation .layout-funcation-odd{
+    background: #eee;
+} 
+
+/* Common CSS */
+.layout .title,
+.layout .wrapper .div-dot:after{
+    background: -webkit-linear-gradient(to right, #2af598, #009efd);
+    background: -moz-linear-gradient(to right, #2af598, #009efd);
+    background: -ms-linear-gradient(to right, #2af598, #009efd);
+    background: -o-linear-gradient(to right, #2af598, #009efd);
+    background: linear-gradient(to right, #2af598, #009efd);
+}
+.layout .layout-heading h2,
+.layout .layout-heading p{
+    color: #fff;
+} 
+.layout .layout-style-title h3,
+.layout .layout-button-title h3,
+.layout .layout-features-title h3,
+.layout .layout-funcation-title h3,
+.layout .layout-features h4,
+.layout .layout-funcation h4{
+    color: #555;
+}
+.layout .layout-style-title p,
+.layout .layout-button-title p,
+.layout .layout-features-title p,
+.layout .layout-funcation-title p,
+.layout .layout-features p,
+.layout .layout-funcation p{
+    color: #8c8c8c;
+}
+
+/*==================================================
+    Click To FB Messenger Sidebar Togle CSS (Left Slide Panel)
+====================================================*/
+.fb-header{
+    background: -webkit-linear-gradient(to right, #2af598, #009efd);
+    background: -moz-linear-gradient(to right, #2af598, #009efd);
+    background: -ms-linear-gradient(to right, #2af598, #009efd);
+    background: -o-linear-gradient(to right, #2af598, #009efd);
+    background: linear-gradient(to right, #2af598, #009efd);
+}
+
+/* Common CSS */
+.fb-setting .icon,
+.fb-setting .link a{
+    color: #555;
+}
+.fb-setting .icon i,
+.fb-setting .link a:hover{
+    color: #009efd;
+}
+
+
+/*==================================================
+    DropDown List for Click To FB Messenger Style10 Button CSS
+====================================================*/
+.fb-dropdown .new-select{
+    color: #444;
+}
+.fb-dropdown .new-select .selection{
+    border: 1px solid #009efd;
+}
+.fb-dropdown .new-select .selection:hover p, 
+.fb-dropdown .new-select .selection.open p{
+    color: #383838;
+}
+.fb-dropdown .new-select .selection > span{
+    border-color: #009efd transparent transparent transparent;
+}
+.fb-dropdown .new-select .selection.open > span{
+    border-color: transparent transparent #bbb transparent;
+}
+.fb-dropdown .new-option.reveal:hover{
+    color: #f5f5f5;
+    background: -webkit-linear-gradient(to right, #2af598, #009efd);
+    background: -moz-linear-gradient(to right, #2af598, #009efd);
+    background: -ms-linear-gradient(to right, #2af598, #009efd);
+    background: -o-linear-gradient(to right, #2af598, #009efd);
+    background: linear-gradient(to right, #2af598, #009efd);    
+}
+
+/* Common CSS */
+.fb-dropdown .new-select .selection,
+.fb-dropdown .new-option{
+    background-color: #fff;
+}
+
+/*==================================================
+    Start Click To FB Messenger Style1 CSS
+====================================================*/
+.fb-style1 .fb-panel{
+    background-color: #fff;
+}
+
+/* Common CSS */
+.fb-style1 .fb-panel .fb-header,
+.fb-style1 .fb-footer .fb-msg-button:before,
+.fb-style1 .fb-footer .fb-msg-button:hover:before,
+.fb-style1 .fb-button{
+    background: -webkit-linear-gradient(to right, #2af598, #009efd);
+    background: -moz-linear-gradient(to right, #2af598, #009efd);
+    background: -ms-linear-gradient(to right, #2af598, #009efd);
+    background: -o-linear-gradient(to right, #2af598, #009efd);
+    background: linear-gradient(to right, #2af598, #009efd);
+}
+.fb-style1 .fb-body p,
+.fb-style1 .fb-footer .fb-msg-button span{
+    color: #3c3c3c;
+}
+.fb-style1 .fb-panel .fb-header,
+.fb-style1 .fb-footer .fb-msg-button:hover span,
+.fb-style1 .fb-button i{
+    color: #fff;
+}
+.fb-style1 .fb-footer .fb-msg-button svg{
+    stroke: #3c3c3c;
+}
+.fb-style1 .fb-footer .fb-msg-button:hover svg{
+    stroke: #fff;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px){
+    
+    .fb-style1 .fb-footer .fb-msg-button:before{
+        background: linear-gradient(to right, #2af598, #009efd);
+    }
+}
+
+/*==================================================
+    End Click To FB Messenger Style1 CSS
+====================================================*/
+
+/*==================================================
+    Start Click To FB Messenger Style2 CSS
+====================================================*/
+.fb-style2 .fb-panel .fb-button{
+    background: -webkit-linear-gradient(to right, #2af598, #009efd);
+    background: -moz-linear-gradient(to right, #2af598, #009efd);
+    background: -ms-linear-gradient(to right, #2af598, #009efd);
+    background: -o-linear-gradient(to right, #2af598, #009efd);
+    background: linear-gradient(to right, #2af598, #009efd);
+}
+.fb-style2 .fb-panel .fb-list{
+    border: 2px solid #009efd;
+}
+.fb-style2 .fb-panel .fb-list img{
+    background: #fff;
+}
+
+/* Common CSS */
+.fb-style2 .fb-panel .fb-button,
+.fb-style2 .fb-panel .fb-button:hover{
+    color: #fff;
+}
+/*==================================================
+    End Click To FB Messenger Style2 CSS
+====================================================*/
+
+/*==================================================
+    Start Click To FB Messenger Style3 CSS
+====================================================*/
+.fb-style3 .fb-button i{
+    color: #009efd;
+}
+.fb-style3 .fb-panel,
+.fb-style3 .fb-button{
+    background-color: #fff;
+}
+
+/* Common CSS */
+.fb-style3 .fb-button,
+.fb-style3 .fb-panel .fb-header,
+.fb-style3 .fb-footer .fb-msg-button{
+    background: -webkit-linear-gradient(to right, #2af598, #009efd);
+    background: -moz-linear-gradient(to right, #2af598, #009efd);
+    background: -ms-linear-gradient(to right, #2af598, #009efd);
+    background: -o-linear-gradient(to right, #2af598, #009efd);
+    background: linear-gradient(to right, #2af598, #009efd);
+}
+.fb-style3 .fb-body p{
+    color: #3c3c3c;
+}
+.fb-style3 .fb-panel .fb-header,
+.fb-style3 .fb-footer .fb-msg-button{
+    color: #fff;
+}
+/*==================================================
+    End Click To FB Messenger Style3 CSS
+====================================================*/
+
+/*==================================================
+    Start Click To FB Messenger Style4 CSS
+====================================================*/
+.fb-style4 .fb-content{
+    background: #fff;
+}
+.fb-style4 .fb-body p{
+    color: #3c3c3c;
+}
+
+/* Common CSS */
+.fb-style4 .fb-panel .fb-header,
+.fb-style4 .fb-panel .fb-msg-button,
+.fb-style4 .fb-button i{
+    color: #fff;
+}
+.fb-style4 .fb-panel .fb-header,
+.fb-style4 .fb-footer .fb-msg-button,
+.fb-style4 .fb-button{
+    background: -webkit-linear-gradient(to right, #2af598, #009efd);
+    background: -moz-linear-gradient(to right, #2af598, #009efd);
+    background: -ms-linear-gradient(to right, #2af598, #009efd);
+    background: -o-linear-gradient(to right, #2af598, #009efd);
+    background: linear-gradient(to right, #2af598, #009efd);
+}
+/*==================================================
+    End Click To FB Messenger Style4 CSS
+====================================================*/
+
+/*==================================================
+    Start Click To FB Messenger Style5 CSS
+====================================================*/
+.fb-style5 .fb-list .fb-online{
+    background: -webkit-linear-gradient(to right, #2af598, #009efd);
+    background: -moz-linear-gradient(to right, #2af598, #009efd);
+    background: -ms-linear-gradient(to right, #2af598, #009efd);
+    background: -o-linear-gradient(to right, #2af598, #009efd);
+    background: linear-gradient(to right, #2af598, #009efd);
+}
+.fb-style5 .fb-list .fb-offline{
+    background-color: #b1b1b1;
+}
+.fb-style5 .fb-list .fb-user-img{
+    border: 2px solid #009efd;
+}
+.fb-style5 .fb-list:hover strong{
+    color: #383838;
+}
+.fb-style5 .fb-list:hover .fb-user-info p{
+    color: #8c8c8c;
+}
+
+/* Common CSS */
+.fb-style5 .fb-list .fb-user-img,
+.fb-style5 .fb-list:hover .fb-user-info{
+    background: #fff;
+}
+/*==================================================
+    End Click To FB Messenger Style5 CSS
+====================================================*/
+
+/*==================================================
+    Start Click To FB Messenger Style6 CSS
+====================================================*/
+.fb-style6 .fb-panel{
+    background: #fff;
+}
+
+/* Common CSS */
+.fb-style6 .fb-panel .fb-header,
+.fb-style6 .fb-header img,
+.fb-style6 .fb-footer .fb-msg-button,
+.fb-style6 .fb-button{
+    background: -webkit-linear-gradient(to right, #2af598, #009efd);
+    background: -moz-linear-gradient(to right, #2af598, #009efd);
+    background: -ms-linear-gradient(to right, #2af598, #009efd);
+    background: -o-linear-gradient(to right, #2af598, #009efd);
+    background: linear-gradient(to right, #2af598, #009efd);
+}
+.fb-style6 .fb-body p{
+    color: #3c3c3c;
+}
+.fb-style6 .fb-panel .fb-header,
+.fb-style6 .fb-footer .fb-msg-button,
+.fb-style6 .fb-button i{
+    color: #fff;
+}
+/*==================================================
+    End Click To FB Messenger Style6 CSS
+====================================================*/
+
+/*==================================================
+    Start Click To FB Messenger Style7 CSS
+====================================================*/
+.fb-style7 .fb-content .fb-bubble span{
+    color: rgba(0,0,0,0.4);
+}
+
+/* Common CSS */
+.fb-style7 .fb-header,
+.fb-style7 .fb-button,
+.fb-style7 .fb-footer .fb-list{
+    background: -webkit-linear-gradient(to right, #2af598, #009efd);
+    background: -moz-linear-gradient(to right, #2af598, #009efd);
+    background: -ms-linear-gradient(to right, #2af598, #009efd);
+    background: -o-linear-gradient(to right, #2af598, #009efd);
+    background: linear-gradient(to right, #2af598, #009efd);
+}
+.fb-style7 .fb-panel,
+.fb-style7 .fb-content .fb-bubble,
+.fb-style7 .fb-footer{
+    background-color: #fff;
+}
+.fb-style7 .fb-panel .fb-header,
+.fb-style7 .fb-button i,
+.fb-style7 .fb-user-info,
+.fb-style7 .fb-list p,
+.fb-style7 .fb-list i{
+    color: #fff;
+}
+/*==================================================
+    End Click To FB Messenger Style7 CSS
+====================================================*/
+
+/*==================================================
+    Start Click To FB Messenger Style8 CSS
+====================================================*/
+.fb-style8 .fb-list .fb-user-img{
+    border: 2px solid #009efd;
+}
+
+/* Common CSS */
+.fb-style8 .fb-panel .fb-button i,
+.fb-style8 .fb-panel ul .fb-list{
+    color: #fff;
+}
+.fb-style8 .fb-panel .fb-button,
+.fb-style8 .fb-list .fb-user-img,
+.fb-style8 .fb-list .fb-user-info{
+    background: -webkit-linear-gradient(to right, #2af598, #009efd);
+    background: -moz-linear-gradient(to right, #2af598, #009efd);
+    background: -ms-linear-gradient(to right, #2af598, #009efd);
+    background: -o-linear-gradient(to right, #2af598, #009efd);
+    background: linear-gradient(to right, #2af598, #009efd);
+}
+/*==================================================
+    End Click To FB Messenger Style8 CSS
+====================================================*/
+
+/*==================================================
+    Start Click To FB Messenger Style9 CSS
+====================================================*/
+.fb-style9 .fb-button i{
+    color: #fff;
+}
+
+/* Common CSS */
+.fb-style9:after,
+.fb-style9 .fb-button{
+    background: -webkit-linear-gradient(to right, #2af598, #009efd);
+    background: -moz-linear-gradient(to right, #2af598, #009efd);
+    background: -ms-linear-gradient(to right, #2af598, #009efd);
+    background: -o-linear-gradient(to right, #2af598, #009efd);
+    background: linear-gradient(to right, #2af598, #009efd);
+}
+/*==================================================
+    End Click To FB Messenger Style9 CSS
+====================================================*/
+
+/*==================================================
+    Start Click To FB Messenger Style10 CSS
+====================================================*/
+/* Start Click To FB Messenger Button Style 1 */
+.fb-style10 .fb-button1 span{
+    color: #fff;
+}
+.fb-style10 .fb-button1 .social-link:hover{
+    border: 2px solid #fff;
+}
+.fb-style10 .fb-button1,
+.fb-style10 .fb-button1:before,
+.fb-style10 .fb-button1:after,
+.fb-style10 .fb-button1:hover{
+    background: -webkit-linear-gradient(to right, #2af598, #009efd);
+    background: -moz-linear-gradient(to right, #2af598, #009efd);
+    background: -ms-linear-gradient(to right, #2af598, #009efd);
+    background: -o-linear-gradient(to right, #2af598, #009efd);
+    background: linear-gradient(to right, #2af598, #009efd);
+}
+/* End Click To FB Messenger Button Style 1 */
+
+/* Start Click To FB Messenger Button Style 2 */
+.fb-style10 .fb-button2 .fb-chat-icon img{
+    border: 2px solid #fff;
+}
+.fb-style10 .fb-button2 .fb-chat-icon img,
+.fb-style10 .fb-button2 p{
+    color: #fff;    
+    background: -webkit-linear-gradient(to right, #2af598, #009efd);
+    background: -moz-linear-gradient(to right, #2af598, #009efd);
+    background: -ms-linear-gradient(to right, #2af598, #009efd);
+    background: -o-linear-gradient(to right, #2af598, #009efd);
+    background: linear-gradient(to right, #2af598, #009efd);
+}
+/* End Click To FB Messenger Button Style 2 */
+
+/* Start Click To FB Messenger Button Style 3 */
+.fb-style10 .fb-button3{
+    border: 2px solid #fff;    
+    background: -webkit-linear-gradient(to right, #2af598, #009efd);
+    background: -moz-linear-gradient(to right, #2af598, #009efd);
+    background: -ms-linear-gradient(to right, #2af598, #009efd);
+    background: -o-linear-gradient(to right, #2af598, #009efd);
+    background: linear-gradient(to right, #2af598, #009efd);
+}
+.fb-style10 .fb-button3 i,
+.fb-style10 .fb-button3 span{
+    color: #fff;
+}
+/* End Click To FB Messenger Button Style 3 */
+
+/* Start Click To FB Messenger Button Style 4 */
+.fb-style10 .fb-button4:hover{
+    background: #fff;
+}
+.fb-style10 .fb-button4:hover span{
+    color: #009efd;
+}
+.fb-style10 .fb-button4 span,
+.fb-style10 .fb-button4 .fa-messenger{
+    color: #fff;
+}
+.fb-style10 .fb-button4,
+.fb-style10 .fb-button4:hover .fa-messenger{
+    background: -webkit-linear-gradient(to right, #2af598, #009efd);
+    background: -moz-linear-gradient(to right, #2af598, #009efd);
+    background: -ms-linear-gradient(to right, #2af598, #009efd);
+    background: -o-linear-gradient(to right, #2af598, #009efd);
+    background: linear-gradient(to right, #2af598, #009efd);
+}
+/* End Click To FB Messenger Button Style 4 */
+
+/* Start Click To FB Messenger Button Style 5 */
+.fb-style10 .fb-button5 img{
+    border: 2px solid #fff;
+    color: #fff;    
+    background: -webkit-linear-gradient(to right, #2af598, #009efd);
+    background: -moz-linear-gradient(to right, #2af598, #009efd);
+    background: -ms-linear-gradient(to right, #2af598, #009efd);
+    background: -o-linear-gradient(to right, #2af598, #009efd);
+    background: linear-gradient(to right, #2af598, #009efd);
+}
+/* End Click To FB Messenger Button Style 5 */
+
+/* Start Click To FB Messenger Button Style 6 */
+.fb-style10 .fb-button6 img{
+    color: #fff;    
+    border: 2px solid #fff;
+    background: -webkit-linear-gradient(to right, #2af598, #009efd);
+    background: -moz-linear-gradient(to right, #2af598, #009efd);
+    background: -ms-linear-gradient(to right, #2af598, #009efd);
+    background: -o-linear-gradient(to right, #2af598, #009efd);
+    background: linear-gradient(to right, #2af598, #009efd);
+}
+/* End Click To FB Messenger Button Style 6 */
+
+/* Start Click To FB Messenger Button Style 7 */
+.fb-style10 .fb-button7 a{
+    background: #009efd;
+}
+.fb-style10 .fb-button7:hover a{
+    background: transparent;
+}
+.fb-style10 .fb-button7 a img{
+    border: 2px solid #009efd;
+}
+.fb-style10 .fb-button7:before, 
+.fb-style10 .fb-button7:after {
+    background: #fff;
+}
+.fb-style10 .fb-button7:hover:before, 
+.fb-style10 .fb-button7:hover:after {
+    background: transparent;
+}
+/* End Click To FB Messenger Button Style 7 */
+/*==================================================
+    Start Click To FB Messenger Style10 CSS
+====================================================*/
