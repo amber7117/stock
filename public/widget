@@ -1,0 +1,125 @@
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/fb-layout.css">
+    <link rel="stylesheet" href="static/css/fb-style8.css">
+    <link id="fb-color" rel="stylesheet" href="static/css/color-blue.css">
+   <div class="container">		
+		<!-- Click To FIB Messenger Container -->	
+		<div class="fb-style8">
+			<!-- Chat Panel -->
+			<div class="fb-panel">
+				
+				<!-- Floating Button-->	
+
+				<a class="fb-button" id="ccBtn">
+                    <div>
+					<img class="fa-messenger" src="static/img/icon.png" alt="">
+                    </div>
+                    
+                </a>
+
+				<!-- User Contact List -->
+				<ul>
+					<!-- Start Single Contact List -->
+				    <li>
+				    	<a class="fb-list fb-list-sm scale-transition scale-out" href="https://band.us/n/a9ab00y0jfzd0" target="_blank">
+				    		<!-- Display Name & Last Seen -->
+							<div class="fb-user-info">
+								<strong>윤석진</strong>
+								<p>단체 채팅방</p>
+							</div>
+							<!-- Profile Picture -->
+							<div class="fb-img-cont">
+								<img class="fb-user-img" src="static/img/profile_01.png" alt="">
+								<strong class="fb-status-icon fb-online"></strong>
+							</div>
+				    	</a>
+				    </li>
+				    <!--/ End Single Contact List -->
+				    <!-- Start Single Contact List -->
+				    <li>
+				    	<a class="fb-list fb-list-sm scale-transition scale-out" href="https://band.us/n/aca20fyaP9c6k" target="_blank">
+				    		<div class="fb-user-info">
+								<strong>정은지</strong>
+								<p>단체 채팅방</p>
+							</div>
+				    		<!-- Profile Picture -->
+							<div class="fb-img-cont">
+								<img class="fb-user-img" src="static/img/profile_02.png" alt="">
+								<strong class="fb-status-icon fb-online"></strong>
+							</div>
+							<!-- Display Name & Last Seen -->
+						</a>
+				    </li>
+				    <!--/ End Single Contact List -->
+				    <!-- Start Single Contact List -->
+				    <li>
+				    	<a class="fb-list fb-list-sm scale-transition scale-out" href="https://band.us/n/a3a404y5Pcca3" target="_blank">
+							<!-- Display Name & Last Seen -->
+							<div class="fb-user-info">
+								<strong>최현우</strong>
+								<p>단체 채팅방</p>
+							</div>
+				    		<!-- Profile Picture -->
+							<div class="fb-img-cont">
+								<img class="fb-user-img" src="static/img/profile_03.png" alt="">
+								<strong class="fb-status-icon fb-online"></strong>
+							</div>
+				    	</a>
+				    </li>
+				    <!--/ End Single Contact List -->
+				    <!-- Start Single Contact List -->
+				    <li>
+				    	<a class="fb-list fb-list-sm scale-transition scale-out" href="https://band.us/n/ada60ey3P5eaY" target="_blank">
+							<!-- Display Name & Last Seen -->
+							<div class="fb-user-info">
+								<strong>박소연</strong>
+								<p>단체 채팅방</p>
+							</div>
+				    		<!-- Profile Picture -->
+							<div class="fb-img-cont">
+								<img class="fb-user-img" src="static/img/profile_04.png" alt="">
+								<strong class="fb-status-icon fb-online"></strong>
+							</div>
+				    	</a>
+				    </li>
+				    <!--/ End Single Contact List -->
+				    <!-- Start Single Contact List -->
+				    <li>
+				    	<a class="fb-list fb-list-sm scale-transition scale-out" href="https://band.us/n/a5a805y4PaFap" target="_blank">
+							<!-- Display Name & Last Seen -->
+							<div class="fb-user-info">
+								<strong>이지훈</strong>
+								<p>단체 채팅방</p>
+							</div>
+				    		<!-- Profile Picture -->
+							<div class="fb-img-cont">
+								<img class="fb-user-img" src="static/img/profile_05.png" alt="">
+								<strong class="fb-status-icon fb-online"></strong>
+							</div>
+				    	</a>
+			    	</li>
+                    <li>
+				    	<a class="fb-list fb-list-sm scale-transition scale-out" href="https://band.us/n/aaaa02ybPdF85" target="_blank">
+							<!-- Display Name & Last Seen -->
+							<div class="fb-user-info">
+								<strong>김민지</strong>
+								<p>단체 채팅방</p>
+							</div>
+				    		<!-- Profile Picture -->
+							<div class="fb-img-cont">
+								<img class="fb-user-img" src="static/img/profile_06.png" alt="">
+								<strong class="fb-status-icon fb-online"></strong>
+							</div>
+				    	</a>
+			    	</li>
+			    	<!--/ End Single Contact List -->
+				</ul>
+
+			</div>
+		</div>
+	</div>
+    <script src="static/js/jquery.min.js"></script>
+   <script src="static/js/bootstrap.min.js"></script>
+   <script src="static/js/fb-layout.js"></script>
+   <script src="static/js/fb-style8.js"></script>
