@@ -1,0 +1,39 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%--메인 비주얼--%>
+<jsp:include page="main_fragment/visual.jsp"></jsp:include>
+<%--기업 개요--%>
+<jsp:include page="main_fragment/overview.jsp"></jsp:include>
+<%--주식 정보--%>
+<jsp:include page="main_fragment/stock.jsp"></jsp:include>
+<%--수시 공시--%>
+<jsp:include page="main_fragment/adhoc.jsp"></jsp:include>
+<%--보도 자료--%>
+<jsp:include page="main_fragment/press.jsp"></jsp:include>
+<%--경영실적발표--%>
+<jsp:include page="main_fragment/presentaion.jsp"></jsp:include>
+<%--광고영상--%>
+<jsp:include page="main_fragment/ad_tv.jsp"></jsp:include>
+<%--사회책임--%>
+<jsp:include page="main_fragment/activity.jsp"></jsp:include>
+<%--비즈니스 네트워크--%>
+<jsp:include page="main_fragment/business.jsp"></jsp:include>
+<%--지속가능경영--%>
+<jsp:include page="main_fragment/sustainability.jsp"></jsp:include>
+<div style="float: right;"> 
+  <a href="kor.html#;" onclick="javascript:window.open('/kbfng.custinfo.CustInfoProvideR.do','','width=830, height=730,scrollbars=yes');" class="btn-info">그룹 내 고객정보 제공안내</a>
+</div>
+<!--서버이전안내 시작-->
+  <!--div id="popup-box" style="position:absolute;z-index:100; padding:0 !important; width:100%; text-align:center; background:#645b4c; top:0;">
+      <div class="kbTable2 lineTop">
+        <img src="/common/img/server.jpg" alt="서버이전공지 이미지" />
+      </div>
+      <div class="btn-box" style="border:none !important; margin:0; ">
+      	<a href="#none" id="btn-click" class="btn-type1" style="position: absolute; top: 96px; right: 483px; padding: 3px 10px;">확인</a>
+      </div>
+    </div>
+  	<script>
+      $("#btn-click").click(function(){
+          $("#popup-box").toggle("slow")
+      });
+  </script-->
+<!--서버이젠안내 끝-->

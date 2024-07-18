@@ -1,0 +1,244 @@
+
+--2024-07-18 10:19:10--  https://www.kbfg.com/webponent-press/external/jsonpath/jsonpath.js
+Reusing existing connection to www.kbfg.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 22480 (22K) [application/x-javascript]
+Saving to: ‘www.kbfg.com/webponent-press/external/jsonpath/jsonpath.js’
+
+
+
+2024-07-18 10:19:10 (124 MB/s) - ‘www.kbfg.com/webponent-press/external/jsonpath/jsonpath.js’ saved [22480/22480]
+
+--2024-07-18 10:19:10--  https://www.kbfg.com/webponent-press/js/webponent.press.js
+Reusing existing connection to www.kbfg.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 108569 (106K) [application/x-javascript]
+Saving to: ‘www.kbfg.com/webponent-press/js/webponent.press.js’
+
+
+
+2024-07-18 10:19:10 (465 KB/s) - ‘www.kbfg.com/webponent-press/js/webponent.press.js’ saved [108569/108569]
+
+--2024-07-18 10:19:10--  https://www.kbfg.com/kor/images/about/pc/img_info_01.jpg
+Reusing existing connection to www.kbfg.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 167465 (164K) [image/jpeg]
+Saving to: ‘www.kbfg.com/kor/images/about/pc/img_info_01.jpg’
+
+     0K .......... .......... .......... .......... .......... 30%  364M 0s
+    50K .......... .......... .......... .......... .......... 61%  219K 0s
+   100K .......... .......... .......... .......... .......... 91%  218K 0s
+   150K .......... ...                                        100% 21.1M=0.5s
+
+2024-07-18 10:19:11 (357 KB/s) - ‘www.kbfg.com/kor/images/about/pc/img_info_01.jpg’ saved [167465/167465]
+
+--2024-07-18 10:19:11--  https://www.kbfg.com/kor/images/about/mo/img_info_01.jpg
+Reusing existing connection to www.kbfg.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 135073 (132K) [image/jpeg]
+Saving to: ‘www.kbfg.com/kor/images/about/mo/img_info_01.jpg’
+
+     0K .......... .......... .......... .......... .......... 37%  303M 0s
+    50K .......... .......... .......... .......... .......... 75%  218K 0s
+   100K .......... .......... .......... .                    100%  245M=0.2s
+
+2024-07-18 10:19:12 (575 KB/s) - ‘www.kbfg.com/kor/images/about/mo/img_info_01.jpg’ saved [135073/135073]
+
+--2024-07-18 10:19:12--  https://www.kbfg.com/templets/kbfg/web/kor/js/common.js
+Reusing existing connection to www.kbfg.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 111784 (109K) [application/x-javascript]
+Saving to: ‘www.kbfg.com/templets/kbfg/web/kor/js/common.js’
+
+     0K .......... .......... .......... .......... .......... 45% 2.16M 0s
+    50K .......... .......... .......... .......... .......... 91%  261K 0s
+   100K .........                                             100%  183K=0.2s
+
+2024-07-18 10:19:12 (510 KB/s) - ‘www.kbfg.com/templets/kbfg/web/kor/js/common.js’ saved [111784/111784]
+
+--2024-07-18 10:19:12--  https://www.kbfg.com/kor/about/group/history/merge.htm
+Reusing existing connection to www.kbfg.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘www.kbfg.com/kor/about/group/history/merge.htm’
+
+     0K .......... .......... .......... .......... .......... 73.9M
+    50K .......... .......... .......... .......... ..........  217K
+   100K .......... .......... .......... .......... .......... 73.0M
+   150K .......... .......... .......... .......... ...         191K=0.5s
+
+Last-modified header missing -- time-stamps turned off.
+2024-07-18 10:19:13 (421 KB/s) - ‘www.kbfg.com/kor/about/group/history/merge.htm’ saved [198203]
+
+--2024-07-18 10:19:13--  https://www.kbfg.com/kor/about/group/history/start.htm
+Reusing existing connection to www.kbfg.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘www.kbfg.com/kor/about/group/history/start.htm’
+
+     0K .......... .......... .......... .......... .......... 37.3M
+    50K .......... .......... .......... .......... ..........  214K
+   100K .......... .......... .......... .......... .......... 33.9M
+   150K .......... .......... .......... .......... ..........  224K
+   200K .......... ....                                        90.6M=0.5s
+
+Last-modified header missing -- time-stamps turned off.
+2024-07-18 10:19:13 (465 KB/s) - ‘www.kbfg.com/kor/about/group/history/start.htm’ saved [219138]
+
+--2024-07-18 10:19:13--  https://www.kbfg.com/data/images/about/group/history_2024_06_00.jpg
+Reusing existing connection to www.kbfg.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 227091 (222K) [image/jpeg]
+Saving to: ‘www.kbfg.com/data/images/about/group/history_2024_06_00.jpg’
+
+     0K .......... .......... .......... .......... .......... 22% 52.6M 0s
+    50K .......... .......... .......... .......... .......... 45%  214K 0s
+   100K .......... .......... .......... .......... .......... 67% 83.0M 0s
+   150K .......... .......... .......... .......... .......... 90%  222K 0s
+   200K .......... .......... .                               100%  132M=0.5s
+
+2024-07-18 10:19:14 (482 KB/s) - ‘www.kbfg.com/data/images/about/group/history_2024_06_00.jpg’ saved [227091/227091]
+
+--2024-07-18 10:19:14--  https://www.kbfg.com/data/images/about/group/history_2024_05_00.jpg
+Reusing existing connection to www.kbfg.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 157854 (154K) [image/jpeg]
+Saving to: ‘www.kbfg.com/data/images/about/group/history_2024_05_00.jpg’
+
+     0K .......... .......... .......... .......... .......... 32%  253M 0s
+    50K .......... .......... .......... .......... .......... 64%  219K 0s
+   100K .......... .......... .......... .......... .......... 97% 68.1M 0s
+   150K ....                                                  100% 83.1K=0.2s
+
+2024-07-18 10:19:15 (671 KB/s) - ‘www.kbfg.com/data/images/about/group/history_2024_05_00.jpg’ saved [157854/157854]
+
+--2024-07-18 10:19:15--  https://www.kbfg.com/data/images/about/group/history_2024_04_00.jpg
+Reusing existing connection to www.kbfg.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 156387 (153K) [image/jpeg]
+Saving to: ‘www.kbfg.com/data/images/about/group/history_2024_04_00.jpg’
+
+     0K .......... .......... .......... .......... .......... 32% 32.1M 0s
+    50K .......... .......... .......... .......... .......... 65%  218K 0s
+   100K .......... .......... .......... .......... .......... 98% 25.4M 0s
+   150K ..                                                    100% 54.4K=0.2s
+
+2024-07-18 10:19:15 (656 KB/s) - ‘www.kbfg.com/data/images/about/group/history_2024_04_00.jpg’ saved [156387/156387]
+
+--2024-07-18 10:19:15--  https://www.kbfg.com/data/images/about/group/history_2024_04_01.jpg
+Reusing existing connection to www.kbfg.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 195555 (191K) [image/jpeg]
+Saving to: ‘www.kbfg.com/data/images/about/group/history_2024_04_01.jpg’
+
+     0K .......... .......... .......... .......... .......... 26% 81.8M 0s
+    50K .......... .......... .......... .......... .......... 52%  197K 0s
+   100K .......... .......... .......... .......... .......... 78%  136M 0s
+   150K .......... .......... .......... ..........           100%  134K=0.6s
+
+2024-07-18 10:19:16 (341 KB/s) - ‘www.kbfg.com/data/images/about/group/history_2024_04_01.jpg’ saved [195555/195555]
+
+--2024-07-18 10:19:16--  https://www.kbfg.com/data/images/about/group/history_2024_02_00.jpg
+Reusing existing connection to www.kbfg.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 79472 (78K) [image/jpeg]
+Saving to: ‘www.kbfg.com/data/images/about/group/history_2024_02_00.jpg’
+
+     0K .......... .......... .......... .......... .......... 64%  176M 0s
+    50K .......... .......... .......                         100% 90.4K=0.3s
+
+2024-07-18 10:19:17 (254 KB/s) - ‘www.kbfg.com/data/images/about/group/history_2024_02_00.jpg’ saved [79472/79472]
+
+--2024-07-18 10:19:17--  https://www.kbfg.com/data/images/about/group/history_2024_02_01.jpg
+Reusing existing connection to www.kbfg.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 224571 (219K) [image/jpeg]
+Saving to: ‘www.kbfg.com/data/images/about/group/history_2024_02_01.jpg’
+
+     0K .......... .......... .......... .......... .......... 22% 54.0M 0s
+    50K .......... .......... .......... .......... .......... 45%  204K 0s
+   100K .......... .......... .......... .......... .......... 68% 82.2M 0s
+   150K .......... .......... .......... .......... .......... 91%  219K 0s
+   200K .......... .........                                  100%  163M=0.5s
+
+2024-07-18 10:19:17 (461 KB/s) - ‘www.kbfg.com/data/images/about/group/history_2024_02_01.jpg’ saved [224571/224571]
+
+--2024-07-18 10:19:17--  https://www.kbfg.com/data/images/about/group/history_2024_02_02.jpg
+Reusing existing connection to www.kbfg.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 243480 (238K) [image/jpeg]
+Saving to: ‘www.kbfg.com/data/images/about/group/history_2024_02_02.jpg’
+
+     0K .......... .......... .......... .......... .......... 21%  194M 0s
+    50K .......... .......... .......... .......... .......... 42%  217K 0s
+   100K .......... .......... .......... .......... .......... 63% 73.3M 0s
+   150K .......... .......... .......... .......... .......... 84%  199K 0s
+   200K .......... .......... .......... .......              100%  380M=0.5s
+
+2024-07-18 10:19:18 (493 KB/s) - ‘www.kbfg.com/data/images/about/group/history_2024_02_02.jpg’ saved [243480/243480]
+
+--2024-07-18 10:19:18--  https://www.kbfg.com/data/images/about/group/history_2024_01_00.jpg
+Reusing existing connection to www.kbfg.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 123592 (121K) [image/jpeg]
+Saving to: ‘www.kbfg.com/data/images/about/group/history_2024_01_00.jpg’
+
+     0K .......... .......... .......... .......... .......... 41%  311M 0s
+    50K .......... .......... .......... .......... .......... 82%  301M 0s
+   100K .......... ..........                                 100%  421M=0s
+
+2024-07-18 10:19:19 (321 MB/s) - ‘www.kbfg.com/data/images/about/group/history_2024_01_00.jpg’ saved [123592/123592]
+
+--2024-07-18 10:19:19--  https://www.kbfg.com/data/images/about/group/history_2023_12_00.jpg
+Reusing existing connection to www.kbfg.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 434007 (424K) [image/jpeg]
+Saving to: ‘www.kbfg.com/data/images/about/group/history_2023_12_00.jpg’
+
+     0K .......... .......... .......... .......... .......... 11% 66.2M 0s
+    50K .......... .......... .......... .......... .......... 23%  219K 1s
+   100K .......... .......... .......... .......... .......... 35%  209M 0s
+   150K .......... .......... .......... .......... .......... 47%  218K 1s
+   200K .......... .......... .......... .......... .......... 58% 45.0M 0s
+   250K .......... .......... .......... .......... .......... 70%  216K 0s
+   300K .......... .......... .......... .......... .......... 82% 74.1M 0s
+   350K .......... .......... .......... .......... .......... 94%  151K 0s
+   400K .......... .......... ...                             100%  495M=1.0s
+
+2024-07-18 10:19:20 (414 KB/s) - ‘www.kbfg.com/data/images/about/group/history_2023_12_00.jpg’ saved [434007/434007]
+
+--2024-07-18 10:19:20--  https://www.kbfg.com/data/images/about/group/history_2023_11_00.jpg
+Reusing existing connection to www.kbfg.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 912818 (891K) [image/jpeg]
+Saving to: ‘www.kbfg.com/data/images/about/group/history_2023_11_00.jpg’
+
+     0K .......... .......... .......... .......... ..........  5%  253M 0s
+    50K .......... .......... .......... .......... .......... 11%  177K 2s
+   100K .......... .......... .......... .......... .......... 16%  407M 1s
+   150K .......... .......... .......... .......... .......... 22%  219K 2s
+   200K .......... .......... .......... .......... .......... 28% 35.3M 1s
+   250K .......... .......... .......... .......... .......... 33%  219K 1s
+   300K .......... .......... .......... .......... .......... 39%  195K 2s
+   350K .......... .......... .......... .......... .......... 44% 24.1M 1s
+   400K .......... .......... .......... .......... .......... 50%  162K 1s
+   450K .......... .......... .......... .......... .......... 56% 39.8M 1s
+   500K .......... .......... .......... .......... .......... 61%  165K 1s
+   550K .......... .......... .......... .......... .......... 67%  163K 1s
+   600K .......... .......... .......... .......... .......... 72% 14.9M 1s
+   650K .......... .......... .......... .......... .......... 78% 51.8M 1s
+   700K .......... .......... .......... .......... .......... 84% 43.8M 0s
+   750K .......... .......... .......... .......... .......... 89%  164K 0s
+   800K .......... .......... .......... .......... .......... 95%  163K 0s
+   850K .......... .......... .......... .......... .         100% 46.2M=2.5s
+
+2024-07-18 10:19:23 (352 KB/s) - ‘www.kbfg.com/data/images/about/group/history_2023_11_00.jpg’ saved [912818/912818]
+
+--2024-07-18 10:19:23--  https://www.kbfg.com/data/images/about/group/history_2023_11_01.jpg
+Reusing existing connection to www.kbfg.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 952335 (930K) [image/jpeg]
+Saving to: ‘www.kbfg.com/data/images/about/group/history_2023_11_01.jpg’
+
+     0K .......... .......... .......... .......... ..........  5%  289M 0s
+    50K .......... .......... .........
